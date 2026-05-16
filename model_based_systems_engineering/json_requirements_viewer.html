@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Requirement JSON Viewer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 16px;
+      background: #f5f5f5;
+    }
+    h1 {
+      margin-bottom: 8px;
+    }
+    .controls {
+      margin-bottom: 16px;
+      padding: 8px;
+      background: #ffffff;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"] {
+      padding: 4px 8px;
+      margin-left: 4px;
+      min-width: 260px;
+    }
+    button {
+      margin-left: 8px;
+      padding: 4px 10px;
+      cursor: pointer;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 6px 8px;
+      vertical-align: top;
+      font-size: 13px;
+    }
+    th {
+      background: #f0f0f0;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+    .tags {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .tag {
+      background: #e0f0ff;
+      border-radius: 3px;
+      padding: 2px 6px;
+      font-size: 11px;
+    }
+    .no-results {
+      margin-top: 12px;
+      font-style: italic;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>Requirement JSON Viewer</h1>
+
+  <div class="controls">
+    <button id="loadJsonBtn">Load JSON File</button>
+    <input type="file" id="fileInput" accept=".json" style="display:none" />
+
+    <br><br>
+
+    <label for="tagFilter">Filter by tags (comma-separated):</label>
+    <input type="text" id="tagFilter" placeholder="e.g. qualification, electronics" />
+    <button id="applyFilter">Apply</button>
+    <button id="clearFilter">Clear</button>
+  </div>
+
+  <table id="requirementsTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Short Name</th>
+        <th>Documentation</th>
+        <th>Text</th>
+        <th>Level</th>
+        <th>Phase</th>
+        <th>Guidance</th>
+        <th>Rationale</th>
+        <th>Tags</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div id="noResults" class="no-results" style="display:none;">
+    No requirements match the current tag filter.
+  </div>
+
+  <script>
+    let requirementData = { elements: [] };
+
+    const tableBody = document.querySelector('#requirementsTable tbody');
+    const noResultsDiv = document.getElementById('noResults');
+
+    function normalizeArray(arr) {
+      if (!Array.isArray(arr)) return [];
+      return arr.map(t => String(t).trim());
+    }
+
+    function renderTable(elements) {
+      tableBody.innerHTML = '';
+
+      if (!elements || elements.length === 0) {
+        noResultsDiv.style.display = 'block';
+        return;
+      } else {
+        noResultsDiv.style.display = 'none';
+      }
+
+      elements.forEach(el => {
+        const props = el.properties || {};
+        const tags = normalizeArray(props.tags);
+
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${el.name || ''}</td>
+          <td>${el.shortName || ''}</td>
+          <td>${el.documentation || ''}</td>
+          <td>${props.text || ''}</td>
+          <td>${props.level || ''}</td>
+          <td>${props.phase || ''}</td>
+          <td>${props.guidance || ''}</td>
+          <td>${props.rationale || ''}</td>
+          <td>
+            <div class="tags">
+              ${tags.map(t => `<span class="tag">${t}</span>`).join('')}
+            </div>
+          </td>
+        `;
+        tableBody.appendChild(tr);
+      });
+    }
+
+    function filterByTags() {
+      const input = document.getElementById('tagFilter').value || '';
+      const rawTags = input.split(',').map(t => t.trim()).filter(t => t.length > 0);
+
+      if (rawTags.length === 0) {
+        renderTable(requirementData.elements);
+        return;
+      }
+
+      const filterTags = rawTags.map(t => t.toLowerCase());
+
+      const filtered = (requirementData.elements || []).filter(el => {
+        const tags = normalizeArray((el.properties || {}).tags).map(t => t.toLowerCase());
+        return filterTags.every(ft => tags.includes(ft));
+      });
+
+      renderTable(filtered);
+    }
+
+    document.getElementById('applyFilter').addEventListener('click', filterByTags);
+    document.getElementById('clearFilter').addEventListener('click', () => {
+      document.getElementById('tagFilter').value = '';
+      renderTable(requirementData.elements);
+    });
+
+    // === Load JSON Button ===
+    document.getElementById('loadJsonBtn').addEventListener('click', () => {
+      document.getElementById('fileInput').click();
+    });
+
+    document.getElementById('fileInput').addEventListener('change', event => {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = e => {
+        try {
+          requirementData = JSON.parse(e.target.result);
+          renderTable(requirementData.elements || []);
+        } catch (err) {
+          alert("Invalid JSON file");
+        }
+      };
+      reader.readAsText(file);
+    });
+
+    // Initial empty table
+    renderTable([]);
+  </script>
+</body>
+</html>

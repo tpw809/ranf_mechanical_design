@@ -1,0 +1,24 @@
+{
+  "elements": [
+    {
+      "id": "<string: unique identifier>",
+      "type": "RequirementUsage",
+      "name": "<string: requirement name>",
+      "shortName": "<string: human-readable ID>",
+      "documentation": "<string: description or notes>",
+      "properties": {
+        "text": "<string: requirement statement>",
+        "phase": "<string: optional lifecycle phase>",
+        "level": "<string: optional system level>",
+		"guidance": "<string: optional guidance text>",
+		"rationale": "<string: optional rationale text>",
+        "tags": [
+          "<string: optional tag>",
+          "<string: optional tag>"
+        ],
+		"verificationMethod": "<string: optional verification method text>",
+		"verificationEvidence": "<string: optional verification evidence text>",
+      },
+    },
+  ]
+}

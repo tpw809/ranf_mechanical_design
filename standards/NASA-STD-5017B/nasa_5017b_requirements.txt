@@ -1,0 +1,645 @@
+
+4 Requirements
+
+4.1 Dimensional Analysis
+
+4.1.1 DDMR 1 A dimensional analysis of all moving parts and intentional interference-fit parts shall be performed and documented to ensure that specified functional performance is maintained under worst-case environmental conditions and configurations. 
+
+Rationale: Dimensional analysis is important for ensuring internal and external clearances and establishing manufacturing tolerances. Dimensional analysis should be performed as part of the design process prior to part manufacturing. Establishing the tolerances via a documented dimensional analysis helps one to understand the effects of tolerances and other factors, avoids tolerance stack-up conditions that can adversely affect hardware performance, ensures useful parts are manufactured, and allows for easy review and revision later.
+
+4.1.2 DDMR 2 The dimensional analysis shall account for the following:
+a. Manufacturing, assembly, and alignment tolerances.
+b. Temperature- and temperature-gradient-induced deformations.
+c. Deflections due to vibration.
+d. Deflections due to external loads.
+e. Deflections due to operational loads.
+f. The full range of adjustability of the mechanism parts.
+
+Rationale: Dimensional analysis is sensitive to these factors.
+
+Guidance: These factors are similar to those to be considered for clearances. Additional factors may be appropriate for consideration based on individual applications. Verification that these factors have been considered is expected to include line items in the analysis documentation for each factor in the dimensional analysis, or if a particular factor does not apply in a given situation, rationale for its inapplicability.
+
+4.2 Clearances
+
+4.2.1 DDMR 3 Static and dynamic clearance requirements between mechanism components and any other structure, component, thermal covering, and field of view shall be established. 
+
+4.2.2 DDMR 4 Required static and dynamic clearances between mechanism components and any other structure, component, thermal covering, and field of view shall be maintained throughout the service life and life test of the mechanism.
+
+4.2.3 DDMR 5 Internal mechanism clearance requirements shall be established.
+
+4.2.4 DDMR 6 Required internal mechanism clearances shall be maintained throughout the service life and life test of the mechanism.
+
+Rationale: Maintaining clearances within and around mechanisms is necessary both to maintain proper mechanism function and to prevent the mechanism from causing problems with other systems. Establishing clearances allows one to both design the mechanism to maintain the clearances and then verify the existence of those clearances in the design and on the flight hardware.
+
+4.2.5 DDMR 7 The established clearance requirements shall account for the following:
+a. Manufacturing, assembly, and alignment tolerances.
+b. Temperature- and temperature-gradient-induced deformations or instabilities.
+c. Deflections due to vibration.
+d. Deflections due to external loads, including gravity effects.
+e. Deflections due to operational loads.
+f. Deflections due to changes in pressurization, including thermal blanket billowing.
+g. Motion of cable harnesses, tubing, and sensor wiring.
+h. Environments arising from transportation.
+i. The full range of adjustability of the mechanism parts
+
+Rationale: Because many of the factors affecting the overall dynamic clearance are not present when inspections are performed, these effects have to be accounted for and included in the static clearance specified on the drawings. Tolerancing, thermal expansion effects, and deflections are the most important factors to consider in establishing the clearances. Thermal blanket behavior is notorious for causing unexpected interferences with mechanisms. Motion under transportation loads is often not considered, but clearances are important in that situation, too.
+
+Guidance: Additional factors may be appropriate for consideration based on individual applications. Verification that these factors have been considered is expected to include line items in the analysis documentation for each factor in the clearance analysis or, if a particular factor does not apply in a given situation, provide rationale for its inapplicability.
+
+4.2.6 DDMR 8 Clearance measurements shall be performed on the highest level of assembly possible.
+
+Rationale: To verify the proper clearances exist, inspections of all the established clearances have to be made on the as-built hardware after installation or assembly of the components of interest.
+
+Guidance: The measurement of each clearance should be made when the mechanism is in the configuration that generates the worst case for that clearance. If clearances cannot be directly measured, positional measurements that allow clearance to be calculated may be substituted.
+
+4.3 Torque and Force Margin
+
+Guidance: Though the term “torque margin” is used in this section for brevity, all references to torque margin also apply to linear motion with “force” replacing “torque.” Torque margin is a measure of the excess capability of a mechanism to impart, maintain, or prevent motion, or to provide required acceleration. Torque margin is intended to ensure that a mechanism retains reserve torque that can be applied in the event of an unforeseen effect that increases resistive torque or reduces motive torque within the mechanism, similar to the factor of safety used in a structural margin calculation. Torque margin is not applicable to mechanisms that must provide a specific torque value within a narrow tolerance range to perform their basic function, such as a spring holding a relief valve closed or an ejection mechanism requiring a specific (not minimum) separation velocity.
+
+4.3.1 General Torque Margin Requirements
+
+4.3.1.1 DDMR 9 All torque margin requirements shall be applied under worst-case conditions throughout the mechanism’s life, including throughout life testing.
+
+Guidance: Worst-case conditions are defined as those that result in a combination of minimum driving torque and maximum resisting torque over the range of qualification environmental limits (e.g., temperature, pressure, acceleration, vibration, radiation, humidity), operating limits (e.g., supply voltage, motor/controller parameters), and design parameters (e.g., material properties, manufacturing tolerances, spring force variability).
+Only those worst-case combinations that can occur simultaneously need to be considered. For example, if the minimum driving torque occurs at hot conditions and the maximum resisting torque occurs at cold conditions, then the two should not be combined to calculate a torque margin. As another example, if the minimum driving torque and maximum resisting torque do not occur at the same point in a mechanism’s range of motion, the two should not be combined to calculate a torque margin.
+The following are examples of conditions that should be accounted for when calculating torque margin:
+• Material property variations
+• Dimensional tolerances
+• Environmental conditions
+• Frictional effects
+• Changes in static and kinetic friction due to storage time or exposure to vacuum
+• Alignment effects
+• Latching forces
+• Return springs
+• Wire harness loads (flex forces and long-term set)
+• Damper drag
+• Thermally induced distortions
+• Load-induced distortions
+• Variations in lubricity
+• Fluid pressure on the elastomers in viscous dampers
+• Supply voltage, voltage drops, current limit
+• Motor controller parameters (gains, sampling rate, bandwidth)
+• Acceleration due to vehicle motion or maneuvers that can retard motion
+• Loading due to vibroacoustic environment
+• Effects of exposure to propellant or propellant vapor, directly or via permeation
+• Magnetic saturation (see Appendix A, section A.2.1.1)
+• Torque required when swapping between redundant electronics
+Whether or not to include inertial loads as resistive torques in a torque margin calculation depends on the type of torque margin being calculated and the duration of the actuation event compared to the duration of the inertial load. Inertial loads arise when inertias are accelerated. Quasi-static accelerations such as acceleration due to launch vehicle thrust have durations long enough to warrant inclusion in all torque margin calculations. However, transient accelerations such as accelerations due to vibration or shock create may generate a small enough response in some mechanisms that they may be neglected in some torque margin calculations.
+For example, the static torque margin calculation for an actuator whose inertia is large may be able to neglect the inerital loads due to high-frequency vibration exposure if the vibratory forces cannot accelerate the inertia enough to generate significant resistive loads. However, exposure to the same high-frequency vibration may be important in the holding torque calculation of a valve because, even if transient, vibratory forces can induce small motions that lead to undesirable effects such as valve leakage or valve seat damage.
+
+4.3.1.2 DDMR 10 Mechanisms that use torque multipliers or reducers (e.g., gearboxes, strain wave gear drives, lever arms) shall meet torque margin requirements at both the input and output of multiplying or reducing devices.
+
+Rationale: Torque margins must be calculated at both positions because torque multipliers and reducers are not 100 percent efficient, and because some resistive torques can have a more detrimental effect on torque margin when considered prior to multiplication. Basing torque margin on the overall output can give a false impression of the true torque margin.
+
+4.3.1.3 DDMR 11 All torque margins shall be verified during an acceptance test at the highest possible level of assembly.
+
+Rationale: Torque margins are intended to ensure that the mechanism retains reserve torque that can be applied in the event of unforeseen circumstances. Therefore, as with any other capability of the mechanism, the minimum torque margin is verified prior to placement into service.
+
+Guidance: Often, it is not possible to test the torque margin directly in which case the individual torque terms in Equation 4-1 are to be individually acceptance tested and the torque margin calculated using these tested values. Attempts to calculate torque margins at higher levels of assembly (subsystem or vehicle) can be more complex because of the potential inability to discriminate between different torque sources in the denominator of Equation 4-1. See Appendix A, section A.2.1.2, for a methodology to calculate torque margin at higher levels of assembly.
+
+4.3.2 Static Torque Margin DDMR 12 Static torque margin per Equation 4-1 and Table 1 shall be greater than zero within the mechanism’s full range of motion.
+
+Guidance: Static torque margin is a measure of the excess torque available to overcome resistance to motion. Tavail is the minimum available torque generated by the driving component. Static friction and static resisting torque values are used for Tv and Tf in this calculation. Ta and FSa are not used in the static torque margin calculation.
+
+4.3.3 Dynamic Torque Margin DDMR 13 Dynamic torque margin per Equation 4-1 and Table 1 shall be greater than zero within the mechanism’s full range of motion.
+
+Guidance: Dynamic torque margin is a measure of the excess torque available to provide a required minimum acceleration to a body. Such a requirement can take many forms such as a specified acceleration, a specified minimum time, or a specified minimum velocity. This requirement is only applicable to mechanisms that are required to provide a minimum acceleration to a body.
+
+Tavail is the minimum available torque generated by the driving component. Friction and resisting torque values appropriate for the specified motion profile are used for Tv and Tf in this calculation, and the torque required to achieve the minimum acceleration is used for Ta. Values of mass and moment of inertia used in dynamic torque margin calculations may need to include allowances for system growth over the duration of a program.
+
+4.3.4 Holding Torque Margin DDMR 14 Holding torque margin per Equation 4-1 and Table 1 shall be greater than zero at the specified positions within the mechanism’s full range of motion.
+
+Guidance: Holding torque margin is a measure of the excess torque available to maintain position in the presence of disturbances. This requirement is applicable to mechanisms that must maintain position in the presence of external disturbances. Tavail is the minimum powered or unpowered holding torque intentionally provided to hold position from sources such as brakes, springs, motors, pneumatic or hydraulic systems, or detents. Incidental, unreliable, and/or uncharacterized contributors to holding torque (e.g., joint friction, harness bending, blanket rubbing) should be excluded from Tavail. The maximum disturbing torque values are used for Tv in this calculation. Tv is used in the holding torque margin calculation for two reasons. First, though the disturbing torques may not be highly variable in nature, the resistive torque of the Tavail term can contain a high degree of variability. Second, using a mechanism to hold position is inherently more variable than using a structure; therefore, a higher factor of safety than would be applied to a structure is appropriate. Tf and Ta are not used in the holding torque margin calculation.
+
+4.3.5 Stepper Motor Margin
+
+4.3.5.1 DDMR 15 Stepper motor torque margin shall be greater than zero within the mechanism’s full range of motion, using the appropriate allowable margin calculation method per Table 2, Stepper Motor Margin Calculation Methods.
+
+Rationale: The dynamic response to a commanded step can create step instability. The bulleted cases in Table 2 are intended to bound the circumstances in which stable stepping can be expected. When those circumstances are not in place, a step stability analysis is needed to guarantee stable stepping.
+
+Guidance: Pull-in torque margin is a measure of the excess torque available to accelerate a stepper motor from rest to operating speed, stop a stepper motor, or reverse stepper motor direction in synchronism with input pulses (i.e., without loss of steps) for a given speed, inertial load, and controller. For pull-in torque margin, the pull-in torque for a given speed is used for Tavail, and the total resisting torque seen by the stepper motor is used for Tv. For torque margin using a step stability analysis, the minimum torque produced under stable stepping is used for Tavail and the total resisting torque seen by the stepper motor is used for Tv. Tf and Ta are not used when calculating stepper motor torque margin.
+A further discussion of stepper motor performance and stability analysis can be found in
+Appendix A, section A.2.4.2.
+
+4.3.5.2 DDMR 16 When stepper motor detent torque is used to maintain rotor position in the presence of vibratory disturbances, detent stiffness and motor damping shall be considered when determining the holding force margin.
+
+Rationale: The spring-damper nature of the detent torque requires special consideration when used in a holding torque application.
+
+4.3.6 Servomechanism Margins
+
+DDMR 17 For servomechanism applications, control system performance margins shall be calculated in addition to meeting the applicable static torque margin, dynamic torque margin, holding torque margin, and stroke margin requirements.
+
+Rationale: Servomechanism performance requirements may require motor performance that far exceeds that required by the torque margin equation 4-1 alone. Though applicable margins should still be calculated and documented, servomechanisms need a control system performance analysis, e.g., phase and gain margin analysis, to fully assess performance and margin. The specific control system margins for a given application are outside of the scope of this document and therefore cannot be specified. It is important to successful servomechanism functionality that they be calculated and evaluated by control system experts.
+
+4.4 Stroke Margin
+
+4.4.1 DDMR 18 Stroke margin requirements shall be established for all mechanisms.
+
+Rationale: Stroke margin helps guarantee enough travel exists in a mechanism to accomplish its function in the presence of uncertainty. Different margins are appropriate for different mechanisms, preventing the specification of a single number for margin; but in any case, the appropriate margin for the application should be assessed and a requirement for it established early enough that it may be evaluated by all stakeholders.
+
+Guidance: In applications where stroke of the driven member is physically limited by a mechanical stop, this requirement still applies to the actuator, i.e., the actuator itself is to have stroke remaining when the mechanical stop is reached by the driven member. Continuously rotating mechanisms, e.g., solar array drives with slip rings, are exempt from this requirement.
+
+4.4.2 DDMR 19 All stroke margins shall account for worst-case credible combinations of the following:
+a. Environmentally induced distortions
+b. Misalignments
+c. Dimensional tolerances
+d. Load-induced distortions
+
+Rationale: Like force margin, stroke margin ensures that adequate travel is available to account for unforeseen effects, which can increase the stroke required. A variety of factors, including those specified in the requirement, can affect the dimensions of the assembly and stroke needed. Therefore, these various factors are important considerations when determining the necessary travel for linear actuators, which include pin-pullers.
+
+Guidance: Worst-case conditions are defined as those that result in the minimum stroke over the range of qualification environmental limits (e.g., temperature, pressure, acceleration, vibration, radiation, humidity), and design parameters (e.g., material properties, manufacturing tolerances).
+
+4.5 Electrical Bonding and Grounding
+
+4.5.1 DDMR 20 Bearings shall not be used to carry electrical current.
+
+4.5.2 DDMR 21 Gears shall not be used to carry electrical current.
+
+Rationale: These requirements are meant to preclude bearings and gears from being used as part of an intentional electrical distribution circuit or to carry other currents such as ground return currents, lightning currents, or plasma-induced surface currents. These components are not designed to carry electrical current, and their geometry and lubrication make it difficult for them to do so. Other current paths should be provided.
+
+Guidance: Electrical currents produced by unintentional charging of bearing-supported hardware should be considered when evaluating this requirement. One should not assume that bearings and gears are insulative or conductive.
+
+4.5.3 DDMR 22 Mechanisms shall include electrical bonding and ground paths between moving and stationary parts sufficient to meet electromagnetic environmental effects requirements.
+
+Rationale: It can sometimes be difficult to achieve an adequate bond or ground path when the interfaces are in motion, especially when bearings and gears are involved. Care should be taken to ensure that the bonding and grounding scheme is able to perform as intended.
+
+Guidance: Verification of this requirement is expected to consist of an analysis or test that demonstrates that an adequate bond or ground path exists to meet electromagnetic environmental effects requirements.
+
+4.6 Lubrication
+
+Guidance: Mechanism lubrication is considered to be a process subject to the requirements of NASA-STD-6016. Mechanism performance can be sensitive to the lubrication process parameters such as the lubricant selected, its quantity, location, application method, etc. The wrong lubrication process parameters can negatively affect mechanism performance by increasing drag and heating while decreasing torque margin and efficiency. Additionally, too much lubricant can create contamination problems while too little lubricant can reduce mechanism life.
+
+4.6.1 DDMR 23 All surfaces in contact for which friction under relative motion negatively affects performance of the mechanism shall be lubricated.
+
+Rationale: Lubrication is one of the most important factors in successful mechanism design and operation. All contacting surfaces that are expected to move with respect to one another should be lubricated in some way, regardless of material choices, load, or life requirements.
+
+Guidance: Use of dissimilar metallic materials for the contacting surfaces, though strongly encouraged, is not an equivalent to or substitute for lubrication and does not meet the intent of this requirement. However, special cases can arise in which the use of lubricant may be more detrimental than beneficial in which case this requirement may be a good candidate for tailoring. If dissimilar metallic materials are used, consideration should be given to the potential for galvanic corrosion.
+Refer to Appendix A, section A.2.2, for a discussion of lubricant selection and factors that should be considered. If a wet-lubricated mechanism contains interfaces in which friction is desirable, such as brakes, clutches, friction drives, friction joints, etc., barrier films should be used to keep wet lubricants from migrating to those interfaces. See Appendix A, section A.2.2.1, for more information on barrier films.
+
+4.6.2 DDMR 24 The selection of lubricants for mechanisms shall include the following considerations:
+a. The effect of the service environments (ground storage conditions, pressure, temperature, radiation, dust, humidity, salt spray, etc.) on lubricants.
+b. Creep properties of wet lubricants.
+c. Viscosity index (variation of viscosity with temperature) of wet lubricants.
+d. Elastohydrodynamic (EHD) film thickness if operating in the EHD lubrication regime.
+e. Protection against galling and friction welding in the boundary lubrication regime.
+f. Outgassing and breakdown products from wet lubricants that could contaminate sensitive surfaces.
+g. Polymerization of wet lubricants, particularly due to high contact pressures.
+h. Lubricant purity and filtration level.
+i. Lubricant depletion for wet lubricants. (This is typically handled through a “lubrication loss analysis” which considers evaporation, creep/migration, consumption, and fling.)
+j. Lubricant wear-out for dry lubricants.
+k. Generation and management of dry lubricant wear debris.
+l. Compatibility of each lubricant with other lubricants and other materials (substrates, platings, coatings, and preservative or shipping oils).
+m. Exposure to propellant or propellant vapor.
+n. Interaction with pyrotechnic materials and their reaction products (blowby).
+o. Temperature limits of the lubricants.
+p. Corrosion protection of the mechanism.
+q. Contact stress.
+r. Coefficient of friction needed.
+s. The effect of wear debris on wet lubricant properties.
+
+Rationale: There are numerous factors that have to be considered to make a proper choice of lubricant.
+
+Guidance: Not all of these considerations will apply to every case. Verification that these factors have been considered is expected to include a line item discussing each factor or the rationale for inapplicability of each factor in the compliance assessment for this Standard.
+
+4.6.3 DDMR 25 An evaporative loss analysis shall be performed to show that 90 percent of the initial liquid lubricant quantity remains at end of life, not including lubricant degradation.
+
+Rationale: Because life testing evaluates cycle life and not calendar life, evaporative effects on lubricant availability typically cannot be evaluated with a life test alone. Equations for mass loss due to evaporation are based on mass loss of lubricant in vacuum tests and analytical idealizations of labyrinth geometry and as such may underpredict mass loss for complex labyrinth designs.
+
+4.7 Indication of Status
+
+4.7.1 DDMR 26 A direct indication of the critical states of each mechanism shall be provided.
+
+Rationale: Knowledge of a mechanism's critical state, i.e., any state necessary for adequate operational use or hazard control is important for mission success. Direct measurement ensures that reliable information is provided.
+
+Guidance: The necessary state information will vary depending on the mechanism, the concept of operations, and any hazards posed by failure to achieve or maintain the intended state. Examples of state indications include the mechanism’s condition, the mechanism’s position, indications of reaching predetermined configurations, current draw, electrical continuity, etc.
+Direct indication, as opposed to indirect indication, is achieved when the mechanism function of interest is itself indicated unambiguously rather than some other related state. For example, measuring the position of a component in a latch drivetrain gives an indirect indication of the latched state that could be erroneous if the drivetrain has structurally failed or has enough backlash or flexibility to allow the shaft to turn while the latch itself remained disengaged. Measuring the position of the latch pawl provides a direct indication of a latched state. Evaluation of the proposed means of state indication is recommended to determine whether a proposed state indication is direct or indirect.
+Positioning mechanisms should always provide absolute positioning capability, either in the form of absolute position indication or the ability to command the device to a specific known position. This allows for periodic calibration or recovery in the event of an anomaly that introduces a discrepancy between the commanded and true positions.
+
+4.8 Structural Requirements
+
+4.8.1 DDMR 27 Mechanisms classified as failure tolerant shall meet all structural requirements using full design factors of safety after failure of the mechanism to operate.
+
+Rationale: To be considered failure-tolerant, a mechanism has to meet all performance requirements after any failures commensurate with its required level of failure tolerance. Structural requirements or the redistribution of loads caused by the failure are sometimes overlooked or reduced design factors of safety are sometimes erroneously applied. While it is often permissible to use a reduced statistical bound on the loads after a failure (e.g., using 2σ loads instead of 3σ loads), the design factor of safety should not be reduced.
+
+4.8.2 DDMR 28 Engineering analyses shall account for the structural mounting boundary conditions, including:
+a. Stiffness
+b. Mounting alignment tolerances
+c. Temperature-induced distortions
+d. Load-induced distortions
+e. Interface friction
+
+Rationale: Often, the structural analysis of a mechanism does not consider interface properties or assumes a rigid interface. Ignoring these properties can lead to failure in service when the interfaces create different environments than were considered in the analysis.
+
+Guidance: Verification of the accounting for these items is expected to include a discussion of each of these items and how they were modeled, or why they were not modeled, in the structural analysis documentation. Stiffness is an important factor in mechanism performance and can also be a significant contributor to offloading mechanism functional loads. A detailed analysis of stiffness and related loads through all ranges of motion will help identify problems early in the development cycle.
+
+4.8.3 DDMR 29 The mechanism shall remain functional after exposure to stall conditions at any point in its travel.
+
+Rationale: Mechanisms frequently stall torque or force, intentionally or unintentionally, either in testing or in flight. Designing the mechanism with enough structural and thermal capability to withstand stall ensures that the mechanism is undamaged by this exposure and allows steps to be taken to recover mechanism function.
+
+Guidance: Where stall duration is important, it is recommended that actuation force/torque stall conditions be applied for at least one minute when assessing compliance. It is recommended that stall conditions be applied for a duration of two minutes during qualification testing and one minute during acceptance testing under worst-case environmental conditions.
+The program-specified factors of safety apply to this stall condition; i.e., the factors of safety applied for structural analysis are not to be reduced for this situation. Mechanism function is defined by the mechanism’s specification. The stall condition load case should include the worst-case force that could be applied in that condition, which could include transient loading. In cases in which no recovery would be possible after a mechanism stall regardless of mechanism functionality, this ability may no longer useful and may be a candidate for tailoring.
+
+4.8.4 DDMR 30 Non-jamming mechanical stops shall be incorporated into all mechanisms where exceeding required range of motion will result in detrimental effects to the mechanism or larger system.
+
+Rationale: Stops ensure that mechanisms do not travel farther than intended and cause problems or end up in an unrecoverable state. Soft stops such as software logic, open-loop control, and limit switches can be unreliable, so mechanical stops are important for maximum reliability.
+
+Guidance: Every case must be assessed for hazards, but examples of mechanisms for which over-travel commonly does not result in detrimental effects include filter wheels and gimbals with slip rings.
+
+4.8.5 DDMR 31 Mechanism components shall maintain a positive margin of safety with the full design factors of safety applied when subjected to worst-case transient loads from mechanical stop impact.
+
+Rationale: The impact against the mechanical stop can create elevated loads on other parts of the mechanism in addition to the stops themselves, and these loads have to be accounted for in the structural analysis. The contact of mechanical stops is often rapid enough that static analysis approaches can be unconservative and dynamic analysis will be necessary.
+
+Guidance: A bounding worst-case load would include impact at maximum speed combined with stall torque, including the effects of controller faults.
+
+4.8.6 DDMR 32 If manipulator systems, payload operations, extravehicular or intravehicular activities, or other situations presenting a risk of inadvertent contact are present, exposed mechanism components, protective shrouds and covers, and mounting structure shall be designed to accommodate inadvertent impact loads from these sources.
+
+Rationale: Designing for this possibility will ensure adequate margins against deformation that could cause a binding or jamming condition or inadvertent operation of the mechanism.
+
+Guidance: These cases are considered design loads, and therefore analysis of these cases will use full factors of safety. The particular load to be accommodated will be determined by the individual program.
+
+
+4.9 Bearings
+
+4.9.1 [DDMR 33] Ball bearings used in high precision or low torque ripple applications shall utilize raceways that meet Annular Bearing Engineering Committee (ABEC) 7, 7P, or 7T tolerances (or better) in accordance with American Bearing Manufacturing Association (ABMA) standards (documents depend on application and are accessible at https://www.americanbearings.org/).
+
+4.9.2 [DDMR 34] Nonstandard ball bearings or thin section ball bearings where ABMA tolerances do not apply that are used in high precision or low torque ripple applications shall have the manufacturer’s precision level most nearly equivalent to ABEC 7.
+
+4.9.3 [DDMR 35] Ball bearings used in high precision or low torque ripple applications shall utilize steel balls of ANSI/ABMA/ISO 3290-1, Rolling Bearings - Balls - Part 1: Steel balls, grades 3 through 10, inclusive, or ASTM F2215, Standard Specification for Balls, Bearings, Ferrous and Nonferrous for Use in Bearings, Valves, and Bearing Applications, grades 3 through 10, inclusive, or ceramic balls of ASTM F2094/F2094M, Standard Specification for Silicon Nitride Bearing Balls, grades 3C through 10C, inclusive.
+
+4.9.4 [DDMR 36] Ball bearings used in high precision or low torque ripple applications shall utilize a raceway surface finish of 2.0 microinches arithmetic average (AA) or better.
+
+Rationale: Bearing tolerances and raceway surface finish can have a strong impact on the performance of bearings where precision or low torque ripple is needed. ABEC 7 tolerances on the raceways have been shown to be adequate for these applications in most situations. However, one has to be careful to also specify the ball grade and raceway surface finish, which are not covered by the ABEC rating. Balls of poor grade can negate the benefits of tight bearing tolerances.
+
+Guidance: While not required, it should be noted that smoother raceway finishes can help a bearing transition to the EHD regime at lower speeds and can also help to extend life. Note that the above conditions are necessary to achieve high precision, low torque ripple, and/or long-life applications but may not be sufficient.
+
+4.9.5 [DDMR 37] Ball bearings used in high precision, low torque ripple or long-life applications shall utilize material that has been refined using one of the following processing sequences:
+a. Air melting followed by Vacuum Arc Remelting (VAR, also known as Consumable Electrode Vacuum Melting or CEVM)
+b. Vacuum Induction Melting (VIM) followed by VAR
+c. VIM followed by Pressurized Electroslag Remelting (PESR)
+
+Rationale: Vacuum melting and remelting or pressurized electroslag remelting improves the cleanliness of bearing steels by minimizing the size and number of non-metallic inclusions. When located at the contact surfaces, non-metallic inclusions create pits which degrade surface finish and increase torque ripple. When located at or below the contact surfaces, non-metallic inclusions are stress raisers from which fatigue cracks and spalls originate, shortening fatigue life.
+
+Guidance: Note that the above conditions are necessary to achieve high precision, low torque ripple, and/or long-life applications but may not be sufficient.
+
+4.9.6 [DDMR 38] The mean Hertzian contact stress on the most highly loaded element in a rolling element bearing shall remain less than or equal to the appropriate values in Table 3, Allowable Contact Stress for Bearing Materials Under Non-Operational Yield Design Loads, when subjected to the non-operational yield design load.
+
+4.9.7 [DDMR 39] For materials other than those listed in Table 3, an allowable contact stress shall be determined.
+
+Rationale: Stressing the bearing raceway material beyond its elastic limit creates a permanent indentation known as a brinell, which can be detected on the torque trace of the bearing and is unsuitable for quiet running applications. The values in the table for 440C and 52100 in high precision, low torque ripple applications were established by experiment and correspond to a brinell depth of 0.00003 times the ball diameter for 440C and 0.00005 times the ball diameter for 52100 (Leveille & Murphy, 1973). The values for M62 were established experimentally using ball-on-plate indentation tests with a brinell depth threshold of 0.00005 times the ball diameter based on the previous work on 440C and 52100 (Park, et al., 1998). Values for M50 are conservative limits based on hardness comparison with 52100. It is recommended that the above references be consulted to understand the configurations and bearing hardnesses tested before utilizing these limits.
+The values in the table for non-quiet running applications are based on the load that produces brinell depths of 0.0001 times the ball diameter, as found in ABMA standards and elsewhere. Experience shows that this brinell depth can be tolerated in most bearing applications without affecting fatigue life.
+
+Guidance: It should be emphasized that the allowables in Table 3 are for the loading of non-rotating bearings only, e.g., random vibration loads during launch, or loads on a bearing intended to release a degree of freedom. The allowables in Table 3 may not be appropriate for operating stresses (stresses experienced during intentional rotation of the bearing that would be suitable for inclusion in a life calculation) which will generally be lower and depend on a number of factors. See Appendix A, section A.2.3.1.2, for guidelines.
+The yield design load is specified in this requirement to allow the use of a yield factor of safety to account for uncertainty in determining the loading conditions on bearings. Because the result of exceeding these allowables is a self-limiting indentation leading to an increase in torque ripple and/or reduction in bearing operating life, a factor of safety such as what is typically applied to a structural design is not necessarily warranted. Each bearing application should be examined to determine the appropriate yield factor of safety given the nature of the loading conditions and the consequences of the resulting brinells.
+
+4.9.8 [DDMR 40] Bearing fatigue life calculations shall be based on the L0.05 life when subjected to maximum time-varying loads consistent with the conditions under which the L0.05 life was determined.
+
+Rationale: Use of the L0.05 life has been shown through testing to effectively eliminate fatigue life failures during life testing and service for space applications.
+
+4.9.9 [DDMR 41] The upper and lower extremes of the ball bearing contact ellipses shall be contained by the raceways.
+
+Rationale: Understanding the contact geometry and stress in a bearing is important for obtaining required bearing performance and life. Truncation of the contact ellipse can cause significant increases in stress that are not accounted for in traditional bearing analyses and can have correspondingly large impacts on load-carrying capacity and life.
+
+4.9.10 [DDMR 42] All ball bearings shall be preloaded with the following exceptions:
+a. Four-point (gothic arch) bearings.
+b. Deep groove ball bearings for which it can be shown that the absence of preload on the deep groove ball bearing is not detrimental to the performance of the mechanism.
+c. Wave generator bearings in strain wave gearing.
+
+Rationale: Preloading a ball bearing eliminates free play, reduces runout of the rotating member, increases axial and radial stiffness, prevents fretting damage, eliminates impact loading when exposed to a vibration environment, increases the load sharing among balls, and prevents skidding of balls.
+
+Guidance: It is recognized that there are situations in which preload is not advisable, and there are many bearing preload strategies and considerations when analyzing the effects of preload levels and unloading of balls. See Appendix A, section A.2.3.1.3, for guidance.
+
+4.9.11 [DDMR 43] If axial sliding of a bearing ring is required to maintain preload and/or prevent axial overload, the sliding interface shall be designed to operate as a linear sliding bearing over the range of qualification environmental limits, including lubrication to reduce wear and sliding friction forces to acceptable levels throughout the service life.
+
+Rationale: To maintain bearing preload and/or prevent axial overload, some bearing mounting schemes depend on one bearing ring or set of rings being free to translate axially in a housing or on a shaft. When bearing mounts that allow bearing rings to slide axially do not follow standard design practices for linear sliding bearings, vibration testing often damages the sliding interfaces and reduces their performance.
+
+Guidance: Mounting the bearing ring(s) on or between compliant diaphragms or structures is a preferred method of allowing axial translation because it does not involve loaded interfaces sliding over each other. Standard design practices for linear sliding bearings include selecting dimensions, tolerances, and clearances to prevent tilting and jamming, and selecting bearing stress level, materials, finishes, and lubricants to prevent galling and seizing. Finally, in bearing mounting schemes that depend on one bearing ring of a non-separable angular contact bearing being free to translate axially in a housing or on a shaft, it is important to include snubbers that prevent reverse thrust loading the bearing.
+
+4.9.12 [DDMR 44] Bearing preload shall be measured once all the assembly steps that establish or affect bearing preload have been completed.
+
+Rationale: Measurement of preload needs to be verified after operations affecting bearing preload have been completed to ensure that the assembly operations did not adversely affect the preload and that the bearings function as desired in the fully assembled configuration.
+
+Guidance: It is highly recommended that the preload be measured at intermediate levels of assembly as well. Direct measurement is preferred; but if bearing preload cannot be directly measured, indirect methods of assessing preload, such as measurement of stiffness or Coulomb friction torque, may be used.
+
+4.9.13 [DDMR 45] Mechanisms utilizing guides or linear bearings to constrain a carriage to move in its length direction shall use a length-to-width ratio of 2:1 or greater, unless it can be shown by analysis that a length-to-width ratio of less than 2:1 will not cause the mechanism to bind or undergo stick-slip motion taking into account the following:
+a. Possible friction coefficients.
+b. Contact forces.
+c. Actuating forces.
+d. Dynamically induced forces.
+e. Misalignments.
+f. Eccentric loading.
+
+Rationale: The performance of mechanisms utilizing guides or linear bearings is geometry-sensitive. Length-to-width ratios greater than 2:1 rarely have problems unless friction coefficients are abnormally high. Ratios less than 2:1 can be used successfully but require careful analysis and characterization of parameters to ensure the system does not bind or become susceptible to stick-slip motion. Ratios less than 1:1 are suitable only for high-precision, low-friction applications such as recirculating-ball linear bearing systems.
+
+Guidance: For mechanisms utilizing a set of guides or linear bearings, the effective length is defined as the distance between guide points or linear bearing centers along the direction of motion, and the width is the distance between the rails or centerlines of the bearings perpendicular to the direction of motion, as depicted in Figure 1, Illustration of Length and Width for Various Examples of Mechanisms Using a Set of Guides. For mechanisms utilizing a single rail, the effective length is the effective length of the linear bearing or guide and the width is the distance from the load application point to the centerline of the rail as depicted in Figure 2, Illustration of Moment Arm, Effective Length, and Width for a Single Linear Bearing Application.
+A length-to-width ratio greater than 2:1 requires no analysis. However, care should be taken when using large length-to-width ratios within a mechanism because rail deflections over the length of the linear bearing can also cause binding problems.
+The effective bearing length of an individual linear bearing is often not the overall length of the linear bearing, but the length of the portion of the linear bearing carrying the load, often called a “load zone.” Few manufacturers publish information about their linear bearings’ load zones, so it is often necessary to contact the manufacturer or make a conservative estimate of the load zone dimensions. The same uncertainty factors used in the force margin analysis (e.g., on friction) should be applied to any analysis performed to examine susceptibility to stick-slip motion. Further information on length-to-width ratios can be found in Schroeder (2010).
+
+4.10 Motors
+
+4.10.1 Electronically Commutated Brushless Motors
+
+4.10.1.1 [DDMR 46] Each electronically commutated (EC) brushless motor shall have the following characteristics measured (or calculated from measured values):
+a. Torque constant (Kt).
+b. Motor constant (Km).
+c. Torque versus speed curve using flight-representative drive electronics.
+d. Phase resistances.
+e. Phase inductances.
+f. End-to-end commutated torque performance.
+
+Rationale: These motor characteristic measurements are critical to understanding how the motor will perform in a mechanical system. Torque versus speed testing verifies the combined performance of the motor, feedback, and controller. This testing should use a flight-like driver and commutation position sensor so that it is known as early as possible how the motor and motor driver perform as a system. EC brushless motor performance can be heavily influenced by the motor driver used to power the motor and by alignment of the commutation position sensor to the motor.
+
+4.10.1.2 [DDMR 47] The minimum measured torque output from each EC brushless motor shall be verified using flight-representative drive electronics.
+
+Rationale: This testing is necessary because a typical dynamometer test run will not reveal “torque holes” where the commutation electronics switch motor current from winding to winding. A motor whose initial position lies in one of these holes may not start under a load.
+
+Guidance: The output torque parameters of an EC brushless motor are characterized with a torque profile test. See Appendix A, section A.2.4.3, for guidance on torque profile testing techniques. Flight-representative drive electronics are electronics that produce the flight drive waveform when connected to the motor. These electronics typically share the same schematic design as the flight electronics but may use off-the-shelf components. However, caution is needed to ensure that off-the-shelf electronic components perform the same as the flight electronics components. For example, the gate capacitance of a radiation-hardened field effect transistor can be up to an order of magnitude different from an off-the-shelf field effect transistor, which would change the switching time and the response of the mechanism. Care also should be taken to consider the configuration and lengths of harnessing as they may affect performance.
+
+4.10.2 Stepper Motors
+
+[DDMR 48] Each stepper motor shall have the following performance characteristics measured:
+a. Powered breakaway torque.
+b. Unpowered (detent) torque versus angle for a full rotation.
+c. Pull-in torque with representative inertia, friction loads, and step rates.
+d. Pull-out torque with representative inertia, friction loads, and step rates.
+e. Step accuracy.
+f. Detent to powered torque null alignment.
+g. Phase resistances.
+h. Phase inductances.
+
+Rationale: Stepper motors operate differently from electronically commutated brush motors so they need to have different characteristics measured. Measuring these motor characteristics for stepper motors allows one to understand how the motor will perform in a mechanical system.
+
+Guidance: All operational tests for stepper motors are sensitive to the inertia and stiffness of loads coupled to the motor shaft, including measurement sensor load parameters. Reaction torque sensors are often employed to minimize frictional and inertial shaft loading from the sensor; however, the compliance of the load sensor can also impact test results. Detent to powered torque null alignment is the difference between the angular position the rotor takes with respect to the stator when unpowered and when powered to the matching cardinal step.
+
+4.10.2.2 [DDMR 49] Each stepper motor shall have the rotor polar inertia calculated.
+
+4.10.2.3 [DDMR 50] Stepper motor testing shall utilize flight or flight-representative drive electronics.
+
+Rationale: Both pull-in and pull-out torque tests require a motor driver to perform. For similar reasons as the brushless motor, it is best to use a motor driver that is as flight-like as possible for these tests, produce the flight drive waveform when connected to the motor (pulse duration, peak voltage, and drive pulse shape) and have similar characteristics for shunting diodes, output impedance, voltage drop, and current limiting.
+
+Guidance: Flight-representative drive electronics are electronics that produce the flight drive waveform when connected to the motor. These electronics typically share the same schematic design as the flight electronics but may use off-the-shelf components. However, caution is needed to ensure that off-the-shelf electronic components perform the same as the flight electronics components. For example, the gate capacitance of a radiation-hardened field effect transistor can be up to an order of magnitude different from an off-the-shelf field effect transistor, which would change the switching time and the response of the mechanism. Care also should be taken to consider the configuration and lengths of harnessing as they may affect performance. Any differences in the drive electronics between the test configuration and flight configuration should be documented in the test report.
+
+4.10.3 Brush Motors
+
+4.10.3.1 [DDMR 51] The maximum allowable temperature limits of the motor windings and other materials in the assembly shall be established.
+
+4.10.3.2 [DDMR 52] Brush motor temperature limits shall not be exceeded for the worst operational cases in the worst-case qualification environments.
+
+Rationale: Brush motors are easier to overheat than other types of motors, and the temperature difference between the windings and case, where temperature can be measured, is quite large.
+
+Guidance: Temperature margin to the motor limits should be incorporated to encompass uncertainty in the test and/or analyses. Locked-rotor stall should be considered in the determination of maximum temperature rise in the motor. The testing and analysis should consider the margined torque output of the motor.
+
+4.11 Springs
+
+4.11.1 [DDMR 53] Springs shall be failure tolerant unless spring failure can be shown to be non-credible.
+
+Rationale: Springs are a common mechanism component as well as a common source of problems. Spring redundancy can greatly improve mechanism reliability.
+
+Guidance: There are two ways to achieve redundancy in a spring: (1) a second spring can be used, and (2) use of a spring that retains functionality after one coil or element of the spring (e.g., a single conical spring in a stack) is fractured or otherwise compromised. Note that this last option generally requires use of a compression spring and that in the case of coil springs, the wire diameter and coil pitch have to be such that the two spring halves cannot thread into each other after a fracture.
+Determining that a spring failure is not credible requires demonstrating that adequate life and stress margins exist on the part. This could be accomplished with a combination of stress analysis, fatigue analysis, fracture control methods, and testing. However, given the size of many springs used in mechanisms, fracture approaches are often not feasible.
+More information on spring use and design is available in Appendix A, section A.2.5.
+
+4.11.1 DDMR 53
+
+Springs shall be failure tolerant unless spring failure can be shown to be non-credible.
+
+4.12 Gears
+
+4.12.1 DDMR 54
+
+Gear trains shall demonstrate that they meet performance requirements, accounting for the worst-case combinations of the following conditions, throughout the service life of the mechanism:
+a. Tooth pitting, brinelling, bending fatigue, and bending strength under nominal and peak
+operating loads.
+b. Impact tooth loads from maximum combined axial, radial, and moment loads sustained
+during the full life cycle of the mechanism.
+c. Backlash.
+d. Effects of temperature and temperature gradients on quality of lubrication and gear
+contact pattern.
+e. Effects of tooth geometry.
+f. Undercutting and tooth profile modifications.
+g. Gear mounting, misalignment, and face load distribution.
+h. Variation in operating center distance.
+
+Rationale: These parameters, which are often overlooked in design and analysis, can influence gear train strength and wear.
+
+Guidance: Verification that these factors have been accounted for is expected to include line items for each factor in the gear train stress and wear analysis. If a particular factor does not apply in a given situation, rationale for this inapplicability is to be provided in the analysis documentation.
+
+4.13 Dampers
+
+4.13.1 DDMR 55 Viscous dampers, including damper fluids, shall have a cleanliness requirement established.
+
+Rationale: The cleanliness of damper components is essential due to the small clearances within a damper. The cleanliness of damper fluid can have a great impact on fluid performance and life, and frequently this aspect of procurement is ignored.
+
+Guidance: Verification of this requirement is expected to include a documented plan for achieving the required cleanliness levels that are specified. It should be stressed that cleanliness is also essential for the assembly area and tooling used.
+
+4.13.2 DDMR 56 Viscous dampers shall be evacuated to a pressure of 0.13 Pa (1 × 10-3 Torr) or less before filling with fluid.
+
+Rationale: Air entrapment in dampers can negatively affect performance of the dampers.
+
+4.13.3 DDMR 57 All viscous dampers exposed to vacuum in service shall have their deadband measured in vacuum.
+
+Rationale: Measuring the deadband in a vacuum confirms that the damper has not been underfilled and does not contain a non-degassed damper fluid.
+
+4.14 Separable Interfaces
+
+4.14.1 DDMR 58 Separation systems utilizing separation nuts or frangible nuts shall retract the bolt beyond the separation plane without reliance upon preload or gravity.
+
+Rationale: The conversion of preload strain energy to kinetic energy of the bolt is highly dependent on configuration and environments and is rarely reliable enough to depend upon for bolt extraction beyond the separation plane. Similarly, because of unknowns in overall acceleration levels and the effects of dispersions in orientation, the effectiveness of gravitational acceleration is also not dependable. Dedicated bolt retractors or other actuation sources are necessary to ensure retraction.
+
+4.14.2 [DDMR 59] All interfaces in deployment and jettison mechanisms designed to separate in service shall use kickoff springs to ensure first motion.
+
+Rationale: Joints designed to separate often experience a wide range of phenomena that can create a tendency to keep the joint together, such as lubricant degradation, adhesion, undesirable motion of thermal blankets, and other retarding effects. As a result, the initial separation of the joint can be completely inhibited, force margins may be negated, or the available energy may be consumed. Adding kickoff springs dedicated to overcoming these effects ensures that the joint separates and enough force or energy remains in the separation to meet requirements.
+
+4.15 Pulleys
+
+4.15.1 DDMR 60 All pulleys shall use pulley guards that extend to the tangency points of the cable.
+
+Rationale: Pulley guards enclose some portion of a cable on the portion of a pulley in contact with the cable. This prevents the cable from moving out of the plane of the pulley under a disturbance. Making sure that the guard extends all the way to the tangency points of the cable (the points at which the cable leaves the surface of the pulley, see Figure 3, Pulley Guard Illustration) derives the maximum benefit from the presence of the pulley guard.
+
+Guidance: Be aware that some pulley systems can have changing tangent points and reversing motion. A reverse motion at a different tangent location without a pulley guard may allow the cable to unseat from the pulley grove.
+
+4.16 Switches
+
+4.16.1 DDMR 61 Switch mounting, orientation, and actuation shall be such that the switch cannot physically impede mechanism travel.
+
+Rationale: It is possible to arrange microswitches or their actuation devices such that they can unintentionally interfere with mechanism motion. An improper set-up or adjustment of a switch toward the end of the switch’s allowable range can also impede mechanism motion. The arrangement of the switch has to be examined over the switch’s entire possible range of adjustment (not just the procedural limits specified) to ensure that this does not happen.
+
+4.16.2 DDMR 62 The worst-case maximum travel of switch actuating mechanisms shall not damage the switch.
+
+Rationale: Microswitches typically have very small ranges of motion and can be damaged when exercised beyond their small limits. To avoid such damage, the switch should be actuated in such a way that these limits are not exceeded.
+
+Guidance: Actuating switches in a way that prevents damage to the switch can be accomplished in a variety of ways, such as cam profiles or spring-loaded levers that release from the microswitch when depressed.
+
+4.17 Fasteners
+
+4.17.1 DDMR 63 All retaining rings used shall be multiple-turn spiral-wound retaining rings.
+
+Rationale: Retaining rings that are not multiple-turn spiral-wound rings, especially smaller ones, can be easily opened beyond their elastic limit when installed and can subsequently become dislodged from their groove. Spiral retaining rings, due to their 360-degree design, are much more robust to failures of this nature.
+
+Guidance: Improper installation techniques can still yield spiral rings, so care is still necessary with their installation.
+
+4.17.2 DDMR 64 Set screws shall not be used to transmit torque between a shaft and a component mounted on the shaft.
+
+Rationale: Set screws have to be highly preloaded and dig into a shaft to work in this way, creating surface imperfections and generating stresses that are difficult to quantify and often cannot be tolerated in low-margin aerospace applications. In addition, repeated loading invariably leads to a loosening of the fit as material around the set screws is deformed, regardless of whether the set screw backs out or retains its original position.
+
+4.18 Heritage Mechanisms
+
+4.18.1 [DDMR 65] The design of previously qualified mechanisms or mechanism components shall undergo a qualification program for use in a new application unless all performance requirements and environments of the new application are enveloped by the performance requirements and environments of the previous application.
+
+Rationale: The use of part designs or entire mechanism designs that have been qualified for another purpose, commonly referred to as “heritage hardware,” is often encouraged due to perceived savings in cost and schedule. Great care must be exercised in utilizing such hardware or the anticipated savings can quickly disappear. A common mistake is selecting a design that was qualified for performance requirements or environments that do not envelope all of the new performance requirements and environments and then failing to re-qualify the design for the new application. Many lessons learned involving the use of heritage mechanisms are documented in the NASA Lessons Learned database and the proceedings of Aerospace Mechanisms Symposium and European Space Mechanisms and Tribology Symposium.
+
+Guidance: In practice, it is difficult to find designs that can be truly said to be previously qualified for a new application because of the wide variety of unique environments and missions encountered by spacecraft. Even if a subset of environments and performance requirements are enveloped, the effect of the unenveloped environments and performance requirements on the performance of the mechanism would be missed if they were not included in the qualification program.
+The extent of the qualification program for the new application is left for the responsible engineering organization to determine. Depending on the application, an appropriate requalification could range from a delta qualification to a full requalification.
+
+
+
+4.19 Mechanism Testing
+
+Guidance: The test campaign requirements for a mechanism are typically outlined in a dedicated test specification such as SMC-S-016, Test Requirements for Launch, Upper-Stage, and Space Vehicles. Detailed mechanism testing activities within the overall test campaign should follow Section 8 of AIAA S-114A-2020, Moving Mechanical Assemblies for Space and Launch Vehicles. The requirements below reflect certain aspects of testing that are important to capture for mechanisms.
+
+Ordnance-actuated mechanical devices are also considered to be "pyrotechnic devices" and are therefore subject to the qualification requirements in applicable pyrotechnic standards or requirements documents.
+
+4.19.1 Performance Testing
+
+4.19.1.1 [DDMR 66] All mechanism functions shall be exercised during performance testing.
+
+Rationale: Sometimes there is a desire to test only critical functions or nominal operations, but all functions of the mechanism have to be tested to verify performance of the system, including back-up or redundant provisions. This applies regardless of whether the performance testing is conducted during qualification, life, or acceptance testing.
+
+Guidance: Performance testing includes the measuring of torque and force margins.
+
+4.19.2 Qualification Testing
+
+4.19.2.1 [DDMR 67] Each mechanism design shall be subjected to environmental qualification testing that exposes the mechanism to all environments, including fluid media, that it will experience in service.
+
+Rationale: Qualification testing ensures that the design is sufficient to meet the requirements of the mechanism, with margin, in the operating environments it is expected to experience. The types of environmental qualification testing required for mechanisms are typically established by the program. A recommended set of tests is included in Appendix A, section A.2.11. The program also typically specifies required margin, test order, tolerances, and general methods to be used. Note that the intent of the qualification program is to accumulate all environmental test exposures on a common qualification unit (versus spreading the environments across multiple qualification units) to ensure that effects of cumulative exposure are accounted for. Behavior under environmental conditions can be very hard to predict, and omission of qualification testing can significantly increase the risk of in-service failure.
+
+
+4.19.2.2 [DDMR 68] All service configurations of the mechanism shall be subjected to environmental qualification testing in the mechanism’s appropriate operating or non-operating state.
+
+Rationale: The hardware configuration (e.g., launch, on-orbit, landing) can affect many aspects of the system such as load path, stiffness, clearances, slop in joints, and radiative view factor. It is important that the qualification testing be performed on the mechanism while the mechanism is in the configuration in which it will experience the environments and perform its functions; otherwise, differences such as those stated may cause the unit to behave differently in test than it would in service, leading to false confidence in the hardware or unrealistic test failures.
+
+4.19.2.3 [DDMR 69] Mechanism qualification testing shall be conducted with mounting interface boundary conditions that replicate the flight boundary conditions, including the following:
+a. Stiffness.
+b. Mounting alignment and tolerances.
+c. Thermal distortions.
+d. Distortions induced by installation or externally applied loads.
+
+Rationale: Testing with improper representation of boundary conditions can give misleading results due to factors such as additional loads, different frequency response, and extra joint slop.
+
+Guidance: Appropriate boundary conditions can sometimes be difficult to implement in test, and compromises often have to be made between interface fidelity and the level of assembly needed to achieve good fidelity. Verification that these influences have been accounted for is expected to include explicit description of how these boundary conditions are addressed in the test plan, or if the condition does not apply in a given situation, the rationale for this inapplicability.
+
+4.19.2.4 [DDMR 70] Qualification units shall utilize flight-representative drive electronics.
+
+Rationale: Using different drive electronics than will be used in flight can generate non-flight-like behavior, which may give false confidence in the performance of the mechanism. For this reason, the qualification test units, including the life test unit, has to utilize flight-representative drive electronics that produce the flight drive waveform when connected to the motor.
+
+Guidance: Flight-representative drive electronics are electronics that produce the flight drive waveform when connected to the actuator. These electronics typically share the same schematic design as the flight electronics but may use off-the-shelf components. However, caution is needed to ensure that off-the-shelf electronic components perform the same as the flight electronics components. For example, the gate capacitance of a radiation-hardened field effect transistor can be up to an order of magnitude different from an off-the-shelf field effect transistor, which would change the switching time and the response of the mechanism. Care also should be taken to consider the configuration and lengths of harnessing and the software used as they may affect performance. Any differences in the drive electronics between the test configuration and flight configuration should be documented in the test report.
+
+4.19.2.5 [DDMR 71] Inspections shall be conducted both at the start of qualification testing and at the conclusion of qualification testing.
+
+4.19.2.6 [DDMR 72] Performance tests shall be conducted both at the start of qualification testing and at the conclusion of qualification testing, prior to the performance of testing with known destructive potential (e.g., a static test to ultimate loads).
+
+Rationale: Pre-test performance tests and inspections establish baseline condition and performance. Post-qualification performance tests and inspections allow the residual effect of the environmental test to be determined when compared to the pre-test baseline.
+
+Guidance: At a minimum, one post-test performance test and inspection should be performed at the end of the suite of qualification tests, but additional tests or inspections inserted into the test flow, for example between random vibration testing and thermal-vacuum testing, or even between axes of random vibration tests, allow for easier identification of a problematic environment when anomalies occur. Depending on the nature of the mechanism and the failure modes of interest, disassembly of the mechanism may be required for effective post-qualification inspection.
+Note that it is not necessary to verify function after exposure to tests of a potentially destructive nature such as a static load test to ultimate load. A functional test would be expected after a test to the yield load, but generally an ultimate load test would only need to show that rupture or unstable failure did not occur.
+Performance testing of an ordnance-actuated mechanical device via initiation of its energetic charge may be destructive. In that case, the performance test should only be conducted at the conclusion of a unit’s qualification sequence and any applied pyrotechnic standards should be consulted for applicable pyrotechnic testing requirements.
+
+4.19.2.7 [DDMR 73] Pass-fail criteria and rationale for those criteria shall be established for all qualification tests prior to the start of qualification testing.
+
+Rationale: Pass-fail criteria have to be established prior to testing to avoid rationalization of anomalous behavior detected during testing. This also helps streamline the decision making and documentation process when anomalies are encountered during the test.
+
+4.19.3 Life Testing
+
+Guidance: Life testing may not be meaningful for ordnance-actuated mechanical devices or other mechanisms that are consumed or must be refurbished after every actuation. Such devices typically must use lot testing approaches. Pyrotecnic devices are subject to the testing requirements levied in applicable pyrotechnic standards or requirements documents.
+
+4.19.3.1 [DDMR 74] Life testing shall be performed on all mechanism functions to verify that all service life requirements have been met.
+
+Rationale: Sometimes there is a desire to test only certain functions or nominal operations, but all functions of the mechanism have to be life tested to verify life of the system, including back-up or redundant provisions. Typical life concerns include fatigue limits, deterioration of lubrication, excessive wear, and deterioration during extended quiescent periods. See Appendix A, section A.2.11.1, for more guidance on life testing.
+
+4.19.3.2 [DDMR 75] Mechanisms whose failure could result in a loss of human life shall be life tested to a number of cycles determined by multiplying the total of all operational cycles and ground cycles (including test cycles, installation cycles, and maintenance cycles) by a minimum life test factor of 4.0.
+
+4.19.3.3 [DDMR 76] All other mechanisms shall be life tested to a number of cycles determined by multiplying the total of all operational cycles and ground cycles (including test cycles, installation cycles, and maintenance cycles) by a minimum life test factor of 2.0.
+
+Rationale: It is difficult to assess mechanism reliability with a single life test. The uncertainty provided by unit-to-unit scatter, which remains unquantified with a single test, is mitigated by use of a life test factor. Higher factors create more confidence that subsequent builds will possess the required service life. A factor of 2.0 is consistent with the factor used on past successful robotic space flight missions, and a factor of 4.0 is consistent with previous human spaceflight implementations typically requiring higher reliability.
+
+Guidance: The minimum life test factors specified above are intended to address mechanical life and wear concerns, not vibration and fatigue life concerns, though in certain cases the mechanical motion and life are driven by vibration and the cycle count and magnitudes have to be derived from the vibration environment. It is highly recommended that spare cycles be added to the total cycles required to allow troubleshooting or execution of extra cycles without exceeding the mechanism's certified life.
+
+4.19.3.4 [DDMR 77] Life testing shall include a number of cycles at the expected operating environmental extremes, loads, ranges of motion, and speeds that is representative of the number of cycles at those conditions expected in the service life of the mechanism.
+
+Rationale: Temperature and vacuum conditions can both have significant effects on component life due to effects on lubrication, friction, and material properties. Not properly including these environments in the life tests can lead to test results that are not indicative of how the hardware will perform in service. In addition, the extent of motion must be accurately represented. For example, small or dithering motions can be more severe because they can wipe away liquid lubricant and create debris dams at the ends of the range of motion that prevent the flow of oil back into the contact zone. A life test that exercised only the full range of motion for such parts could give a false impression of life. Such mistakes have resulted in mission failures.
+
+Guidance: Appendix A, section A.2.11.1, contains recommendations on how to allocate cycles of the life test to different environments.
+
+4.19.3.5 [DDMR 78] The life test shall include the operation of bearings under the maximum predicted operational contact stress for the number of cycles predicted to experience maximum operational contact stress in flight multiplied by the life test factor specified by section 4.19.3.2 or section 4.19.3.3 of this Standard.
+
+Rationale: Bearing life and lubricant life are highly dependent on contact stress; it is necessary to ensure that flight-like contact stresses are present in the life test to avoid misleading test results.
+
+4.19.3.6 [DDMR 79] Life testing shall include intentionally running the mechanism into the mechanical stops during each test cycle.
+
+Rationale: Mechanical stops perform a function of the mechanism and must be life tested. Often mechanical stops are not contacted under nominal testing conditions, so the ability of the mechanical stops to function over the life of the mechanism may not be evaluated in ground testing. Mechanical stop contact loads may be a driving load case not only for the mechanical stop but for other parts of the mechanism. In service, conditions may be such that the mechanical stops are contacted consistently regardless of whether or not the mechanism reached its mechanical stops during ground testing. For this reason, the mechanical stops need to be intentionally tested during a life test.
+
+Guidance: Mechanical stops are often called "hard stops" but may be made compliant using components such as springs or preloaded spring plungers in order to limit the magnitude of contact loads.
+When stops are not normally contacted due to the use of software stops or other means, it may be impractical to run the mechanism into the mechanical stops during an assembly-level life test. In these situations, life testing of the mechanical stops may be conducted separately at a subassembly level in place of assembly-level testing. When subassembly-level life tests are used it is recommended that the assembly-level life test run the mechanism into the mechanical stops for at least the first cycle before continuing the test using the nominal range of motion. This serves as a preconditioning step to help avoid false life test results should a mechanical stop contact occur.
+
+4.19.3.7 [DDMR 80] The life test shall be performed on a unit that has been exposed to all environments and levels expected to be encountered by the flight unit, including those encountered during testing.
+
+Rationale: Performing the life test on a unit that has been exposed to environments helps ensure that environmental effects on the mechanism life are accounted for.
+
+Guidance: For programs with a qualification unit, it is often most convenient to utilize this qualification unit for life testing. For programs utilizing a protoflight strategy, a qualification unit is not available and a dedicated life test unit is needed. Whereas qualification units are exposed to qualification levels prior to running the life test, a dedicated life test unit need not use qualification levels for the environmental exposure. The dedicated life test unit exposure levels should, however, envelope the ground test and operational environments seen by the protoflight unit, including ground test environments.
+
+4.19.3.8 [DDMR 81] A performance test shall be conducted during both the first and last cycles of the life test.
+
+Rationale: Beginning-of-life performance tests establish baseline condition and performance. End-of-life performance tests allow the residual effect of the life test to be determined when compared to the beginning-of-life baseline.
+
+4.19.3.9 [DDMR 82] Pass-fail criteria for life tests and performance tests shall be established prior to the start of life testing.
+
+Rationale: Pass-fail criteria have to be established prior to testing to avoid rationalization of anomalous behavior detected during testing. This also helps streamline the decision making and documentation process when anomalies are encountered during the test.
+
+4.19.4 Acceptance Testing
+
+Guidance: The requirements in this section are intended to be applied to flight mechanisms. The best practice is to also perform acceptance testing on qualification units before beginning the qualification test program. Acceptance testing may not be meaningful for ordnance-actuated mechanical devices or other mechanisms that are consumed or must be refurbished after every actuation. Such devices typically must use lot testing approaches. Pyrotecnic devices are subject to the testing requirements levied in applicable pyrotechnic standards or requirements documents.
+
+4.19.4.1 [DDMR 83] Each mechanism shall be subjected to environmental acceptance testing that exposes the mechanism to all environments that it will experience in service.
+
+Rationale: Acceptance testing ensures that the individual hardware build is sound and capable of meeting its performance requirements in the operating environment it is expected to experience.
+
+Guidance: The types of environmental acceptance testing required for mechanisms are typically established by the program. A recommended set of tests is included in Appendix A, section A.1.12. The program also typically specifies required margin, test order, tolerances, and general methods to be used. Omission of acceptance testing can significantly increase the risk of in-service failure.
+
+4.19.4.2 [DDMR 84] All service configurations of the mechanism shall be subjected to environmental acceptance testing in the mechanism’s appropriate operating or non-operating state.
+
+Rationale: The hardware configuration can affect load path, stiffness, clearances, slop in joints, radiative view factor, and many other aspects of the system. It is important that the acceptance testing be performed on the mechanism while the mechanism is in the configuration in which it will experience the environments and perform its functions; otherwise, differences such as those stated may cause the unit to behave differently in test than it would in service, leading to false confidence in the hardware or unrealistic test failures.
+
+4.19.4.3 [DDMR 85] A run-in test shall be performed on each mechanism prior to undergoing any other acceptance testing.
+
+Rationale: Run-in testing (also known as wear-in testing) serves two purposes: (1) it acts as a screen to detect material and workmanship defects that manifest themselves early in the mechanism’s life (“infant mortality”), and (2) it allows the mechanism to work through initial transient behavior and reach steady-state performance. This allows for a better understanding of mechanism performance and easier observation of trends and detection of anomalies.
+
+Guidance: If performance metrics do not appear to be leveling off, trends are not as expected, or performance levels are not as anticipated, this may be an indication of failure. Sufficient data must be obtained during the run-in test to allow determination of these important performance characteristics and their trends. Without sufficient data, for example, high enough sample frequency, actual trends may be masked. In addition, measurements of important parameters should be made as directly as possible to help avoid ambiguous results.
+
+4.19.4.4 [DDMR 86] The run-in test shall be conducted for at least 15 cycles or 5 percent of the total expected service life, whichever is greater.
+
+Rationale: These run-in durations have been shown through experience to be adequate for achieving the workmanship screening goals of run-in testing in most cases; however, it may not be sufficient to achieve smooth, consistent performance in all situations.
+
+Guidance: If performance metrics do not appear to be leveling off or friction levels have not been reduced to a desired level at the conclusion of the run-in test, continued run-in may be warranted. For this reason, among others, it is recommended to include margin in the number of run-in cycles used in calculating the service life for the mechanism. The definition of what constitutes a cycle is application-dependent and has to be determined on a case-by-case basis.
+
+4.19.4.5 [DDMR 87] The run-in test conditions shall be representative of the operational loads, speed, and environment.
+
+Rationale: Running-in using conditions other than those expected in service can produce data during the test that is not indicative of true performance or can even damage hardware. For example, running-in at a different speed than anticipated in service can change the lubrication regime in a wet-lubricated bearing, and running-in a molybdenum disulfide dry film lubricant at ambient pressure can generate excessive wear of the lubricant and inaccurate friction values.
+
+Guidance: If a variety of environments are expected in service, a split similar to that recommended for life testing in Appendix A, section A.2.11.1, should be used. This requirement is not intended to require application of all environments simultaneously.
+
+4.19.4.6 [DDMR 88] Inspection and performance tests shall be conducted after run-in testing prior to further acceptance testing, and at the conclusion of acceptance testing.
+
+Rationale: Pre-test performance tests and inspections establish baseline condition and performance. Post-test performance tests and inspections allow the residual effect of the environmental test to be determined when compared to the pre-test baseline.
+
+Guidance: Unlike inspections after qualification testing, the post-acceptance inspections have to be made without disassembly or other breaking of configuration. At a minimum, one performance test and inspection should be performed at the conclusion of the acceptance test program; but additional tests or inspections inserted into the test flow, for example between random vibration testing and thermal-vacuum testing, or even between axes of random vibration test, allow for easier identification of a problematic environment when anomalies occur. Be sure to account for these performance tests when calculating the required service life of the mechanism.
+
+4.19.4.7 [DDMR 89] Pass-fail criteria for all acceptance tests and the rationale for those criteria shall be established prior to the start of acceptance testing.
+
+Rationale: Establishing pass-fail criteria prior to testing avoids normalization of anomalous behavior detected during testing. This also helps identify what successful performance means and helps streamline the decision making and documentation process when anomalies are encountered during the test.
+
+4.20 Mechanism Installation
+
+4.20.1 [DDMR 90] Mechanisms shall either be designed to preclude installation in an incorrect orientation or be clearly labeled in a manner that indicates proper installation orientation.
+
+Rationale: There have been incidents in the past wherein mechanisms whose correct installation orientation is not overtly obvious have been installed improperly because the interface allowed this to happen.
+
+Guidance: To prevent improper installation, features such as keys or asymmetric mounting patterns should be utilized whenever possible. If such provisions are not possible or practical, the hardware has to be at least labeled in such a way that makes improper orientation obvious. Depiction of the correct orientation on the drawing, drawing notes, or other procedural controls that are not present on the hardware are not as effective and are not considered sufficient to meet this requirement.

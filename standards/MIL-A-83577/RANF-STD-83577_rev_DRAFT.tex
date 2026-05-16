@@ -1,0 +1,1958 @@
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage{graphicx}      % For logo
+\usepackage{tcolorbox}     % For note box
+\usepackage{setspace}      % Optional spacing
+\usepackage{geometry}      % Page layout
+\usepackage{draftwatermark}
+
+\geometry{margin=1in}
+
+\begin{document}
+
+% Watermark:
+\SetWatermarkText{DRAFT} % Text of the watermark
+\SetWatermarkScale{4} % Size (scale factor)
+\SetWatermarkColor[gray]{0.85} % Transparency (0 = invisible, 1 = fully opaque)
+
+% -------------------------------
+% TITLE PAGE
+% -------------------------------
+\begin{titlepage}
+    \centering
+
+    % Top row: Logo (left) and Doc Info (right)
+    \noindent
+    \begin{minipage}[t]{0.49\textwidth}
+        \vspace{0pt}
+        \includegraphics[width=0.6\textwidth]{logo_text.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.49\textwidth}
+        \vspace{0pt}
+        \raggedleft
+        \begin{tabular}{rl}
+            \textbf{Document Number:} & RANF-STD-83577 \\
+            \textbf{Revision:} & Rev. DRAFT \\
+        \end{tabular}
+    \end{minipage}
+
+    % Vertical spacing before title
+    \vspace{2.5cm}
+
+%    % Document Number and Revision
+%    \begin{tabular}{rl}
+%        \textbf{Document Number:} & DOC-00123 \\
+%        \textbf{Revision:} & Rev. A \\
+%    \end{tabular}
+%
+%    % Organization Logo
+%    \vspace*{1cm}
+%    \includegraphics[width=0.35\textwidth]{ranf_imprint_logo.png}\\[1.5cm]
+
+% TODO: add QR code to website
+
+    % Report Title
+    {\Huge \bfseries Moving Mechanical Assemblies for Space and Launch Vehicles \\[0.5cm]}
+
+    % Author and Date
+    {\Large Timothy P Woodard \\[0.2cm]}
+    {\large \today \\[1.5cm]}
+
+    % Note Box
+    \begin{tcolorbox}[colback=gray!10, colframe=black, width=0.9\textwidth]
+        \textbf{Note:} Copyright 2026 Roads Are No Fun
+
+This document is provided as part of the Roads Are No Fun project under the Creative Commons CC BY-SA license.
+    \end{tcolorbox}
+
+    \vfill
+\end{titlepage}
+
+% -------------------------------
+% MAIN DOCUMENT
+% -------------------------------
+%\tableofcontents
+\newpage
+
+\section{Scope}
+
+\subsection{Purpose} 
+This specification sets forth the general requirements for the design, manufacture, quality control, and testing of moving mechanical assemblies to be used on space and launch vehicles.
+
+\subsection{Application}
+This specification is intended for reference in vehicle or equipment specifications, to incorporate those requirements which are common to most moving mechanical assemblies for space and launch vehicles. 
+The requirements stated are a composite of those that have been found to be cost effective for high reliability space and launch vehicle applications. 
+The requirements covered by this specification are applicable to the mechanical or electromechanical devices that control the movement of a mechanical part of a space or launch vehicle relative to another part. 
+They include, but are not limited to, deployment mechanisms, sensor mechanisms, pointing mechanisms, drive mechanisms, despin mechanisms, separation mechanisms, momentum and reaction wheels, control moment gyros, gimbals, and other mechanisms required to perform specific functions. 
+The requirements apply to the overall moving mechanical assembly as well as to the actuators, motors, springs, dampers, linkages, latches, bearings, clutches, cams, booms, gimbals, slip rings, gears, and instrumentation that are an integral part of these mechanical assemblies. 
+When this specification is used as a reference document to specify general requirements for moving mechanical assemblies to be used on launch vehicles, injection stages, reentry vehicles, or other vehicles, the term "space vehicle" is to be interpreted as the applicable vehicle.
+
+\section{Applicable Documents}
+
+\subsection{Government Documents}
+
+\subsubsection{Specifications, Standards, and Handbooks}
+The following specifications, standards, and handbooks form a part of this specification to the extent specified herein. Unless otherwise specified, the issues of these documents shall be those listed in the issue of the Department of Defense Index of Specifications and Standards (DoDISS) and supplement thereto, cited in the solicitation.
+
+
+SPECIFICATIONS:
+
+Federal
+
+QQ-N-290 Nickel Plating (Electrodeposited)
+
+QQ-C-320 Chromium Plating (Electrodeposited)
+
+QQ-S-763 Steel Bars, Shapes, and Forgings, Corrosion Resisting
+
+Military
+
+MIL-M-3171 Magnesium Alloy, Processes for Pretreatment - and Prevention of Corrosion on
+
+MIL-C-5541 Chemical Conversion Coatings on Aluminum and Aluminum Alloys
+
+MIL-H-5606 Hydraulic Fluid, Petroleum Base; Aircraft Missile and Ordnance
+
+MIL-H-6083 Hydraulic Fluid; Petroleum Base: For Preservation \& Operation
+
+MIL-H-6088 Heat Treatment of Aluminum Alloys
+
+MIL-I-6868 Inspection Process, Magnetic Particle
+
+MIL-H-6875 Heat Treatment of Steel (Aircraft Practice), Process for
+
+MIL-F-7179 Finishes and Coatings, General Specification for Protection of Aerospace Weapons Systems, Structures and Parts
+
+MIL-S-7742 Screw Threads, Standard, Optimum Selected Series, General Specification for
+
+MIL-M-8609 Motors, Direct Current, 28V System, Aircraft, General Specification For
+
+MIL-A-8625 Anodic Coatings, for Aluminum and Aluminum Alloys
+
+MIL-S-8879 Screw Threads, Controlled Radius Root with Increased Minor Diameter, General Specification for
+
+DOD-E-8983 Electronic Equipment, Aerospace, Extended Space Environment, General Specification for
+
+MIL-S-13572 Spring, Helical, Compression and Extension
+
+MIL-M-13786 Motors, Fractional Horsepower, Direct Current and Universal (For Communication and Other Electronic and Special Military Applications)
+
+MIL-M-13787 Motors, Alternating Current, Fractional Horsepower, Squirrel Cage (For Communication and Other Electronic and Special Military Applications)
+
+MIL-C-26074 Coatings, Electroless Nickel, Requirements
+
+MIL-M-45202 Magnesium Alloys, Anodic Treatment of
+
+MIL-H-81200 Heat Treatment of Titanium and Titanium Alloys
+
+MIL-B-81793 Bearing, Ball, Precision, for Instruments and Rotating Components
+
+DOD-W-83575 Wiring Harness, Space Vehicle, Design and Testing, General Specification for
+
+DOD-E-83578 Explosive Ordnance for Space Vehicles, General Specification for
+
+STANDARDS:
+
+Federal:
+
+FED-STD-209 Clean Room and Work Station Requirements, Controlled Environment
+
+Military:
+
+MIL-STD-29 Springs, Mechanical: Drawing Requirements for
+
+MIL-STD-453 Radiographic Inspection Methods
+
+MIL-STD-889 Dissimilar Metals
+
+MIL-STD-1246 Product Cleanliness Levels and Contamination Control Program
+
+MIL-STD-1515 Fasteners for Use in the Design and Construction of Aerospace Mechanical Systems
+
+MIL-STD-1522 Standard General Requirements for Safe Design and Operation of Pressurized Missile and Space Systems
+
+MIL-STD-1540 Test Requirements for Space Vehicles
+
+MIL-STD-1547 Electronic Parts, Materials and Processes for Space and Launch Vehicles
+
+MIL-STD-1568 Materials and Processes for Corrosion Prevention and Control in Aerospace Systems
+
+MIL-STD-6866 Inspection, Liquid Penetrant
+
+MS-33540 Safety Wiring and Cotter Pinning, General Practices for
+
+HANDBOOKS:
+
+MIL-HDBK-5 Metallic Materials and Elements for Aerospace Vehicle Structures
+
+MIL-HDBK-17 Plastics for Aerospace Vehicles - Part 1, Reinforced Plastics; - Part II, Transparent Glazing Materials
+
+MIL-HDBK-23 Structural Sandwich Composites
+
+MIL-HDBK-217 Reliability Prediction of Electronic Equipment
+
+DOD-HDBK-263 Electrostatic Discharge Control Handbook for Protection of Electrical b Electronic Parts, Assemblies and Equipment
+
+\subsubsection{Other Government Documents, Drawings, and Publications} % Section 2.1.2
+The following other government documents, drawings, and publications form a part of this specification to the extent specified herein. 
+Unless otherwise specified, the issues shall be those in effect on the date of the solicitation.
+
+SP-R-0022 Vacuum Stability Requirements of Polymeric Materials for Spacecraft Applications (NASA JSC)
+
+MSFC-SPEC-522 Stress Corrosion Cracking Control (NASA MS F C)
+
+NHB 1700.7 Safety Policy and Requirements for Payloads Using the Space Transportation System (STS) (NASA)
+
+(Copies of specifications, standards, handbooks, drawings, publications, and other government documents required by
+contractors in connection with specific acquisition functions should be obtained from the contracting activity or as directed
+by the contracting officer.)
+
+\subsubsection{Other Publications} % Section 2.2
+The following document(s), form a part of this specification to the extent specified herein.
+Unless otherwise specified, the issues of the documents which are DOD adopted shall be those listed in the issue of the DoDISS specified in the solicitation. 
+Unless otherwise specified, the issues of documents not listed in the DoDISS shall be the issue of the nongovernment documents which is current on the date of the solicitation.
+
+AMERICAN GEAR MANUFACTURER'S ASSOCIATION (AGMA)
+
+AGMA Handbook American Gear Manufacturer's Association Handbook
+
+(Application for copies should be addressed to AGMA, 1500 King
+St., Suite 201, Alexandria, VA 22314)
+
+ANTI-FRICTION BEARING MANUFACTURERS ASSOCIATION (AFBMA)
+
+AFBMA Standards AFBMA Standards for Ball and Roller Bearings and Balls
+
+(Application for copies should be addressed to AFBMA, Suite 700, 1101 Connecticut Ave.N.W., Washington, D.C. 20036)
+
+(Industry association specifications and standards are normally available for reference from libraries. 
+They are also distributed among technical groups and using Federal agencies)
+
+
+\section{Requirements} % Section 3
+
+\subsection{Requirement Weighting Factors} % Section 3.1
+The requirements stated herein are a composite of the designs, items, and practices found to be cost effective for high reliability moving mechanical assemblies used in space vehicles. 
+Because of the broad scope of the requirements stated herein and the wide range of applications, all requirements stated are not of equal importance or weight. 
+They have been divided into four categories of importance, ranging from requirements that are imposed on all applications to examples of acceptable designs, items, and practices. 
+The relative weighting of requirements is an important consideration when tailoring the specification to specific applications and in making trade studies of alternatives (see 6.1). 
+The weighting factors that are incorporated in the specification are:
+
+a. Weighting factor "a" 
+"Shall" designates the most important weighting level, the mandatory requirements. 
+Unless specifically tailored out or modified by the contract, they constitute the firm contractual compliance requirements. 
+Any deviations from the contractually imposed mandatory requirements requires the approval of the contracting officer (see 6.2.3).
+
+b. Weighting factor "b" 
+"Shall, where practicable", designates the second weighting
+level. 
+Alternative designs, items, or practices
+may be used for specific applications when the use
+of the alternative is substantiated by documented
+technical trade studies. 
+These trade studies
+shall be made available for review when requested
+or provided to the government in accordance with
+the contract provisions. 
+Unless required by other
+contract provisions, deviations, from the “shall,
+where practicable” requirements do not require
+approval of the contracting officer.
+
+C . Weighting factor "c " "Preferred" or "should"
+designates the third weighting level. 
+Unless
+required by other contract provisions, deviations
+from these preferred requirements do not require
+approval of the contracting officer and do not
+require documented technical substantiation.
+
+d . Weighting factor * d ” “May” designates the lowest
+weighting level. In’some cases these "may'
+requirements are stated as examples of acceptable
+designs, items, and practices. 
+Unless required by
+other contract provisions, deviations from the
+‘may” requirements do not require approval of the
+contracting officer and do not require documented
+technical substantiation.
+
+
+\subsection{General Design Requirements} % Section 3.2
+
+\subsubsection{Selection of Parts, Materials, and Processes} % Section 3.2.1
+
+Unless otherwise specified in the contract, the parts,
+materials, and processes shall be selected and controlled in
+accordance with contractor established and documented procedures
+to satisfy the requirements specified herein. The selection and
+control procedures shall emphasize quality and reliability to
+meet the mission requirements and to minimize total life cycle
+costs for the applicable system. Electronic parts shall be JAN
+Class S‘or in accordance with ML-STD-1547. An additional
+objective in the selection of parts, materials, and processes
+shall be to marimize commonality and thereby minimize the
+variety of parts, related tools, and test equipment required in
+the fabrication, installation, and maintenance of the vehicle.
+However, identical electrical connectors, identical fluid
+fittings, or other identical parts shall not be used on a space vehicle where inadvertent interchange of the items or
+interconnect ions could cause possible mal funct ion.
+materials,
+The parts,
+and processes selected shal l be of suf f icient proven
+quality to allow the space equipment to meet the functional
+pe r f o rmanc e , r e l i a b i l i t y ,
+l i f e c y c l e ,
+and strength requirements during its
+including al l environmental degradat ion ef fects.
+Parts, materials, and processes shall be selected to ensure that
+any damage or deterioration from the space environment, or the
+outgassing effects in the space environment, will not reduce the
+performance of the space vehicle beyond the speci f ied l imi ts.
+
+
+
+\paragraph{Materials} % Section 3.2.1.1
+Materials shal l , where pract icable, be
+selec ted that have deminstrated their sui tabi l i ty for the
+intended appl icat ion. Inherent ly fungus- inert materials shal l be
+used, where pract icable. Combustible materials or materials that
+can generate toxic outgassing or toxic products of combustion
+shal l not be used i f cos t -ef fec t ive al ternat ives exi s t .
+
+Materials shal l , where pract icable, be selected f o r l o w
+outgassing in accordance with SP-R-0022 (NASA JSC). The total
+mass loss in 24 hours shall be less than 1 percent, and the
+col lected volat i le condensable material shal l be less than 0.1
+percent when heated in vacuum (0.0001 Torr) to 125 deg C (257
+deg F) and collected at 23 deg C (73 deg F ) . The hygroscopic
+nature of many materials such as ester lubricants, composites,
+electroformed nickel, and anodic coatings for aluminum should be
+recognized i f they are used, since they emit water in a vacuum
+and therefore may be unsuitable for some applications.
+Analytical contamination models shall be used to evaluate
+performance impacts of outgassing on adjacent cri t ical
+equipment. Swel l ing and shrinkage characterist ics of materials
+shall be shown to be within acceptable tolerances under worst
+case humidity and temperature cycling.
+
+Metal s shal l be cor ros ion res i s tant , or shal l be sui tably
+treated to resist corrosion when subjected to the speci f ied
+environments. Protect ion of dissimi lar metal combinat ions shal l
+be in accordance with MIL-STD-889. Care shal l be exercised in
+the select ion of materials and processes in accordance wi th
+MSFC-SPEC-522 and MIL-STD-1568 to avoid stress corrosion
+cracking and brittle fracture failure modes, and to preclude
+failures induced by hydrogen embrittlement. For example,
+aluminum alloys 2020-T6, 7079-T6, and 7178-T6 shal l not be used
+for s t ruc tural appl i cat ions . The use of 7075-T6, 2024-T3,
+2024-T4, and 2014-T6 sheet material less than 6.3 millimeters
+(0.25 inches) thick is allowed, provided short transverse
+stresses (design, attachment, assembly, thermal, and residual)
+are below acceptable stress corrosion l imi ts and corrosion
+protect ion systems are provided. Other forms of 7075 shall be
+heat treated to the -T73 or -T76 t emp e r .
+
+The following alloys and heat treatments shall not be used
+in applications where the temperature exceeds 65 deg C (149 deg
+F): 5083-H32; 5083-H38; 5086-H34; 5086-H38; 5456-H32; and
+5456-H38. Heat treatment of aluminum alloy parts shall be in
+accordance with MIL-H-6088. Heat treatment of steel parts shall
+be in accordance with MIL-H-6875. Heat treatment of titanium
+and titanium alloys shall be in accordance with MIL-H-81200.
+All high strength steel parts heat treated at or above 1241
+megapascals (180,000 pounds per square inch) ultimate tensile
+strength shall include appropriate test specimens from the same
+heat of material as the part. These test specimens shall
+accompany the parts through the entire fabrication cycle to
+ensure that the desired properties are obtained. When acid
+cleaning baths or plating processes are used on high strength
+steel parts, the parts shall be baked at 190 deg C (374 deg F)
+for not less than 23 hours following such processes to alleviate
+hydrogen embrittlement problems.
+
+Materials with low fracture toughness in the predicted
+operating environment, such as that exhibited by some plastics,
+shall not be used. Materials which are susceptible to cracking
+due to shock loads, or shock loads combined with low
+temperatures, shall not be utilized near any pyrotechnically
+actuated devices.
+
+To minimize possible interactions with experiments or with
+the earth's magnetic field, magnetic materials shall be used
+only where necessary for equipment operation. For space
+vehicles that will operate at altitudes above 1000 kilometers
+(621 nautical miles), insulating materials or finishes having a
+resistivity greater than 10 megohm-meters shall not be used
+except in applications where charge buildup will not be
+excessive. Except for honeycomb panels, wall thickness of sheet
+metal and wall thickness on composite parts shall, where
+practicable, be greater than 0.5 millimeters (.020 inches) to
+minimize the possibility of handling damage. Honeycomb shall be
+vented to prevent excessive blow-off forces in vacuum.
+
+
+\paragraph{Surface Treatments} % Section 3.2.1.2
+Any surface treatments or
+coatings used shall be such that completed components shall be
+resistant to corrosion. The design goal should be that there
+would be no harmful corrosion of the completed components or
+assemblies when exposed to moderately humid or mildly corrosive
+environments while unprotected during manufacture or handling,
+such as possible industrial environments or sea coast fog that
+could be expected prior to launch. Harmful corrosion shall be
+construed as being any type of corrosion which interferes with
+meeting the specified performance of the equipment or its
+associated parts. Protective methods and materials for
+cleaning, surface treatment, and applications of protective coatings shall be in accordance with MIL-F-7179. 
+Cadmium and
+zinc coat ings shal l not be used. Chromium plating shall be in
+accordance with QQ-C-320. Nickel plat ing shal l be in accordance
+with QQ-N-290 or MIL-C-26074. Anodic treatment of aluminum and
+aluminum alloys shall be in accordance with MIL-A-8625. Anodic
+treatment of magnesium shall be in accordance with MIL-M-45202.
+Corrosion protection of magnesium shall be in accordance with
+MIL-M-3171. Chemical films for aluminum and aluminum alloys
+shall be in accordance with MIL-C-5541.
+
+
+
+\subsubsection{Deployables} % Section 3.2.2
+Deployables (see 6.2.6) shal l , where
+pract icable, be designid so that they are self supporting when
+placed in any orientat ion relat ive to gravi ty, whi le in ei ther
+the stowed or deployed conf igurat ion. Deployable5 shall be
+designed wi th suf f icient mot ive force to permi t ful l operat ion
+during ground testing without depending upon the assistance of
+gravity to demonstrate deployment. Of f - loading devi ces to
+simulate a zero-g condition are allowed so that the deployable
+does not have to act against the force of gravi ty. The
+deployables shal l ut i l ize redundancy, where pract icable, in the
+design to improve the reliability of deployment. Techniques
+such as redundant springs or the use of a back up deployment
+device shal l be considered to sat isfy this requirement . Where a -
+device rotates af ter deployment , as in sun tracking solar
+arrays, the design shal l be, where pract icable, such that the
+center of gravi ty of the device is coincident wi th the axis of
+rotation to preclude the need for counterbalancing during
+func t ional tes t ing. For al l deployables , the deployment motion
+s h a l l , where pract icable, be control led or restrained for the
+ful l range of t ravel . 
+A controlled deployment may be provided
+by a motor and gear drive mechanism or other suitable means. 
+A
+restrained deployment may be provided by a spring and damper
+drive mechanism or other suitable means. For al 1 deployables,
+rebound of the deployable after contacting the stops should be
+minimized. Kick-of f springs or other sui table devices shal l ,
+where pract icable, be used to initiate deployment motion. 
+These
+springs shal l have a stroke long enough to ensure complete
+disengagement of the deployable from its retention mechanism.
+Field joints shal l be provided, where pract icable, to permi t
+disassembly of all deplcyables from the space vehicle and to
+permit disassembly of rotating or translating elements from the
+remainder of the deployable to faci l i tate test ing or replacement
+of par t s . 
+Deployables which require discrete sequent ial
+motions, each ini t iated by separate pyrotechni c event s , shal l
+have ei ther the primary ini t iat ion of each event separately
+ground commanded or shall have a backup ground command for each
+event. 
+Where cables (nonelect r ical ) are used in the deployment
+mechanism, they shal l be adequately guided and suppor ted by -
+f a i r l e a d s . Al l pul leys shal l ut i l ize pul ley guards which extend
+to the tangency points of the cable. 
+Where operational acceleration loads are applied to a deployed assembly, such as
+tho s e gene rat ed by space vehicle spin or propulsion forces, t h e
+design should preferably be such that the accelerat ions tend to
+drive the deployable into i ts deployed latched posi t ion.
+
+
+\paragraph{Sequential Deployment} % Section 3.2.2.1
+Where two or more deployables are used on a space vehicle, the deployment of o n e shall not be dependent upon the successful deployment of the other, unless this sequent ial method of operat ion is unavoidable. 
+Where this sequential dependency cannot be avoided, and the deployable that could be obstructed is mission
+c r i t i c a l ( s e e 6.2.41, a ful ly redundant release device and ful ly
+redundant or backup deployment mechanism shall be provided for
+the deployable which, by i ts fai lure (see 6.2.8) could p r e v e n t
+successful deployment of the mission cri t ical deployable.
+
+\paragraph{Retention and Release Devices} % Section 3.2.2.2
+
+\subparagraph{General} % Section 3.2.2.2.1
+Pos i t ive retent ion provi s ions shal l
+be.provided for deployables in the stowed and in the deployed
+positions. The effects of deflections such as those induced by
+centri fugal forces or di f ferent ial thermal growth of a n y
+deployable wi th respect to i ts space vehicle at tachments shal l
+be considered in the design of the attachments. Devices that
+may be subject to binding due to misalignment, adverse
+tolerances, or contamination shall not be used. Sl ip j o int s
+shal l be avoided, where pract icable. Flexures, four bar
+linkages, or other types of pivotal l inkage are preferred.
+Se l f - a l i gning f e a tur e s , such as sel f -al igning bearings and rod
+ends, shall be used, where pract icable, to preclude binding of
+pivot ing elements. Continuous hinges, such as piano hinges,
+shall not be used for large deployable panel s . Pyrotechnically
+actuated devices, motor driven devices, or other sui table
+techniques may be used to retain the deployable in the stowed
+p o s i t i o n . Release mechanisms which permit ejection of parts
+away from the space vehicle shall be avoided, where
+practicable. The design of latching devices shal l be such that
+peaking of resistance near the end of travel of the deployable
+is minimized. Leaf spring latches which become the primary
+element for reacting deployment or deployment rebound loads
+shal l be avoided, where pract icable. Catches using a permanent
+magnet as the holding element shall be avoided, where
+practicable. The design and materials used for the retention
+devices shall be such that the stresses are maintained
+suf f icient ly below the fat igue endurance l imi t to avoid fat igue
+fai lures due to cycl ic design load levels and environmental
+exposure. 
+Retent ion and release devices shal l be designed to
+preclude cold welding and frict ion welding (see 6.2.2). For
+surfaces that sl ide or separate during operat ional use, t h e
+contact pressures at the interfaces shall b e minimi z e d consistent with providing adequate ascent stiffness. 
+These
+surfaces shall be fabricated from appropriate materials and
+lubricated so as to prevent gal l ing or seizure. Where contact
+areas may be reduced from the nominal as a result of tolerance
+build-up, the minimum area which could occur shall be used in
+determining contact pressure.
+
+\subparagraph{Pin Pullers} % Section 3.2.2.2.2
+Where pin pullers are used, such as cartridge actuated or explosive pin pullers, they shall be
+designed to be in double shear. The design, installation, and
+checkout procedures for pin pullers shall ensure that loads due
+to misalignment of the pin are within design limits. A minimum
+retraction force margin of safety of 100 percent at worst case
+environmental conditions and under worst case tolerances shall
+be maintained for all nonexplosive pin pullers. Functional
+margins of cartridge actuated pin pullers shall comply with
+DOD-E-83578. Where the force margin of safety cannot be met
+with a release device, such as a pin puller, in the direct path
+of the primary load, designs which utilize the mechanical
+advantage of a linkage to reduce the loads on the device may be
+used. Release devices, such as pin pullers, shall have
+sufficient stroke so that complete release is attained under
+worst case tolerances and environmental conditions. As a
+minimum, pin pullers shall rolrirct at least 2 millimeters (.08
+inches) beyond the point of release calculated under worst case
+dimensional tolerances and environmental conditions. Redundant
+release devices shall be used, where practicable. An example is
+a toggle release mechanism where activation of either pin puller
+permits release.
+
+\paragraph{Cartridge Actuated Devices} % Section 3.2.2.3
+Cartridge actuated device designs and their applicatizn shall comply with DOD-EL83578. 
+Redundant pyrotechnic devices shall be used, where practicable.
+
+\paragraph{Test Fixtures} % Section 3.2.2.4
+The fixtures to be used to assist
+in the fabrication and tesiing of the deployables shall be
+designed in conjunction with the deployable device to ensure
+compatibility. 
+Where it is impractical to design the deployable
+to support itself in a one “g” field, supplemental supports may
+be employed for test purposes. These supplemental supports
+shal l be designed so that their inf luence on the operat ion of
+the mechanism is minimized. 
+The tes t f ixtures shal l
+incorporate, where practicable, provisions to measure torque vs
+angle and time vs angle, or equivalent linear measurements for
+l inear devi ces . 
+Where practicable, tes t f ixtures shal l have
+interlocks or other safety features incorporated to preclude
+damage to the moving mechanical assembly or deployable in the
+event of testing malfunctions. 
+Tethers and supports shall be incorporated as backup features to preclude damage in the event of failure.
+
+
+
+
+\subsubsection{Bearings} % Section 3.2.3
+For deployables, hinges, and linkages,
+self-aligning beariigs shall be used, where practicable, to
+preclude binding due to misalignments. Bearings shall not be
+used for ground current return paths or to carry electrical
+current. All ferrous material bearings shall employ, where
+practicable, a corrosion-resistant steel that is in accordance
+with QQ-S-763. Rolling element bearings shall, where
+practicable, be of 44OC stainless steel; however, 52100 or MS0
+steels may be employed providing they are suitably protected
+from corrosion (see 3.2.4). Rolling element bearings shall have
+a minimum hardness of Rockwell C58. Ball bearings used in
+applications where low torque ripple is required or where
+fatigue life is critical shall, where practicable, be fabricated
+of consumable electrode vacuum melted (CEVM) material.
+
+\paragraph{Ball Bearings} % Section 3.2.3.1
+Bearings used in critical
+applications such as reaction wheels, control moment gyros,
+gimbals, de-spin mechanisms, and pointing devices shall meet
+ABEC 7, 7P or 7T tolerance or better in accordance with the
+AFBMA Standards. 
+Nonstandard bearings or thin sectioned
+bearings where AFBMA tolerances do not apply shall have the
+manufacturers precision level most nearly equivalent to ABEC 7.
+Bearings used in noncritical applications such as one time use
+deployables, shall, where practicable, meet ABEC 5 or better.
+Stainless steel bearings shall, where practicable, also be in
+accordance with MIL-B-81793.
+
+\subparagraph{Design and Selection} % Section 3.2.3.1.1
+Ball bearing selection,
+mounting, and preloading shall be b;sed on the following design
+considerations:
+a. Maximum combined axial, radial, and moment loads
+sustained during ground handling, launch, on
+orbit, or other operational modes
+
+b. Stiffness requirements
+
+C . Effects of temperature, temperature gradients, fits, tolerances, and initial preload on torque, stiffness, and life
+
+d. Lubrication
+
+e. Wear
+
+f . Smoothness of operation (torque ripple)
+
+g. Friction torques, considering breakaway and running, in the installed state
+
+h. Reliability and life
+
+The design of each bal l bearing instal lat ion shal l be
+substantiated by analysis and either development tests or previous
+usage. 
+The mater ial s , s t res ses , s t i f fnes s , fat igue l i fe, preload,
+and possible binding under normal, as well as the most severe
+combined loading condi t ions, and other expected environmental
+condi t ions shal l be considered. 
+Al ignment s , f i t s , tolerances , thermal and load induced distort ions, and other condi t ions shal l
+be considered in determining preload variat ions. 
+An analysis of the effects of fits and temperatures shall be performed where the
+preload value i s c r i t i cal to meet ei ther l i fe, f r i c t ion, or stiffness requirements. 
+Bear ing fat igue l i fe cal culat ions shal l be based on a survival probability of 99.95 percent when subjected
+to maximum time varying loads. 
+Appropr iate cor rec t ion fac tor s shal l be included to account for the selected bearing materials and lubrication parameters. 
+Bearing retainer design s h a l l provide an acceptable contribut ion to bearing frict ion t o r que and torque variation. 
+For noncri t ical appl icat ions, such as most deployables, if nonquite running is acceptable, the mean Hertzian
+contact stress shall not exceed 2758 megapascals (400,000 psi) when subjected to the yield load. 
+During operation, the mean Hertzian stress shall not exceed 2310 megapascalj (335,000 psi).
+The bearings shall be designed.to withstand the ultimate load wi thout f rac ture. 
+The yield and ul t imate factors of safety shal l be as specified in 3.4.1.5.
+
+\subparagraph{Bearing Applications Requiring Quiet Operation or Low Torque Ripple} % Section 3.2.3.1.2
+For these appl icat ions, in addi t ion to the
+rezuirements of Piragraph 3 . 2 . 3 . 1 . 1 bearing races and bal ls
+shal l be designed so that stress lecels are below the levels that
+would cause unacceptable permanent deformation during application
+of as cent loads . 
+Where ball bearing deformation is required to
+carry a portion or all of the space vehi c le as cent loads , and
+where smoothness of operation is required on orbit, the mean
+Hertzian stress levels of the bearing steel shal l not exceed 2310
+megapascals (335,000 pounds per square inch) when subjected to
+the yield load. 
+The upper and lower extremes of the contact
+el l ipses shal l be contained by the raceways. The stress and
+shoulder height requirements of the races shall be analyzed for
+both nominal and off-nominal bearing tolerances.
+analysis and for qual i ty control ,
+For subsequent
+these bearings shal l be
+serial ized and measurements cri t ical to their operation shall be
+recorded. Depending on the application and its requirements,
+considerat ion shal l be given to recording preload, low speed
+torque, inside diameter, outside diameter,
+angle,
+radial play or c o n t r o l
+curvatures, raceway roundness, ball size and roundness,
+raceway surface finishes, and hardness.
+
+\subparagraph{Reuse of Bearings} % Section 3.2.3.1.3
+The design of bearings that are to be used for a number of f l ights shal l be substant iated by analysis and either development tests or previous usage.
+
+\subparagraph{Bearing Alignment} % Section 3.2.3.1.4
+Run-out tolerances on shaft
+and housing diameters and shoulders shall be established in
+accordance wi th the needs of the appl icat ion and the sensi t ivi ty
+of the bearing to misalignment. 
+Bearings requiring stringent
+control of al ignment inc lude:
+
+a. Thin sect ion, large diameter bearings
+
+b. Preloaded bearings
+
+C . Bearings operating continuously at speed
+
+d. Bearings requiring low torque ripple
+
+e . Bear ings that os c i l late
+
+Overall misalignment of inner plus outer rings of these
+bear ings shal l , where pract icable, not exceed 0.3 milliradians.
+Other bearings shal l , where pract icable, have overal l
+misalignment not exceeding 1 milliradian.
+
+\paragraph{Other Bearing Types} % Section 3.2.3.2
+Selection of other bearing
+types such as r o l le r , ne edl e , o r ’ j ournal , shall be based on the
+fol lowing des ign cons iderat ions :
+
+a. Maximum combined axial, radial, a n d moment loads
+sustained during ground handling, launch, on
+o r b i t , or other operational modes
+
+b. Temperature excursions and thermal gradients
+
+C . Ef fects of temperature on f i ts and tolerances
+
+d . Stiffness
+
+e . Lubrication
+
+f . Smoothness of operation
+
+g. Fr i c t ion t o rque s
+
+h. Rel iabi l i ty over the des ign l i fe
+
+The design of each bearing instal lat ion shal l be
+substantiated by analysis and either development tests or
+previous usage. 
+The mat e r ial s , s t r e s s e s , s t i f fne s s , fat igue
+l i f e , p r e l o a d , and possible binding under normal, as well as t
+most severe combined loading conditions, and other expected
+environmental condi t ions shal l be considered.
+
+
+\subsubsection{Lubricants} % Section 3.2.4
+Lubricat ion shal l be provided by
+g r e a s e s , l i qui d s , sol id f i lm lubricants, or a combinat ion of
+ei ther grease or l iquid wi th sol id f i lm lubr i cant s , sof t metal l i c
+films, or sacrifical cages (for ball bearings) for all contacting
+surfaces having relative motion. The selection of lubricants for
+moving mechanical assemblies shall be based on the following
+considerations:
+
+a. Co e f f i c i e n t o f f r i c t i o n
+
+b. Lubrication property changes in storage or in a vacuum environment
+
+C . Depletion and wear out
+
+d. Operating temperature limits
+
+e. Creep properties
+
+f . viscosity vs temperature properties
+
+g. Pressure coefficient of viscosity (ball bearings)
+
+h. Outgassing that could cause contamination such as on optical or thermal control surfaces (see 3.2.1.1)
+
+i . Corrosion protection
+
+j.Pos s ibi l i ty of polymer i zat ion, par t i cular ly due to high contact pressures or contaminants.
+
+k. Protection against cold welding and friction welding
+
+l. Cleanliness
+
+m. Run-in requirements such as rate of speed, load, and time duration
+
+n. Any requirements for demonstration of the suitability of the lubricant in a simulated space environment
+
+o. Any requirements of other environments such as humidity and salt spray
+
+p. Compatibility of the lubricant with o t h e r mater ial s , par t i cular ly other lubr i cant s i f used
+
+The lubricant chosen shal l not cause detrimental ef fects on the moving mechanical assembly during or after operation at ambient condi t ions. 
+The vent paths from al l l iquid lubricants shall be designed such that the outgassing products do n o t impinge di rec t ly on c r i t i cal sur faces . 
+The select ion of the lubricant for use in the cri t ical moving mechanical assembly shall be based upon development tests of the lubricant that demonstrate the abi l i ty of the lubricant system to provide adequate lubricat ion under al l speci f ied operat ing condi t ions over the des ign l i fet ime. 
+The lubricant selected, and the processes used in cleaning parts and applying the lubricant
+shal l be del ineated. 
+Lubricants used with M50 or 52100 gear materials shal l include corrosion inhibi tors which prevent corrosion when the assembly is humidity tested in accordance with Paragraph 6.4.9 of MIL-STD-1540.
+
+
+
+
+
+\subsubsection{Brush and Slip Ring Assemblies} % Section 3.2.5
+
+
+
+
+\subsubsection{Electrical and Electronic} % Section 3.2.6
+
+
+
+
+
+\subsubsection{Electric Motors} % Section 3.2.7
+
+
+
+
+
+
+\subsubsection{Springs} % Section 3.2.8
+
+
+
+
+
+\subsubsection{Dampers} % Section 3.2.9
+
+
+
+
+\subsubsection{Gears} % Section 3.2.10
+
+
+
+
+\subsubsection{Fasteners and Locking} % Section 3.2.11
+
+
+
+
+
+\subsubsection{Stops} % Section 3.2.12
+
+
+
+
+
+
+\subsubsection{Test Points and Test Parameters} % Section 3.2.15
+
+
+
+
+
+\subsection{Performance} % Section 3.3
+
+
+\subsubsection{Error Budget for Precision Control Assemblies} % Section 3.3.1
+
+
+
+
+\subsubsection{Failure Modes and Effects} % Section 3.3.2
+
+
+
+\subsubsection{Single Point Failures} % Section 3.3.3
+
+
+
+
+
+
+\subsubsection{Tolerances} % Section 3.3.7
+
+
+
+
+
+\subsection{Environmental Design Requirements} % Section 3.4
+
+
+\subsubsection{Launch Environment} % Section 3.4.1
+
+The equipment shall be
+designed to function within performance specifications after
+exposure in the launch configuration to the maximum iaunch or
+other nonorbital service environments. These environments
+include temperature, vibration, acoustic noise, shock,
+acceleration, atmospheric pressure, humidity, and electrical
+storms with associated radiation.
+
+
+\subsubsection{On-Orbit Environment} % Section 3.4.2
+
+
+The equipment shall be designed to function within performance specifications following or, if appropriate, during exposure to environmental levels that exceed the maximum predicted on-orbit environments by the design factor of safety or design margin. 
+These environments include thermal, vacuum, radiation exposure, shock, random vibration, and acceleration.
+
+
+
+\subsubsection{Fabrication, Storage, Transportation, and Handling Environments} % Section 3.4.3
+
+
+
+
+
+\subsection{Identification and Marking} % Section 3.5
+
+Each moving mechanical assembly and interchangeable subassembly shall be identified by
+a nameplate. 
+The nameplate identification may be attached to,
+etched in, or marked directly on the item where size and noninterference
+of operation permits. 
+The nameplate shall utilize
+suitable letter size and contrasting colors, ,contrasting surface
+f i n i s h e s , or other techniques to provide identification that is
+readily legible. 
+The nameplate shall be capable of withstanding
+cleaning procedures and environmental exposures anticipated
+during the service life of the item without becoming illegible.
+Metal foil nameplates may be applied if they can be placed in an
+area where they cannot interfere with proper operation should
+they inadvertently become detached. 
+Metal stamping shall not be
+used. 
+Where practicable, identification nameplates on
+components and subassemblies shall be in locations which permit
+observation of the marking at the next higher level of
+assembly. 
+Nameplates shall contain, as a minimum, the following:
+
+a. Item identification number
+
+b. Serial number
+
+c. Lot number
+
+d. Manufacturer
+
+e. Nomenclature
+
+The marking of any two or more items intended for space applications with the same item number or identification shall
+indicate that they may be capable of being changed, one for
+another, without alteration of the items themselves or of
+adjoining equipment if the items also meet the specified flight
+accreditation requirements.
+
+\subsubsection{Data Cards} % Section 3.5.1
+
+When size limitations, cost, or other
+considerations preclude marking all applicable information on an
+item, the nameplate may simply provide a reference key to cards
+or documents where the omitted nameplate information may be
+found. A copy of the referenced nameplate information or card
+shall accompany the item or assembly containing the item during
+ground tests and ground operations.
+
+\subsubsection{"NOT FOR FLIGHT" Markings} % Section 3.5.2
+
+Items which by intent or by material disposition are not suitiable for use in flight, and which could be ac c idental ly subs t i tuted for f l ight or f l ight spare hardware, shall be red tagged or striped with red paint, or both, to prevent such subst i tut ion. 
+The red tag shall be conspicuous and marked “NOT FOR FLIGHT.” 
+The red paint shall be material compatible and the stripes unmistakable.
+
+\subsection{Interface Requirements} % Section 3.6
+
+\subsubsection{Clearance} % Section 3.6.1
+
+The clearance requirements between the moving mechanical assembly or deployable and any other structure or component shall be established and maintained. 
+The manufacturing, assembly, and alignment tolerances as well as environmental conditions such as temperature, temperature gradient s , vibrat ion, distortion d u e to- relaxation of the *g” f ield, ef fec t s of cent r i fugal for ces , and ac celerat ion dur ing the cri t ical periods of launch and on-orbi t operat ions shal l be taken into considerat ion for establ ishing clearance adequacy.
+The established clearances shall be maintained during transportat ion and al l operat ional modes o f the space vehicle.
+Obscurat ion of the operat ional f ields of view of v ehi c l e s ens o r s by the moving mechanical assemblies shall be avoided except - where obscuration is a design requirement of the sensor system.
+Interface control drawings or layouts shal l indicate the stowed, extended, and cri t ical intermediate posi t ions of the moving mechani cal as sembl ies and deployable8 with respect to fields of view and surrounding structure or components.
+
+\subsubsection{Alignments} % Section 3.6.2
+
+Provisions shal l be included to permi t of moving mechanical assemblies with respect to the space vehicle and other subsystem elements where appropriate. 
+A shimming-type alignment technique may be used tihere addi t ional surface area is necessary to provide a bearing surface or where electrical bonding is required. 
+Where an adjustable- type al ignment technique is used, locking provisions as speci f ied herein shal l be provided. 
+Installation o f al ignment pins is permissible i f the pins are posi t ively retained with the moving mechanical assembly mounting face structure and permit the moving mechanical assembly to be easily removed from the vehicle.
+
+\subsubsection{Structural} % Section 3.6.3
+
+In select ing the design for the
+structural interface of the moving mechanical assembly with the
+space vehicle, preference shal l be given to simple approaches
+that minimize the complexi ty of the interface. 
+The moving
+mechanical assembly shal l , where pract icable, be easi ly instal led
+and readily accessible for inspection or removal. Standard wrench
+clearances shal l be provided. 
+The use of special tools shal l be
+minimized. 
+In addition, where complex connections and structural assembly interfaces are employed, the design of fittings shall
+be based on a minimum fitting factor of 1.15 at ultimate load.
+
+
+\subsubsection{Mechanical Interfaces} % Section 3.6.4
+
+Where practicable, a common interface drill template shall b; used to ensure correct mechanical mating, particularly for interfaces external to the moving mechanical assembly.
+
+\subsubsection{Interchangeability} % Section 3.6.5
+
+A n y two or more moving mechanical assemblies beating’the same part number or
+identification shall possess such functional and physical
+characteristics as to be equivalent in performance and
+durability and shall be capable of being changed, one for
+another, without alterations of the items themselves or of
+adjoining items except for alignment adjustments.
+
+
+
+\subsection{Operability} % Section 3.7
+\subsubsection{Reliability} % Section 3.7.1
+
+The reliability allocations to the
+moving mechanical asse;blies and the assigned design
+requirements shall ensure that the overall vehicle reliability
+requirements are met under the severe extremes of acceptance
+testing, storage, transportation, preflight testing, and
+operational environments. Highly reliable assemblies are
+usually obtained by elimination of single point failure modes
+unless it can be shown that the addition of redundancy actually
+reduces overall reliability due to added complexity. The
+incorporation of redundancy is usually an acceptable technique
+for meeting the reliability requirements. For designs that
+switch redundant subassemblies or units autonomously, or by
+ground command, the failure rates for the switching circuits,
+and for the redundant equipment while in the off line mode,
+shall be appropriately included in the reliability
+determination. The reliability of each moving mechanical
+assembly shall be analytically determined using piece part or
+component failure rates obtained from actual usage data where
+available, or evaluated at anticipated operating temperatures
+from standard data sources such as MIL-HDBK-217. The assembly
+reliability shall be evaluated in terms of events and usage
+cycles that occur in operation. The design margins shall
+preclude wear out of components within the service life of the
+space vehicle at the programmed duty cycle, including the wear
+associated with all preflight testing.
+
+\subsubsection{Maintainability} % Section 3.7.2
+
+Except for possible relubrication
+after extended storage, or’at prescribed intervals in multiple
+reuse applications, the moving mechanical assemblies shall,
+where practicable, be designed so as not to require any
+scheduled maintenance or repair during their service life.
+Suitable development tests and inspections at appropriate
+intervals shal l val idate that scheduled maintenance is not
+required. However, access shall be provided for r eplac ement of
+age-dated elastomeric materials which may have “expiration of
+u s e f u l l i f e ” dates that can occur before scheduled f l ight .
+
+
+
+\subsubsection{Human Engineering} % Section 3.7.3
+Throughout the design and
+development of the moving meihanical assembl ies, c r i t e r i a s h a l l
+be judi c ious ly appl ied to obtain ef fec t ive, compat ible, and safe
+man-equipment interactions. The design of all moving mechanical
+assemblies shall be such that they may be tested or inspected to
+ensure that they are assembled and instal led correct ly.
+Provisions such as tabs, shoulders, and di f ferent thread sizes
+shall be employed to prevent assembly in any incorrect manner
+which may impair the intended functions of the moving mechanical
+assembly.
+
+
+\subsubsection{Service Life} % Section 3.7.4
+The combined operational and
+:lonoperational s e r v i c e iife of the moving mechanical assembl ies
+shal l exceed the service l i fe of the space vehi c le in whi ch they
+are mounted. The servi ce l i fe inc ludes al l operat ional and
+nonoperat ional t ime required or al lowed af ter successful
+complet ion of acceptance tests.
+
+\subsubsection{Safety} % Section 3.7.5
+
+\paragraph{General Safety} % Section 3.7.5.1
+
+
+
+\paragraph{Space Transportation System Payloads} % Section 3.7.5.2
+
+
+
+
+
+\subsection{Manufacturing} % Section 3.8
+
+\subsubsection{Process and Controls} % Section 3.8.1
+Acceptance and flight
+certification of space equipment is based primarily on an
+evaluation of data from the manufacturing process. Handling and
+storage of parts and materials for space applications shall be
+controlled consistent with the criticality of the end use of
+each item. Controlled environment and controlled access shall,
+be used to the extent required to avoid degradation o f t h e
+qual i ty and rel iabi l i ty of the par t s , mater ial s , and
+assemblies. 
+The manufacturing process shall be accomplished in
+accordance with documented procedures and process controls which
+ensure the rel iabi l i ty and qual i ty required for the mission.
+These manufacturing procedures and process controls shall be
+documented to give visibi l i ty to the procedures and
+spec i f i cat ions by whi ch al l proces ses , operat ions , inspec t ions ,
+and tests are to be accomplished by the contractor. 
+This
+internal contractor documentation shall include the name of e a c h
+part or component, each material required, the point i t enters
+the manufacturing flow, and the cont rol l ing spec i f i cat ion or
+drawing. 
+The documentat ion shal l indicate required tool ing,
+f a c i l i t i e s , and test equipment; the manufacturing check points
+and pert inent process control thresholds; the qual i ty assurance v e r i f i c a t i on po int s ; and the veri f icat ion procedures
+corresponding to each appl icable process or material l isted.
+The speci f icat ions, procedures, drawings, and support ing
+documentat ion shal l ref lec t the spec i f i c revi s ions in ef fec t at
+the time the items were produced. 
+These flow charts and the
+referenced speci f icat ions, procedures, drawings, and support ing
+documentation become the manufacturing process control baseline
+and shal l be retained by the contractor for reference. 
+I t i s
+recognized that many factors may warrant making changes to this
+documented baseline; however, al l changes to the basel ine
+processes used, or the baseline documents used, shall be
+recorded by the contractor fol lowing establ ishment of the
+manufacturing basel ine or fol lowing the manufacture of the f irst
+i tem or lot of i tems. 
+These changes provide the basis f o r
+f l ight accredi tat ion of the i tems manufactured or of subsequent
+f l i ght i t ems .
+
+
+The manufacturing process and control documents shall provide a contractor-control led basel ine that ensures that any
+subsequent failure or discrepancy analysis that may be required can ident i fy the speci f ic manufacturing materials and processes that were used for each item. 
+In this way, changes can be incorporated into a known baseline item to correct problems.
+
+
+\subsubsection{Production Lots} % Section 3.8.2
+To the extent pract icable, parts
+for use in space equipment shall.be grouped together in
+individual product ion lots during the various stages of their
+manufacture to ensure that all devices assembled during the same
+time period use the same materials, tools, methods, and
+c o n t r o l s . 
+Parts and devices for space equipment that cannot be
+adequately tested af ter assembly wi thout destruct ion of the
+i t em., such as explosive ordnance devices, shal l have lot
+controls implemented during their manufacture to ensure a
+uni form qual i ty and rel iabi l i ty level of the ent i re lot . 
+Each
+lot shal l be manufactured, tested, and stored as a single
+batch. 
+Sequential lot numbers that indicate the date of
+manufacture shall be assigned to each production lot.
+(Typically, use three digits for the day of the year and t w o
+digi t s for the year . )
+
+
+\subsubsection{Contamination} % Section 3.8.3
+\paragraph{Fabrication and Handling} % Section 3.8.3.1
+Fabr i c a t ion and handling of space equipment shall be accomplished in a clean environment. 
+At tent ion shal l be given to avoiding n o n p a r t i c u l a t e ( c h emi c a l ) a s we l l a s p a r t i c u l a t e a i r contamination. 
+To avoid safety and contaminat ion problems, the
+us e of l iquids shal l be minimi z ed in a r e a s whe r e ini t i a tor s ,
+e x p l o s i v e b o l t s , or any loaded explosive devices are exposed.
+
+
+\paragraph{Device Cleanliness} % Section 3.8.3.2
+The particulate cleanliness of internal moving subassemblies shall be maintained to at least
+level 500 as defined in MIL-STD-1246. 
+External surfaces shall be visibly clean. 
+The allowable product nonvolatile residue (NVR) level shall be maintained to at least level "G", as defined in MIL-STD-1246. 
+Specific cleanliness requirements shall be determined for each moving mechanical assembly based on an analysis of overall system cleanliness requirements.
+
+
+
+
+
+\section{Quality Assurance Provisions} % Section 4
+\subsection{Responsibility for Inspections and Tests} % Section 4.1
+Unless
+otherwise specified in the contract, the contractir is
+responsible for the performance of all inspection and test
+requirements as speci f ied herein. 
+Except as otherwise speci f ied
+in the c ont rac t , the contractor may use his own or any other
+faci l i t ies sui table for the performance of the ins p e c t i on and
+test requirements specified herein, unless disapproved by the
+government. 
+The government reserves the right to perform any of
+the inspections set forth in the specification where such
+inspections are deemed necessary to assure that supplies and
+services conform to prescribed requirements.
+
+\subsubsection{Responsibility for Compliance} % Section 4.1.1
+All items shall meet all requirements of Sections 3 and 4.
+The inspect ions set
+forth in this speci f icat ion shal l become a part of the
+contractor’s overal l inspect ion system or qual i ty program. 
+The
+absence of any inspect ion requirements in the spec i f i cat ion
+shal l not rel ieve the contractor of the respons ibi l i ty o f
+assuring that al l products or suppl ies submi t ted to the
+Government for acceptance comply with all requirements of the
+contract.
+
+\subsubsection{Test Equipment and Inspection Facilities} % Section 4.1.2
+The manufacturer shall ensure that test and inspection facilities of sufficient accuracy, quality, and quantity are established and maintained to permit performance of required inspections.
+
+\subsection{Classification of Inspections and Tests} % Section 4.2
+The tests and inspections specified herein are classified is follows:
+
+a. Parts, materials, and process controls (see 4.3) 
+
+b. Development tests (See 4.4)
+
+c. First assembly inspection (see 4.5)
+
+d. Component and subsystem level acceptance tests (see 4.6)
+
+e. Qualification tests (see 4.7)
+
+f. Vehicle level acceptance tests (see 4.8)
+
+g. Prelaunch validation tests and inspections (see 4.9)
+
+\subsection{Parts, Materials, and Process Controls} % Section 4.3
+To ensure that a reliable moving mechanical assembly is fabricated, all parts and materials shall be adequately controlled and inspected prior to assembly. 
+During fabrication, the tools and processes, as well as parts and materials, shall be adequately controlled and inspected to ensure compliance with the approved manufacturing processes and controls.
+
+\subsubsection{Records} % Section 4.3.1
+Records documenting the accreditation
+status of the moving mechanical assemblies shall be maintained
+following assignment of serial numbers. 
+Each moving mechanical
+assembly shall have inspection records and test records
+maintained by serial number to provide traceability from system
+usage to production lot data for the device. 
+Complete records
+shall be maintained and shall be available for review during the
+service life of the system. 
+The records shall indicate all
+relevant test data, all rework or modifications, and all
+installation and removals for whatever reason.
+
+\subsubsection{Manufacturing Screens} % Section 4.3.2
+Each moving mechanical
+assembly and each critical subassembly shall be subjected to
+in-process manufacturing and assembly screens to ensure
+compliance with the specified requirements to the extent
+practicable. 
+Compliance with the documented process controls,
+documented screening requirements, required hardware
+configuration, and general workmanship requirements shall be
+verified. 
+At each level of assembly, each completed unit shall
+be subjected to visual inspection to ensure that it is free of
+obvious defects and is within Specified physical limits.
+
+\subsubsection{Nonconforming Material} % Section 4.3.3
+Nonconforming material,
+components, or assemblies that do-not meet the established
+tolerance limits set for the acceptance limits in the in-process
+screens shall be rejected for use. 
+Any rejected material,
+component, or assembly may be reworked and rescreened in
+accordance with established procedures if system reliability is
+not jeopardized, and if the rework is not so extensive as to
+jeopardize the lot identity of the material or assembled unit.
+
+If reworked material or an assembled unit that was lot
+controlled subsequently pass the in-process screens, it can
+again be considered part of the lot. 
+Reassignment of units that
+were lot controlled to a different lot shall not be made.
+Nonconforming material or assembled units that do not satisfy
+these rework criteria shall be considered scrap.
+
+\subsubsection{Inspection of Parts} % Section 4.3.4
+As a minimum, all castings, fusion welds, fibre composite or honeycomb parts and surfaces of stressed parts shall be inspected as follows:
+
+a. Internal . All castings and all fusion
+welds shall be inspected for the presence of
+internal defects by radiographic methods in
+accordance with MIL-STD-453. 
+Plastic composite
+structural elements shall be inspected for the
+presence of internal defects by an appropriate
+test method.
+
+b. Surface defects. The surfaces of stressed parts
+shall be inspected in accordance with MIL-X-6868
+(magnetic particle inspection method), in
+accordance with MIL-STD-6866 (liquid penetl-ant
+inspection method), or in accordance with other
+inspection methods, as appropriate. 
+Heat-treated
+steel parts with tensile strength above 1,790
+megapascals (259,617 pounds per square inch)
+ultimate that require a grinding operation after
+final heat treatment shall be inspected by nital
+etch on all surfaces subject to grinding.
+
+All parts used in critical moving mechanical assemblies or
+parts comprising single point failures shall be completely
+inspected to ensure that no defects exist which could lead to
+degraded performance or failure.
+
+\subsubsection{Inspection of Assemblies} % Section 4.3.5
+The dimensions, weight, finish, identification markings, and cleanliness of each moving mechanical assembly shall be inspected, as appropriate, prior to acceptance testing and prior to installation on the vehicle.
+Inspection of the assembly shall be made to ensure that a minimum thread engagement of five full threads exists for all
+threaded attachments; or where through bolts are used, that a minimum of two full threads protrude beyond the end of the nut.
+Fasteners shall be inspected for compliance with required torque levels. 
+These inspections shall be made concurrently with the assembly of the parts. 
+Pin pullers shall be inspected at the vehicle test level to verify adequate travel and travel margin.
+All moving mechanical assemblies shall be inspected before and after exposure to environmental tests at the component test level, at the vehicle test level, and at the launch site. 
+In addition, the inspections should be conducted at intermediate
+test points. 
+These inspection processes shall include, but are
+not limited to, the following:
+
+a. Scratchefi or dammed surfaces . If surface damage
+is sufficient to affect the intended function of
+the assembly, or the performance is degraded (e.g.,
+damaged thermal control surfaces, increased
+friction of contacting surfaces or contamination
+due to debris), the moving mechanical assembly
+shall be rejected.
+
+b. Rust or corrosion Any parts exhibiting rust or
+cor ros ion shal l b; r e j e c t e d .
+
+c. Fastener torque, Fasteners shall be visually
+inspected for looseness. In addi t ion, the torque
+shall be checked on preselected fasteners before
+and after exposure to each environmental test
+condition.
+
+d. Handling damage. Graphite epoxy and other composite
+parts shall be visually inspected for damage. Where
+tubular composite members are used, the internal
+surfaces shall, where practicable, be visually
+inspected for damage, by means of a borescope or by
+other appropriate means.
+
+e. Cleanliness. Product particulate cleanliness shall
+not exceed ieve 500 as defined in MIL-STD-1246.
+Product nonvolatile residue (NVR) shall be in
+compliance with the applicable requirements
+specified for each assembly.
+
+f. Wirina harness-. Wiring harnesses shall be
+inspected to verify that they are properly secured
+and to verify that the proper configuration is
+maintained, particularly in the area of rotating
+parts or joints.
+
+g. Electrical and fluid connectors Dust caps shall
+be installed on unused connectois during shipment
+or test. 
+Although unnecessary disconnecting and
+reconnecting of connectors shall be avoided,
+inspection for connector out-of-round and broken or
+loose electrical pins shall be made, where
+practicable.
+
+h. Multilayer lnsulation. Multilayer insulation
+should be inspected at the vehicle test level and after vehicle shipment for adequate clearance with
+respect to adjacent moving mechanical assemblies
+to ensure that movement of the assemblies will not
+be impeded during operation. In addition, where
+switches are used for indicating purposes, the
+clearance between the multilayer insulation and
+the switch shall be verified to ensure that proper
+operation of the switch can occur.
+.
+
+i. Safety wire Fasteners utilizing safety wire
+shall be inipected to ensure that the wire is
+properly installed and that such wire cannot
+result in interference with other parts of the
+moving mechanical assembly.
+
+j. Alianment
+appropriaie.
+Alignment shall be inspectec! as
+Alignment mirrors shall be inspected
+to verify freedom from damage or displacement.
+Alignments of deployables shall, where
+practicable, be checked in their deployed
+positions.
+
+k. Switch= Indicating switches shall be inspected
+to ensur;! that they operate satisfactorily and
+that adequate overtravel exists. Switch wires
+shall be inspected to verify that they are free
+from damage or sharp bends. Switch actuation
+shall, where practicable, be verified by means of electrical continuity.
+
+l. Brinel;Ligg. Highly loaded surfaces such as
+preload fittings or overcenter latches shall be
+inspected for evidence of Brinelling damage to
+surfaces in contact.
+
+m. Springs. Where accessibility permits, the
+following inspections and measurements shall be
+made on springs: inspection for broken coils or
+other damage and measurement of spring force or
+torque and spring rate on the fully assembled
+moving mechanical assembly. The spring load at
+the installed position and the spring rate shall
+be measured before assembly, recorded, and the
+springs properly serialized. The spring load and
+the spring rate shall also be measured and
+recorded after spring assembly or installation, as
+appropriate. The location of each serialized
+spring on the moving mechanical assembly shall be
+recorded. On all springs comprising single point
+failures, the heat treat shall be checked, where practicable, using an unstressed portion of each
+spring, such as on the ground flats on the ends o f
+compression springs. Where there is a danger of
+causing damage as a result of the heat treat test,
+a lot sampling technique may be used if approved
+by the contracting officer. Where practicable,
+actual spring position and deflected shape during
+the entire range of travel shall be checked to
+avoid off-nominal loading due to coil displacement
+and tang movement
+
+n. DamPers Viscous dampers shall be performance and
+leak chicked. Deformable material dampers shall be
+inspected to ensure that the material is not
+deformed or damaged.
+
+o. Clearances shall be inspected to
+ensure compliance with the specified requirements.
+
+
+p. E l e c t r i c = Where accessibility permits, the
+following inspections and measurements shall be
+made on electric motors:
+
+1. Verification of the part number.
+
+2. Identification of special precautions (if
+any) such as use of keepers during armature
+removal, and observation of lead color code
+for polarity where suppression diodes are
+used.
+
+3. Inspection for adequate lead length and
+clearance from other leads to which motor
+noise might introduce electromagnetic
+interference.
+
+4. Adequate mount heat sinking.
+
+5. Inspection of freedom of motion without
+binding or misalignment problems.
+
+Operationally the input current may be monitored
+to verify brush and motor performance.
+
+\subsubsection{Lubricant Processing Procedures} % Section 4.3.6
+Lubricant
+p r o c e s s i n g p r o c e d u r e s s h a l l b e e s t a b l i s h e d ’ t o c o n t r o l t h e
+uniformity, r e p e a t a b i l i t y , c l e a n l i n e s s , a c c o u n t a b i l i t y , a n d
+amount of lubr icant in the moving mechanical assembl ies. 
+These
+procedures shall also delineate the processes of removal of
+bearingishipping l u b r i c a n t s . 
+Shipping lubr icant s shal l be analyzed for compat ibi l i ty wi th the appl ied lubricant . 
+Porous
+bal l bearing retainers and lubricant reservoirs which have
+shipping lubricants in them shal l be replaced before processing
+wi th the f l ight lubr i cant . 
+Each bearing to be processed with a
+l iquid lubr i cant shal l be tes ted for wetabi l i ty pr ior to
+appl i cat ion of the f l ight lubr i cant . 
+The wetability test method
+shal l be approved by the contract ing of f icer.
+
+
+
+
+
+
+\subsection{Development Tests} % Section 4.4
+Development test ing may be
+performed 0: moving mechanical assemblies to supplement
+analyt ical techniques in the quant i f icat ion of d e s i gn p a r ame t e r s
+and to promote the evolution of new design concepts.
+Developmental testing shall be used to validate new design
+concepts for critical components and assemblies as a prelude to
+qua l i f i c a t i on t e s t ing . The nature and extent of developmental
+testing on components, subsystems, and complete moving mechanical
+as sembl ies shal l be suf f i c ient to ensure that qual i f i cat ion
+testing of new designs will produce minimal failures which would
+then require redesign. Developmental testing shall be conducted
+using MIL-STD-1540 as a guide. Cri t ical components requiring
+development tests should be identified early in the design and
+development program, and a l ist of tests and i tems so ident i f ied
+should be documented. The adequacy of the development testing is
+a contractor responsibi l i ty; however, 8ome contracts may allow
+the contract ing of f icer to delay approval to proceed wi th
+qual i f icat ion test ing pending a review of the development test
+r e s u l t s . In that case, a part icular test should not be
+considered completed until a minimum of 30 days after the test
+results have been presented to the contracting officer. Unless
+the design is substantiated by previous usage, developmental
+tes t ing shal l inc lude the fol lowing, as appl i cable:
+
+a. Tests to substantiate the design of each bearing
+ins tal lat ion wi th respec t to mater ial s , s t res ses ,
+s t i f f n e s s , fat ique l i fe. preload, and pos s ible
+binding under normal, as well as the most severe
+combined loading conditions, and the expected
+environmental condi t ions.
+
+b. For bearings that are reused, tests to characterize
+the wear and lubrication changes resulting from
+bearing reuse, and the effects these changes have
+on torque margin.
+
+C . Where practicable, tests to substant iate the
+ef fects of temperature gradients on bearing preload
+and s t i f fnes s .
+
+d. For critical moving mechanical assemblies, tests of the lubricant that demonstrate the ability of the lubricant system to provide adequate lubrication under all specified operating conditions over the design lifetime.
+
+e. Where contact pressure is sufficiently high, such
+that friction welding might be possible, design and
+process verification tests shall be conducted at
+the piece part or subassembly level to verify the
+selection of materials and lubricants in the
+proposed application.
+
+f. For brushes and commutator or slip ring assemblies,
+tests to demonstrate that the lubricant is not
+significantly deteriorated or driven from the areas
+requiring lubrication by adverse thermal, gravity
+forces, or other conditions; and that wear rates,
+wear debris, electrical noise level, friction
+torque, and lubricant loss are compatible with
+design requirements.
+
+g. For deployable devices, minimum available driving
+capability and maximum load determination shall be
+verified through an appropriate test program; each
+element of resistance shall be characterized in
+this test program.
+
+h. For moving mechanical assemblies driven by
+electrical motors, a torque versus current
+relationship for each motor under minimum, maximum,
+and ambient thermal and vacuum conditions shall be
+established.
+
+i. Where practicable, tests to substantiate that scheduled maintenance is not required.
+
+j. Eddy current dampers shall be tested for repeatability of damping rate and torque values for twice its expected operational life cycle. 
+The eddy current damper shall be tested at temperature extremes to determine its damping rate over the temperature range.
+
+
+\subsection{First Assembly Inspection} % Section 4.5
+An inspection of the first of each of the moving mechanical assemblies produced with production equipment and procedures shall be conducted at a time and location acceptable to the contracting officer. 
+There shall be no discrepancies among the equipment, the fabrication tooling used, the released drawings, the test data, the inspection records, and the specification requirements. 
+First assembly approval is valid only on the contract or purchase order under which it is granted, unless extended by the contracting officer to other contracts or purchase orders.
+
+\subsection{Component and Subsystem Level Acceptance Tests} % Section 4.6
+The configuration and workmanship of the completed hardware shall be
+verified by inspection prior to the start of acceptance testing.
+Acceptance tests shall be conducted on each moving mechanical
+assembly in accordance with the acceptance test requirements of
+MIL-STD-1540. 
+The acceptance tests shall incorporate the run-in,
+functional, and environmental test requirements stated herein.
+The acceptance tests shall be structured to detect workmanship
+defects that could affect operational performance. 
+Components
+fabricated from fiber composite material or of honeycomb
+construction shall be subjected to acceptance proof testing. 
+The
+acceptance testing of moving mechanical assemblies that are part
+of a deployable device shall, where practicable, be conducted
+with the moving mechanical assembly attached to the deployable
+device. In some cases, such as solar array drives, despin bearing
+assemblies, or pointing devices, dummy loads may be substituted
+for the driven member. 
+The dummy loads shall provide a reasonable
+representation of the dynamic characteristics (such as inertia,
+stiffness, free play, and natural frequencies) of the actual
+driven member. 
+The effect of friction due to the additional
+weight of the dummy load on the drive unit shall be accounted for
+in evaluating the test results. 
+Dummy loads are also permitted
+to minimize the effects of air damping where large panels are
+deployed under ambient conditions. 
+Appropriate quantitative
+measurements such as torque vs angle measurements and time vs
+angle measurements, or equivalent linear measurements for linear
+devices, shall be made during run-in, functional, and
+environmental acceptance testing of all moving mechanical
+assemblies. 
+For spring driven devices, torque vs angle
+measurements shall be made during restowing .as well as during
+deployment in order to generate a torque vs angle hysteresis
+curve to determine torque mArgin 
+For linear devices, equivalent linear measurements shall be made to determine force margin. 
+As a minimum, these measurements shall be made under ambient and
+acceptance level hot and cold temperatures. 
+When an assembly is
+too large or complex to be tested, results of component or
+subassembly torque or force margin testing may be added to obtain
+the assembly torque margin. 
+Moving mechanical assemblies that
+contain redundancy in their design shall, where practicable,
+demonstrate performance to their requirements in each redundant
+mode of operation. 
+Functional operation and alignment of each moving mechanical assembly, including instrumentation that is an integral part of the assembly, shall be tested and checked, where practicable, before and after exposure to each environmental
+acceptance test. 
+All swaged ends on rods or cables shall be 100 percent tested with a load equal to twice the limit load (see 6.2.12). 
+(Note: the proof factor of safety shall be 2.0 for swaged ends on rods or cables.)
+
+\subsection{Run-in Test} % Section 4.6.1
+After initial functional testing, a run-in test shall be performed on each moving mechanical assembly before it is subjected to further acceptance testing, unless it can be shown that this procedure would be detrimental to performance and would result in reduced reliability. 
+The primary purpose of the run-in test is to detect material and workmanship defects which occur early in the component life. 
+Another purpose of the run-in test is to wear-in parts of the moving mechanical assembly so that they perform in a consistent and controlled manner. 
+Satisfactory wear-in may be manifested by a reduction in running friction to a constant low level. 
+The run-in test shall be conducted for a minimum of 50 hours except for items where the number of cycles of operation, rather than hours of operation, is a more appropriate measure of the capability to perform in a consistent and controlled manner. 
+For these units, the run-in test shall be for at least 15 cycles or 5 percent of the total expected service life cycles, whichever is greater. 
+The run-in test conditions should be representative of the operational loads, speed, and environment; however, operation of the assembly at ambient conditions may be conducted if the test objectives can be met and the ambient environment will not degrade reliability or cause unacceptable changes to occur within the equipment such as the generation of excessive debris. 
+During the run-in test, sufficient periodic measurements shall be made to indicate what conditions may be changing with time and what wear rate characteristics exist. 
+Test procedures, test time, and criteria for performance adequacy shall be in accordance with a test plan that has been approved by the contracting officer. 
+All gear trains using solid film lubricants shall, where practicable, be inspected and cleaned following the run-in test.
+
+\subsection{Functional and Environmental Acceptance} % Section 4.6.2
+Each moving mechanical assembly shall be subjected to function;1 and
+environmental tests that are in accordance with the applicable
+acceptance test requirements of MfL-STD-1540. 
+Functional tests
+shall be structured to demonstrate that the moving mechanical
+assembly is capable of operating in such a manner that all
+performance requirements are satisfied. 
+Functional tests are
+required before and after exposure to environmental test conditions
+in order to establish whether damage or degradation in performance
+has occurred. 
+These tests shall be sufficiently comprehensive and
+shall include sufficient measurements to determine whether
+performance specifications are met. 
+The functional tests are usually conducted at room ambient conditions, with the initial functional testing used as a baseline against which subsequent performance is compared. 
+Where a device is designed to operate in extreme heat or cold or in some other environmental extreme, and a
+functional test at ambient conditions would not be significant, the functional tests shall be conducted in the appropriate
+environment that would demonstrate performance. 
+All command functions should be exercised during funct ional testing. 
+The moving mechanical assemblies shall be tested in their launch or in their on-orbit configurations corresponding to the environment being simulated. 
+They shall be passive or operating corresponding to their state during the launch or on-orbit operational phases.
+Fully assembled deployables shall, where practicable, have torque vs angle and time vs angle measurements, or equivalent linear measurements for linear devices, made during thermal vacuum testing. 
+When a harmonic drive is used for precision pointing applications, full functional testing should be performed to
+verify the harmonic drive characteristics at each level of assembly. 
+Functional tests should include torsional stiffness, damping, and friction characteristics. 
+After a harmonic drive is assembled into the parent assembly, it shall be inspected for the dedoidal condition (see 6.2.5). 
+When operation of a deployable in a vacuum chamber or measurements in a vacuum chamber are impractical, the fully assembled deployable shall have deployment tests , including torque vs angle and time vs angle measurements,
+or equivalent linear measurements for linear devices, made in a hot or cold box. 
+When the fully assembled deployable is so large
+that it cannot be completely enclosed within a hot or cold box,
+the moving mechanical assemblies themselves may be separately
+enclosed within several smaller hot or cold boxes which surrrrrln?l
+only the moving mechanical assembly portion of the deployable
+device. 
+Test procedures, test t ime, and c r i t e r ia f o r pe r f o rmance
+adequacy shal l be as approved by, the cont rac t ing of f i cer . 
+No disassembly, adjustments, or repair shall be made on moving mechanical assemblies during functional and environmental acceptance testing or after completion of testing unless approved by the contracting officer.
+
+\subsection{Qualification Tests} % Section 4.7
+The qual i f i cat ion tes t s of the
+moving mechanical assemblies.shall be conducted in accordance
+with the qualification test requirements of MXL-STD-1540. 
+The 6
+dB, 10 deg C (18 deg F ) , or other design factors o f safety or
+margins speci f ied herein include test condi t ion tolerances that
+are those allowed in MIL-STD-1540. 
+When the actual qual i f icat ion
+or acceptance test tolerances can be shown to be less than those
+spe c i f i ed in MfL-STD-1540, the qual i f icat ion test levels may be
+appropriately reduced in accordance wi th provisions speci f ied in
+MXL-STD-1540. 
+The qualification tests shall incorporate the
+design life verification test, functional test, and environmental
+test requirements stated herein. 
+Moving mechanical assemblies
+which are required to operate more than once during their
+on-orbi t l i fe shal l be tes ted us ing dedi cated qual i f i cat ion
+items. 
+Where a moving mechanical assembly is required to operate
+only once dur ing i t s on-orbi t l i fe, consideration may be given t o
+flight use of the qual i f i cat ion ar t i c le based on the requi rement s
+of Section 8 of MIL-STD-1540. 
+However, any flight use of a
+qual i f i cat ion ar t i c le shal l have pr ior approval by the contracting officer. 
+The qualification tests shall be structured
+to demonstrate the design adequacy and design margins. 
+An
+acceptance test shall precede the qualification tests. 
+Torque vs
+angle measurements and time vs angle measurements, or equivalent
+linear measurements for linear devices, shall be made during
+qualification testing of all moving mechanical assemblies.
+Satisfactory completion of these tests or equivalent proven space
+vehicle operational performance is required for flight
+certification or qualification. 
+Compliance with all or portions
+of the qualification requirements based upon tests of similar
+items or upon equivalent space vehicle operational performance
+shall require approval of the contracting officer. 
+The general
+test measurements and test configurations used for qualification
+tests shall be similar to those used for acceptance tests.
+Moving mechanical assemblies that contain redundancy in their
+design shall, where practicable, demonstrate performance to their
+requirements in each redundant mode of operation during the
+qualification test. 
+Functional operation and alignment of each
+moving mechanical assembly, including instrumentation that is an
+integral part of the assembly, shall, where practicable, be
+tested and checked, before and after exposure to each
+qualification test.
+
+\subsection{Design Life Verification Tests} % Section 4.7.1
+The design life
+verification tests are intended to evaluate lubricant
+suitability, release and deployment life cycle margins, wear
+life, and avoidance of fatigue. 
+One or more items of each of the
+moving mechanical assemblies, produced with production equipment
+and procedures, shall be subjected to a design life verification
+test. 
+The number of units to be tested should be sufficient to
+achieve the desired confidence level for the test results. 
+These
+tests shall be conducted to simulate operational use within the
+range of the worst predicted operational environments. 
+The items
+shall be subjected to tests which demonstrate the capability to
+perform the full operational life cycle. 
+Masses, loads, and
+stiffness of support structure shall be actual or simulated
+operational values, and any interfacing equipment such as thermal
+heaters, cabling, or hoses shall be in place so that operational
+conditions are simulated. 
+The test and criteria for performance
+adequacy shall be approved by the contracting officer. 
+F or items
+having a relatively low percentage duty cycle, it shall be
+acceptable to compress the operational cycle into a tolerable
+total test duration. 
+For assemblies which operate continuously
+on-orbit, or at very high percentage duty cycles, accelerated
+test techniques may be employed if such an approach can be shown
+to be valid. 
+For such assemblies, tests shall be under proper
+environmental conditions, of varying duration, followed by
+disassembly and inspection. 
+A single item may be used provided
+that periodic disassembly and inspection does not influence the
+test conditions sufficiently to invalidate the test results.
+Detailed analyses of lubricant consumption, debris accumulation,
+wear, or other critical parameters may be used to provide bases
+for forecasting the expected life of the assembly. The moving
+mechanical assemblies used for life test shall be essentially
+identical with the flight items. The only differences between
+the test items and the flight items shall be those changes
+necessary for incorporation of test instrumentation. These
+differences shall not jeopardize the validity of the tests with
+respect to the flight hardware. Sufficient instrumentation shall
+be used to provide knowledge of the operating conditions within
+the assemblies during life testing such as internal pressures,
+temperatures, and temperature gradients. Where liquid
+lubrication is used, consideration shall be given to measuring
+lubricant loss, degradation, distribution, quantity, and
+outgassing constituents over the duration of the test. The
+instrumentation shall be similar to that employed in other test
+phases to provide a basis for comparison of the design life test
+conditions with those of other selected ground tests and with
+those during orbital operations. The design life test moving
+mechanical assembly shall be operated as expected in flight with
+equipment operating in accordance with the predicted duty cycle.
+The tests shall include variations of the expected flight usage,
+such as power down modes to check low temperature operation of
+the system, to the degree practicable without exceeding the
+thermal limits of the equipment. All electrical slip ring and
+commutator assembly tests shall be conducted with representative
+levels of electrical current at the rated voltage across the
+interface. All moving mechanical assemblies shall be tested for
+at least twice the number of duty cycles expected in operational
+use, plus twice the number of duty cycles expected during
+component and vehicle functional and environmental tests. stops
+shall be tested by intentionally running the moving mechanical
+assembly into the stops whether or not the moving mechanical
+assembly has limit switches to prevent contacting the stops in
+normal operation. The stops shall be tested for at least twice
+the number of duty cycles expected in operational use, plus twice
+the number of duty cycles expected during component and vehicle
+functional and environmental tests. For moving mechanical
+assemblies which employ limit switches and do not normally
+contact the stops, the qualification tests of the stops may be
+conducted as a separate subassembly level test with the switch
+inactive. A functional test shall be conducted after the design
+life verification test has been completed and the assembly shall
+be disassembled and inspected for anomalous conditions. The
+critical areas of parts which may be subject to fatigue failure
+shall be inspected to determine if failure has occurred.
+
+\subsection{Functional and Environmental Qualification} % Section 4.7.2
+One item of each of the moving mechanical assemblies, produced with production equipment and procedures, shall be subjected to environmental qualification testing to verify satisfactory
+performance at the design environmental levels. 
+Tests shall be
+in accordance with the applicable qualification test requirements
+of MIL-STD-1540. 
+The moving mechanical assemblies shall be
+tested in their launch or in their on-orbit configurations
+corresponding to the environment being simulated. 
+They shall be
+passive or operating corresponding to their state during the
+launch or on-orbit operational phases. 
+Test procedures, test
+time, and criteria for performance adequacy shall be as approved
+by the contracting officer. 
+Qualification testing of deployables
+shall include tests to simulate the lowest motive force combined
+with the highest resistance under the most a d v e r s e environmental
+conditions to provide the worst case torque margin. 
+In addition,
+the highest motive force combined with the lowest resistance
+under the most aiding environmental conditions shall be tested to
+provide the worst case loading including the loads against the
+stops. Sufficient measurements shall be made to show that the
+requirements of this specification are met under both of the
+above conditions. 
+Measurements shall include torque vs angle and
+time vs angle, or equivalent linear measurements for linear
+devices. 
+For deployables, time correlated video recording, or
+motion picture film coverage, and potentiometers, accelerometers,
+or other appropriate instrumentation shall be utilized for all
+functional and environmental qualification tests to enable the
+dynamics of the deployment to be determined and to establish time
+vs angle or time vs distance acceptance test criteria limits. 
+A
+one-time release test of pyrotechnic devices shall be conducted
+in the fully assembled configuration using a worst case lowest
+explosive charge loading of 80\%. 
+This release test shall be
+conducted using worst case tolerances and worst case
+environmental conditions. 
+To evaluate the possibility of
+structural damage to moving mechanical assemblies actuated by
+pyrotechnic devices, a one-time test shall also be conducted
+under worst case highest explosive charge loading. 
+A 120 percent
+explosive charge load shall, where practicable, be used for this
+test. 
+Instrumentation shall be provided on adjacent equipment
+during release tests to assess the transmitted shock loads. 
+A
+static load test to demonstrate the required strength, safety
+factors, and margins shall be conducted. 
+Following the static
+load test, the assemblies shall be completely disassembled and
+reinspected for possible damage.
+
+
+
+\subsection{Vehicle Level Acceptance Tests} % Section 4.8
+The vehicle level acceptance tests shall be conducted in accordance with the requirements of MIL-STD-1540. 
+After assembly of the deployable on the space vehicle, a time correlated video recording or motion picture film of deployment shall be utilized to ensure that the dynamics of deployment are within specified time vs angle or time vs distance pass-fail criteria. 
+Where deployment is impractical after assembly on the space vehicle, this recording of the dynamics of deployment shall be made during the last functional deployment prior to mounting of the deployable on the space vehicle. 
+A first motion cold test of all deployables shall be included, where practicable, as part of the space vehicle thermal
+testing to verify release of the deployables at the acceptance level cold temperature.
+
+\subsection{Prelaunch Validation Testing and Inspection} % Section 4.9
+The prelaunch validation tests shall be conducted in accordance with the requirements of MIL-STD-1540.
+
+\subsection{Interface Tests} % Section 4.9.1
+Where practicable, a complete
+deployment of deployable flight hardware in the flight
+configuration shall be conducted after attachment of the
+deployable to the space vehicle. A hand held walkout, if
+appropriate, is sufficient to satisfy this requirement. This
+test should be conducted at the latest possible time prior to
+flight. Where a complete deployment is not practical due to the
+size of the deployable, lack of a “one-g’ supporting fixture, or
+risk of damage associated with a hand held walkout, an alignment
+check and an initial motion release test shall be conducted in
+lieu of the above requirements. A measurement of the minimum
+breakaway force shall be made to ensure that no binding of the
+ttriuasa mechanism or excessive friction due to distortions of
+pivot support brackets is present.
+
+
+\subsection{Inspection} % Section 4.9.2
+Where practicable, the inspections
+listed in Paragraph 4.3.5 shall be repeated at the launch site
+after assembly of the vehicle in the flight configuration.
+Deployments such as hand-held walkouts, or other deployments such
+as those required to provide access to nearby equipment, or as
+part of pre-flight checks, should not be performed without the
+presence of an inspector to witness, approve, and sign-off
+acceptability of the handling, deployment, and restowing
+procedures.
+
+
+\subsection{Prelaunch Validation Exercises} % Section 4.9.3
+Prelaunch
+validation exercises shall include contingency cases involving
+anomalous operation of moving mechanical assemblies. 
+For
+example, partial deployment of space vehicle devices may cause
+additional effects on the space vehicle such as changes to the
+thermal control of the space vehicle, changes to the inertial
+properties of the space vehicle, degradation of communication
+systems, and possible blocking of sensors. 
+In some cases the
+effects of the failure may be circumvented by operation of the
+space vehicle in a different mode, such as increasing the space
+vehicle spin speed to aid in deployment of a deployable device
+which has experienced a hang-up. 
+These contingency plans should 
+be formulated and exercised to the extent practicable.
+
+
+\subsection{Prelaunch Validation of Bearings that are Reused} % Section 4.9.4
+Bearings that are to be used for a number of flights shall be inspected and retested after the initial flight. 
+Individual bearing tests shall be conducted to determine if the resistive torques are within acceptable limits. 
+If the mechanism torque or force margins are less than the minimum acceptance requirements, the bearings shall be completely inspected, refurbished, and retested as necessary after each flight. 
+If the mechanism torque or force margins are considerably higher than minimum acceptance requirements, the bearings tests and inspections following subsequent flights may be relaxed.
+
+\subsection{Modification, Rework, and Retest} % Section 4.9.5
+Completed moving mechanical assemblies shall be modified and reworked with the same high quality assurance provisions and criteria as the original assembly. 
+Inspection and retesting shall be in accordance with MIL-STD-1540 and the requirements stated herein, or as directed by the contracting officer. 
+Moving mechanical assemblies that have successfully completed the run-in test and are subsequently repaired, reworked, modified, or reacceptance tested shall not be given another run-in test unless the rework is so extensive as to invalidate the initial run-in. 
+Moving mechanical assemblies that are not assembled on a space vehicle but are placed in storage for more than one year shall be retested in accordance with the established thermal or thermal vacuum acceptance teat procedures prior to use. 
+After two years of storage and every year thereafter, the liquid lubricants used in these moving mechanical assemblies shall, where practicable, be sample tested to evaluate degradation. 
+If there is evidence of lubricant degradation, the cause of the degradation shall be eliminated and the assembly relubricated.
+
+
+
+
+%\section{Glossary}
+%\paragraph{Not Invented Here (NIH) Syndrome} when engineers at a company do not use a system external to their organization due to the perceived inferiority to internally developed systems
+%\paragraph{C-Sketch} collaborative sketching, also called 6-3-5, is a brainstorming method
+
+\clearpage
+\section*{References}
+
+\begin{enumerate}
+\item MA2-00-057 Mechanical System Safety, 2000.
+\item NSTS/ISS 18798 Rev B Interpretations of NSTS/ISS Payload Safety Requirements, 1997.
+\end{enumerate}
+
+\clearpage
+\section*{Appendix A: Original DFMR Requirements Text}
+
+
+\setcounter{section}{0} % Sets the section counter
+\section{Binding / Jamming / Siezing}
+
+\end{document}

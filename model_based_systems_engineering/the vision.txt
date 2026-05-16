@@ -1,0 +1,68 @@
+Enable inclusion of guidance document requirements to model based system engineering (MBSE) frameworks.
+
+A lightweight package to load, modify, enter, requirements and export to json compliant with sysml 2.0.
+
+Most of these guidance requirements are actually meta-requirements.
+
+Have tags associated with the requirements for easy searchability and applicability evaluations.
+
+What is a requirement?
+- A condition necessary to achieve an objective.
+
+The source of truth is the requirement document itself, but formatted to be convenient for use in MBSE. 
+Canned for immediate incorporation into a new project. 
+Then evaluated (by tags) for applicability to each requirement.
+
+Verification: does the implementation match the specification?
+
+Validation: does the specification as implemented meet the user needs?
+
+Verification Methods:
+- test
+- inspection
+- analysis
+- demonstration
+- heritage
+- lot acceptance
+
+Requirement Desirable Characteristics:
+- unambiguous
+- verifiable (quantifiable)
+- traceable
+- singular
+- necessary
+- active voice
+
+EARS: Easy Approach to Requirements Syntax (Alistair Mavin)
+[condition] + [subject] + [action] + [object] + [constraint]
+
+Java Script Object Notation (JSON):
+- ID 
+- Name
+- Text
+- Source / Parent
+- Rationale / Concern
+- Verification Method
+- Guidance
+- Tags / Keywords
+- verification summary / applicability note
+- phase (design, build, qual, acceptance)
+- level (of assembly) (component/ part, subassembly, assembly, vehicle (system), enterprise, material? process?)
+Relationships:
+- derivedFrom (source / parent)
+- tracedFrom
+- satisfies
+- verifies
+- allocatedTo
+- verification evidence??? (documentation link)
+- verifiedBy? (object or element? is this the evidence)
+Meta:
+- created by
+- created on (date)
+- last modified (date)
+- version #
+- status
+
+
+Notes: 
+make the requirements simple by incorporating guidance and rationale in the same element, instead of having a separate concern, which requires ownedRelationships or traces...

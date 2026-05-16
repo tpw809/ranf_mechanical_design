@@ -1,0 +1,41 @@
+{
+  "elements": [
+    {
+      "id": "req-p6xgb3xp",
+      "type": "RequirementUsage",
+      "name": "Flight-Like Qualification Electronics",
+      "shortName": "ReqDDMR70",
+      "documentation": "NASA-STD-5017B",
+      "properties": {
+        "text": "Qualification units shall utilize flight-representative drive electronics.",
+        "tags": [
+          "qualification",
+          "electronics",
+          "flight-like"
+        ],
+        "phase": "Qualification",
+        "level": "Subassembly",
+        "guidance": "Flight-representative drive electronics are electronics that produce the flight drive waveform when connected to the actuator. These electronics typically share the same schematic design as the flight electronics but may use off-the-shelf components. However, caution is needed to ensure that off-the-shelf electronic components perform the same as the flight electronics components. For example, the gate capacitance of a radiation-hardened field effect transistor can be up to an order of magnitude different from an off-the-shelf field effect transistor, which would change the switching time and the response of the mechanism. Care also should be taken to consider the configuration and lengths of harnessing and the software used as they may affect performance. Any differences in the drive electronics between the test configuration and flight configuration should be documented in the test report.",
+        "rationale": "Using different drive electronics than will be used in flight can generate non-flight-like behavior, which may give false confidence in the performance of the mechanism. For this reason, the qualification test units, including the life test unit, has to utilize flight-representative drive electronics that produce the flight drive waveform when connected to the motor."
+      }
+    },
+    {
+      "id": "req-bmyjvc2k",
+      "type": "RequirementUsage",
+      "name": "Pre-Post Qualification Inspections",
+      "shortName": "ReqDDMR71",
+      "documentation": "NASA-STD-5017B",
+      "properties": {
+        "text": "Inspections shall be conducted both at the start of qualification testing and at the conclusion of qualification testing.",
+        "tags": [
+          "Qual",
+          "Inspections"
+        ],
+        "phase": "Qualification",
+        "level": "Subassembly, Assembly",
+        "guidance": "At a minimum, one post-test performance test and inspection should be performed at the end of the suite of qualification tests, but additional tests or inspections inserted into the test flow, for example between random vibration testing and thermal-vacuum testing, or even between axes of random vibration tests, allow for easier identification of a problematic environment when anomalies occur. Depending on the nature of the mechanism and the failure modes of interest, disassembly of the mechanism may be required for effective post-qualification inspection.",
+        "rationale": "Pre-test performance tests and inspections establish baseline condition and performance. Post-qualification performance tests and inspections allow the residual effect of the environmental test to be determined when compared to the pre-test baseline."
+      }
+    }
+  ]
+}

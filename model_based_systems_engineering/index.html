@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SysML 2.0 Requirement Editor</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h2 { margin-top: 40px; }
+    .req, .concern {
+        border: 1px solid #ccc;
+        padding: 12px;
+        margin-bottom: 12px;
+        border-radius: 6px;
+    }
+    .req { background: #f7faff; }
+    .concern { background: #fffaf2; }
+    label { display: block; margin-top: 6px; }
+    input, textarea { width: 100%; padding: 6px; margin-top: 2px; }
+    button { margin-top: 10px; padding: 8px 12px; }
+</style>
+</head>
+<body>
+
+<h1>SysML 2.0 Requirements Editor</h1>
+
+<input type="file" id="fileInput">
+<button onclick="downloadJSON()">Save JSON</button>
+
+<h2>Requirements</h2>
+<div id="requirements"></div>
+<button onclick="addRequirement()">Add Requirement</button>
+
+<script>
+let model = { elements: [] };
+
+function uid(prefix) {
+    return prefix + "-" + Math.random().toString(36).substring(2, 10);
+}
+
+document.getElementById("fileInput").addEventListener("change", function(evt) {
+    const file = evt.target.files[0];
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        model = JSON.parse(e.target.result);
+        render();
+    };
+    reader.readAsText(file);
+});
+
+function render() {
+    renderRequirements();
+    renderConcerns();
+}
+
+function renderRequirements() {
+    const container = document.getElementById("requirements");
+    container.innerHTML = "";
+
+    const reqs = model.elements.filter(e => e.type === "RequirementUsage");
+
+    reqs.forEach(req => {
+        const div = document.createElement("div");
+        div.className = "req";
+
+        div.innerHTML = `
+            <label>Name <input value="${req.name}" onchange="updateField('${req.id}', 'name', this.value)"></label>
+            <label>Text <textarea onchange="updateProp('${req.id}', 'text', this.value)">${req.properties?.text || ""}</textarea></label>
+            <label>Phase <input value="${req.properties?.phase || ""}" onchange="updateProp('${req.id}', 'phase', this.value)"></label>
+            <label>Level <input value="${req.properties?.level || ""}" onchange="updateProp('${req.id}', 'level', this.value)"></label>
+			<label>Guidance <textarea onchange="updateProp('${req.id}', 'guidance', this.value)">${req.properties?.guidance || ""}</textarea></label>
+			<label>Rationale <textarea onchange="updateProp('${req.id}', 'rationale', this.value)">${req.properties?.rationale || ""}</textarea></label>
+            <label>Tags <input value="${(req.properties?.tags || []).join(', ')}" onchange="updateTags('${req.id}', this.value)"></label>
+            <button onclick="deleteElement('${req.id}')">Delete</button>
+        `;
+
+        container.appendChild(div);
+    });
+}
+
+function updateField(id, field, value) {
+    const el = model.elements.find(e => e.id === id);
+    el[field] = value;
+}
+
+function updateProp(id, prop, value) {
+    const el = model.elements.find(e => e.id === id);
+    if (!el.properties) el.properties = {};
+    el.properties[prop] = value;
+}
+
+function updateTags(id, value) {
+    const el = model.elements.find(e => e.id === id);
+    if (!el.properties) el.properties = {};
+    el.properties.tags = value.split(",").map(t => t.trim()).filter(t => t.length > 0);
+}
+
+function updateGuidance(id, value) {
+    const el = model.elements.find(e => e.id === id);
+    if (!el.properties) el.properties = {};
+    el.properties.guidance = value.split(",").map(t => t.trim()).filter(t => t.length > 0);
+}
+
+function updateRationale(id, value) {
+    const el = model.elements.find(e => e.id === id);
+    if (!el.properties) el.properties = {};
+    el.properties.rationale = value.split(",").map(t => t.trim()).filter(t => t.length > 0);
+}
+
+function addRequirement() {
+    model.elements.push({
+        id: uid("req"),
+        type: "RequirementUsage",
+        name: "New Requirement",
+        properties: { text: "", tags: [] }
+    });
+    render();
+}
+
+function deleteElement(id) {
+    model.elements = model.elements.filter(e => e.id !== id);
+    render();
+}
+
+function downloadJSON() {
+    const blob = new Blob([JSON.stringify(model, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "sysml_model.json";
+    a.click();
+    URL.revokeObjectURL(url);
+}
+</script>
+
+</body>
+</html>

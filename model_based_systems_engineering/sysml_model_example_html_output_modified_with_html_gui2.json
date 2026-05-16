@@ -1,0 +1,41 @@
+{
+  "elements": [
+    {
+      "id": "req-p6xgb3xp",
+      "type": "RequirementUsage",
+      "name": "Flight-Like Qualification Electronics",
+      "shortName": "ReqDDMR70",
+      "documentation": "NASA-STD-5017B",
+      "properties": {
+        "text": "Qualification units shall utilize flight-representative drive electronics.",
+        "tags": [
+          "qualification",
+          "electronics",
+          "flight-like"
+        ],
+        "phase": "Qualification",
+        "level": "Subassembly",
+        "guidance": "None",
+        "rationale": "Using different drive electronics than will be used in flight can generate non-flight-like behavior, which may give false confidence in the performance of the mechanism. For this reason, the qualification test units, including the life test unit, has to utilize flight-representative drive electronics that produce the flight drive waveform when connected to the motor."
+      }
+    },
+    {
+      "id": "req-bmyjvc2k",
+      "type": "RequirementUsage",
+      "name": "Pre-Post Qualification Inspections",
+      "shortName": "ReqDDMR71",
+      "documentation": "NASA-STD-5017B",
+      "properties": {
+        "text": "Inspections shall be conducted both at the start of qualification testing and at the conclusion of qualification testing.",
+        "tags": [
+          "Qual",
+          "Inspections"
+        ],
+        "phase": "Qualification",
+        "level": "Subassembly, Assembly",
+        "guidance": "At a minimum, one post-test performance test and inspection should be performed at the end of the suite of qualification tests, but additional tests or inspections inserted into the test flow, for example between random vibration testing and thermal-vacuum testing, or even between axes of random vibration tests, allow for easier identification of a problematic environment when anomalies occur. Depending on the nature of the mechanism and the failure modes of interest, disassembly of the mechanism may be required for effective post-qualification inspection.",
+        "rationale": "Pre-test performance tests and inspections establish baseline condition and performance. Post-qualification performance tests and inspections allow the residual effect of the environmental test to be determined when compared to the pre-test baseline."
+      }
+    }
+  ]
+}

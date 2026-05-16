@@ -1,0 +1,6 @@
+make minimal sysml v2 req / concern / trace example
+
+test loading example into sysml v2 tool
+
+make "source of truth" jsons for NASA 5017, DFMR 2.0, Mil-A-83577B, JERG 330
+

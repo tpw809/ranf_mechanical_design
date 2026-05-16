@@ -1,0 +1,28 @@
+Poka-yoke is a Japanese term meaning "mistake-proofing" or "error-proofing," defined as implementing simple, inexpensive devices or procedures to prevent, correct, or draw attention to human errors instantly. Formalized by Shigeo Shingo for the Toyota Production System, it ensures 100% quality by stopping defects at the source.
+
+Key Concepts and Synonyms:
+
+Definition: "Poka" (inadvertent mistake) + "Yoke" (prevention).
+
+Synonyms/Related Terms: Mistake-proofing, error-proofing, fail-safing, zero defect quality.
+
+Purpose: To prevent defects from being created, rather than catching them after they are made.
+
+
+Common Usage Examples:
+
+Physical/Hardware: SIM cards with a cut corner so they only fit one way; USB ports that only insert in one orientation; elevators that won't close if sensors detect someone.
+
+Safety/Process: A car that requires the brake pedal to be pressed to shift out of "Park"; appliances that won't start while the lid/door is open.
+
+Digital/Software: A spellcheck warning; an email client prompting for an attachment if the word "attached" is in the text; required form fields that prevent submission until filled.
+
+
+
+Benefits:
+
+Eliminates repetitive defects and reduces wasted time.
+
+Allows operators to focus on productive tasks, not just catching errors.
+
+Increases safety and improves customer satisfaction.
