@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[10pt]{article}
 
 % ---------------------------------------------------------
 % MIL-STD STYLE PACKAGES
@@ -10,6 +10,8 @@
 \usepackage{titling}
 %\usepackage{fancyhdr}
 \usepackage{tocloft}
+\usepackage{tabularx}
+\usepackage{multirow}
 \usepackage{helvet} % Sans-serif similar to MIL-STD documents
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -619,12 +621,13 @@ Section II — DESIGN, and
 
 Section III — MANUFACTURE.
 
-% Shoulds be "Appendix A, Section I" heading here...
+% "Appendix A, Section I" heading here...
 \clearpage
 \section*{Appendix A, Section I}
+%\centerline{\textbf{Appendix A, Section I}}
 
-\section{Spring Materials} % should be section 11.
-\subsection{General} % should be section 11.1
+\section{Spring Materials} % section 11.
+\subsection{General} % section 11.1
 More than forty different steel compositions, seven corrosion resisting steels and about twenty different non-ferrous compositions are used as spring materials.
 Each has some particular advantage over the others and the selection is based on seeking, in addition to other requirements, the best behavior in applications involving high stress, shock loads, elevated temperatures and corrosion resistance.
 All spring wire should be used in round cross-section whenever possible as it is more readily available, less expensive, usually has higher mechanical properties and is easier to fabricate. 
@@ -635,12 +638,12 @@ Nickel-base alloys have the best resistance to elevated temperatures combined wi
 More specific data on these materials is covered in this section. 
 The SAE and AISI references and the specifications of bar in the following paragraphs represent typical compositions of metal from which springs with the specified mechanical properties can be produced.
 
-\subsection{Sizes Available} % should be section 11.2
+\subsection{Sizes Available} % section 11.2
 In the column headed Mechanical Properties in Paragraphs 12.2 through 17.3 are shown "Sizes Available", which lists the range of sizes usually available from warehouses or wire mills. 
 For most materials both smaller and larger sizes can be obtained on special order. 
 The sizes shown in Table I, Appendix A, Section I, should be used wherever possible.
 
-\section{High Carbon Steels} % should be section 12.
+\section{High Carbon Steels} % section 12.
 \subsection{General}
 The most commonly used of all spring materials are the high carbon spring steels. 
 These materials are used in Music-Wire, Hard-Drawn Wire, Oil Tempered Wire and Valve Spring Wire. 
@@ -648,85 +651,506 @@ All are readily available in a wide variety of sizes.
 These materials should be used in preference to other materials whenever the design requirements permit their use. 
 They are not usually recommended for sub zero temperature applications.
 
-\subsection{Music Wire}
-(yet to be transcribed)
+\subsection{Music Wire QQ-W-470, ASTM A228-51} % section 12.2
+Music wire is the highest quality cold drawn, high carbon wire in the ferrous group.
+It has exceptionally high tensile strength and uniform temper. 
+It is recommended for small springs which are subjected to high stresses and suddenly applied loads.
+Only round sections have high tensile strengths.
+This material is not a true music wire if obtained in any sections other than round.
 
-\subsection{Hard Drawn}
-(yet to be transcribed)
+\begin{center}
+\begin{tabular}{ r c }
+\multicolumn{2}{c}{Mechanical Properties:} \\
+\hline
+Modulus in Tension: & E = 30 x 10$^4$ \\ 
+Modulus in Torsion (Up to 0.100 in): & G = 12 x 10$^4$ \\  
+Modulus in Torsion (Over 0.100 in): & G = 11.75 x 10$^4$ \\
+Elastic Limit in Tension: & 65 to 75 \% of TS \\  
+Elastic Limit in Torsion: & 45 to 50 \% of TS \\
+Density: & 0.284 lb/in$^3$ \\
+Maximum Elevated Temperature: & 250$^\circ$ F \\
+Sizes Available: & 0.004 to 0.180 \\
+\hline
+\end{tabular}
+\end{center}
 
-\subsection{Oil Tempered}
-(yet to be transcribed)
+\subsection{Hard Drawn Steel Wire QQ-W-428, Type II; ASTM A227-47} % section 12.3
+Hard drawn steel wire is a low cost spring steel which can be used for average stress applications where accuracy of wire diameter, spring diameter and loads are not required with great precision.
+Do not use in applications where long life is required.
+This material can be readily electroplated.
+Square section are also obtainable but at reduced tensile strengths.
 
-\subsection{Carbon Steel Valve Spring Quality}
-(yet to be transcribed)
+\begin{center}
+\begin{tabular}{ r c }
+\multicolumn{2}{c}{Mechanical Properties:} \\
+\hline
+Modulus in Tension: & E = 30 x 10$^4$ \\  
+Modulus in Torsion: & G = 11.5 x 10$^4$ \\
+Elastic Limit in Tension: & 60 to 70 \% of TS \\  
+Elastic Limit in Torsion: & 45 to 55 \% of TS \\
+Density: & 0.284 lb/in$^3$ \\
+Maximum Elevated Temperature: & 250$^\circ$ F \\
+Sizes Available: & 0.028 to 0.625 in. dia \\
+\hline
+\end{tabular}
+\end{center}
 
-\section{Alloy Steel Wire and BAR} % Section 13.
+\subsection{Oil Tempered Steel Wire QQ-W-428, Type I; ASTM A229-56} % section 12.4
+Oil-tempered steel wire is a general purpose spring steel of uniform quality and temper.
+Because of its surface condition this material is recommended for springs where: (1) the stress requirements are not too extreme, (2) the spring is not subjected to impact or shock loading, and (3) the spring index is 5 or greater.
+This material is wdiely used for mechanical products and machine tools in applications where the slight scale of the surface is not objectionable.
+The scale can be removed if necessary by shot blasting.
+Also obtainable in the annealed condition if desired.
+
+\begin{center}
+\begin{tabular}{ r c }
+\multicolumn{2}{c}{Mechanical Properties:} \\
+\hline
+Modulus in Tension: & E = 28.5 x 10$^4$ \\  
+Modulus in Torsion: & G = 11.2 x 10$^4$ \\
+Elastic Limit in Tension: & 80 to 90 \% of TS \\  
+Elastic Limit in Torsion: & 40 to 50 \% of TS \\
+Rockwell Hardness & C45 - 50 less than 0.125 in. dia\\
+& C42 - 48 0.126 in. to 0.250 in. dia\\
+& C40 - 45 0.251 in. to 0.500 in. dia\\
+Density: & 0.284 lb/in$^3$ \\
+Maximum Elevated Temperature: & 350$^\circ$ F \\
+Sizes Available: & 0.032 to 0.500 in. dia \\
+Sizes Available in Square Section: & 1/32 to 1/2 in common fractions \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Carbon-Steel Valve Spring Quality Wire ASTM A230-47} % section 12.5
+Because of the absence of scale on this material, it is suitable for use where flaking of scale would clog or otherwise injure moving parts. 
+This material is recommended for springs of ininite life with an average stress range. 
+This material is available in the tempered and annealed condition, but the tempered condition is most often used. 
+The annealed condition should be used with subsequent hardeníng and tempering for springs with a low spring index (less than 5) or where severe forming is required.
+
+\begin{center}
+\begin{tabular}{ r c }
+\multicolumn{2}{c}{Mechanical Properties:} \\
+\hline
+Modulus in Tension: & E = 29.5 x 10$^4$ \\  
+Modulus in Torsion: & G = 11.2 x 10$^4$ \\
+Elastic Limit in Tension: & 85 to 95 \% of TS \\  
+Elastic Limit in Torsion: & 50 to 60 \% of TS \\
+Rockwell Hardness & C45 - 50 for 0.125 in. diameter and under\\
+& C42 - 48 above 0.125 in.\\
+Density: & 0.284 lb/in$^3$ \\
+Maximum Elevated Temperature: & 350$^\circ$ F \\
+Sizes Available: & 0.093 to 0.250 in. dia \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Alloy Steel Wire and Bar} % Section 13.
 \subsection{General} % Section 13.1
-Alloy spring steels are particularly useful in applications involving high atmas and where shock or impact loadings occur.
+Alloy spring steels are particularly useful in applications involving high stress and where shock or impact loadings occur.
 They can also withstand higher and lower temperature conditions than the carbon spring Steels. 
 All these alloys are generally used in the oil tempered or pre-hardened condition. 
 They also are obtainable in the annealed condition for springs that have sharp bends or small spring indexes such as 5 or less.
-\subsection{Chrome-Vanadium} % Section 13.2
-(yet to be transcribed)
 
-\subsection{Silico-Manganese} % Section 13.3
-(yet to be transcribed)
+\subsection{Chrome-Vanadium Alloy Steel Wire \& Bar ASTM A231-41 (Wire); QQ-S-624 FS 6150; A60-49 (Bars); ASTM A232-47 (Wire); QQ-W-412, Comp 1 (Wire)} % Section 13.2
 
-\subsection{Chrome-Silicon} % Section 13.4
+Chrome-Vanadium alloy steel wire will withstand higher stresses than Oil-tempered steel wire, but not as high as music wire. 
+This material is recommended for springs which are subjected to shock by impact or suddenly applied loads, and for springs which are subjected to a large number of stress cycles. 
+This material is frequently used for die springs. 
+It is especially useful when annealed round wire is flattened into rectangular section with round edges. 
+Die springs made from such sections are hardened and tempered after coiling and then shotpeened to increase their endurance limit. 
+Hot rolled bars in heavy sections are also used for hot rolled springs and torsion bars.
+
+Mechanical Properties:
+
+Modulus;
+
+In tension E=29.5 x 10$^4$
+
+In torsion
+
+G=11.2 x 10$^4$
+
+Elastic Limit;
+
+Tension=88 to 93\% of TS
+
+Torsion=65 to 75\% of TS
+
+Rockwell Hardness=C45-50
+
+Density=.284 lb/in.
+
+Maximum elevated temperature
+
+425$^\circ$ F
+
+Sizes Available:
+
+.032 to .375 in. dia in the tempered or annealed condition; 7/16 to 2 in. dia in bars for hot rolled springs.
+Square sections in common fractional sizes are also obtainable.
+
+\subsection{Silico-Manganese Alloy Steel Bar SAE 9260 \& ASTM A59-49 (Bar)} % Section 13.3
+This alloy steel has frequently been used as a less expensive substitute or alternate for chrome-vanadium. 
+It does not have mechanical properties quite as high as other alloy steels. 
+This alloy is obtainable in the oil-tempered, and in the annealed conditions in hot rolled bars. 
+Heavy flat sections have been used for leaf springs and torsion bars.
+
+Mechanical Properties:
+
+Modulus:
+
+In tension
+
+E = 29.5 x 10$^4$
+
+In torsion
+
+G = 112 x 10$^4$
+
+Elastic Limit;
+
+In tension = 78 to 86\% of TS
+
+In torsion = 55 to 65\% of TS
+
+Rockwell Hardness = C44 to 48
+
+Density=284 lb/in.
+
+Sizes Available: 7/16 to 2 in. dia bars
+
+\subsection{Chrome-Silicon Alloy Steel Wire QQ-W-412, Comp 2, Type II; ASTM A401-58} % Section 13.4
 This alloy steel is especially suited for highly stressed springs subjected to shock or impact loading such as recoil springs in anti-aircraft guns and for moderately elevated temperatures. 
 It may be obtained in the oil-tempered condition, but has most often been used in the annealed condition and then hardened and tempered to quite high hardness after coiling.
 
+Mechanical Properties:
+
+Modulus;
+
+In tension:
+
+In torsion:
+
+Elastic Limit:
+
+Rockwell Hardness = C50 to C53
+
+Density = 0.284 lb/in$^3$
+
+Maximum elevated temperature 475$^\circ$
+
+Sizes Available: 0.032 to 0.375 in. dia wire.
+
+\clearpage
 \section{Corrosion Resisting Steel Wire} % Section 14.
 \subsection{General} % Section 14.1
+Corrosion resisting steels are especially useful in applications involving corrosion and high temperatures.
+The 300 series "18-8" chromium-nickel austenitic types are usually used up to about 3/16 inch diameter and the 400 series chromium martensitic types for larger sizes. 
+The 300 series "18-8" types are hard-drawn to high tensile strengths and cannot be hardened by heat treatment.
+The 400 series martensitic types are usually used in the annealed condition and then hardened and tempered after coiling.
+The 300 series are non-magnetic in the fully annealed condition only, hard drawing to obtain spring qualities cause some magnetic ability which cannot be totally removed. 
+The 400 series are magnetic and should not be used at sub zero temperatures.
+Passivating or immunizing by dipping in a 20 to 40\% solution of nitric acid after fabrication is desirable for flat strip, but is frequently omitted on springs made of round wire.
+
+\subsection{Corrosion-Resisting Steel Wire QQ-W423, Composition Type FS302 Condition B; AISI 302; SAE 30302; ASTM A313-55} % Section 14.2
+This is a general purpose corrosion resisting material. 
+Its spring properties are developed by cold working only. 
+This material has higher tensile strengths than FS 304 and FS 316 but does not possess quite as good corrosíon resisting properties.
+It is slightly magnetic in the spring temper, has low creep and resists relaxation at elevated temperatures. 
+This material is also available in strip form for flat springs.
+
+
+
+\subsection{Corrosion-Resisting Steel Wire QQ-W-423, Composition Type FS304, Condition B; AISI 304; SAE 30304} % Section 14.3
 (yet to be transcribed)
 
-\subsection{Type FS302}
+\subsection{Type FS316} % Section 14.4
 (yet to be transcribed)
 
-\subsection{Type FS304}
+\subsection{Corrosion Resisting Steel Wire 17-7 PH} % Section 14.5
+This new type of corrosion resisting steel is of the precipitation hardening type. 
+It is obtainable in the annealed condition, but it is most often used in the cold worked condition and then precipitation hardened at 900$^\circ$ F for 1 hour.
+It then has tensile strengths higher than FS 302 and in some smaller sizes the tensile strength is equal to that of music wire.
+
+\begin{center}
+\begin{tabular}{ r c }
+\multicolumn{2}{c}{Mechanical Properties:} \\
+\hline
+Modulus in Tension: & E = 29.5 x 10$^4$ \\  
+Modulus in Torsion: & G = 11 x 10$^4$ \\
+Elastic Limit in Tension: & 75 to 80 \% of TS \\  
+Elastic Limit in Torsion: & 55 to 60 \% of TS \\
+Rockwell Hardness: & C47 - 50 after hardening \\
+Density: & 0.277 lb/in$^3$ \\
+%Maximum Elevated Temperature: & 250$^\circ$ F \\
+Sizes Available: & 0.030 to 0.375 in. dia \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Corrosion-Resisting Steel Wire QQ-W-423, Composition Type FS 420; AISI 420; SAE 51420} % Section 14.6
 (yet to be transcribed)
 
-\subsection{Type FS316}
-(yet to be transcribed)
+\subsection{Corrosion-Resisting Steel Wire AISI 431; SAE 51431} % Section 14.7
+This new type corrosion resisting steel is first hardened and tempered and then cold drawn. 
+This combination produces bright clean wire with high tensile strengths nearly as high as music wire, but its corrosion resistance is not quite equal to FS 302. 
+The hardened wire is magnetic and finds many uses for springs subjected to high stresses. 
+Flat strip is also available.
 
-\subsection{Type 17-7 PH}
-(yet to be transcribed)
+\begin{center}
+\begin{tabular}{ r c }
+\multicolumn{2}{c}{Mechanical Properties:} \\
+\hline
+Modulus in Tension: & E = 30 x 10$^4$ \\  
+Modulus in Torsion: & G = 11.5 x 10$^4$ \\
+Elastic Limit in Tension: & 72 to 75 \% of TS \\  
+Elastic Limit in Torsion: & 50 to 55 \% of TS \\
+Rockwell Hardness: & C47 - 51 \\
+Density: & 0.280 lb/in$^3$ \\
+%Maximum Elevated Temperature: & 250$^\circ$ F \\
+Sizes Available: & 0.050 to 0.312 in. dia \\
+\hline
+\end{tabular}
+\end{center}
 
-\subsection{Type FS420}
-(yet to be transcribed)
-
-\subsection{Type 481}
-(yet to be transcribed)
-
+\clearpage
 \section{Copper Base Alloys} % Section 15.
-\subsection{General}
-(yet to be transcribed)
+\subsection{General} % Section 15.1
+Copper-base alloys combine good electrical properties with excellent corrosion resistance. 
+Although more expensive than steel they find many use in electrical components and are excellent at sub zero temperature applications. 
+All are non-magnetic.
 
-\subsection{Spring Brass}
-(yet to be transcribed)
+\subsection{Spring Brass Wire QQ-W-321, Composition B, Spring Temper; ASTM B134-52, Alloy 6; SAE 80A} % Section 15.2
+Spring brass is recommended for use where high electrical conductivity, excellent corrosion resistance, ease of forming, low cost, and repeated flexure at low stress and low temperatures are required.
+Spring brass is non-magnetic.
+It is not recommended for applications where stress is severe. 
+It is also available in flat strip.
+\begin{center}
+\begin{tabular}{ r c }
+\multicolumn{2}{c}{Mechanical Properties:} \\
+\hline
+Modulus in Tension: & E = 15 x 10$^4$ \\  
+Modulus in Torsion: & G = 5.0 x 10$^4$ \\
+Elastic Limit in Tension: & 75 to 80 \% of TS \\  
+Elastic Limit in Torsion: & 45 to 50 \% of TS \\
+Rockwell Hardness: & B89 - 95 \\
+Density: & 0.308 lb/in$^3$ \\
+Maximum Elevated Temperature: & 150$^\circ$ F \\
+Sizes Available: & 0.005 to 0.500 in. dia \\
+\hline
+\end{tabular}
+\end{center}
 
-\subsection{Phosphor Bronze}
-(yet to be transcribed)
+\subsection{Phosphor Bronze Wire QQ-W-401; ASTM B159-58, Alloy A; SAE 81} % Section 15.3
+Phosphor bronze is used for electrical conductivity, ability to resist corrosion, and non-magnetic properties.
+It has good bending and forming properties and the ability to withstand repeated flexures.
+This is the most popular of the copper-base non-ferrous alloys.
+It is also available in flat strip for electrical contact fingers.
+Superfine grain structure withstands quite high stresses and has long endurance to repeated flexure.
+\begin{center}
+\begin{tabular}{ r c }
+\multicolumn{2}{c}{Mechanical Properties:} \\
+\hline
+Modulus in Tension: & E = 15 x 10$^4$ \\  
+Modulus in Torsion: & G = 6.0 x 10$^4$ \\
+Elastic Limit in Tension: & 75 to 80 \% of TS \\  
+Elastic Limit in Torsion: & 45 to 50 \% of TS \\
+Rockwell Hardness: & B90 - 97 \\
+Density: & 0.320 lb/in$^3$ \\
+Maximum Elevated Temperature: & 212$^\circ$ F \\
+Sizes Available: & 0.005 to 0.500 in. dia \\
+\hline
+\end{tabular}
+\end{center}
 
-\subsection{Beryllium Copper}
-(yet to be transcribed)
+\clearpage
+\subsection{Beryllium Copper Wire QQ-C-530; ASTM B197-52} % Section 15.4
+Beryllium copper is a precipitation hardening non-magnetic material with good electrical conductivity and corrosion resistance. 
+It is non-magnetic and has high elastic and fatigue strength, and low drift and hysteresis.
+This material can be severely formed in the annealed condition.
+Following forming, beryllium copper is precipitation hardened at 600$^\circ$ F for 2 hours.
+Pretempered wire is also useful for many applications where the stresses are not too high.
+Flat strip is also available.
+\begin{center}
+\begin{tabular}{ r c }
+\multicolumn{2}{c}{Mechanical Properties:} \\
+\hline
+Modulus in Tension: & E = 19 x 10$^4$ \\  
+Modulus in Torsion: & G = 7.3 x 10$^4$ \\
+Elastic Limit in Tension: & 75 \% of TS \\  
+Elastic Limit in Torsion: & 50 to 55 \% of TS \\
+Rockwell Hardness: & C37 - 41 \\
+Density: & 0.298 lb/in$^3$ \\
+Maximum Elevated Temperature: & 300$^\circ$ F \\
+Sizes Available: & 0.005 to 0.500 in. dia \\
+\hline
+\end{tabular}
+\end{center}
 
+\clearpage
 \section{Nickel Base Alloys} % Section 16.
-\subsection{General}
-(yet to be transcribed)
+\subsection{General} % Section 16.1
+Nickel-base alloys have excellent corrosion resistance combined with ability to withstand both elevated and below zero temperature applications.
+Also, their non-magnetic characteristic is important for such devices as gyroscopes, chronoscopes and indicating instruments.
+These materials have high electrical resistance and should not be used for conductors of electrical current.
 
-\subsection{Monel}
-(yet to be transcribed)
+\subsection{Nickel Copper Alloy, QQ-N-281, Class A, Spring Temper (Monel)} % Section 16.2
+Monel is recommended for use at elevated temperatures where corrsive conditions exist. 
+It retains its corrosive resistance properties at relatively high temperatures. 
+This material has good resistance to sea water attack.
 
-\subsection{K-Monel}
-(yet to be transcribed)
+Mechanical Properties:
 
-\subsection{Inconel}
-(yet to be transcribed)
+Modulus;
 
-\subsection{Inconel X}
-(yet to be transcribed)
 
+E = 26.0 x 10
+
+In torsion
+
+
+Elastic Limit;
+
+Tension=65 to 70\% of TS
+
+
+Density =.319 lb/in.
+
+Maximum elevated temperature
+
+400$^\circ$ F (450$^\circ$ F-for short periods)
+
+Sizes Available:
+
+.005 to 250 in. dia full hard, over .250 at lower hardness.
+
+
+\subsection{Nickel-Copper-Aluminum Alloy, Wrought, QQ-N-286, Class A (K-Monel)} % Section 16.3
+K-Monel is a precipitation hardening alloy with excellent resistance to both corrosion and moderately elevated temperatures. 
+It is usually used in larger sizes than Monel, as it can be formed in the cold drawn condition and then heat treated for hardening purposes. 
+The mechanical properties are for the spring temper, age hardened condition. 
+This alloy is non-magnetic.
+\begin{center}
+\begin{tabular}{ r c }
+\multicolumn{2}{c}{Mechanical Properties:} \\
+\hline
+Modulus in Tension: & E = 26.0 x 10$^4$ \\  
+Modulus in Torsion: & G = 9.5 x 10$^4$ \\
+Elastic Limit in Tension: & 65 to 70 \% of TS \\  
+Elastic Limit in Torsion: & 38 to 42 \% of TS \\
+
+%Rockwell Hardness: & C47 - 51 \\
+Density: & 0.305 lb/in$^3$ \\
+Maximum Elevated Temperature: & 450$^\circ$ F (500$^\circ$ F for short periods) \\
+Sizes Available: & 0.005 to 0.563 in. dia for cold wound springs \\
+& 3/8 in. dia and over for hot wound springs \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Wire: Nickel-Chromium-Iron Alloy, QQ-W-390, Condition C (Inconel)} % Section 16.4
+Inconel is recommended for springs requiring: 
+(1) the retention of spring properties at relatively high temperatures, 
+(2) corrosion resistance, 
+(3) low magnetic permeability. 
+This is one of the most popular of the nickel-base alloy group. 
+It is cold drawn and cannot be hardened by heat treatment. 
+Wire diameters up to 1/4 inch are most often used. 
+This alloy is non-magnetic.
+
+Mechanical Properties:
+
+Modulus;
+
+In tension
+
+E=81 x 10 at 70$^\circ$ F.
+
+29.5 x 10 at 40$^\circ$ F
+29.2 x 10 at 500$^\circ$ F.
+28.7 x 10 at 600$^\circ$ F.
+28.2 x 10 at 700$^\circ$ F.
+28.0 x 10 at 750$^\circ$ F.
+
+In torsion
+
+G=11.2 x 10 at 70$^\circ$ F.
+
+10.8 x 10 at 400$^\circ$ F.
+10.5 x 10 at 500$^\circ$ F.
+10.2 x 10 at 600$^\circ$ F.
+10.0 x 10 at 700$^\circ$ F.
+9.8 x 10 at 750$^\circ$ F.
+
+Elastic Limit;
+
+In tension =65 to 70\% of TS
+
+In torsion = 40 to 45\% of TS
+
+TS=185,000 up to .057 in dia incl
+
+175,000 over .057 in. to .114 in dia incl
+
+170,000 over .114 in. to .229 in. dia incl
+
+165,000 over 229 in. to .329 in. dia incl
+
+160,000 over .329 in. to .375 in. dia incl
+
+155,000 over .375 in. to .500 in dia incl
+
+140,000 over .500 in. to .563 in. dia incl
+
+Density.304 lb/in.
+
+Maximum elevated temperature
+
+650$^\circ$ F. (750$^\circ$ F. for short periods)
+
+Sizes Available:
+.010 to .1875 in. dia full hard, over .1875 at lower hardness.
+
+
+\subsection{Nickel Alloy Spring Wire, AMS 5698 for No. 1 Temper; AMS 5699 for Spring Temper (Inconel X)} % Section 16.5
+Inconel-X is a precipitation hardening material with high corrosion resistance and oxydization resistance at elevated temperatures. 
+To make optimum use of this material, it is recommended that it be used in applications where the temperature is from 650 to 1150$^\circ$ F. 
+For applications below 650$^\circ$ F the use of other materials is recommended. 
+Neither cold setting nor shot peening should be specified on product drawing, when springs are intended to be operating
+within the recommended temperatures (650 to 1150$^\circ$ F) due to the adverse effect of pre-stressing on inittal retaxation and the rate of relaxation under heat and stress.. 
+Large diameter bars can be hot coiled, and this is often done for 3s in dia and larger sizes depending upon the spring index.
+This non-magnetic alloy can also be used at sub-zero temperatures. 
+The mechanical properties are for the tempers indicated after age hardening. 
+For sub zero to 700$^\circ$ F applications, use spring temper stock and heat 1200$^\circ$ F for 4 hours, after coiling. 
+For 700 to 1000$^\circ$ F applications, use No. 1 temper (or hot fmished stock) and heat 1350$^\circ$ F for 16 hours, after coiling. 
+For 1000 to 1200$^\circ$ F applications, use spring temper stock and heat 2100$^\circ$ F for 2 hours, air cool, then 1550$^\circ$ F for 24 hours, air cool and 1300$^\circ$ F for 20 hours and air cool, after coiling.
+\begin{center}
+\begin{tabular}{ r c }
+\multicolumn{2}{c}{Mechanical Properties:} \\
+\hline
+Modulus in Tension: & E = 31 x 10$^4$ at 70$^\circ$ F \\  
+& E = 28.1 x 10$^4$ at 700$^\circ$ F \\ 
+
+& E = 25.5 x 10$^4$ at 1200$^\circ$ F \\ 
+
+Modulus in Torsion: & G = 11.2 x 10$^4$ at 70$^\circ$ F \\
+& G = 10.0 x 10$^4$ at 700$^\circ$ F \\
+
+Elastic Limit in Tension: & 85 to 90 \% of TS \\  
+Elastic Limit in Torsion: & 65 to 75 \% of TS \\
+Tensile Strength: & For No. 1 temper: \\
+& 244,000 to 305,000 for sizes under .032 in. \\
+& 214,000 to 240,000 for sizes over .032 in. \\
+& For spring temper: \\
+Rockwell Hardness: & C46 - 49 \\
+Density: & 0.298 lb/in$^3$ \\
+Maximum Elevated Temperature: & 1150 to 1200$^\circ$ F at low stresses\\
+Sizes Available: & 0.005 to 0.062 in. thickness, others on special order \\
+\hline
+\end{tabular}
+\end{center}
+
+\clearpage
 \section{Steel Strip High Carbon} % Section 17.
 \subsection{General} % Section 17.1
 Several types of flat cold rolled steel strip with different ranges of carbon content, tempers, finishes and edges are obtainable, but only two types are readily available.
@@ -735,15 +1159,62 @@ Thin sections of high hardness (over Rockwell "C" 43) are highly susceptible to 
 These materials are used for mainsprings in clocks and timing devices; for constant force springs, clips and stampings. 
 For general information see Spec. MIL-S-17919.
 
-\subsection{SAE 1074} % Section 17.2
-(yet to be transcribed)
+\subsection{Steel Strip, High Carbon SAE 1074; MIL-S-17919 Matl. No. 1 \& 4} % Section 17.2
+This type of material is usually called "cold rolled blue tempered spring steel". 
+It is slit to desired widths and the edges can be squared or rounded as desired. 
+The material obtained in the hardened conditions is widely used for flat springs, spiral, clock and motor springs. 
+It is also available in the annealed condition for use in automatic equipment and where severe forming operations are required, after which it is hardened and tempered.
+\begin{center}
+\begin{tabular}{ r c }
+\multicolumn{2}{c}{Mechanical Properties:} \\
+\hline
+Modulus in Tension: & E = 30 x 10$^4$ \\  
+Modulus in Torsion: & G = 11.5 x 10$^4$ \\
+Elastic Limit in Tension: & 85 to 90 \% of TS \\  
+Elastic Limit in Torsion: & 65 to 75 \% of TS \\
+Tensile Strength: & 244,000 to 305,000 for sizes under .032 in. \\
+& 214,000 to 240,000 for sizes over .032 in. \\
+Rockwell Hardness: & C46 - 49 \\
+Density: & 0.284 lb/in$^3$ \\
+Maximum Elevated Temperature: & 350$^\circ$ F \\
+Sizes Available: & 0.005 to 0.062 in. thickness, others on special order \\
+\hline
+\end{tabular}
+\end{center}
 
-\subsection{SAE 1095} % Section 17.3
-(yet to be transcribed)
+\subsection{Steel Strip, High Carbon SAE 1095; MIL-S-17919 Matl. No. 1 \& 2} % Section 17.3
+This type of material, usually called "cold rolled blue tempered and polished clock spring steel", is widely used in clocks and motor springs because it can withstand higher stresses than SAE 1074. 
+It is slit to widths desired and the edges are usually made square or rounded. 
+It is generally obtained in the hardened condition, but annealed material can be obtained.
+\begin{center}
+\begin{tabular}{ r c }
+\multicolumn{2}{c}{Mechanical Properties:} \\
+\hline
+\multicolumn{2}{c}{The same as SAE 1074 but the tensile strengths are about 5 per cent higher.} \\
+%Modulus in Tension: & E = 30 x 10$^4$ \\  
+%Modulus in Torsion: & G = 11.5 x 10$^4$ \\
+%Elastic Limit in Tension: & 72 to 75 \% of TS \\  
+%Elastic Limit in Torsion: & 50 to 55 \% of TS \\
+Rockwell Hardness: & C48 - 51 \\
+%Density: & 0.280 lb/in$^3$ \\
+%Maximum Elevated Temperature: & 250$^\circ$ F \\
+%Sizes Available: & 0.050 to 0.312 in. dia \\
+\hline
+\end{tabular}
+\end{center}
 
 
-
+% Page 57:
+\clearpage
 Table I. Preferred sizes for spring materials wire diameters, strip thickness and bars
+
+% Table goes here...
+\begin{figure}[htbp] % h:here, t:top, b:bottom, p:page
+    \centering
+    \includegraphics[width=0.9\textwidth]{milstd29a_table_i.png}
+    %\caption{}
+    %\label{fig:table_i}
+\end{figure}
 
 Note 1. Square sizes of wire and bars are obtainable in preferred fractional sizes as follows: 1/32, 1/16, 3/32, 1/8, 5/32, 3/16, 7/32, 1/4, 9/32, 5/16, 3/8, 7/16, 1/2, 9/16, 5/8, 11/16, 3/4, 13/16, 7/8, 15/16, 1, 1 1/16, 1 1/8, 1 3/16, 1 1/4,  1 5/16, 1 3/8, 1 1/2, 1 5/8, 1 3/4, 1 7/8 and 2 in.
 
@@ -1228,41 +1699,154 @@ Connecting the ends with a separate short section, called a connector, is occasi
 \section*{Appendix A, Section III}
 \section{Spring Manufacture} % Section 30.
 \subsection{General} % Section 30.1
-(yet to be transcribed)
+Information on only a few operations is essential for design purposes.
 
 \section{Stress Relieving} % Section 31.
-(yet to be transcribed)
+The usual types of hardening and tempering ovens are used for stress relieving. 
+Springs made from prehardened wire such as Music Wire, Oil Tempered, Hard Drawn, Corrosion Resisting 18-8 and similar materials are stress relieved by heating at low temperatures from 400 to 650$^{\circ}$ F. to reduce the residual stresses trapped in the wire during the coiling operation.
+Springs made from annealed wire are hardened and tempered in a manner somewhat similar to tool steel. 
+Precipitation hardening materials such as Beryllium-Copper, K-Monel, Inconel X, 17-7 PH and others are heated at varying temperatures, depending upon composition, for extended times from 1 hour to 16 hours.
 
 \section{Cold Set to Solid} % Section 32.
-(yet to be transcribed)
+This process is used to stabilize the free length of a compression spring, so that subsequent inadvertent or intentional compression to solid height will not change the loads at working deflections.
+
+(a) If a compression spring is designed so that the elastic limit is not exceeded when the spring is compressed to solid height, no appreciable permanent set will occur, other than removal of small kinks in the wire. 
+The note "Cold Set to Solid" should be specified on the drawing of such springs.
+
+(b) If a spring is designed so that the elastic limit is exceeded when the spring is closed solid, permanent set will occur and the free length will be decreased.
+Residual stresses of opposite sign will be set up in the wire when the load is released, so that if the spring again is closed solid it will withstand a higher calculated stress than the stress corresponding with the elastic limit.
+If the initial free length of the spring is made greater than the calculated free length by the proper amount, overstressing the spring beyond the elastic limit by compressing it to solid height will stabilize the characteristics and produce the desired loads at working deflections. 
+Additional cycles of compressing the spring to solid height and releasing the load will not further change the free length. 
+However, there is a limit to this process. 
+After a certain initial free length has been reached for a particular spring, the final free length after compression to a solid height will remain constant no matter what increases are made in initial free length.
+
+(c) When a spring is designed so that the stress at solid height is so far above the elastic limit that the spring will not have the desired loads at the working deflections if cold
+set to solid, the note "Shall compress to .....in. without permanent set" should be placed on the drawing. 
+The computed stress at the specified length (equal to, or less than, the final assembled length) must be less than the stress at the elastic limit. 
+Whenever practicable, this design of spring should be discarded in favor of a spring having a solid stress within limits that will permit closing solid without permanent set.
+
+Several methods may be used to cold set to solid. 
+Small air presses and foot presses can be used for light springs, power presses, and specifically built motorized equipment for larger springs, and hydraulic presses for
+heavy springs. 
+Light springs also may be compressed by hand over close fitting arbors.
 
 \section{Grinding} % Section 33.
-(yet to be transcribed)
+End coils of compression springs are ground whenever it is necessary for the springs 1. to stand upright, 2. to obtain a good seat against a contacting part, 3. to reduce buckling, and 4. to cause the springs to exert more uniform pressures under a diaphragm or against a mating part. 
+This operation is expensive and should be avoided wherever it is practicable to do so especially on light springs with wire diameters under 1/32 inch and where a large spring index ratio (OD/d) prevails, such as 13 or larger.
+Several types of disc grinding machines are available.
+The small disc grinders using paddles to hold springs for grinding are especially useful for small production runs from 100 to 5000 or more springs.
+Grinders with horizontal "ferris wheel" methods of loading are useful for larger quantities of light springs using wire diameters up to about 3/32 inch.
+Heavier sizes may be ground in disc grinders with vertical ferris wheels.
 
 \section{Shot Peening} % Section 34.
-(yet to be transcribed)
+Spring life can be increased at least 30 per cent and has often been incressed from two to ten times by shot peening.
+This process may be applied to all highly stressed springs made from steel and non-ferrous materials usually over 1/16 inch wire diameter.
+Extension springs and closely wound torsion springs are difficult to shotpeen becasue the tiny steel shot if frequently trapped between the coils and is difficult to remove.
+The large increase in fatigue life of helical springs due to shot peening is accomplished by a combination of effects:
+
+(a) Small surface irregularities seen only by the microscope are hammered smooth.
+
+(b) The surface of the wire is thoroughly cleaned, and sharp burrs are made dull.
+
+(c) This additional cold work hardens the surface of the wire and raises the physical properties where the stress is the highest.
+
+(d) Cold forging traps beneficial compression stresses near the wire surface which must be overcome by the destructive tensile stresses that cause fatigue failure before breakage can occur.
+All heat treating of springs and all stress-relieving processes should be done prior to shot peening, except in those instances where electroplating is used; it is then necessary to reheat after plating.
+Heating the springs above 500$^\circ$ F after shot peening counteracts much of the beneficial effects of the trapped compression stresses produced by shot peening.
+
+Springs made from annealed, oil tempered or alloy steels that must be electroplated can be shot peened principally to clean the surface, thus avoiding the necessity of soaking them in acid solutions to remove scale.
+The slightly roughened surface of shot peened springs does not produce a bright glossy, electroplated coating.
 
 \section{Protective Coatings} % Section 35.
-(yet to be transcribed)
+Uncoated or oil dipped springs are satisfactory where corrosive conditions are not a factor.
+Black japanning is often used as it is a flexible, inexpensive finish suitable for many applications.
+Enamels, lacquers and paint are occasionally used. 
+Cadmium with supplementary chromate treatment provides one of the best electro deposited coatings because it is both flexible and corrosion resistant.
+
+Nickel, chromium zinc and other metals are also deposited electrolytically.
+Black oxide and phosphate coatings are occasionally specified.
+Care must be used in applying coatings, first to use detergents, solvents, alkaline or vaporizing degreasers to remove oil and dirt, shotblasting or sand blasting to remove scale, and baking to remove the hydrogen embrittelement that may be caused by acid dipping or electroplating.
 
 \section{Hydrogen Embrittlement} % Section 36.
+Steel, particularly hardened steel, is susceptible to embrittlement resulting from hydrogen introduced by acid pickling, electroplating, or cathodic electrocleaning operations.
+Absorbed hydrogen results in brittle behavior particularly under sustained loading in the presence of stress concentration.
+Baking to relieve hydrogen embrittled springs should be accomplished by a method similar to that specified in specification QQ-Z-325 or QQ-P-416.
+
+(a) Most hydrogen is evolved during acid pickling and can be reduced by using organic inhibitors in the solution.
+The cleaning of springs by shotblasting or by tumbling is advisable so that less time is required in the picking bath.
+
+(b)
+
+(c)
+
+(d)
+
 (yet to be transcribed)
+
+
+% Page 117:
+% Table XIX:
+
+
+
+% Page 118:
+% Figure 63:
+\begin{figure}[htbp] % h:here, t:top, b:bottom, p:page
+    \centering
+    \includegraphics[width=0.8\textwidth]{milstd29a_fig63.png}
+    \caption{Maximum Deviations Allowed on Ends of Extension Springs}
+    \label{fig:63}
+\end{figure}
 
 
 % Page 119:
 \section{Tolerances for Springs} % Section 37.
+Tables that follow present tolerances which can be obtained under normal manufacturing methods. 
+Springs having closer tolerances can be produced but at greatly increased cost.
+A more liberal tolerance should be specified whenever possible.
 
+% Table XX. Tolerances on squareness of grinding on end coils for compression springs:
+\begin{table}[h!]
+\centering
+\caption{Tolerances on squareness of grinding on end coils for compression springs.}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{c|c|c|c}
+\hline
+\multirow{2}{*}{\parbox
+{4cm}
+{\centering Number of coils per inch of length (Number of coils ÷ length)}} 
+& \multicolumn{3}{c}{Maximum tolerance from squareness to axis (degrees)} \\
+\cline{2-4}
+& \multicolumn{3}{c}{Spring Index (OD/d)} \\
+\cline{2-4}
+& Up to 6 (small) & 6 to 10 (average) & 10 to 16 (large) \\
+\hline
+Up to 7          & 3$^\circ$ & 4$^\circ$ & 5$^\circ$ \\
+\hline
+Over 7 to 12     & 4$^\circ$ & 5$^\circ$ & 6$^\circ$ \\
+\hline
+Over 12 to 17    & 5$^\circ$ & 6$^\circ$ & 7$^\circ$ \\
+\hline
+Over 17          & 6$^\circ$ & 7$^\circ$ & 8$^\circ$ \\
+\hline
+\end{tabularx}
+\end{table}
+
+These tolerances in degrees maybe reduced 50 per cent by individually grinding, measuring, testing, and sorting the springs, but this increases production time and cost.
+Grinding end coils of springs made from wire under 1/32 inch diameter is usually unnecessary and frequently is expensive.
 
 \subsection{Tolerance on Loads} % Section 37.1
 The recommended tolerance on all loads is plus or minus 10 per cent and should be specified as shown on the drawing requirement charts. 
 However, when the deflection from the free length to the limit load is small, the load tolerance must be large and should be considered proportional to the tolerances that apply to the free length. 
-For example, if the deflection is only ~ inch and the tolerance on the free len@h is ~~ inch, then it follows that the tolerance on the first load should be plus or Inh8 ~ P@!rcent (~~=~ ~ cent of ~a)? otherwise the tolerance on the fra length could not be taken.
+For example, if the deflection is only 1/8 inch and the tolerance on the free length is 1/32 inch, then it follows that the tolerance on the first load should be plus or minus 25 percent (1/32 = 25 percent of 1/8), otherwise the tolerance on the free length could not be taken.
 
 Where a specific amount of initial tension is required for extension springs, it should be specified in pounds or ounces with a recommended tolerance of plus or minus 15 per cent, but it usually is specified as a REFERENCE.
 
 Smaller load tolerances than these usually require testing and adjusting each spring and add considerably to the manufacturing time and to the cost.
 
+Table XXI. Table of Third and Fourth Powers of Wire Diameters
 
+Table XXII. Load changes due to slight wire changes
 
 \clearpage
 % Page 122:
@@ -1346,6 +1930,90 @@ Tool marks, nicks, and cuts often became stress raisers.
 Deflecting torsion springs outwardly causes high stresses. 
 Winding them tightly causes binding on supporting rods. 
 High speed of deflection, vibration and surging due to operation near natural periods of vibration or their harmonics, cause increased stresses.
+
+\begin{table}[h!]
+\centering
+\caption{Causes of spring failure. Listed in sequence according to frequency of failure.}
+%\renewcommand{\arraystretch}{1.3}
+%\begin{tabularx}{\textwidth}{|l|X|}
+\begin{tabularx}{\textwidth}{|p{3cm}|p{12cm}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Spring failure may be caused by breakage, high permanent set, or loss of load. Group I lists the causes that occur most frequently. Group II contains the less frequent causes and Group III lists causes that occur occasionally.}} \\
+\hline
+
+\multicolumn{2}{|l|}{\textbf{GROUP I}} \\
+\hline
+\textbf{HIGH STRESS} &
+The majority of spring failures are due to high stresses caused by large deflections and high loads. High stresses should be used only for statically loaded springs. Low stresses lengthen fatigue life. \\
+\hline
+\textbf{HYDROGEN EMBRITTLEMENT} &
+Improper electro-plating methods and acid cleaning of springs, without proper baking treatment, cause spring steels to become brittle, and is a frequent cause of failure. Non-ferrous springs are immune. \\
+\hline
+\textbf{SHARP BENDS \& HOLES} &
+Sharp bends on extension, torsion and flat springs and holes or notches in flat springs cause high concentration of stress resulting in failure. Bend radii should be as large as possible, and tool marks avoided. \\
+\hline
+\textbf{FATIGUE} &
+Repeated deflections of springs, especially above 1{,}000{,}000 operations, even with medium stresses, may cause failure. Low stresses should be used for severe operating conditions. \\
+\hline
+\textbf{SHOCK LOADING} &
+Impact, shock, and rapid loading cause far higher stresses than those computed by the regular spring formulas. High carbon spring steels do not withstand shock loading as well as alloy steels. \\
+\hline
+
+\multicolumn{2}{|l|}{\textbf{GROUP II}} \\
+\hline
+\textbf{CORROSION} &
+Slight rusting or pitting caused by acids, alkali, galvanic corrosion, stress corrosion cracking, or corrosive atmosphere weakens the material and causes higher stresses in the corroded area. \\
+\hline
+\textbf{FAULTY HEAT TREATMENT} &
+Keeping spring materials at the hardening temperature for longer periods than necessary causes an undesirable growth in grain structure resulting in brittleness even though the hardness may be correct. \\
+\hline
+\textbf{FAULTY MATERIAL} &
+Poor material containing inclusions, seams, slivers, and flat material with rough, slit, or torn edges cause early failure. Overdrawn wire, improper hardness, and poor grain structure also result in early failure. \\
+\hline
+
+\multicolumn{2}{|l|}{\textbf{GROUP III}} \\
+\hline
+\textbf{HIGH TEMPERATURE} &
+High temperatures reduce spring temper (or hardness), lower the modulus of elasticity thereby causing lower loads, reduce the elastic limit, and increase corrosion. Corrosion‑resisting or nickel alloys should be used. \\
+\hline
+\textbf{LOW TEMPERATURE} &
+Temperatures below $-40^\circ$F lessen the ability of carbon steels to withstand shock loads. Carbon steels become brittle at $-70^\circ$F. Corrosion‑resisting, nickel, or non‑ferrous alloys should be used. \\
+\hline
+\textbf{FRICTION} &
+Close fits on rods or in holes result in a wearing away of material and occasional failure. The outside diameters of compression springs expand during deflection but they become smaller on torsion springs. \\
+\hline
+\textbf{OTHER CAUSES} &
+Enlarged hooks on extension springs increase the stress at the bends. Carrying too much electrical current will cause failure. Welding and soldering frequently destroy the spring temper. Tool marks, nicks, and cuts often become stress raisers. Deflecting torsion springs outwardly causes high stresses. Winding them tightly causes binding on supporting rods. High speed of deflection, vibration, and surging due to operation near natural periods of vibration or their harmonics cause increased stresses. \\
+\hline
+
+\end{tabularx}
+\end{table}
+
+
+% Page 123:
+\clearpage
+Copies of specification, standards, drawings, and publications required by contractors in connection with procurement functions should be obtained from the procuring activity or as directed by the contracting officer.
+
+Copies of this standard for military use may be obtained as indicated in the foreword to or general provisions of the Index of Military Specifications and Standards.
+
+Copies of this Standard may be obtained for other than official use by individuals, firms, and contractors from the Superintendent of Documents, U. S. Government Printing Office, Washington 25. D. C.
+
+Both the title and the identifying symbol number should be stipulated when requesting copies of Military Standards.
+
+Patent notice. 
+When Government drawings, specifications, or other data are used for any purpose other than in connection with a definitely related Government procurement operation, the United States Government thereby incurs no responsibility, nor any obligation whatsoever; and the fact that the Government may have formulated, furnished or in any way supplied the said drawings, specifications, or other data is not to be regarded by implication or otherwise as in any manner licensing the holder or any other person or corporation, or conveying any rights or permission to manufacture, use, or sell any patented invention that may in any way be related thereto.
+
+\noindent Custodians:
+
+Army - Ordnance Corps
+
+Navy - Bureau of Naval Weapons
+
+Air Force
+
+\noindent Preparing activity:
+
+Navy - Bureau of Naval Weapons
 
 
 \end{document}

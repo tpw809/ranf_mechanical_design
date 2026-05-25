@@ -1275,38 +1275,92 @@ Page 114:
 
 Appendix A, Section III
 
-30. Spring Manufacture.
-30.1 General.
+30. Spring Manufacture
+30.1 General
 
-1. Stress Relieving
+Information on only a few operations is essential for design purposes.
 
-2 Cold Set to Solid
+31. Stress Relieving
+
+The usual types of hardening and tempering ovens are used for stress relieving. 
+Springs made from prehardened wire such as Music Wire, Oil Tempered, Hard Drawn, Corrosion Resisting 18-8 and similar materials are stress relieved by heating at low temperatures from 400 to 650$^\circ$ F. to reduce the residual stresses trapped in the wire during the coiling operation.
+Springs made from annealed wire are hardened and tempered in a manner somewhat similar to tool steel. 
+Precipitation hardening materials such as Beryllium-Copper, K-Monel, Inconel X, 17-7 PH and others are heated at varying temperatures, depending upon composition, for extended times from 1 hour to 16 hours.
+
+32. Cold Set to Solid
+
+This process is used to stabilize the free length of a compression spring, so that subsequent inadvertent or intentional compression to solid height will not change the loads at working deflections.
+
+(a) If a compression spring is designed so that the elastic limit is not exceeded when the spring is compressed to solid height, no appreciable permanent set will occur, other than removal of small kinks in the wire. 
+The note "Cold Set to Solid" should be specified on the drawing of such springs.
+
+(b) If a spring is designed so that the elastic limit is exceeded when the spring is closed solid, permanent set will occur and the free length will be decreased.
+Residual stresses of opposite sign will be set up in the wire when the load is released, so that if the spring again is closed solid it will withstand a higher calculated stress than the stress corresponding with the elastic limit.
+If the initial free length of the spring is made greater than the calculated free length by the proper amount, overstressing the spring beyond the elastic limit by compressing it to solid height will stabilize the characteristics and produce the desired loads at working deflections. 
+Additional cycles of compressing the spring to solid height and releasing the load will not further change the free length. 
+However, there is a limit to this process. 
+After a certain initial free length has been reached for a particular spring, the final free length after compression to a solid height will remain constant no matter what increases are made in initial free length.
+
+(c) When a spring is designed so that the stress at solid height is so far above the elastic limit that the spring will not have the desired loads at the working deflections if cold
+set to solid, the note "Shall compress to .....in. without permanent set" should be placed on the drawing. 
+The computed stress at the specified length (equal to, or less than, the final assembled length) must be less than the stress at the elastic limit. 
+Whenever practicable, this design of spring should be discarded in favor of a spring having a solid stress within limits that will permit closing solid without permanent set.
+
+Several methods may be used to cold set to solid. 
+Small air presses and foot presses can be used for light springs, power presses, and specifically built motorized equipment for larger springs, and hydraulic presses for
+heavy springs. 
+Light springs also may be compressed by hand over close fitting arbors.
 
 33. Grinding
 
-
+End coils of compression springs are ground whenever it is necessary for the springs 1. to stand upright, 2. to obtain a good seat against a contacting part, 3. to reduce buckling, and 4. to cause the springs to exert more uniform pressures under a diaphragm or against a mating part. 
+This operation is expensive and should be avoided wherever it is practicable to do so especially on light springs with wire diameters under 1/32 inch and where a large spring index ratio (OD/d) prevails, such as 13 or larger.
+Several types of disc grinding machines are available.
+The small disc grinders using paddles to hold springs for grinding are especially useful for small production runs from 100 to 5000 or more springs.
+Grinders with horizontal "ferris wheel" methods of loading are useful for larger quantities of light springs using wire diameters up to about 3/32 inch.
+Heavier sizes may be ground in disc grinders with vertical ferris wheels.
 
 Page 115:
 
 34. Shot Peening
 
+Spring life can be increased at least 30 per cent and has often been incressed from two to ten times by shot peening.
+This process may be applied to all highly stressed springs made from steel and non-ferrous materials usually over 1/16 inch wire diameter.
+Extension springs and closely wound torsion springs are difficult to shotpeened becasue the tiny steel shot if frequently trapped between the coils and is difficult to remove.
+The large increase in fatigue life of helical springs due to shot peening is accomplished by a combination of effects:
 
-(a)
+(a) Small surface irregularities seen only by the microscope are hammered smooth.
 
-(b)
+(b) The surface of the wire is thoroughly cleaned, and sharp burrs are made dull.
 
-(c)
+(c) This additional cold work hardens the surface of the wire and raises the physical properties where the stress is the highest.
 
-(d)
+(d) Cold forging traps beneficial compression stresses near the wire surface which must be overcome by the destructive tensile stresses that cause fatigue failure before breakage can occur.
+All heat treating of springs and all stress-relieving processes should be done prior to shot peening, except in those instances where electroplating is used; it is then necessary to reheat after plating.
+Heating the springs above 500$^\circ$ F after shot peening counteracts much of the beneficial effects of the trapped compression stresses produced by shot peening.
 
+Springs made from annealed, oil tempered or alloy steels that must be electroplated can be shot peened principally to clean the surface, thus avoiding the necessity of soaking them in acid solutions to remove scale.
+The slightly roughened surface of shot peened springs does not produce a bright glossy, electroplated coating.
 
 35. Protective Coatings.
 
+Uncoated or oil dipped springs are satisfactory where corrosive conditions are not a factor.
+Black japanning is often used as it is a flexible, inexpensive finish suitable for many applications.
+Enamels, lacquers and paint are occasionally used. 
+Cadmium with supplementary chromate treatment provides one of the best electro deposited coatings because it is both flexible and corrosion resistant.
 
+Nickel, chromium zinc and other metals are also deposited electrolytically.
+Black oxide and phosphate coatings are occasionally specified.
+Care must be used in applying coatings, first to use detergents, solvents, alkaline or vaporizing degreasers to remove oil and dirt, shotblasting or sand blasting to remove scale, and baking to remove the hydrogen embrittelement that may be caused by acid dipping or electroplating.
 
 36. Hydrogen Embrittlement.
 
-(a)
+Steel, particularly hardened steel, is susceptible to embrittlement resulting from hydrogen introduced by acid pickling, electroplating, or cathodic electrocleaning operations.
+Absorbed hydrogen results in brittle behavior particularly under sustained loading in the presence of stress concentration.
+Baking to relieve hydrogen embrittled springs should be accomplished by a method similar to that specified in specification QQ-Z-325 or QQ-P-416.
+
+(a) Most hydrogen is evolved during acid pickling and can be reduced by using organic inhibitors in the solution.
+The cleaning of springs by shotblasting or by tumbling is advisable so that less time is required in the picking bath.
 
 (b)
 
@@ -1335,28 +1389,26 @@ page 119:
 
 37. TOLERANCES FOR SPRINGS. 
 
-Tables that follow present tolerance which can be obtied undar normal manufacturing methods. 
-
-Springs having closer tolerances can be ~KXhlU2d but at greatiy iIICd cost 
-
+Tables that follow present tolerances which can be obtained under normal manufacturing methods. 
+Springs having closer tolerances can be produced but at greatly increased cost.
 A more liberal tolerance should be specified whenever possible.
 
-These tolerances in degrees maybe reduced 60 per cent by individually grinding, measurk-, -g, ~d sorting the springs, but this immases production time and cost.
+Table XX. Tolerances on squareness of grinding on end coils for compression springs
 
+These tolerances in degrees maybe reduced 50 per cent by individually grinding, measuring, testing, and sorting the springs, but this increases production time and cost.
 Grinding end coils of springs made from wire under 1/32 inch diameter is usually unnecessary and frequently is expensive.
-
 
 37.1 TOLERANCE ON LOADS. 
 
 The recommended tolerance on all loads is plus or minus 10 per cent and should be specified as shown on the drawing requirement charts. 
 However, when the deflection from the free length to the limit load is small, the load tolerance must be large and should be considered proportional to the tolerances that apply to the free length. 
-For example, if the deflection is only ~ inch and the tolerance on the free len@h is ~~ inch, then it follows that the tolerance on the first load should be plus or Inh8 ~ P@!rcent (~~=~ ~ cent of ~a)? otherwise the tolerance on the fra length could not be taken.
+For example, if the deflection is only 1/8 inch and the tolerance on the free length is 1/32 inch, then it follows that the tolerance on the first load should be plus or minus 25 percent (1/32 = 25 percent of 1/8), otherwise the tolerance on the free length could not be taken.
 
 Where a specific amount of initial tension is required for extension springs, it should be specified in pounds or ounces with a recommended tolerance of plus or minus 15 per cent, but it usually is specified as a REFERENCE.
 
 Smaller load tolerances than these usually require testing and adjusting each spring and add considerably to the manufacturing time and to the cost.
 
-Page 102: 
+Page 120: 
 
 Table XXI. Table of Third and Fourth Powers of Wire Diameters
 
@@ -1467,17 +1519,16 @@ High speed of deflection, vibration and surging due to operation near natural pe
 
 Page 123:
 
-Copies of specification, standards, drawhgs, and publications required by contractors in connection with procurement functions should be obtained from the procuring actiV& or as directed by the contracting -05cer.
-Copies of this standard for military use may be obtained as indicated in the foreword to or general provisions of the Index of Military,Specifications and S&mdar& 
-Copies of this Standard may be obtained for other than official use by individual _ ad contractors from the Supmintend~
-ant of Documents, U. S. Government Printing Otlke, Washington 2S. D. C.
+Copies of specification, standards, drawings, and publications required by contractors in connection with procurement functions should be obtained from the procuring activity or as directed by the contracting officer.
 
-Both the title and the identifying s@ml number should be stipulated when requesting copies of Militwy Standards
+Copies of this standard for military use may be obtained as indicated in the foreword to or general provisions of the Index of Military Specifications and Standards.
 
+Copies of this Standard may be obtained for other than official use by individuals, firms, and contractors from the Superintendent of Documents, U. S. Government Printing Office, Washington 25. D. C.
 
-Patant notice. 
+Both the title and the identifying symbol number should be stipulated when requesting copies of Military Standards.
 
-When Government drawings, specifications, or other data are used for any purpose other than in connection with a definitely related Government procurement operation, the United States Government thereby incurs no responsibility, nor any obligation whatsoever; and the fact that the Government may have formulated, fornishe& or in 81iy W8y SUppiied the said drawin~, SpeCifi~tiOllS, or other data is not to be re~ed by implication or otherwise as in any manner licensing the holder or any other person or corporation, or conveying any rights or permission b manufacture, use, or sell any patented invention that may in any way be related thereto.
+Patent notice.
+When Government drawings, specifications, or other data are used for any purpose other than in connection with a definitely related Government procurement operation, the United States Government thereby incurs no responsibility, nor any obligation whatsoever; and the fact that the Government may have formulated, furnished or in any way supplied the said drawings, specifications, or other data is not to be regarded by implication or otherwise as in any manner licensing the holder or any other person or corporation, or conveying any rights or permission to manufacture, use, or sell any patented invention that may in any way be related thereto.
 
 Custodians:
 Army - Ordnance Corps
@@ -1485,4 +1536,4 @@ Navy - Bureau of Naval Weapons
 Air Force
 
 Preparing activity:
-Navy—Bureau of Naval Weapons
+Navy - Bureau of Naval Weapons
