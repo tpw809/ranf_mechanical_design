@@ -1,0 +1,251 @@
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage{graphicx}      % For logo
+\usepackage{tcolorbox}     % For note box
+\usepackage{setspace}      % Optional spacing
+\usepackage{geometry}      % Page layout
+\usepackage{draftwatermark}
+
+\geometry{margin=1in}
+
+\begin{document}
+
+% Watermark:
+%\SetWatermarkText{DRAFT} % Text of the watermark
+%\SetWatermarkScale{4} % Size (scale factor)
+%\SetWatermarkColor[gray]{0.85} % Transparency (0 = invisible, 1 = fully opaque)
+
+% -------------------------------
+% TITLE PAGE
+% -------------------------------
+\begin{titlepage}
+    \centering
+
+    % Top row: Logo (left) and Doc Info (right)
+    \noindent
+    \begin{minipage}[t]{0.49\textwidth}
+        \vspace{0pt}
+        \includegraphics[width=0.6\textwidth]{logo_text.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.49\textwidth}
+        \vspace{0pt}
+        \raggedleft
+        \begin{tabular}{rl}
+            \textbf{Document Number:} & RANF-ENG-00002 \\
+            \textbf{Revision:} & Rev. Initial \\
+        \end{tabular}
+    \end{minipage}
+
+    % Vertical spacing before title
+    \vspace{2.5cm}
+
+%    % Document Number and Revision
+%    \begin{tabular}{rl}
+%        \textbf{Document Number:} & DOC-00123 \\
+%        \textbf{Revision:} & Rev. A \\
+%    \end{tabular}
+%
+%    % Organization Logo
+%    \vspace*{1cm}
+%    \includegraphics[width=0.35\textwidth]{ranf_imprint_logo.png}\\[1.5cm]
+
+% TODO: add QR code to website
+
+    % Report Title
+    {\Huge \bfseries Design Verification Methods \\[0.5cm]}
+
+    % Author and Date
+    {\Large Timothy P Woodard \\[0.2cm]}
+    {\large \today \\[1.5cm]}
+
+    % Note Box
+    \begin{tcolorbox}[colback=gray!10, colframe=black, width=0.9\textwidth]
+        \textbf{Note:} Copyright 2026 Roads Are No Fun
+
+This document is provided as part of the Roads Are No Fun project under the Creative Commons CC BY-SA license.
+    \end{tcolorbox}
+
+    \vfill
+\end{titlepage}
+
+% -------------------------------
+% MAIN DOCUMENT
+% -------------------------------
+%\tableofcontents
+\newpage
+
+\section{Overview}
+
+Design verification is the process of confirming that the design meets the requirements and was built correctly according to its specifications. 
+To accomplish verification, one or more verification methods are used, chosen based on the requirement type, risk, cost, and feasibility. 
+The basic verification methods are: analysis, test, inspection, demonstration, similarity, and lot controls. 
+Typical requirement types include: functional, feature, performance, interface, environmental, and design requirements. The requirements should be provided in an item or system specification which also identifies the proper verification method. 
+A requirements verification matrix (RVM) may be used to summarize the requirement information including: requirement identification, origin, text, phase of verification, verification method, pass / fail criteria, etc. 
+A design verification plan and report (DVP\&R) is a document which provides details on the verification plan and results.
+
+\subsection{Qualification versus Acceptance}
+Qualification tests establish margin for the design and may consume the test article (static load tests to failure or life tests). Acceptance tests ensure the end-item was built correctly with no flaws / defects and meets all performance requirements (workmanship). 
+It is expected the qualification unit(s) will see all tests to a higher level or longer duration to establish margin. 
+This also provides opportunity to refine and validate the verification plan. 
+Delivered items undergo acceptance testing, which can be a reduced set of verification events to ensure quality.
+
+\subsection{Verification versus Validation}
+Verification checks whether a product meets its specified requirements and is “built right”. 
+Validation checks whether the product fulfills its intended purpose and ensures the “right product is built”.
+
+\section{Verification Methods}
+
+\subsection{Analysis}
+Analysis is verification through mathematical models, simulations, calculations, or theoretical evaluation. 
+Analysis is typically fast and cost‑effective, and it supports early design decisions before prototypes exist. 
+Analysis is used when physical testing is impractical, expensive, or unnecessary and early in development to predict performance before hardware is available.
+
+Examples: 
+\begin{itemize} 
+\item finite element analysis (FEA)
+\item computational fluid dynamics (CFD)
+\item tolerance stack‑ups
+\item stress/strain calculations
+\item dynamic simulations
+\item kinematic analysis
+\end{itemize}
+
+\subsection{Demonstration}
+Demonstration is verification by showing that the product performs a function under normal operating conditions without detailed measurement. 
+Data may be observed which is available from the test item itself.
+Demonstration is used for qualitative or functional requirements and when special equipment or precise measurement is not necessary.
+
+Examples: 
+\begin{itemize}
+\item powering on a device to show it boots
+\item moving a mechanism through its full range of motion
+\item showing a user interface responds to input 
+\end{itemize}
+
+\subsection{Inspection}
+Inspection is verification by examining, measuring, or reviewing the physical item or documentation. 
+Inspection is used for simple, observable requirements and does not require specialized measurement equipment or measurement while operating.
+
+Examples: 
+\begin{itemize}
+\item existence of a feature
+\item dimensional inspection
+\item visual inspection
+\item reviewing drawings, BOMs, or documentation
+\item critical clearance checks between moving parts at extreme ranges of motion
+\end{itemize}
+
+\subsection{Test}
+Test is a verification by collection and evaluation of quantitative performance, functional, or environmental data. 
+Testing requires specialized instrumentation or equipment and typically requires measurement during operation or application of external stimuli. 
+Test is used when quantitative, measurable evidence is required or when existing models or knowledge is not mature enough or practical to predict the outcome. 
+
+Examples: 
+\begin{itemize}
+\item static load testing (externally applied load)
+\item environmental testing (thermal, vibration, vacuum, humidity) 
+\item performance testing (dynamometer)
+\end{itemize}
+
+\subsection{Similarity}
+Verification by similarity is accomplished by showing that a requirement is met through comparison to a previously verified, equivalent design. 
+Verification by similarity is only applicable to qualification level requirements, not acceptance level (workmanship). Verification by similarity must be used carefully with the following restrictions:
+\begin{itemize}
+\item heritage unit was not verified by similarity or analysis
+\item heritage unit was flight quality
+\item heritage unit environments envelope those for the candidate
+\item relevant design features are identical
+\item heritage unit was successfully qualified without waivers
+\item heritage and candidate functions and operation are identical
+\item heritage unit life envelopes that for the candidate
+\item all documentation for the heritage unit is available
+\end{itemize}
+Qualification by similarity can reduce time and cost but requires strong justification and documentation.
+
+Examples: 
+\begin{itemize}
+\item reusing a previously qualified material or component
+\item leveraging historical test data 
+\end{itemize}
+
+\subsection{Lot Controls}
+Lot controls is a verification by testing of samples from a well-controlled production process. 
+Some products cannot be tested without consumption of the product; for example: explosive devices. 
+The presumption is that the samples that are tested are representative of the rest of the delivered lot. 
+Statistics can be used to bound the expected performance of the rest of the lot based on the test data of the tested samples. 
+The number of samples to be tested is determined by the size of the lot and level of desired reliability. 
+Non-destructive techniques can be used on the whole lot to detect defects that do not require consumption and confirm the representative assumption.
+
+Examples: 
+\begin{itemize}
+\item lot sample testing of explosive devices
+\item co-mixed and cured composite / epoxy samples subjected to tensile testing
+\end{itemize}
+
+\section{Planning \& Documentation}
+
+\subsection{Design Specification}
+A design specification is a document which provides the details of design features, functions, requirements, constraints, and performance of an item.
+It provides information for proper usage of the item, including key requirements, verification methods, and expected performance (acceptance criteria). A specification may include a requirements verification matrix (RVM).
+
+\subsection{Requirements Verification Matrix (RVM)}
+A requirements verification matrix (RVM) is a table that summarizes each requirement, the method(s) used to verify it, and the verification plan or evidence.
+It may also include other planning information such as schedule, responsibility, traceability, etc.
+It helps ensure complete requirement coverage, traceability, and accountability across the verification process. 
+The RVM is useful because it: 
+\begin{itemize}
+\item Ensures no requirement is left unverified
+\item Provides a single reference for design teams, test teams, and quality
+\item Supports audits, design reviews, and regulatory compliance
+\item Enables early detection of verification gaps or ambiguous requirements
+\end{itemize}
+The RVM often contains: 
+\begin{itemize}
+\item Requirement identification (ID)
+\item Requirement description (text)
+\item Source / origin (parent)
+\item Verification method
+\item Acceptance criteria
+\item Link to verification activity details (test plan or procedure)
+\item Responsibility
+\item Timing / Schedule
+\item High level results summary (pass/fail)
+\end{itemize}
+
+\subsection{Design Verification Plan and Report (DVP\&R)}
+A Design Verification Plan and Report (DVP\&R) is a part of the engineering documentation used to plan, execute, and record all verification activities required to prove that a design meets its specifications. 
+A typical DVP\&R includes:
+\begin{itemize}
+\item List of requirements to be verified 
+\item Verification method (analysis, test, inspection, demonstration, similarity, etc.) 
+\item Test conditions and procedures 
+\item Acceptance criteria 
+\item Responsibility and timing 
+\item Actual results and pass/fail status 
+\end{itemize}
+It combines two parts:
+\begin{itemize}
+\item DVP — Design Verification Plan (the planned tests) = Test Plan
+\item DVR — Design Verification Report (the results) = Test Report
+\end{itemize}
+
+%\section{Glossary}
+%\paragraph{Not Invented Here (NIH) Syndrome} when engineers at a company do not use a system external to their organization due to the perceived inferiority to internally developed systems
+%\paragraph{C-Sketch} collaborative sketching, also called 6-3-5, is a brainstorming method
+
+\subsection{Verification (Test) Procedures}
+Verification (test) procedures are the detailed steps to be followed in the execution of the verification event.
+A test procedure may be interactive with test results added to the document as the test is executed.
+
+Sloppy Copy = copy of the as-run test procecures which is marked up or modified during the verification as part of the procedure refinement.
+
+\section*{References}
+
+\begin{enumerate}
+\item SMC-S-016 Test Requirements for Launch, Upper-Stage and Space Vehicles, 2014.
+\item SMC Systems Engineering Primer \& Handbook, Space \& Missile Systems Center U.S. Air Force, 2005.
+\end{enumerate}
+
+\end{document}

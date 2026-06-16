@@ -1,0 +1,122 @@
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage{graphicx}      % For logo
+\usepackage{tcolorbox}     % For note box
+\usepackage{setspace}      % Optional spacing
+\usepackage{geometry}      % Page layout
+\usepackage{draftwatermark}
+
+\geometry{margin=1in}
+
+\begin{document}
+
+% Watermark:
+%\SetWatermarkText{DRAFT} % Text of the watermark
+%\SetWatermarkScale{4} % Size (scale factor)
+%\SetWatermarkColor[gray]{0.85} % Transparency (0 = invisible, 1 = fully opaque)
+
+% -------------------------------
+% TITLE PAGE
+% -------------------------------
+\begin{titlepage}
+    \centering
+
+    % Top row: Logo (left) and Doc Info (right)
+    \noindent
+    \begin{minipage}[t]{0.49\textwidth}
+        \vspace{0pt}
+        \includegraphics[width=0.6\textwidth]{logo_text.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.49\textwidth}
+        \vspace{0pt}
+        \raggedleft
+        \begin{tabular}{rl}
+            \textbf{Document Number:} & RANF-ENG-00001 \\
+            \textbf{Revision:} & Rev. Initial \\
+        \end{tabular}
+    \end{minipage}
+
+    % Vertical spacing before title
+    \vspace{2.5cm}
+
+%    % Document Number and Revision
+%    \begin{tabular}{rl}
+%        \textbf{Document Number:} & DOC-00123 \\
+%        \textbf{Revision:} & Rev. A \\
+%    \end{tabular}
+%
+%    % Organization Logo
+%    \vspace*{1cm}
+%    \includegraphics[width=0.35\textwidth]{ranf_imprint_logo.png}\\[1.5cm]
+
+% TODO: add QR code to website
+
+    % Report Title
+    {\Huge \bfseries Four 'C's of Design \\[0.5cm]}
+
+    % Author and Date
+    {\Large Timothy P Woodard \\[0.2cm]}
+    {\large \today \\[1.5cm]}
+
+    % Note Box
+    \begin{tcolorbox}[colback=gray!10, colframe=black, width=0.9\textwidth]
+        \textbf{Note:} Copyright 2026 Roads Are No Fun
+
+This document is provided as part of the Roads Are No Fun project under the Creative Commons CC BY-SA license.
+    \end{tcolorbox}
+
+    \vfill
+\end{titlepage}
+
+% -------------------------------
+% MAIN DOCUMENT
+% -------------------------------
+%\tableofcontents
+\newpage
+
+\section{Four 'C's of Design}
+The four 'C's of design are concepts all designers should be aware of.
+They are realities of any design process which represent difficulties (or opportunities) that must be acknowledged and mitigated.
+
+\subsection{Creativity}
+Design typically requires generation or synthesis of new ideas.
+This ability is called creativity.
+Creativity may be a natural skill among certain individuals ("think outside the box") but it can also be a result of a structured process.
+Brainstorming techniques exist to help create multiple novel solutions.
+
+\subsection{Complexity}
+Design problems are often complex, meaning they involve multiple connected parts which may also include uncertainty or lack of understanding.
+Humans are adapted to operating in a three-dimensional environment which leads to a difficulty of intuitively handling more than 3 or 4 parameters at a time.
+This is the multi-dimensional problem (curse of dimensionality).
+Computers are better configured to handle multiple parameters as long as the problem can be structured analytically or if data can be taken which samples the entire parameter space adequately.
+This leads to the second issue of complexity which is imperfect knowledge.
+If enough data cannot be taken to characterize the design space, then there will be uncertainty.
+If models are created to analytically predict the design space, the models may be simplifications which lose validity in certain regions of the design space.
+
+\subsection{Choice}
+Decision making is the fundamental aspect of design; if decisions are not being made among alternative choices, then design is not taking place.
+A designer must choose among multiple alternatives often with imperfect evaluation of those alternatives.
+How the choice is made is defined by the decision making process.
+A structured decision making process is preferable to subjective 'gut feeling' or 'engineering judgment'.
+Structured decision making involves identification and ranking of criteria and evaluation of those criteria among the design alternatives.
+% assumptions
+
+\subsection{Compromise}
+Design nearly always involves compromise which means making concessions on desirable traits.
+This is necessary because of competing objectives related to physical realities.
+The designer must prioritize and balance the competing objectives to define the proper concessions; they become like Goldilocks looking for 'just-right'.
+An example is mass versus strength and stiffness; for any given material and geometry, increasing stiffness or strength also increases mass.
+
+%\section{Glossary}
+%\paragraph{Not Invented Here (NIH) Syndrome} when engineers at a company do not use a system external to their organization due to the perceived inferiority to internally developed systems
+%\paragraph{C-Sketch} collaborative sketching, also called 6-3-5, is a brainstorming method
+
+\section*{References}
+
+\begin{enumerate}
+    \item George E. Dieter, Linda C. Schmidt; Engineering Design Fourth Edition; McGraw Hill; 2009.
+\end{enumerate}
+
+\end{document}
