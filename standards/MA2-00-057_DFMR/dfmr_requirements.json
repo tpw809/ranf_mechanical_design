@@ -1,0 +1,76 @@
+{
+	"elements": [
+	{
+		"type": "requirement",
+		"req_id": "DFMR-3.1",
+		"name": "Redundant Springs",
+		"text": "In designs and applications where spring failure would result in a hazard, the springs shall be redundant.",
+		"tags": ["spring", "redundant"],
+		"phase": ["design"],
+		"level": "subassembly",
+		"source": "MA2-00-057",
+		"guidance": "",
+		"rationale": "if one spring breaks, then functionality can be maintained",
+		"verifiedBy": "inspection", 
+		"metadata": {
+			"unique_id": "req-39haliohug8n",
+			"lastModified": 20260622,
+			"version": 0.1
+		}
+	},
+	{
+		"type": "requirement",
+		"req_id": "DFMR-3.2",
+		"name": "Spring Fracture Control",
+		"text": "In designs and applications where spring failure would result in a hazard and not redundant, the springs shall be designed, evaluated, and used under an acceptable fracture control program (reference NASA-STD-5003)",
+		"tags": ["spring", "redundant", "fracture"],
+		"phase": ["design"],
+		"level": "subassembly",
+		"source": "MA2-00-057",
+		"guidance": "",
+		"rationale": "makes spring failure non-credible",
+		"verifiedBy": "inspection", 
+		"metadata": {
+			"unique_id": "req-348uguhsn34934h",
+			"lastModified": 20260622,
+			"version": 0.1
+		}
+	},
+	{
+		"type": "requirement",
+		"req_id": "DFMR-6.1",
+		"name": "Positive Status Indication",
+		"text": "All movable mechanical systems shall provide positive indication that the mechanism has achieved its desired position (i.e., ready-to-latch, latched).",
+		"tags": ["status", "indication"],
+		"phase": ["design", "verification"],
+		"level": "assembly",
+		"source": "MA2-00-057",
+		"guidance": "status such as ready to latch, latched, etc",
+		"rationale": "allows deterministic automation of sequences",
+		"verifiedBy": "demonstration", 
+		"metadata": {
+			"unique_id": "req-5729563nvu",
+			"lastModified": 20260622,
+			"version": 0.1
+		}
+	},
+	{
+		"type": "requirement",
+		"req_id": "DFMR-6.2",
+		"name": "End of Travel Stops",
+		"text": "End of travel stops shall be provided for all movable mechanical systems.",
+		"tags": ["stop", "travel", "end"],
+		"phase": ["design"],
+		"level": "assembly",
+		"source": "MA2-00-057",
+		"guidance": "non-jamming, obviously not for continuously rotating systems",
+		"rationale": "stops prevent motion beyond what is intended",
+		"verifiedBy": "inspection", 
+		"metadata": {
+			"unique_id": "req-39vhma948fhs",
+			"lastModified": 20260622,
+			"version": 0.1
+		}
+	}
+	]
+}

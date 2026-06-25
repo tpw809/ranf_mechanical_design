@@ -1,0 +1,1377 @@
+[
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2-Req01",
+    "name": "Deployables Self-Supporting",
+    "source": "MIL-A-83577B",
+    "text": "Deployables shall, where practicable, be designed so that they are self supporting when placed in any orientation relative to gravity, while in either the stowed or deployed configuration.",
+    "tags": ["deployables", "structural"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2-Req02",
+    "name": "Ground Test Motive Force",
+    "source": "MIL-A-83577B",
+    "text": "Deployables shall be designed with sufficient motive force to permit full operation during ground testing without depending upon the assistance of gravity.",
+    "tags": ["deployables", "testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2-Req03",
+    "name": "Deployable Redundancy",
+    "source": "MIL-A-83577B",
+    "text": "Deployables shall utilize redundancy, where practicable, in the design to improve the reliability of deployment.",
+    "tags": ["deployables", "redundancy"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2-03"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2-Req04",
+    "name": "Redundant Springs Consideration",
+    "source": "MIL-A-83577B",
+    "text": "Techniques such as redundant springs or the use of a backup deployment device shall be considered to satisfy the redundancy requirement.",
+    "tags": ["deployables", "redundancy"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2-04"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2-Req05",
+    "name": "CG Alignment for Rotating Deployables",
+    "source": "MIL-A-83577B",
+    "text": "Where a device rotates after deployment, the design shall, where practicable, be such that the center of gravity is coincident with the axis of rotation.",
+    "tags": ["deployables", "mass-properties"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2-05"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2-Req06",
+    "name": "Controlled or Restrained Deployment",
+    "source": "MIL-A-83577B",
+    "text": "For all deployables, the deployment motion shall, where practicable, be controlled or restrained for the full range of travel.",
+    "tags": ["deployables", "deployment"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2-06"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2-Req07",
+    "name": "Kick-Off Springs",
+    "source": "MIL-A-83577B",
+    "text": "Kick-off springs or other suitable devices shall, where practicable, be used to initiate deployment motion.",
+    "tags": ["deployables", "springs"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2-07"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2-Req08",
+    "name": "Kick-Off Spring Stroke",
+    "source": "MIL-A-83577B",
+    "text": "Kick-off springs shall have a stroke long enough to ensure complete disengagement of the deployable from its retention mechanism.",
+    "tags": ["deployables", "springs"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2-08"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2-Req09",
+    "name": "Field Joints for Disassembly",
+    "source": "MIL-A-83577B",
+    "text": "Field joints shall be provided, where practicable, to permit disassembly of deployables and rotating or translating elements.",
+    "tags": ["deployables", "maintenance"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2-09"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2-Req10",
+    "name": "Sequential Pyro Events",
+    "source": "MIL-A-83577B",
+    "text": "Deployables requiring discrete sequential motions initiated by separate pyrotechnic events shall have each event separately ground commanded or have a backup ground command.",
+    "tags": ["deployables", "pyrotechnics"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2-10"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2-Req11",
+    "name": "Cable Guidance",
+    "source": "MIL-A-83577B",
+    "text": "Where cables are used in the deployment mechanism, they shall be adequately guided and supported by fairleads.",
+    "tags": ["deployables", "cables"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2-11"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2-Req12",
+    "name": "Pulley Guards",
+    "source": "MIL-A-83577B",
+    "text": "All pulleys shall utilize pulley guards which extend to the tangency points of the cable.",
+    "tags": ["deployables", "cables", "pulleys"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2-12"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.1-Req01",
+    "name": "No Dependency Between Deployables",
+    "source": "MIL-A-83577B",
+    "text": "Where two or more deployables are used on a vehicle, the deployment of one shall not be dependent upon the successful deployment of the other, unless unavoidable.",
+    "tags": ["deployables", "sequential"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.1-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.1-Req02",
+    "name": "Redundant Release for Mission-Critical Sequential Deployables",
+    "source": "MIL-A-83577B",
+    "text": "Where sequential dependency cannot be avoided and the obstructed deployable is mission critical, a fully redundant release device and backup deployment mechanism shall be provided.",
+    "tags": ["deployables", "redundancy", "mission-critical"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.1-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.2-Req01",
+    "name": "Positive Retention in Stowed and Deployed Positions",
+    "source": "MIL-A-83577B",
+    "text": "Positive retention provisions shall be provided for deployables in the stowed and deployed positions.",
+    "tags": ["deployables", "retention"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.2-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.2-Req02",
+    "name": "Consider Deflections in Attachment Design",
+    "source": "MIL-A-83577B",
+    "text": "The effects of deflections such as centrifugal forces or differential thermal growth shall be considered in the design of deployable attachments.",
+    "tags": ["deployables", "thermal", "structural"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.2-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.2-Req03",
+    "name": "Avoid Binding-Prone Devices",
+    "source": "MIL-A-83577B",
+    "text": "Devices subject to binding due to misalignment, adverse tolerances, or contamination shall not be used.",
+    "tags": ["deployables", "binding"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.2-03"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.2-Req04",
+    "name": "Avoid Slip Joints",
+    "source": "MIL-A-83577B",
+    "text": "Slip joints shall be avoided, where practicable.",
+    "tags": ["deployables", "mechanisms"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.2-04"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.2-Req05",
+    "name": "Use Self-Aligning Features",
+    "source": "MIL-A-83577B",
+    "text": "Self-aligning features such as self-aligning bearings and rod ends shall be used, where practicable, to preclude binding.",
+    "tags": ["deployables", "alignment"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.2-05"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.2-Req06",
+    "name": "No Continuous Hinges for Large Panels",
+    "source": "MIL-A-83577B",
+    "text": "Continuous hinges such as piano hinges shall not be used for large deployable panels.",
+    "tags": ["deployables", "hinges"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.2-06"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.2-Req07",
+    "name": "Avoid Ejection-Type Release Mechanisms",
+    "source": "MIL-A-83577B",
+    "text": "Release mechanisms which permit ejection of parts away from the vehicle shall be avoided, where practicable.",
+    "tags": ["deployables", "release"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.2-07"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.2-Req08",
+    "name": "Minimize Latch Resistance Peaking",
+    "source": "MIL-A-83577B",
+    "text": "The design of latching devices shall be such that peaking of resistance near the end of travel is minimized.",
+    "tags": ["deployables", "latches"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.2-08"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.2-Req09",
+    "name": "Avoid Leaf Spring Latches",
+    "source": "MIL-A-83577B",
+    "text": "Leaf spring latches which become the primary element for reacting deployment or rebound loads shall be avoided, where practicable.",
+    "tags": ["deployables", "latches"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.2-09"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.2-Req10",
+    "name": "Avoid Permanent Magnet Catches",
+    "source": "MIL-A-83577B",
+    "text": "Catches using a permanent magnet as the holding element shall be avoided, where practicable.",
+    "tags": ["deployables", "magnet"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.2-10"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.2.2-Req01",
+    "name": "Pin Pullers in Double Shear",
+    "source": "MIL-A-83577B",
+    "text": "Where pin pullers are used, they shall be designed to be in double shear.",
+    "tags": ["deployables", "pin-pullers"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.2.2-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.2.2-Req02",
+    "name": "Pin Puller Misalignment Loads",
+    "source": "MIL-A-83577B",
+    "text": "The design, installation, and checkout procedures for pin pullers shall ensure that loads due to misalignment are within design limits.",
+    "tags": ["deployables", "pin-pullers"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.2.2-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.2.2-Req03",
+    "name": "Pin Puller Retraction Margin",
+    "source": "MIL-A-83577B",
+    "text": "A minimum retraction force margin of safety of 100 percent shall be maintained for all nonexplosive pin pullers.",
+    "tags": ["deployables", "pin-pullers", "safety"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.2.2-03"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.2.2-Req04",
+    "name": "Pin Puller Stroke Requirement",
+    "source": "MIL-A-83577B",
+    "text": "Pin pullers shall retract at least 2 millimeters beyond the point of release under worst case tolerances and environmental conditions.",
+    "tags": ["deployables", "pin-pullers"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.2.2-04"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.3-Req01",
+    "name": "Pyrotechnic Devices per DOD-EL83578",
+    "source": "MIL-A-83577B",
+    "text": "Cartridge actuated device designs and their application shall comply with DOD-EL83578.",
+    "tags": ["deployables", "pyrotechnics"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.3-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.3-Req02",
+    "name": "Redundant Pyrotechnic Release Devices",
+    "source": "MIL-A-83577B",
+    "text": "Redundant pyrotechnic release devices shall be used, where practicable.",
+    "tags": ["deployables", "pyrotechnics", "redundancy"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.3-02"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.4-Req01",
+    "name": "Test Fixture Compatibility",
+    "source": "MIL-A-83577B",
+    "text": "Fixtures used to assist in fabrication and testing shall be designed in conjunction with the deployable device to ensure compatibility.",
+    "tags": ["deployables", "test-fixtures"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.4-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.4-Req02",
+    "name": "Minimize Influence of Supplemental Supports",
+    "source": "MIL-A-83577B",
+    "text": "Supplemental supports shall be designed so that their influence on the operation of the mechanism is minimized.",
+    "tags": ["deployables", "test-fixtures"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.4-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.4-Req03",
+    "name": "Test Fixture Measurement Provisions",
+    "source": "MIL-A-83577B",
+    "text": "Test fixtures shall incorporate provisions to measure torque vs angle and time vs angle, or equivalent linear measurements.",
+    "tags": ["deployables", "testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.4-03"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.4-Req04",
+    "name": "Test Fixture Safety Interlocks",
+    "source": "MIL-A-83577B",
+    "text": "Where practicable, test fixtures shall have interlocks or other safety features incorporated to preclude damage to the moving mechanical assembly or deployable in the event of testing malfunctions.",
+    "tags": ["deployables", "test-fixtures", "safety"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.4-04"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.2.4-Req05",
+    "name": "Tethers and Backup Supports",
+    "source": "MIL-A-83577B",
+    "text": "Tethers and supports shall be incorporated as backup features to preclude damage in the event of failure.",
+    "tags": ["deployables", "test-fixtures", "safety"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.2.4-05"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.3-Req01",
+    "name": "Use Self-Aligning Bearings",
+    "source": "MIL-A-83577B",
+    "text": "For deployables, hinges, and linkages, self-aligning bearings shall be used, where practicable, to preclude binding due to misalignments.",
+    "tags": ["bearings", "alignment", "deployables"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.3-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.3-Req02",
+    "name": "Bearings Not for Electrical Current",
+    "source": "MIL-A-83577B",
+    "text": "Bearings shall not be used for ground current return paths or to carry electrical current.",
+    "tags": ["bearings", "electrical"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.3-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.3-Req03",
+    "name": "Use Corrosion-Resistant Steel for Ferrous Bearings",
+    "source": "MIL-A-83577B",
+    "text": "All ferrous material bearings shall employ, where practicable, a corrosion-resistant steel that is in accordance with QQ-S-763.",
+    "tags": ["bearings", "materials", "corrosion"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.3-03"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.3-Req04",
+    "name": "Rolling Element Bearing Material",
+    "source": "MIL-A-83577B",
+    "text": "Rolling element bearings shall, where practicable, be of 440C stainless steel; however, 52100 or M50 steels may be employed providing they are suitably protected from corrosion.",
+    "tags": ["bearings", "materials"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.3-04"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.3-Req05",
+    "name": "Rolling Element Bearing Hardness",
+    "source": "MIL-A-83577B",
+    "text": "Rolling element bearings shall have a minimum hardness of Rockwell C58.",
+    "tags": ["bearings", "materials", "hardness"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.3-05"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.3-Req06",
+    "name": "CEVM Material for Critical Bearings",
+    "source": "MIL-A-83577B",
+    "text": "Ball bearings used in applications where low torque ripple is required or where fatigue life is critical shall, where practicable, be fabricated of consumable electrode vacuum melted (CEVM) material.",
+    "tags": ["bearings", "materials", "critical"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.3-06"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.3.1-Req01",
+    "name": "ABEC 7 Bearings for Critical Applications",
+    "source": "MIL-A-83577B",
+    "text": "Bearings used in critical applications such as reaction wheels, control moment gyros, gimbals, de-spin mechanisms, and pointing devices shall meet ABEC 7, 7P or 7T tolerance or better.",
+    "tags": ["bearings", "critical", "tolerances"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.3.1-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.3.1-Req02",
+    "name": "Nonstandard Bearings Equivalent to ABEC 7",
+    "source": "MIL-A-83577B",
+    "text": "Nonstandard bearings or thin sectioned bearings where AFBMA tolerances do not apply shall have the manufacturer's precision level most nearly equivalent to ABEC 7.",
+    "tags": ["bearings", "tolerances"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.3.1-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.3.1-Req03",
+    "name": "ABEC 5 for Noncritical Deployables",
+    "source": "MIL-A-83577B",
+    "text": "Bearings used in noncritical applications such as one time use deployables shall, where practicable, meet ABEC 5 or better.",
+    "tags": ["bearings", "noncritical"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.3.1-03"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.3.1-Req04",
+    "name": "Stainless Bearings per MIL-B-81793",
+    "source": "MIL-A-83577B",
+    "text": "Stainless steel bearings shall, where practicable, also be in accordance with MIL-B-81793.",
+    "tags": ["bearings", "materials", "standards"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.3.1-04"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.3.1.1-Req01",
+    "name": "Bearing Design Based on Combined Loads",
+    "source": "MIL-A-83577B",
+    "text": "Ball bearing selection, mounting, and preloading shall be based on maximum combined axial, radial, and moment loads sustained during all operational modes.",
+    "tags": ["bearings", "design", "loads"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.3.1.1-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.3.1.1-Req02",
+    "name": "Bearing Design Must Consider Stiffness",
+    "source": "MIL-A-83577B",
+    "text": "Stiffness requirements shall be considered in bearing selection, mounting, and preloading.",
+    "tags": ["bearings", "stiffness"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.3.1.1-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.3.1.1-Req03",
+    "name": "Consider Temperature Effects on Bearings",
+    "source": "MIL-A-83577B",
+    "text": "Effects of temperature, temperature gradients, fits, tolerances, and initial preload on torque, stiffness, and life shall be considered.",
+    "tags": ["bearings", "thermal", "design"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.3.1.1-03"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.3.1.1-Req04",
+    "name": "Bearing Lubrication Consideration",
+    "source": "MIL-A-83577B",
+    "text": "Lubrication shall be considered in bearing selection, mounting, and preloading.",
+    "tags": ["bearings", "lubrication"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.3.1.1-04"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.3.1.1-Req05",
+    "name": "Bearing Wear Consideration",
+    "source": "MIL-A-83577B",
+    "text": "Wear shall be considered in bearing selection, mounting, and preloading.",
+    "tags": ["bearings", "wear"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.3.1.1-05"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.3.1.1-Req06",
+    "name": "Smoothness of Operation",
+    "source": "MIL-A-83577B",
+    "text": "Smoothness of operation, including torque ripple, shall be considered in bearing design.",
+    "tags": ["bearings", "torque", "smoothness"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.3.1.1-06"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.3.1.1-Req07",
+    "name": "Friction Torque Consideration",
+    "source": "MIL-A-83577B",
+    "text": "Friction torques, considering breakaway and running, in the installed state shall be considered.",
+    "tags": ["bearings", "friction"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.3.1.1-07"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.3.1.1-Req08",
+    "name": "Bearing Design Substantiation",
+    "source": "MIL-A-83577B",
+    "text": "The design of each ball bearing installation shall be substantiated by analysis and either development tests or previous usage.",
+    "tags": ["bearings", "verification"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.3.1.1-08"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.3.1.2-Req01",
+    "name": "Quiet Operation Bearing Hertzian Stress Limit",
+    "source": "MIL-A-83577B",
+    "text": "For noncritical applications, such as most deployables, if nonquiet running is acceptable, the mean Hertzian contact stress shall not exceed 2758 megapascals (400,000 psi) when subjected to the yield load.",
+    "tags": ["bearings", "hertzian-stress", "quiet-operation"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.3.1.2-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.4-Req01",
+    "name": "Lubrication Required for All Contacting Surfaces",
+    "source": "MIL-A-83577B",
+    "text": "Lubrication shall be provided by greases, liquids, solid film lubricants, or combinations thereof for all contacting surfaces having relative motion.",
+    "tags": ["lubricants", "contacting-surfaces"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.4-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.4-Req02",
+    "name": "Lubricant Selection Criteria",
+    "source": "MIL-A-83577B",
+    "text": "The selection of lubricants for moving mechanical assemblies shall be based on coefficient of friction, vacuum behavior, depletion, temperature limits, viscosity, outgassing, corrosion protection, polymerization, cleanliness, run-in requirements, and compatibility.",
+    "tags": ["lubricants", "selection-criteria"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.4-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.4-Req03",
+    "name": "Lubricant Shall Not Cause Detrimental Effects",
+    "source": "MIL-A-83577B",
+    "text": "The lubricant chosen shall not cause detrimental effects on the moving mechanical assembly during or after operation at ambient conditions.",
+    "tags": ["lubricants", "safety"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.4-03"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.4-Req04",
+    "name": "Vent Paths for Liquid Lubricants",
+    "source": "MIL-A-83577B",
+    "text": "The vent paths from all liquid lubricants shall be designed such that the outgassing products do not impinge directly on critical surfaces.",
+    "tags": ["lubricants", "outgassing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.4-04"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.4-Req05",
+    "name": "Lubricant Selection Based on Development Tests",
+    "source": "MIL-A-83577B",
+    "text": "The selection of the lubricant for use in the critical moving mechanical assembly shall be based upon development tests demonstrating adequate lubrication under all specified operating conditions over the design lifetime.",
+    "tags": ["lubricants", "testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.4-05"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.4-Req06",
+    "name": "Lubricant and Process Documentation",
+    "source": "MIL-A-83577B",
+    "text": "The lubricant selected, and the processes used in cleaning parts and applying the lubricant shall be delineated.",
+    "tags": ["lubricants", "documentation"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.4-06"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.4-Req07",
+    "name": "Corrosion Inhibitors for M50 and 52100",
+    "source": "MIL-A-83577B",
+    "text": "Lubricants used with M50 or 52100 gear materials shall include corrosion inhibitors which prevent corrosion when the assembly is humidity tested in accordance with MIL-STD-1540.",
+    "tags": ["lubricants", "corrosion"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.4-07"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.4.1-Req01",
+    "name": "Maximize Lubricant Film Thickness",
+    "source": "MIL-A-83577B",
+    "text": "In rolling element bearings, the lubricant film thickness shall be maximized consistent with lubricant type, operating conditions, and bearing parameters.",
+    "tags": ["lubricants", "rolling-element-bearings"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.4.1-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.4.1-Req02",
+    "name": "Boundary Lubrication Requirements",
+    "source": "MIL-A-83577B",
+    "text": "If bearings must be operated in the boundary lubrication regime, a boundary lubricant with good anti-wear characteristics shall be used.",
+    "tags": ["lubricants", "boundary-lubrication"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.4.1-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.4.1-Req03",
+    "name": "Reservoir Attachment for Lubricant Flow",
+    "source": "MIL-A-83577B",
+    "text": "Where bearing lubricant reservoirs are used, the reservoir shall be attached, where practicable, to an area of relatively high temperature to enhance molecular and surface flow into the bearing.",
+    "tags": ["lubricants", "reservoirs"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.4.1-03"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.4.2-Req01",
+    "name": "Dry Film Lubricant Application Process",
+    "source": "MIL-A-83577B",
+    "text": "Application of dry film lubricants shall be by an appropriate process that provides a predictable, uniform, and repeatable lubricant film.",
+    "tags": ["dry-film-lubrication", "process"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.4.2-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.4.2-Req02",
+    "name": "Corrosion Resistant Materials for Dry Film Bearings",
+    "source": "MIL-A-83577B",
+    "text": "Corrosion resistant materials shall be used in bearings employing dry film lubricants.",
+    "tags": ["dry-film-lubrication", "materials"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.4.2-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.4.2-Req03",
+    "name": "Protect MoS2 from Humidity",
+    "source": "MIL-A-83577B",
+    "text": "Consideration shall be given to protection of molybdenum disulfide dry film lubricants from adverse effects due to exposure to atmospheric humidity.",
+    "tags": ["dry-film-lubrication", "humidity"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.4.2-03"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.4.3-Req01",
+    "name": "Hard Coating Application Process",
+    "source": "MIL-A-83577B",
+    "text": "Hard coatings shall be applied by an appropriate process such as ion implantation or chemical vapor deposition that assures the coating will not flake off under maximum stress.",
+    "tags": ["hard-coatings", "process"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.4.3-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.4.4-Req01",
+    "name": "Hydraulic Fluid Conformance",
+    "source": "MIL-A-83577B",
+    "text": "Fluids used in hydraulic systems shall be in conformance with MIL-H-6083 or MIL-H-5605.",
+    "tags": ["hydraulic-fluids", "standards"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.4.4-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.5-Req01",
+    "name": "Brush and Slip Ring Material Selection",
+    "source": "MIL-A-83577B",
+    "text": "Brush and slip ring materials shall be selected to minimize wear, electrical noise, and contamination.",
+    "tags": ["brushes", "slip-rings", "materials"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.5-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.6-Req01",
+    "name": "Electrical Parts Shall Meet MIL-STD-1547",
+    "source": "MIL-A-83577B",
+    "text": "Electrical and electronic parts used in moving mechanical assemblies shall meet the requirements of MIL-STD-1547.",
+    "tags": ["electrical", "electronics", "standards"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.6-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.7-Req01",
+    "name": "Motor Selection Based on Performance Requirements",
+    "source": "MIL-A-83577B",
+    "text": "Electric motors shall be selected based on torque, speed, power, efficiency, thermal characteristics, and environmental requirements.",
+    "tags": ["motors", "selection-criteria"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.7-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.7-Req02",
+    "name": "Motor Thermal Protection",
+    "source": "MIL-A-83577B",
+    "text": "Motors shall be protected from overheating by design features, thermal switches, or current limiting devices.",
+    "tags": ["motors", "thermal-protection"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.7-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.7.1-Req01",
+    "name": "Stepper Motor Detent Torque Minimization",
+    "source": "MIL-A-83577B",
+    "text": "Stepper motors shall be selected and designed to minimize detent torque where smooth motion is required.",
+    "tags": ["stepper-motors", "torque"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.7.1-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.7.1-Req02",
+    "name": "Stepper Motor Resonance Avoidance",
+    "source": "MIL-A-83577B",
+    "text": "Stepper motor drive systems shall be designed to avoid resonant frequencies that could cause loss of synchronism.",
+    "tags": ["stepper-motors", "resonance"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.7.1-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-3.2.7.2-Req01",
+    "name": "Torque Motor Continuous Stall Operation",
+    "source": "MIL-A-83577B",
+    "text": "Torque motors shall be capable of continuous stall operation without exceeding allowable temperature limits.",
+    "tags": ["torque-motors", "thermal"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-25",
+      "unique_id": "req-3.2.7.2-01"
+    }
+  }
+]

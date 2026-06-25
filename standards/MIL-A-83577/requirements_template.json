@@ -1,0 +1,38 @@
+[
+    {
+        "type": "requirement",
+        "req_id": "MIL-A-83577B-Req01",
+        "name": "Example Requirement",
+        "source": "MIL-A-83577B",
+        "text": "The system shall do xyz when commanded",
+        "tags": ["system", "command"],
+        "implementationPhase": "design",
+        "assemblyLevel": "subassembly",
+        "guidance": "",
+        "rationale": "",
+        "verifiedBy": "test",
+        "metadata": {
+             "version": 0.1,
+             "modifiedDate": "2026-06-25",
+             "unique_id": "req-348f7en3487" 
+        }
+    },
+    {
+        "type": "requirement",
+        "req_id": "MIL-A-83577B-Req02",
+        "name": "Example Requirement 2",
+        "source": "MIL-A-83577B",
+        "text": "The system shall do abc when commanded",
+        "tags": ["system", "abc"],
+        "implementationPhase": "qualification",
+        "assemblyLevel": "assembly",
+        "guidance": "",
+        "rationale": "",
+        "verifiedBy": "analysis",
+        "metadata": {
+             "version": 0.1,
+             "modifiedDate": "2026-06-25",
+             "unique_id": "req-372ofdkudkjwejed" 
+        }
+    }
+]

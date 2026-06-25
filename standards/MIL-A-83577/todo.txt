@@ -1,0 +1,18 @@
+the key is the json requirements viewer...
+
+what do I want it to do?
+
+1. view requirements from multiple json sources
+2. filter from any json element
+3. export to excel
+4. modify? (auto-update lastmodified date & version)
+5. export to MBSE sysml2.0 compatible format
+
+step 0: finalize json format
+step 1: get all the jsons for the requirements docs...
+
+python json mod tools?
+
+vscode is a powerful json mod tool...
+
+practice: glossary / nomenclature... (simpler)

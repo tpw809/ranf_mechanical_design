@@ -1,0 +1,162 @@
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage{graphicx}      % For logo
+\usepackage{tcolorbox}     % For note box
+\usepackage{setspace}      % Optional spacing
+\usepackage{geometry}      % Page layout
+\usepackage{draftwatermark}
+
+\geometry{margin=1in}
+
+\begin{document}
+
+% Watermark:
+\SetWatermarkText{DRAFT} % Text of the watermark
+\SetWatermarkScale{4} % Size (scale factor)
+\SetWatermarkColor[gray]{0.85} % Transparency (0 = invisible, 1 = fully opaque)
+
+% -------------------------------
+% TITLE PAGE
+% -------------------------------
+\begin{titlepage}
+    \centering
+
+    % Top row: Logo (left) and Doc Info (right)
+    \noindent
+    \begin{minipage}[t]{0.49\textwidth}
+        \vspace{0pt}
+        \includegraphics[width=0.6\textwidth]{logo_text.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.49\textwidth}
+        \vspace{0pt}
+        \raggedleft
+        \begin{tabular}{rl}
+            \textbf{Document Number:} & RANF-ENG-00001 \\
+            \textbf{Revision:} & Rev. DRAFT \\
+        \end{tabular}
+    \end{minipage}
+
+    % Vertical spacing before title
+    \vspace{2.5cm}
+
+%    % Document Number and Revision
+%    \begin{tabular}{rl}
+%        \textbf{Document Number:} & DOC-00123 \\
+%        \textbf{Revision:} & Rev. A \\
+%    \end{tabular}
+%
+%    % Organization Logo
+%    \vspace*{1cm}
+%    \includegraphics[width=0.35\textwidth]{ranf_imprint_logo.png}\\[1.5cm]
+
+% TODO: add QR code to website
+
+    % Report Title
+    {\Huge \bfseries Levels of Assembly \\[0.5cm]}
+
+    % Author and Date
+    {\Large Timothy P Woodard \\[0.2cm]}
+    {\large \today \\[1.5cm]}
+
+    % Note Box
+    \begin{tcolorbox}[colback=gray!10, colframe=black, width=0.9\textwidth]
+        \textbf{Note:} Copyright 2026 Roads Are No Fun
+
+This document is provided as part of the Roads Are No Fun project under the Creative Commons CC BY-SA license.
+    \end{tcolorbox}
+
+    \vfill
+\end{titlepage}
+
+% -------------------------------
+% MAIN DOCUMENT
+% -------------------------------
+%\tableofcontents
+\newpage
+
+\section{Levels of Assembly}
+
+Levels of assembly are often a matter of perspective; the goal is for the distinction to be useful for a product life cycle.
+For design, certain requirements only affect specific levels of assembly, which is the purpose of this document.
+Each level is critical to high reliability systems.
+
+\subsection{Part}
+
+A part is a single piece or substance.
+
+examples: bracket, spring, lubricant
+
+Parts, Materials, and Processes
+
+Materials and processes are usually controlled by industry standards.
+
+Parts typically require a drawing which identify relevant materials and processes.
+
+\subsection{Component}
+
+A component is a basic functional element consisting or two or more parts.
+
+examples: ball bearing, gear set, honeycomb panel
+
+May require a procurement specification.
+
+\subsection{Subassembly}
+
+A subassembly is a collection of components and / or other subassemblies.
+
+examples: electric motor, cable wrap, slip ring
+
+May require a procurement specification.
+
+\subsection{Assembly}
+
+An assembly is a complete functional module consisting of multiple subassemblies.
+
+examples: gimbal, reaction wheel, antenna, rover moblity corner
+
+Requires a specification
+
+\subsection{Subsystem}
+
+A subsystem encompasses all elements of a functional set.
+
+examples: communications, propulsion, attitude control, rover mobility, power, computing
+
+Requires a specification
+
+\subsection{System}
+
+Mission level
+
+example: spacecraft, rover, ground vehicle, 
+
+Requires a specification
+
+\subsection{Enterprise / System of Systems}
+
+Campaign level
+
+Consists of multiple systems
+
+
+\subsection{Interfaces}
+
+
+
+
+
+
+%\section{Glossary}
+%\paragraph{Not Invented Here (NIH) Syndrome} when engineers at a company do not use a system external to their organization due to the perceived inferiority to internally developed systems
+%\paragraph{C-Sketch} collaborative sketching, also called 6-3-5, is a brainstorming method
+
+\section*{References}
+
+\begin{enumerate}
+\item MIL-A-83577, 1988.
+    %\item George E. Dieter, Linda C. Schmidt; Engineering Design Fourth Edition; McGraw Hill; 2009.
+\end{enumerate}
+
+\end{document}

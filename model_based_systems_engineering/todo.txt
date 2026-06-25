@@ -4,3 +4,22 @@ test loading example into sysml v2 tool
 
 make "source of truth" jsons for NASA 5017, DFMR 2.0, Mil-A-83577B, JERG 330
 
+json fields:
+
+type: requirement
+unique_id: unique for each revision / version
+req_id: short name
+name: short descriptive name
+source: where did the req come from?
+text: text of the requirment itself
+tags: keywords
+phase: product lifecycle phase
+assembly_level: level of assembly
+guidance:
+rationale: concern
+verification_method:
+
+metadata:
+version
+unique_id
+last modified date
