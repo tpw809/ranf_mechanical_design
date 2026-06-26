@@ -1373,5 +1373,2038 @@
       "modifiedDate": "2026-06-25",
       "unique_id": "req-3.2.7.2-01"
     }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.1.2-Req01",
+    "name": "Test and Inspection Facility Capability",
+    "source": "MIL-A-83577B",
+    "text": "The manufacturer shall ensure that test and inspection facilities of sufficient accuracy, quality, and quantity are established and maintained to permit performance of required inspections.",
+    "tags": ["inspection", "test-facilities", "quality-assurance"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.1.2-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3-Req01",
+    "name": "Control of Parts and Materials Prior to Assembly",
+    "source": "MIL-A-83577B",
+    "text": "To ensure that a reliable moving mechanical assembly is fabricated, all parts and materials shall be adequately controlled and inspected prior to assembly.",
+    "tags": ["parts", "materials", "inspection", "quality-control"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3-Req02",
+    "name": "Control of Tools, Processes, Parts, and Materials During Fabrication",
+    "source": "MIL-A-83577B",
+    "text": "During fabrication, the tools and processes, as well as parts and materials, shall be adequately controlled and inspected to ensure compliance with the approved manufacturing processes and controls.",
+    "tags": ["fabrication", "process-control", "inspection"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.1-Req01",
+    "name": "Accreditation Records Maintenance",
+    "source": "MIL-A-83577B",
+    "text": "Records documenting the accreditation status of the moving mechanical assemblies shall be maintained following assignment of serial numbers.",
+    "tags": ["records", "traceability", "documentation"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.1-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.1-Req02",
+    "name": "Serial Number Traceability Records",
+    "source": "MIL-A-83577B",
+    "text": "Each moving mechanical assembly shall have inspection records and test records maintained by serial number to provide trace-ability from system usage to production lot data for the device.",
+    "tags": ["records", "traceability", "inspection"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.1-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.1-Req03",
+    "name": "Complete Records Availability",
+    "source": "MIL-A-83577B",
+    "text": "Complete records shall be maintained and shall be available for review during the service life of the system.",
+    "tags": ["records", "documentation", "lifecycle"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.1-03"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.1-Req04",
+    "name": "Record Content Requirements",
+    "source": "MIL-A-83577B",
+    "text": "The records shall indicate all relevant test data, all rework or modifications, and all installation and removals for whatever reason.",
+    "tags": ["records", "documentation", "configuration-control"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.1-04"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.2-Req01",
+    "name": "In-Process Manufacturing Screens",
+    "source": "MIL-A-83577B",
+    "text": "Each moving mechanical assembly and each critical subassembly shall be subjected to in-process manufacturing and assembly screens to ensure compliance with the specified requirements to the extent practicable.",
+    "tags": ["manufacturing", "screening", "quality-control"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.2-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.2-Req02",
+    "name": "Verification of Process Controls and Configuration",
+    "source": "MIL-A-83577B",
+    "text": "Compliance with the documented process controls, documented screening requirements, required hardware configuration, and general workmanship requirements shall be verified.",
+    "tags": ["process-control", "screening", "workmanship"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.2-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.2-Req03",
+    "name": "Visual Inspection at Each Assembly Level",
+    "source": "MIL-A-83577B",
+    "text": "At each level of assembly, each completed unit shall be subjected to visual inspection to ensure that it is free of obvious defects and is within specified physical limits.",
+    "tags": ["inspection", "visual-inspection", "assembly"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.2-03"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.3-Req01",
+    "name": "Reject Nonconforming Material",
+    "source": "MIL-A-83577B",
+    "text": "Nonconforming material, components, or assemblies that do not meet the established tolerance limits set for the acceptance limits in the in-process screens shall be rejected for use.",
+    "tags": ["nonconformance", "quality-control", "screening"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.3-01"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.3-Req02",
+    "name": "No Reassignment of Lot-Controlled Units",
+    "source": "MIL-A-83577B",
+    "text": "Reassignment of units that were lot controlled to a different lot shall not be made.",
+    "tags": ["nonconformance", "lot-control"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.3-02"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.3-Req03",
+    "name": "Scrap Nonconforming Material Not Meeting Rework Criteria",
+    "source": "MIL-A-83577B",
+    "text": "Nonconforming material or assembled units that do not satisfy these rework criteria shall be considered scrap.",
+    "tags": ["nonconformance", "scrap", "quality-control"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.3-03"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.4-Req01",
+    "name": "Inspection of Castings, Welds, Composite Parts, and Stressed Surfaces",
+    "source": "MIL-A-83577B",
+    "text": "As a minimum, all castings, fusion welds, fibre composite or honeycomb parts and surfaces of stressed parts shall be inspected as follows:",
+    "tags": ["inspection", "materials", "structural"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.4-01"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.4-Req02",
+    "name": "Radiographic Inspection of Castings and Welds",
+    "source": "MIL-A-83577B",
+    "text": "All castings and all fusion welds shall be inspected for the presence of internal defects by radiographic methods in accordance with MIL-STD-453.",
+    "tags": ["inspection", "radiography", "welds", "castings"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.4-02"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.4-Req03",
+    "name": "Internal Inspection of Composite Structures",
+    "source": "MIL-A-83577B",
+    "text": "Plastic composite structural elements shall be inspected for the presence of internal defects by an appropriate test method.",
+    "tags": ["inspection", "composites", "structural"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.4-03"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.4-Req04",
+    "name": "Surface Inspection of Stressed Parts",
+    "source": "MIL-A-83577B",
+    "text": "The surfaces of stressed parts shall be inspected in accordance with MIL-X-6868, MIL-STD-6866, or other appropriate inspection methods.",
+    "tags": ["inspection", "surface-defects", "NDT"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.4-04"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.4-Req05",
+    "name": "Nital Etch Inspection for High-Strength Steel",
+    "source": "MIL-A-83577B",
+    "text": "Heat-treated steel parts with tensile strength above 1,790 MPa that require a grinding operation after final heat treatment shall be inspected by Nital etch on all surfaces subject to grinding.",
+    "tags": ["inspection", "steel", "Nital-etch"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.4-05"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.4-Req06",
+    "name": "Complete Inspection of Critical or Single-Point-Failure Parts",
+    "source": "MIL-A-83577B",
+    "text": "All parts used in critical moving mechanical assemblies or parts comprising single point failures shall be completely inspected to ensure that no defects exist which could lead to degraded performance or failure.",
+    "tags": ["inspection", "critical-parts", "single-point-failure"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.4-06"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.5-Req01",
+    "name": "Assembly Dimensional and Physical Inspection",
+    "source": "MIL-A-83577B",
+    "text": "The dimensions, weight, finish, identification markings, and cleanliness of each moving mechanical assembly shall be inspected, as appropriate, prior to acceptance testing and prior to installation on the vehicle.",
+    "tags": ["inspection", "assemblies", "physical-properties"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.5-01"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.5-Req02",
+    "name": "Thread Engagement Requirements",
+    "source": "MIL-A-83577B",
+    "text": "Inspection of the assembly shall be made to ensure that a minimum thread engagement of five full threads exists for all threaded attachments; or where through bolts are used, that a minimum of two full threads protrude beyond the end of the nut.",
+    "tags": ["inspection", "fasteners", "threads"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.5-02"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.5-Req03",
+    "name": "Fastener Torque Inspection",
+    "source": "MIL-A-83577B",
+    "text": "Fasteners shall be inspected for compliance with required torque levels.",
+    "tags": ["inspection", "fasteners", "torque"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.5-03"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.5-Req04",
+    "name": "Concurrent Assembly Inspections",
+    "source": "MIL-A-83577B",
+    "text": "These inspections shall be made concurrently with the assembly of the parts.",
+    "tags": ["inspection", "assembly-process"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.5-04"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.5-Req05",
+    "name": "Pin Puller Travel Verification",
+    "source": "MIL-A-83577B",
+    "text": "Pin pullers shall be inspected at the vehicle test level to verify adequate travel and travel margin.",
+    "tags": ["inspection", "pin-pullers", "travel"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.5-05"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.5-Req06",
+    "name": "Pre- and Post-Environmental Test Inspections",
+    "source": "MIL-A-83577B",
+    "text": "All moving mechanical assemblies shall be inspected before and after exposure to environmental tests at the component test level, at the vehicle test level, and at the launch site.",
+    "tags": ["inspection", "environmental-testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.5-06"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.5-Req07",
+    "name": "Surface Damage Rejection Criteria",
+    "source": "MIL-A-83577B",
+    "text": "If surface damage is sufficient to affect the intended function of the assembly, or the performance is degraded, the moving mechanical assembly shall be rejected.",
+    "tags": ["inspection", "surface-defects", "rejection"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.5-07"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.5-Req08",
+    "name": "Reject Rust or Corrosion",
+    "source": "MIL-A-83577B",
+    "text": "Any parts exhibiting rust or corrosion shall be rejected.",
+    "tags": ["inspection", "corrosion", "rejection"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.5-08"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.5-Req09",
+    "name": "Fastener Looseness Inspection",
+    "source": "MIL-A-83577B",
+    "text": "Fasteners shall be visually inspected for looseness.",
+    "tags": ["inspection", "fasteners"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.5-09"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.5-Req10",
+    "name": "Torque Check Before and After Environmental Tests",
+    "source": "MIL-A-83577B",
+    "text": "The torque shall be checked on pre-selected fasteners before and after exposure to each environmental test condition.",
+    "tags": ["inspection", "fasteners", "torque"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.5-10"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.6-Req01",
+    "name": "Establish Lubricant Processing Procedures",
+    "source": "MIL-A-83577B",
+    "text": "Lubricant processing procedures shall be established to control the uniformity, repeatability, cleanliness, accountability, and amount of lubricant in the moving mechanical assemblies.",
+    "tags": ["lubrication", "process-control"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.6-01"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.6-Req02",
+    "name": "Removal of Shipping Lubricants",
+    "source": "MIL-A-83577B",
+    "text": "Lubricant processing procedures shall delineate the processes of removal of bearing shipping lubricants.",
+    "tags": ["lubrication", "processing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.6-02"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.6-Req03",
+    "name": "Analyze Shipping Lubricant Compatibility",
+    "source": "MIL-A-83577B",
+    "text": "Shipping lubricants shall be analyzed for compatibility with the applied lubricant.",
+    "tags": ["lubrication", "compatibility"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.6-03"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.6-Req04",
+    "name": "Replace Porous Retainers Containing Shipping Lubricants",
+    "source": "MIL-A-83577B",
+    "text": "Porous ball bearing retainers and lubricant reservoirs which have shipping lubricants in them shall be replaced before processing with the flight lubricant.",
+    "tags": ["lubrication", "bearings", "processing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.6-04"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.6-Req05",
+    "name": "Wetability Testing of Bearings",
+    "source": "MIL-A-83577B",
+    "text": "Each bearing to be processed with a liquid lubricant shall be tested for wetability prior to application of the flight lubricant.",
+    "tags": ["lubrication", "bearings", "testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.6-05"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.3.6-Req06",
+    "name": "Approval of Wetability Test Method",
+    "source": "MIL-A-83577B",
+    "text": "The wetability test method shall be approved by the contracting officer.",
+    "tags": ["lubrication", "testing", "approval"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.3.6-06"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.4-Req01",
+    "name": "Use Developmental Testing to Validate New Designs",
+    "source": "MIL-A-83577B",
+    "text": "Developmental testing shall be used to validate new design concepts for critical components and assemblies as a prelude to qualification testing.",
+    "tags": ["development-testing", "design-validation", "critical-components"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.4-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.4-Req02",
+    "name": "Development Testing Must Ensure Minimal Failures During Qualification",
+    "source": "MIL-A-83577B",
+    "text": "The nature and extent of developmental testing on components, subsystems, and complete moving mechanical assemblies shall be sufficient to ensure that qualification testing of new designs will produce minimal failures which would then require redesign.",
+    "tags": ["development-testing", "qualification", "design-maturity"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.4-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.4-Req03",
+    "name": "Development Testing Shall Use MIL-STD-1540 as a Guide",
+    "source": "MIL-A-83577B",
+    "text": "Developmental testing shall be conducted using MIL-STD-1540 as a guide.",
+    "tags": ["development-testing", "standards", "MIL-STD-1540"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.4-03"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.4-Req04",
+    "name": "Bearing Installation Design Substantiation",
+    "source": "MIL-A-83577B",
+    "text": "Tests to substantiate the design of each bearing installation with respect to materials, stresses, stiffness, fatigue life, preload, and possible binding under normal, as well as the most severe combined loading conditions, and the expected environmental conditions shall be conducted.",
+    "tags": ["bearings", "design-validation", "development-testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.4-04"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.4-Req05",
+    "name": "Bearing Reuse Wear and Lubrication Characterization",
+    "source": "MIL-A-83577B",
+    "text": "For bearings that are reused, tests to characterize the wear and lubrication changes resulting from bearing reuse, and the effects these changes have on torque margin, shall be conducted.",
+    "tags": ["bearings", "wear", "lubrication", "reuse"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.4-05"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.4-Req06",
+    "name": "Temperature Gradient Effects on Bearing Preload",
+    "source": "MIL-A-83577B",
+    "text": "Where practicable, tests to substantiate the effects of temperature gradients on bearing preload and stiffness shall be conducted.",
+    "tags": ["bearings", "thermal-effects", "preload"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.4-06"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.4-Req07",
+    "name": "Lubricant System Adequacy Testing",
+    "source": "MIL-A-83577B",
+    "text": "For critical moving mechanical assemblies, tests of the lubricant that demonstrate the ability of the lubricant system to provide adequate lubrication under all specified operating conditions over the design lifetime shall be conducted.",
+    "tags": ["lubrication", "lifetime", "critical-components"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.4-07"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.4-Req08",
+    "name": "Friction Welding Verification Tests",
+    "source": "MIL-A-83577B",
+    "text": "Where contact pressure is sufficiently high, such that friction welding might be possible, design and process verification tests shall be conducted at the piece part or subassembly level to verify the selection of materials and lubricants in the proposed application.",
+    "tags": ["friction-welding", "materials", "verification-testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.4-08"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.4-Req09",
+    "name": "Brush and Commutator Lubrication and Wear Testing",
+    "source": "MIL-A-83577B",
+    "text": "For brushes and commutator or slip ring assemblies, tests shall demonstrate that the lubricant is not significantly deteriorated or driven from the areas requiring lubrication by adverse thermal, gravity forces, or other conditions; and that wear rates, wear debris, electrical noise level, friction torque, and lubricant loss are compatible with design requirements.",
+    "tags": ["brushes", "commutators", "lubrication", "wear"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.4-09"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.4-Req10",
+    "name": "Deployable Driving Capability and Load Testing",
+    "source": "MIL-A-83577B",
+    "text": "For deployable devices, minimum available driving capability and maximum load determination shall be verified through an appropriate test program; each element of resistance shall be characterized in this test program.",
+    "tags": ["deployables", "load-testing", "driving-capability"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.4-10"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.4-Req11",
+    "name": "Motor Torque vs Current Characterization",
+    "source": "MIL-A-83577B",
+    "text": "For moving mechanical assemblies driven by electrical motors, a torque versus current relationship for each motor under minimum, maximum, and ambient thermal and vacuum conditions shall be established.",
+    "tags": ["motors", "torque", "current", "thermal", "vacuum"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.4-11"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.4-Req12",
+    "name": "Eddy Current Damper Life Testing",
+    "source": "MIL-A-83577B",
+    "text": "Eddy current dampers shall be tested for repeatability of damping rate and torque values for twice its expected operational life cycle.",
+    "tags": ["eddy-current-dampers", "lifetime-testing", "damping"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.4-12"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.4-Req13",
+    "name": "Eddy Current Damper Temperature Testing",
+    "source": "MIL-A-83577B",
+    "text": "The eddy current damper shall be tested at temperature extremes to determine its damping rate over the temperature range.",
+    "tags": ["eddy-current-dampers", "thermal-testing", "damping"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.4-13"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.5-Req01",
+    "name": "First Assembly Inspection Requirement",
+    "source": "MIL-A-83577B",
+    "text": "An inspection of the first of each of the moving mechanical assemblies produced with production equipment and procedures shall be conducted at a time and location acceptable to the contracting officer.",
+    "tags": ["first-article", "inspection", "production"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.5-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.5-Req02",
+    "name": "No Discrepancies Among Equipment, Tooling, Drawings, and Records",
+    "source": "MIL-A-83577B",
+    "text": "There shall be no discrepancies among the equipment, the fabrication tooling used, the released drawings, the test data, the inspection records, and the specification requirements.",
+    "tags": ["configuration-control", "inspection", "quality-assurance"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.5-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.5-Req03",
+    "name": "First Assembly Approval Validity",
+    "source": "MIL-A-83577B",
+    "text": "First assembly approval is valid only on the contract or purchase order under which it is granted, unless extended by the contracting officer to other contracts or purchase orders.",
+    "tags": ["first-article", "approval", "contracting"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.5-03"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6-Req01",
+    "name": "Verify Configuration and Workmanship Before Acceptance Testing",
+    "source": "MIL-A-83577B",
+    "text": "The configuration and workmanship of the completed hardware shall be verified by inspection prior to the start of acceptance testing.",
+    "tags": ["acceptance-testing", "inspection", "workmanship"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6-01"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6-Req02",
+    "name": "Conduct Acceptance Tests per MIL-STD-1540",
+    "source": "MIL-A-83577B",
+    "text": "Acceptance tests shall be conducted on each moving mechanical assembly in accordance with the acceptance test requirements of MIL-STD-1540.",
+    "tags": ["acceptance-testing", "MIL-STD-1540", "standards"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6-02"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6-Req03",
+    "name": "Acceptance Tests Shall Include Run-In, Functional, and Environmental Tests",
+    "source": "MIL-A-83577B",
+    "text": "The acceptance tests shall incorporate the run-in, functional, and environmental test requirements stated herein.",
+    "tags": ["acceptance-testing", "run-in", "functional-testing", "environmental-testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6-03"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6-Req04",
+    "name": "Acceptance Tests Must Detect Workmanship Defects",
+    "source": "MIL-A-83577B",
+    "text": "The acceptance tests shall be structured to detect workmanship defects that could affect operational performance.",
+    "tags": ["acceptance-testing", "workmanship", "performance"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6-04"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6-Req05",
+    "name": "Proof Testing of Composite or Honeycomb Components",
+    "source": "MIL-A-83577B",
+    "text": "Components fabricated from fiber composite material or of honeycomb construction shall be subjected to acceptance proof testing.",
+    "tags": ["acceptance-testing", "composites", "honeycomb", "proof-testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6-05"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6-Req06",
+    "name": "Acceptance Testing with Deployable Device Attached",
+    "source": "MIL-A-83577B",
+    "text": "The acceptance testing of moving mechanical assemblies that are part of a deployable device shall, where practicable, be conducted with the moving mechanical assembly attached to the deployable device.",
+    "tags": ["acceptance-testing", "deployables", "integration"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6-06"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6-Req07",
+    "name": "Dummy Load Requirements for Acceptance Testing",
+    "source": "MIL-A-83577B",
+    "text": "The dummy loads shall provide a reasonable representation of the dynamic characteristics (such as inertia, stiffness, free play, and natural frequencies) of the actual driven member.",
+    "tags": ["acceptance-testing", "dummy-loads", "dynamic-characteristics"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6-07"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6-Req08",
+    "name": "Account for Dummy Load Friction Effects",
+    "source": "MIL-A-83577B",
+    "text": "The effect of friction due to the additional weight of the dummy load on the drive unit shall be accounted for in evaluating the test results.",
+    "tags": ["acceptance-testing", "dummy-loads", "friction"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6-08"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6-Req09",
+    "name": "Torque and Angle Measurement Requirements",
+    "source": "MIL-A-83577B",
+    "text": "Appropriate quantitative measurements such as torque vs angle measurements and time vs angle measurements, or equivalent linear measurements for linear devices, shall be made during run-in, functional, and environmental acceptance testing of all moving mechanical assemblies.",
+    "tags": ["acceptance-testing", "torque", "angle-measurement", "instrumentation"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6-09"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6-Req10",
+    "name": "Torque vs Angle Hysteresis for Spring-Driven Devices",
+    "source": "MIL-A-83577B",
+    "text": "For spring driven devices, torque vs angle measurements shall be made during restowing as well as during deployment in order to generate a torque vs angle hysteresis curve to determine torque margin.",
+    "tags": ["springs", "torque", "hysteresis", "acceptance-testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6-10"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6-Req11",
+    "name": "Force Margin Measurements for Linear Devices",
+    "source": "MIL-A-83577B",
+    "text": "For linear devices, equivalent linear measurements shall be made to determine force margin.",
+    "tags": ["linear-devices", "force-margin", "acceptance-testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6-11"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6-Req12",
+    "name": "Measurements Required at Ambient and Hot/Cold Acceptance Temperatures",
+    "source": "MIL-A-83577B",
+    "text": "As a minimum, these measurements shall be made under ambient and acceptance level hot and cold temperatures.",
+    "tags": ["acceptance-testing", "thermal", "measurements"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6-12"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6-Req13",
+    "name": "Redundant Modes Must Be Tested",
+    "source": "MIL-A-83577B",
+    "text": "Moving mechanical assemblies that contain redundancy in their design shall, where practicable, demonstrate performance to their requirements in each redundant mode of operation.",
+    "tags": ["redundancy", "acceptance-testing", "performance"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6-13"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6-Req14",
+    "name": "Functional Operation and Alignment Before and After Environmental Tests",
+    "source": "MIL-A-83577B",
+    "text": "Functional operation and alignment of each moving mechanical assembly, including instrumentation that is an integral part of the assembly, shall be tested and checked, where practicable, before and after exposure to each environmental acceptance test.",
+    "tags": ["functional-testing", "alignment", "environmental-testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6-14"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6-Req15",
+    "name": "Swaged Ends Must Be Proof Tested",
+    "source": "MIL-A-83577B",
+    "text": "All swaged ends on rods or cables shall be 100 percent tested with a load equal to twice the limit load.",
+    "tags": ["swaged-ends", "proof-testing", "cables", "rods"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6-15"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6.1-Req01",
+    "name": "Run-In Test Required for Each Moving Mechanical Assembly",
+    "source": "MIL-A-83577B",
+    "text": "After initial functional testing, a run-in test shall be performed on each moving mechanical assembly before it is subjected to further acceptance testing, unless it can be shown that this procedure would be detrimental to performance and would result in reduced reliability.",
+    "tags": ["run-in", "acceptance-testing", "reliability"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6.1-01"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6.1-Req02",
+    "name": "Minimum Run-In Duration (Hours or Cycles)",
+    "source": "MIL-A-83577B",
+    "text": "The run-in test shall be conducted for a minimum of 50 hours except for items where the number of cycles of operation, rather than hours of operation, is a more appropriate measure of the capability to perform in a consistent and controlled manner.",
+    "tags": ["run-in", "duration", "cycles", "testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6.1-02"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6.1-Req03",
+    "name": "Minimum Run-In Cycles Requirement",
+    "source": "MIL-A-83577B",
+    "text": "For these units, the run-in test shall be for at least 15 cycles or 5 percent of the total expected service life cycles, whichever is greater.",
+    "tags": ["run-in", "cycles", "service-life"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6.1-03"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6.1-Req04",
+    "name": "Run-In Test Conditions Must Be Representative",
+    "source": "MIL-A-83577B",
+    "text": "The run-in test conditions should be representative of the operational loads, speed, and environment; however, operation of the assembly at ambient conditions may be conducted if the test objectives can be met and the ambient environment will not degrade reliability or cause unacceptable changes to occur within the equipment such as the generation of excessive debris.",
+    "tags": ["run-in", "environmental-conditions", "operational-loads"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6.1-04"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6.1-Req05",
+    "name": "Periodic Measurements During Run-In",
+    "source": "MIL-A-83577B",
+    "text": "During the run-in test, sufficient periodic measurements shall be made to indicate what conditions may be changing with time and what wear rate characteristics exist.",
+    "tags": ["run-in", "measurements", "wear", "monitoring"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6.1-05"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6.1-Req06",
+    "name": "Run-In Test Plan Approval",
+    "source": "MIL-A-83577B",
+    "text": "Test procedures, test time, and criteria for performance adequacy shall be in accordance with a test plan that has been approved by the contracting officer.",
+    "tags": ["run-in", "test-plan", "approval", "contracting-officer"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6.1-06"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6.1-Req07",
+    "name": "Post Run-In Inspection of Solid Film Lubricated Gear Trains",
+    "source": "MIL-A-83577B",
+    "text": "All gear trains using solid film lubricants shall, where practicable, be inspected and cleaned following the run-in test.",
+    "tags": ["run-in", "gear-trains", "lubrication", "inspection"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6.1-07"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6.2-Req01",
+    "name": "Functional and Environmental Tests Required",
+    "source": "MIL-A-83577B",
+    "text": "Each moving mechanical assembly shall be subjected to functional and environmental tests that are in accordance with the applicable acceptance test requirements of MIL-STD-1540.",
+    "tags": ["functional-testing", "environmental-testing", "MIL-STD-1540", "acceptance-testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6.2-01"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6.2-Req02",
+    "name": "Functional Tests Must Demonstrate Performance Requirements",
+    "source": "MIL-A-83577B",
+    "text": "Functional tests shall be structured to demonstrate that the moving mechanical assembly is capable of operating in such a manner that all performance requirements are satisfied.",
+    "tags": ["functional-testing", "performance", "acceptance-testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6.2-02"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6.2-Req03",
+    "name": "Functional Tests Required Before and After Environmental Exposure",
+    "source": "MIL-A-83577B",
+    "text": "Functional tests are required before and after exposure to environmental test conditions in order to establish whether damage or degradation in performance has occurred.",
+    "tags": ["functional-testing", "environmental-testing", "performance-degradation"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6.2-03"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6.2-Req04",
+    "name": "Functional Tests Must Be Comprehensive",
+    "source": "MIL-A-83577B",
+    "text": "These tests shall be sufficiently comprehensive and shall include sufficient measurements to determine whether performance specifications are met.",
+    "tags": ["functional-testing", "measurements", "performance"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6.2-04"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6.2-Req05",
+    "name": "Functional Tests Must Be Conducted in Relevant Environments",
+    "source": "MIL-A-83577B",
+    "text": "Where a device is designed to operate in extreme heat or cold or in some other environmental extreme, and a functional test at ambient conditions would not be significant, the functional tests shall be conducted in the appropriate environment that would demonstrate performance.",
+    "tags": ["functional-testing", "environmental-extremes", "thermal-testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6.2-05"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6.2-Req06",
+    "name": "Test Assemblies in Launch or On-Orbit Configuration",
+    "source": "MIL-A-83577B",
+    "text": "The moving mechanical assemblies shall be tested in their launch or in their on-orbit configurations corresponding to the environment being simulated.",
+    "tags": ["configuration", "launch", "on-orbit", "environmental-testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6.2-06"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6.2-Req07",
+    "name": "Assemblies Must Be Passive or Operating as in Launch/Orbit",
+    "source": "MIL-A-83577B",
+    "text": "They shall be passive or operating corresponding to their state during the launch or on-orbit operational phases.",
+    "tags": ["launch", "on-orbit", "operational-state", "environmental-testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6.2-07"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6.2-Req08",
+    "name": "Torque and Angle Measurements During Thermal Vacuum Testing",
+    "source": "MIL-A-83577B",
+    "text": "Fully assembled deployables shall, where practicable, have torque vs angle and time vs angle measurements, or equivalent linear measurements for linear devices, made during thermal vacuum testing.",
+    "tags": ["deployables", "thermal-vacuum", "torque", "angle-measurement"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6.2-08"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6.2-Req09",
+    "name": "Harmonic Drive Dedoidal Inspection",
+    "source": "MIL-A-83577B",
+    "text": "After a harmonic drive is assembled into the parent assembly, it shall be inspected for the dedoidal condition.",
+    "tags": ["harmonic-drive", "inspection", "precision-mechanisms"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6.2-09"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6.2-Req10",
+    "name": "Hot/Cold Box Testing When Vacuum Testing Is Impractical",
+    "source": "MIL-A-83577B",
+    "text": "When operation of a deployable in a vacuum chamber or measurements in a vacuum chamber are impractical, the fully assembled deployable shall have deployment tests, including torque vs angle and time vs angle measurements, or equivalent linear measurements for linear devices, made in a hot or cold box.",
+    "tags": ["deployables", "thermal-testing", "hot-box", "cold-box"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6.2-10"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6.2-Req11",
+    "name": "Localized Hot/Cold Box Testing for Large Deployables",
+    "source": "MIL-A-83577B",
+    "text": "When the fully assembled deployable is so large that it cannot be completely enclosed within a hot or cold box, the moving mechanical assemblies themselves may be separately enclosed within several smaller hot or cold boxes which surround only the moving mechanical assembly portion of the deployable device.",
+    "tags": ["deployables", "thermal-testing", "large-structures"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6.2-11"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6.2-Req12",
+    "name": "Test Plan Approval for Functional and Environmental Tests",
+    "source": "MIL-A-83577B",
+    "text": "Test procedures, test time, and criteria for performance adequacy shall be as approved by the contracting officer.",
+    "tags": ["test-plan", "approval", "functional-testing", "environmental-testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6.2-12"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.6.2-Req13",
+    "name": "No Disassembly or Repair Allowed During Testing Without Approval",
+    "source": "MIL-A-83577B",
+    "text": "No disassembly, adjustments, or repair shall be made on moving mechanical assemblies during functional and environmental acceptance testing or after completion of testing unless approved by the contracting officer.",
+    "tags": ["testing-restrictions", "configuration-control", "approval"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.6.2-13"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7-Req01",
+    "name": "Conduct Qualification Tests per MIL-STD-1540",
+    "source": "MIL-A-83577B",
+    "text": "The qualification tests of the moving mechanical assemblies shall be conducted in accordance with the qualification test requirements of MIL-STD-1540.",
+    "tags": ["qualification-testing", "MIL-STD-1540", "standards"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7-01"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7-Req02",
+    "name": "Qualification Tests Must Include Design Life, Functional, and Environmental Tests",
+    "source": "MIL-A-83577B",
+    "text": "The qualification tests shall incorporate the design life verification test, functional test, and environmental test requirements stated herein.",
+    "tags": ["qualification-testing", "design-life", "functional-testing", "environmental-testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7-02"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7-Req03",
+    "name": "Dedicated Qualification Items Required for Multi-Use Assemblies",
+    "source": "MIL-A-83577B",
+    "text": "Moving mechanical assemblies which are required to operate more than once during their on-orbit life shall be tested using dedicated qualification items.",
+    "tags": ["qualification-testing", "multi-use", "dedicated-test-items"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7-03"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7-Req04",
+    "name": "Flight Use of Qualification Article Requires Approval",
+    "source": "MIL-A-83577B",
+    "text": "Any flight use of a qualification article shall have prior approval by the contracting officer.",
+    "tags": ["qualification-testing", "flight-use", "approval"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7-04"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7-Req05",
+    "name": "Qualification Tests Must Demonstrate Design Adequacy and Margins",
+    "source": "MIL-A-83577B",
+    "text": "The qualification tests shall be structured to demonstrate the design adequacy and design margins.",
+    "tags": ["qualification-testing", "design-margins", "performance"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7-05"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7-Req06",
+    "name": "Acceptance Test Must Precede Qualification Test",
+    "source": "MIL-A-83577B",
+    "text": "An acceptance test shall precede the qualification tests.",
+    "tags": ["qualification-testing", "acceptance-testing", "sequence"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7-06"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7-Req07",
+    "name": "Torque and Angle Measurements Required During Qualification",
+    "source": "MIL-A-83577B",
+    "text": "Torque vs angle measurements and time vs angle measurements, or equivalent linear measurements for linear devices, shall be made during qualification testing of all moving mechanical assemblies.",
+    "tags": ["qualification-testing", "torque", "angle-measurement", "instrumentation"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7-07"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7-Req08",
+    "name": "Contracting Officer Approval Required for Alternate Qualification Evidence",
+    "source": "MIL-A-83577B",
+    "text": "Compliance with all or portions of the qualification requirements based upon tests of similar items or upon equivalent vehicle operational performance shall require approval of the contracting officer.",
+    "tags": ["qualification-testing", "approval", "alternate-evidence"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7-08"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7-Req09",
+    "name": "Qualification Test Configurations Must Match Acceptance Tests",
+    "source": "MIL-A-83577B",
+    "text": "The general test measurements and test configurations used for qualification tests shall be similar to those used for acceptance tests.",
+    "tags": ["qualification-testing", "test-configuration", "consistency"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7-09"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7-Req10",
+    "name": "Redundant Modes Must Be Tested During Qualification",
+    "source": "MIL-A-83577B",
+    "text": "Moving mechanical assemblies that contain redundancy in their design shall, where practicable, demonstrate performance to their requirements in each redundant mode of operation during the qualification test.",
+    "tags": ["qualification-testing", "redundancy", "performance"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7-10"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7-Req11",
+    "name": "Functional Operation and Alignment Before and After Qualification Tests",
+    "source": "MIL-A-83577B",
+    "text": "Functional operation and alignment of each moving mechanical assembly, including instrumentation that is an integral part of the assembly, shall, where practicable, be tested and checked, before and after exposure to each qualification test.",
+    "tags": ["qualification-testing", "functional-testing", "alignment"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7-11"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req01",
+    "name": "Design Life Verification Test Required",
+    "source": "MIL-A-83577B",
+    "text": "One or more items of each of the moving mechanical assemblies, produced with production equipment and procedures, shall be subjected to a design life verification test.",
+    "tags": ["design-life", "verification-testing", "qualification-testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7.1-01"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req02",
+    "name": "Simulate Worst Predicted Operational Environments",
+    "source": "MIL-A-83577B",
+    "text": "These tests shall be conducted to simulate operational use within the range of the worst predicted operational environments.",
+    "tags": ["design-life", "environmental-testing", "simulation"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7.1-02"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req03",
+    "name": "Demonstrate Full Operational Life Cycle Capability",
+    "source": "MIL-A-83577B",
+    "text": "The items shall be subjected to tests which demonstrate the capability to perform the full operational life cycle.",
+    "tags": ["design-life", "lifecycle", "performance"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7.1-03"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req04",
+    "name": "Simulate Operational Masses, Loads, and Stiffness",
+    "source": "MIL-A-83577B",
+    "text": "Masses, loads, and stiffness of support structure shall be actual or simulated operational values, and any interfacing equipment such as thermal heaters, cabling, or hoses shall be in place so that operational conditions are simulated.",
+    "tags": ["design-life", "simulation", "operational-conditions"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7.1-04"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req05",
+    "name": "Design Life Test Plan Approval",
+    "source": "MIL-A-83577B",
+    "text": "The test and criteria for performance adequacy shall be approved by the contracting officer.",
+    "tags": ["design-life", "test-plan", "approval"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7.1-05"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req06",
+    "name": "Acceptable to Compress Duty Cycle for Low Duty Assemblies",
+    "source": "MIL-A-83577B",
+    "text": "For items having a relatively low percentage duty cycle, it shall be acceptable to compress the operational cycle into a tolerable total test duration.",
+    "tags": ["design-life", "duty-cycle", "test-duration"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7.1-06"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req07",
+    "name": "Accelerated Testing Allowed for High Duty Assemblies",
+    "source": "MIL-A-83577B",
+    "text": "For assemblies which operate continuously on-orbit, or at very high percentage duty cycles, accelerated test techniques may be employed if such an approach can be shown to be valid.",
+    "tags": ["design-life", "accelerated-testing", "duty-cycle"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7.1-07"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req08",
+    "name": "Environmental Testing with Disassembly and Inspection",
+    "source": "MIL-A-83577B",
+    "text": "For such assemblies, tests shall be under proper environmental conditions, of varying duration, followed by disassembly and inspection.",
+    "tags": ["design-life", "environmental-testing", "inspection"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7.1-08"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req09",
+    "name": "Test Items Must Be Essentially Identical to Flight Items",
+    "source": "MIL-A-83577B",
+    "text": "The moving mechanical assemblies used for life test shall be essentially identical with the flight items.",
+    "tags": ["design-life", "flight-representative", "test-items"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7.1-09"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req10",
+    "name": "Instrumentation Differences Must Not Jeopardize Validity",
+    "source": "MIL-A-83577B",
+    "text": "The only differences between the test items and the flight items shall be those changes necessary for incorporation of test instrumentation. These differences shall not jeopardize the validity of the tests with respect to the flight hardware.",
+    "tags": ["design-life", "instrumentation", "flight-representative"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7.1-10"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req11",
+    "name": "Instrumentation Required to Monitor Operating Conditions",
+    "source": "MIL-A-83577B",
+    "text": "Sufficient instrumentation shall be used to provide knowledge of the operating conditions within the assemblies during life testing such as internal pressures, temperatures, and temperature gradients.",
+    "tags": ["design-life", "instrumentation", "monitoring", "environmental-testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7.1-11"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req12",
+    "name": "Periodic Disassembly and Inspection During Life Testing",
+    "source": "MIL-A-83577B",
+    "text": "A single item may be used provided that periodic disassembly and inspection are performed to determine wear, lubrication condition, and any degradation that may affect performance.",
+    "tags": ["design-life", "inspection", "wear", "lubrication"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-26",
+      "unique_id": "req-4.7.1-12"
+    }
   }
 ]

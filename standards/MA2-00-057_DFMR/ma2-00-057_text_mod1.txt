@@ -1,0 +1,176 @@
+MA2-00-057 Mechanical Systems Safety
+
+Design For Minimum Risk (DFMR)
+
+September 28, 2000
+
+0.0 Mechanical Systems Verification Plan
+
+REQ: A comprehensive Mechanical Systems Verification Plan (MSVP) that describes the verification approach for safety critical movable mechanical systems shall be submitted for review and approval by the Mechanical Systems Working Group (MSWG).
+
+The specific purpose of this plan is to establish an understanding on how applicable systems requirements will be implemented and verified. 
+Before a movable mechanical system can be classified as a DFMR Mechanical System, compliance to the subject letter requirements must be provided to and approved by the MSWG.
+
+
+1.0 Binding / Jamming / Seizing
+
+REQ: Designs shall include provisions to prevent binding/jamming/seizing. 
+
+Appropriate design provisions include, but are not limited to, dual rotating surfaces or other mechanical redundancies, robust strength margins such that self-generated internal particles are precluded, shrouding and debris shielding, proper selection of materials and lubrication design to prevent friction welding or galling, etc. 
+
+REQ: Designs shall establish dimensional tolerances on all moving parts to ensure that proper functional performance will be maintained under all natural and induced environmental conditions including, but not limited to, thermally induced in-plane and out-of-plane distortions, differential thermal growth and shrinkage, and load-induced deflections. 
+
+REQ: The design shall take into account tolerances associated with rigging (mechanical adjustment).
+
+REQ: The design shall demonstrate by test and/or analysis that the sensitivity of mechanism performance as a function of rigging tolerances or installation/integration variables is understood. 
+
+REQ: Mechanical system design shall ensure compatibility of any lubricants used with interfacing materials.
+
+REQ: Mechanical system design shall ensure compatibility of any lubricants used with other lubricants used in the design.
+
+REQ: Mechanical system design shall ensure the lubrication is compatible with the natural and induced environment. 
+
+REQ: The design shall address proper quantities of lubricant.
+
+2.0 Quick Release Pins (Pip-Pins)
+
+Quick release pins (pip-pins) used in safety critical applications are considered movable mechanical systems subject to the provisions of this letter. 
+
+REQ: A pip-pin design qualified by inspection and test to the provisions of MIL-P-23460 or equivalent shall be used in any system design incorporating safety critical pip-pins. 
+
+REQ: Flight pip-pins shall be subjected to environmental acceptance testing. 
+
+REQ: Pip-pins shall be vibration tested to qualification levels in place in their respective hardware locations during the qualification test of the total assembly, or they may be tested alone in a component test to the predicted qualification levels at the hardware location. 
+
+REQ: Pip-pins shall be subjected to thermal testing to the maximum/minimum qualification temperatures. 
+Due to a history of failures with pip-pins, the simple mechanical system approach identified above is not applicable.
+
+3.0 Springs
+
+REQ: In designs and applications where spring failure would result in a hazard, the springs shall be redundant or designed, evaluated, and used under an acceptable fracture control program (reference NASA-STD-5003). 
+
+Failure of springs that are properly controlled under an acceptable fracture control program, is considered noncredible. 
+The design and use of a fail-safe spring or the use of a spring that maintains functionality with the loss of a single coil is acceptable. 
+Where practical, compression springs should be used in lieu of tension or torsional springs.
+
+4.0 Fastener Retention
+
+REQ: A means of positive locking (i.e., self-locking threads, selflocking inserts, etc.) shall be provided on all fasteners (threaded and otherwise) to assure integrity of the mechanical assemblies and prevent loose parts. 
+
+This is in addition to the standard torque/preload of the fastener. 
+
+REQ: Where other locking devices are practicable, locking compounds shall not be used on fasteners to provide locking.
+
+5.0 Strength and Fracture Control
+
+REQ: Structural design of safety critical mechanical system components shall adhere to paragraphs 208.1, 208.2, and 208.3 of NSTS 1700.7.
+
+REQ: Movable mechanical assemblies used in safety critical applications shall be included in an acceptable fracture control program (reference NASA-STD-5003). 
+
+REQ: Mechanical system components and linkages shall be designed with sufficient strength to tolerate an actuation force/torque stall condition at any point of travel and maintain a positive margin of safety with an ultimate factor of safety applied. 
+
+REQ: Mechanical systems that incorporate end of travel mechanical stops shall be designed to have positive strength margins for worst case dynamic loading conditions, considering variables in inertia properties, actuation force/torque, drive train resistance, and other environmental conditions. 
+
+REQ: Exposed mechanical system components, protective shrouds and covers, and mounting structure shall be designed to accommodate inadvertent impact loads from remote manipulator system/ISS remote manipulator system/payload operations and extravehicular activity/intravehcular activity loads, as appropriate, to ensure adequate margins to preclude deformation that could cause a binding or jamming condition or inadvertent operation of the mechanism. 
+
+REQ: A design that incorporates preload as a means of meeting functional and/or structural requirements shall comply with the preload criteria defined in NSTS 08307.
+
+6.0 Positive Indication of Status
+
+REQ: All movable mechanical systems shall provide positive indication that the mechanism has achieved its desired position (i.e., ready-to-latch, latched). 
+
+REQ: End of travel stops shall be provided for all movable mechanical systems.
+
+7.0 Torque / Force Margins
+
+REQ: For movable mechanical systems in safety critical applications, the operating torque or force margin shall be acceptance-test verified unless another verification approach is approved by the MSWG. 
+
+REQ: When test verified, the margin shall be 1.0 or greater at applicable points of travel. 
+
+REQ: Verification by analysis only will require prior review and approval of the analytical approach and margin requirement by the MSWG.
+ 
+REQ: This margin, as demonstrated conservatively by test or analytical calculations, shall take into account worst case environmental conditions, frictional effects, alignment effects, latching forces, thermally induced distortions, load induced distortions, and variations in lubricity including degradation or depletion of lubrication under vacuum and under worst case thermal conditions, etc. 
+
+Operating torque margin is defined as:
+
+Operating Torque Margin = (Available Driving Torque / Resisting Torque) - 1
+
+For linear devices, "Force" replaces "Torque" in the above equation.
+
+REQ: Mechanism holding torque or force margin shall be acceptance-test verified unless another verification approach is approved by the MSWG. 
+
+REQ: When test verified, a margin of 1.0 or greater is required in the applicable mechanism holding configuration(s). 
+
+The holding torque or force margin is the margin provided to prevent inadvertent operation. 
+
+REQ: Verification by analysis only will require prior review and approval of the analytical approach and margin requirement by the MSWG.
+ 
+REQ: This margin, as conservatively demonstrated by test or analytical calculations, shall take into account worst case environmental conditions, frictional effects, alignment effects, latching forces, thermally induced distortions, and load induced distortions, etc. 
+
+The holding torque margin is defined as:
+
+Holding Torque Margin = (Available Holding Torque / Torque Applied by Limit Load) - 1
+
+For linear devices, "Force" replaces "Torque" in the above equation.
+
+Verification by test, as specified in this paragraph, does not require a mechanical system demonstration at greater than limit load conditions but rather requires a test verification of the amount of driving or holding torque or force available under conservative adverse conditions.
+
+8.0 Contamination
+
+REQ: Fabrication and handling of safety critical movable mechanical assemblies shall be accomplished in a clean environment with attention given to avoiding nonparticulate (chemical) as well as particulate air contamination. 
+
+REQ: Specific cleanliness requirements shall be established for each movable mechanical assembly and shall address cleanliness levels needed to prevent binding or jamming.
+
+9.0 Assembly Level Acceptance Tests
+
+REQ: Each movable mechanical assembly designated for flight or as a qualification test article shall be subjected to acceptance testing which incorporates run-in, functional, and environmental testing. 
+
+REQ: The acceptance tests shall be structured to detect workmanship defects that could affect operational performance. 
+
+For programs using proto-flight approaches, the test parameters may be adjusted with MSWG approval to avoid excessive endurance or fatigue limit margin erosion.
+
+9.1 Run-in Test
+
+REQ: After initial functional testing, a run-in test shall be performed on each movable mechanical assembly before it is subjected to further acceptance testing. 
+
+The purpose of the run-in test is to detect material/workmanship defects and to wear-in parts.
+
+9.2 Functional and Environmental Acceptance Tests
+
+REQ: Each movable mechanical assembly shall be subjected to functional and environmental tests. 
+
+REQ: Functional tests shall be structured to demonstrate that the movable mechanical assembly is capable of operating to satisfy all performance requirements. 
+
+REQ: Functional tests are required before and after exposure to environmental test conditions in order to establish whether damage or degradation in performance has occurred. 
+
+REQ: Environmental acceptance tests shall be structured to demonstrate the ability to achieve performance requirements when exposed to the expected environmental extremes and to identify any workmanship defects.
+
+10.0 Qualification Test
+
+REQ: A Qualification Test Program shall be established for each safety critical movable mechanical assembly. 
+
+REQ: The qualification test program shall assure that a design performance and safety margin exists with respect to all design requirements when exposed to any mechanical, electrical, environmental, including acceptance testing, and operational stimuli that the product may reasonably expect to encounter during its service life. 
+
+REQ: The mechanism shall be tested in its launch, on-orbit, and landing configurations with the appropriate corresponding environmental extremes and with the mechanism in its appropriate passive or operating state. 
+
+REQ: Inspection and functional tests shall be performed before and after qualification tests. 
+
+MIL-STD-1540D may be helpful in establishing an effective Qualification Test Program. 
+
+REQ: Natural and induced environmental conditions shall include but are not limited to, thermally induced in-plane and out-of-plane distortions, differential thermal growth and shrinkage, and load-induced deflections. 
+
+For programs using protoflight approaches, the test parameters may be adjusted with MSWG approval to avoid excessive endurance or fatigue limit margin erosion.
+
+11.0 Design Life Verification Tests
+
+REQ: For applications where design life might be a concern due to endurance or fatigue limits being exceeded, potential deterioration of lubrication, or excessive wear, design life verification testing shall be conducted to verify that design life requirements have been complied with. 
+
+REQ: Design life testing for mechanisms that pose a catastrophic hazard potential shall assure at least four times the number of operational cycles, plus four times the number of component and vehicle functional and environmental test cycles. 
+
+REQ: Design life testing for mechanisms that pose a critical hazard potential shall assure at least two times the number of operational cycles, plus two times the number of component and vehicle functional and environmental test cycles. 
+
+REQ: Inspection and functional tests shall be performed before and after design life verification tests. 
+
+For programs using protoflight approaches, the test parameters may be adjusted with MSWG approval to avoid excessive endurance or fatigue limit margin erosion. 
+
+REQ: For protoflight hardware, refurbishment shall be accomplished after the qualification or design life verification tests and prior to reacceptance testing.

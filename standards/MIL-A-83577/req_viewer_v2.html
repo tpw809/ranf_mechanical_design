@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Requirements JSON Viewer</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+    h2 { margin-top: 40px; }
+    .json-block { 
+		background: white; 
+		padding: 20px; 
+		margin-bottom: 40px; 
+		border-radius: 8px; 
+		box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    table {
+		border-collapse: collapse;
+		margin-top: 10px;
+		width: max-content;   /* 🔥 KEY FIX: table grows as wide as needed */
+		table-layout: auto;   /* allow natural expansion */
+		/* min-width: 1600px; */
+	}
+    th, td { 
+		border: 1px solid #ccc; 
+		padding: 8px; 
+		vertical-align: top; 
+		/* overflow: hidden; */
+		text-overflow: ellipsis; 
+	}
+    th { 
+		position: sticky;
+		top: 0;
+		background: #eee; 
+		z-index: 5; /* keeps header above table cells */
+		/* position: relative; */
+	}
+    input[type="text"] { width: 300px; padding: 6px; margin-top: 10px; }
+
+    .file-label { font-weight: bold; }
+
+    .highlight {
+        background-color: yellow;
+        font-weight: bold;
+    }
+
+    .resize-handle {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 6px;
+        height: 100%;
+        cursor: col-resize;
+        user-select: none;
+    }
+	.table-wrapper {
+		overflow-x: auto;
+		overflow-y: auto;
+		max-height: 70vh; /* gives vertical scroll room */
+		width: 100%;
+		/* display: block; */
+		/* position: relative; */
+	}
+</style>
+</head>
+<body>
+
+<h1>Multi‑JSON Requirements Viewer</h1>
+
+<input type="file" id="fileInput" multiple accept=".json">
+<p>Select one or more JSON files containing requirement objects (array of requirement objects).</p>
+
+<div id="jsonContainers"></div>
+
+<script>
+// ---------- Column resize state ----------
+let currentTh = null;
+let startX = 0;
+let startWidth = 0;
+
+document.addEventListener("mousedown", function(e) {
+    if (e.target.classList.contains("resize-handle")) {
+        currentTh = e.target.parentElement;
+        startX = e.pageX;
+        startWidth = currentTh.offsetWidth;
+        document.body.style.cursor = "col-resize";
+        e.preventDefault();
+    }
+});
+
+document.addEventListener("mousemove", function(e) {
+    if (!currentTh) return;
+
+    const dx = e.pageX - startX;
+    const newWidth = Math.max(60, startWidth + dx);
+
+    // Resize the column
+    currentTh.style.width = newWidth + "px";
+
+    const table = currentTh.closest("table");
+    const index = Array.from(currentTh.parentElement.children).indexOf(currentTh);
+
+    // Apply width to all cells in this column
+    table.querySelectorAll("tr").forEach(row => {
+        const cell = row.children[index];
+        if (cell) cell.style.width = newWidth + "px";
+    });
+
+    // 🔥 KEY FIX: let the table grow
+    table.style.width = "max-content";
+});
+
+document.addEventListener("mouseup", function() {
+    currentTh = null;
+    document.body.style.cursor = "default";
+});
+
+// ---------- Helper: filter ----------
+function filterRequirements(requirements, keyword) {
+    const k = keyword.toLowerCase();
+    if (!k) return requirements;
+    return requirements.filter(req =>
+        JSON.stringify(req).toLowerCase().includes(k)
+    );
+}
+
+// ---------- Helper: table creation ----------
+function createTable(requirements, containerId, keyword = "") {
+    const container = document.getElementById(containerId);
+    container.innerHTML = "";
+
+    if (!Array.isArray(requirements)) {
+        container.textContent = "JSON root is not an array. Expected an array of requirement objects.";
+        return;
+    }
+
+    const table = document.createElement("table");
+    const header = document.createElement("tr");
+
+    const columns = [
+        "req_id",
+        "name",
+        "text",
+        "tags",
+        "guidance",
+        "rationale",
+        "implementationPhase",
+        "assemblyLevel",
+        "metadata.version",
+        "metadata.modifiedDate",
+        "metadata.unique_id"
+    ];
+
+    columns.forEach(col => {
+        const th = document.createElement("th");
+        th.textContent = col;
+
+        const handle = document.createElement("div");
+        handle.className = "resize-handle";
+        th.appendChild(handle);
+
+        header.appendChild(th);
+    });
+
+    table.appendChild(header);
+
+    const regex = keyword ? new RegExp(`(${keyword})`, "gi") : null;
+
+    requirements.forEach(req => {
+        const row = document.createElement("tr");
+
+        columns.forEach(col => {
+            const td = document.createElement("td");
+            let value;
+
+            if (col.includes(".")) {
+                const parts = col.split(".");
+                value = req;
+                parts.forEach(p => value = value ? value[p] : "");
+            } else {
+                value = req[col];
+            }
+
+            if (Array.isArray(value)) value = value.join(", ");
+            if (value === undefined || value === null) value = "";
+
+            if (regex && keyword) {
+                td.innerHTML = value.toString().replace(regex, `<span class="highlight">$1</span>`);
+            } else {
+                td.textContent = value;
+            }
+
+            row.appendChild(td);
+        });
+
+        table.appendChild(row);
+    });
+
+    const wrapper = document.createElement("div");
+	wrapper.className = "table-wrapper";
+	wrapper.appendChild(table);
+	
+	container.appendChild(wrapper);
+	}
+
+// ---------- File loading ----------
+document.getElementById("fileInput").addEventListener("change", function(event) {
+    const files = event.target.files;
+    const container = document.getElementById("jsonContainers");
+    container.innerHTML = "";
+
+    Array.from(files).forEach((file, index) => {
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+            let data;
+            try {
+                data = JSON.parse(e.target.result);
+            } catch (err) {
+                const block = document.createElement("div");
+                block.className = "json-block";
+                block.innerHTML = `<h2>${file.name}</h2><p style="color:red;">Invalid JSON: ${err.message}</p>`;
+                container.appendChild(block);
+                return;
+            }
+
+            const blockId = "jsonBlock_" + index;
+            const tableId = "table_" + index;
+
+            const block = document.createElement("div");
+            block.className = "json-block";
+            block.innerHTML = `
+                <h2>${file.name}</h2>
+                <label class="file-label">Filter:</label>
+                <input type="text" id="filter_${index}" placeholder="Enter keyword...">
+                <div id="${tableId}"></div>
+            `;
+
+            container.appendChild(block);
+
+            createTable(data, tableId, "");
+
+            document.getElementById(`filter_${index}`).addEventListener("input", function() {
+                const keyword = this.value.trim();
+                const filtered = filterRequirements(data, keyword);
+                createTable(filtered, tableId, keyword);
+            });
+        };
+
+        reader.readAsText(file);
+    });
+});
+</script>
+
+</body>
+</html>
