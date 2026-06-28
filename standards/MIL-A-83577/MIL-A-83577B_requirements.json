@@ -1,6 +1,24 @@
 [
   {
     "type": "requirement",
+    "req_id": "MIL-A-83577B-3.1-Req01",
+    "name": "Provide Trade Studies",
+    "source": "MIL-A-83577B",
+    "text": "Trade studies shall be made available for review when requested or provided in accordance with the contract provisions.",
+    "tags": ["trade study"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-3.1-01"
+    }
+  },
+  {
+    "type": "requirement",
     "req_id": "MIL-A-83577B-3.2.2-Req01",
     "name": "Deployables Self-Supporting",
     "source": "MIL-A-83577B",
@@ -1284,6 +1302,7 @@
       "unique_id": "req-3.2.6-01"
     }
   },
+
   {
     "type": "requirement",
     "req_id": "MIL-A-83577B-3.2.7-Req01",
@@ -1374,6 +1393,7 @@
       "unique_id": "req-3.2.7.2-01"
     }
   },
+
   {
     "type": "requirement",
     "req_id": "MIL-A-83577B-4.1.2-Req01",
@@ -3351,7 +3371,6 @@
       "unique_id": "req-4.7.1-09"
     }
   },
-
   {
     "type": "requirement",
     "req_id": "MIL-A-83577B-4.7.1-Req10",
@@ -3388,7 +3407,6 @@
       "unique_id": "req-4.7.1-11"
     }
   },
-
   {
     "type": "requirement",
     "req_id": "MIL-A-83577B-4.7.1-Req12",
@@ -3405,6 +3423,666 @@
       "version": 0.1,
       "modifiedDate": "2026-06-26",
       "unique_id": "req-4.7.1-12"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req14-2",
+    "name": "Lubricant Monitoring During Life Test",
+    "source": "MIL-A-83577B",
+    "text": "Where liquid lubrication is used, consideration shall be given to measuring lubricant loss, degradation, distribution, quantity, and outgassing constituents over the duration of the test.",
+    "tags": ["qualification", "lubrication", "monitoring"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.1-14"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req13",
+    "name": "Instrumentation Consistency Across Test Phases",
+    "source": "MIL-A-83577B",
+    "text": "The instrumentation shall be similar to that employed in other test phases to provide a basis for comparison of the design life test conditions with those of other selected ground tests and with those during orbital operations.",
+    "tags": ["design-life", "instrumentation", "consistency"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.1-13"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req14",
+    "name": "Operate Assembly According to Predicted Duty Cycle",
+    "source": "MIL-A-83577B",
+    "text": "The design life test moving mechanical assembly shall be operated as expected in flight with equipment operating in accordance with the predicted duty cycle.",
+    "tags": ["design-life", "duty-cycle", "testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.1-14"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req15",
+    "name": "Include Variations of Expected Flight Usage",
+    "source": "MIL-A-83577B",
+    "text": "The tests shall include variations of the expected flight usage, such as power down modes to check low temperature operation of the system, to the degree practicable without exceeding the thermal limits of the equipment.",
+    "tags": ["design-life", "thermal", "flight-usage"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.1-15"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req16",
+    "name": "Slip Ring and Commutator Testing with Representative Current",
+    "source": "MIL-A-83577B",
+    "text": "All electrical slip ring and commutator assembly tests shall be conducted with representative levels of electrical current at the rated voltage across the interface.",
+    "tags": ["design-life", "electrical", "slip-rings", "commutators"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.1-16"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req17",
+    "name": "Life Testing Duty Cycle Requirements",
+    "source": "MIL-A-83577B",
+    "text": "All moving mechanical assemblies shall be tested for at least twice the number of duty cycles expected in operational use, plus twice the number of duty cycles expected during component and vehicle functional and environmental tests.",
+    "tags": ["design-life", "duty-cycle", "testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.1-17"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req18",
+    "name": "Stop Testing Requirements",
+    "source": "MIL-A-83577B",
+    "text": "Stops shall be tested by intentionally running the moving mechanical assembly into the stops whether or not the moving mechanical assembly has limit switches to prevent contacting the stops in normal operation.",
+    "tags": ["design-life", "stops", "testing"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.1-18"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req19",
+    "name": "Stop Duty Cycle Requirements",
+    "source": "MIL-A-83577B",
+    "text": "The stops shall be tested for at least twice the number of duty cycles expected in operational use, plus twice the number of duty cycles expected during component and vehicle functional and environmental tests.",
+    "tags": ["design-life", "stops", "duty-cycle"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.1-19"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req20",
+    "name": "Functional Test After Life Verification",
+    "source": "MIL-A-83577B",
+    "text": "A functional test shall be conducted after the design life verification test has been completed and the assembly shall be disassembled and inspected for anomalous conditions.",
+    "tags": ["design-life", "functional-testing", "inspection"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.1-20"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.1-Req21",
+    "name": "Inspect Critical Areas for Fatigue Failure",
+    "source": "MIL-A-83577B",
+    "text": "The critical areas of parts which may be subject to fatigue failure shall be inspected to determine if failure has occurred.",
+    "tags": ["design-life", "fatigue", "inspection"],
+    "implementationPhase": "",
+    "assemblyLevel": "",
+    "guidance": "",
+    "rationale": "",
+    "verifiedBy": "",
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.1-21"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.2-Req01",
+    "name": "Environmental Qualification Testing Required",
+    "source": "MIL-A-83577B",
+    "text": "One item of each of the moving mechanical assemblies, produced with production equipment and procedures, shall be subjected to environmental qualification testing to verify satisfactory performance at the design environmental levels.",
+    "tags": ["qualification", "environmental-testing", "performance"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.2-01"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.2-Req02",
+    "name": "Qualification Tests Shall Follow MIL-STD-1540",
+    "source": "MIL-A-83577B",
+    "text": "Tests shall be in accordance with the applicable qualification test requirements of MIL-STD-1540 (SSC-S-016).",
+    "tags": ["qualification", "MIL-STD-1540", "standards"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.2-02"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.2-Req03",
+    "name": "Test Assemblies in Launch or On-Orbit Configuration",
+    "source": "MIL-A-83577B",
+    "text": "The moving mechanical assemblies shall be tested in their launch or in their on-orbit configurations corresponding to the environment being simulated.",
+    "tags": ["qualification", "configuration", "launch", "on-orbit"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.2-03"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.2-Req04",
+    "name": "Assemblies Shall Operate in Launch/Orbit State",
+    "source": "MIL-A-83577B",
+    "text": "They shall be passive or operating corresponding to their state during the launch or on-orbit operational phases.",
+    "tags": ["qualification", "launch", "on-orbit", "operation"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.2-04"
+    }
+  },
+
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.2-Req05",
+    "name": "Qualification Test Plan Approval",
+    "source": "MIL-A-83577B",
+    "text": "Test procedures, test time, and criteria for performance adequacy shall be as approved by the contracting officer.",
+    "tags": ["qualification", "test-plan", "approval"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.2-05"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.2-Req06",
+    "name": "Worst-Case Torque Margin Testing for Deployables",
+    "source": "MIL-A-83577B",
+    "text": "Qualification testing of deployables shall include tests to simulate the lowest motive force combined with the highest resistance under the most adverse environmental conditions to provide the worst case torque margin.",
+    "tags": ["qualification", "deployables", "torque-margin"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.2-06"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.2-Req07",
+    "name": "Worst-Case Loading Against Stops",
+    "source": "MIL-A-83577B",
+    "text": "The highest motive force combined with the lowest resistance under the most aiding environmental conditions shall be tested to provide the worst case loading including the loads against the stops.",
+    "tags": ["qualification", "deployables", "stops", "loading"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.2-07"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.2-Req08",
+    "name": "Measurements Must Demonstrate Specification Compliance",
+    "source": "MIL-A-83577B",
+    "text": "Sufficient measurements shall be made to show that the requirements of this specification are met under both of the above conditions.",
+    "tags": ["qualification", "measurements", "compliance"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.2-08"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.2-Req09",
+    "name": "Torque and Angle Measurements Required",
+    "source": "MIL-A-83577B",
+    "text": "Measurements shall include torque vs angle and time vs angle, or equivalent linear measurements for linear devices.",
+    "tags": ["qualification", "torque", "angle", "instrumentation"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.2-09"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.2-Req10",
+    "name": "Deployable Qualification Instrumentation Requirements",
+    "source": "MIL-A-83577B",
+    "text": "For deployables, time correlated video recording, or motion picture film coverage, and potentiometers, accelerometers, or other appropriate instrumentation shall be utilized for all functional and environmental qualification tests.",
+    "tags": ["qualification", "deployables", "instrumentation", "video"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.2-10"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.2-Req11",
+    "name": "Pyrotechnic Release Test at 80% Charge",
+    "source": "MIL-A-83577B",
+    "text": "A one-time release test of pyrotechnic devices shall be conducted in the fully assembled configuration using a worst case lowest explosive charge loading of 80%.",
+    "tags": ["qualification", "pyrotechnics", "release-test"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.2-11"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.2-Req12",
+    "name": "Pyrotechnic Release Test Under Worst-Case Conditions",
+    "source": "MIL-A-83577B",
+    "text": "This release test shall be conducted using worst case tolerances and worst case environmental conditions.",
+    "tags": ["qualification", "pyrotechnics", "environmental-testing"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.2-12"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.2-Req13",
+    "name": "Pyrotechnic Structural Damage Evaluation",
+    "source": "MIL-A-83577B",
+    "text": "To evaluate the possibility of structural damage to moving mechanical assemblies actuated by pyrotechnic devices, a one-time test shall also be conducted under worst case highest explosive charge loading.",
+    "tags": ["qualification", "pyrotechnics", "structural"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.2-13"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.2-Req14",
+    "name": "Use 120% Charge for Structural Damage Test",
+    "source": "MIL-A-83577B",
+    "text": "A 120 percent explosive charge load shall, where practicable, be used for this test.",
+    "tags": ["qualification", "pyrotechnics", "structural-testing"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.2-14"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.2-Req15",
+    "name": "Shock Load Instrumentation Required",
+    "source": "MIL-A-83577B",
+    "text": "Instrumentation shall be provided on adjacent equipment during release tests to assess the transmitted shock loads.",
+    "tags": ["qualification", "pyrotechnics", "shock"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.2-15"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.2-Req16",
+    "name": "Static Load Test Required",
+    "source": "MIL-A-83577B",
+    "text": "A static load test to demonstrate the required strength, safety factors, and margins shall be conducted.",
+    "tags": ["qualification", "static-load", "strength"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.2-16"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.7.2-Req17",
+    "name": "Post-Static-Test Disassembly and Inspection",
+    "source": "MIL-A-83577B",
+    "text": "Following the static load test, the assemblies shall be completely disassembled and reinspected for possible damage.",
+    "tags": ["qualification", "inspection", "static-load"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.7.2-17"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.8-Req01",
+    "name": "Vehicle Level Acceptance Tests Shall Follow MIL-STD-1540",
+    "source": "MIL-A-83577B",
+    "text": "The vehicle level acceptance tests shall be conducted in accordance with the requirements of MIL-STD-1540 (SSC-S-016).",
+    "tags": ["vehicle-testing", "acceptance", "MIL-STD-1540"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.8-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.8-Req02",
+    "name": "Video Recording of Deployment Required",
+    "source": "MIL-A-83577B",
+    "text": "After assembly of the deployable on the vehicle, a time correlated video recording or motion picture film of deployment shall be utilized to ensure that the dynamics of deployment are within specified criteria.",
+    "tags": ["vehicle-testing", "deployables", "video"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.8-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.8-Req03",
+    "name": "Record Deployment Prior to Vehicle Mounting When Needed",
+    "source": "MIL-A-83577B",
+    "text": "Where deployment is impractical after assembly on the vehicle, this recording shall be made during the last functional deployment prior to mounting of the deployable on the vehicle.",
+    "tags": ["vehicle-testing", "deployables", "video"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.8-03"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.8-Req04",
+    "name": "First Motion Cold Test Required",
+    "source": "MIL-A-83577B",
+    "text": "A first motion cold test of all deployables shall be included, where practicable, as part of the vehicle thermal testing to verify release at the acceptance level cold temperature.",
+    "tags": ["vehicle-testing", "thermal", "deployables"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.8-04"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.9-Req01",
+    "name": "Prelaunch Validation Tests Shall Follow MIL-STD-1540",
+    "source": "MIL-A-83577B",
+    "text": "The prelaunch validation tests shall be conducted in accordance with the requirements of MIL-STD-1540 (SSC-S-016).",
+    "tags": ["prelaunch", "validation", "MIL-STD-1540"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.9-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.9.1-Req01",
+    "name": "Full Deployment After Vehicle Attachment",
+    "source": "MIL-A-83577B",
+    "text": "Where practicable, a complete deployment of deployable flight hardware in the flight configuration shall be conducted after attachment of the deployable to the vehicle.",
+    "tags": ["prelaunch", "deployables", "deployment"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.9.1-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.9.1-Req02",
+    "name": "Alignment Check and Initial Motion Test When Full Deployment Is Impractical",
+    "source": "MIL-A-83577B",
+    "text": "Where a complete deployment is not practical, an alignment check and an initial motion release test shall be conducted in lieu of the above requirements.",
+    "tags": ["prelaunch", "alignment", "release-test"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.9.1-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.9.1-Req03",
+    "name": "Minimum Breakaway Force Measurement",
+    "source": "MIL-A-83577B",
+    "text": "A measurement of the minimum breakaway force shall be made to ensure that no binding of the release mechanism or excessive friction is present.",
+    "tags": ["prelaunch", "force", "release-mechanism"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.9.1-03"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.9.2-Req01",
+    "name": "Repeat 4.3.5 Inspections at Launch Site",
+    "source": "MIL-A-83577B",
+    "text": "Where practicable, the inspections listed in Paragraph 4.3.5 shall be repeated at the launch site after assembly of the vehicle in the flight configuration.",
+    "tags": ["prelaunch", "inspection", "launch-site"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.9.2-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.9.3-Req01",
+    "name": "Include Contingency Cases in Prelaunch Validation",
+    "source": "MIL-A-83577B",
+    "text": "Prelaunch validation exercises shall include contingency cases involving anomalous operation of moving mechanical assemblies. For example, partial deployment of devices may cause additional effects on the vehicle such as changes to thermal control, inertial properties, communication degradation, or sensor blockage.",
+    "tags": ["prelaunch", "contingency", "validation", "anomalous-operation"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.9.3-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.9.3-Req02",
+    "name": "Formulate and Exercise Contingency Plans",
+    "source": "MIL-A-83577B",
+    "text": "Contingency plans shall be formulated and exercised to the extent practicable. For example, increasing vehicle spin speed may aid deployment of a device that has experienced a hang-up.",
+    "tags": ["prelaunch", "contingency", "validation", "operations"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.9.3-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.9.4-Req01",
+    "name": "Inspect and Retest Bearings After Initial Flight",
+    "source": "MIL-A-83577B",
+    "text": "Bearings that are to be used for a number of flights shall be inspected and retested after the initial flight.",
+    "tags": ["prelaunch", "bearings", "inspection", "reuse"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.9.4-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.9.4-Req02",
+    "name": "Conduct Individual Bearing Torque Tests",
+    "source": "MIL-A-83577B",
+    "text": "Individual bearing tests shall be conducted to determine if the resistive torques are within acceptable limits.",
+    "tags": ["prelaunch", "bearings", "torque", "testing"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.9.4-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.9.4-Req03",
+    "name": "Refurbish Bearings When Torque Margins Are Too Low",
+    "source": "MIL-A-83577B",
+    "text": "If the mechanism torque or force margins are less than the minimum acceptance requirements, the bearings shall be completely inspected, refurbished, and retested as necessary after each flight.",
+    "tags": ["prelaunch", "bearings", "refurbishment", "torque-margin"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.9.4-03"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.10-Req01",
+    "name": "Modification and Rework Shall Meet Original QA Criteria",
+    "source": "MIL-A-83577B",
+    "text": "Completed moving mechanical assemblies shall be modified and reworked with the same high quality assurance provisions and criteria as the original assembly.",
+    "tags": ["modification", "rework", "quality-assurance"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.10-01"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.10-Req02",
+    "name": "Inspection and Retesting Shall Follow MIL-STD-1540",
+    "source": "MIL-A-83577B",
+    "text": "Inspection and retesting shall be in accordance with MIL-STD-1540 (SSC-S-016) and the requirements stated herein, or as directed by the contracting officer.",
+    "tags": ["modification", "retest", "MIL-STD-1540"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.10-02"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.10-Req03",
+    "name": "No Second Run-In Test Unless Rework Invalidates Original",
+    "source": "MIL-A-83577B",
+    "text": "Moving mechanical assemblies that have successfully completed the run-in test and are subsequently repaired, reworked, modified, or reacceptance tested shall not be given another run-in test unless the rework is so extensive as to invalidate the initial run-in.",
+    "tags": ["modification", "run-in", "rework"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.10-03"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.10-Req04",
+    "name": "Retest Assemblies Stored More Than One Year",
+    "source": "MIL-A-83577B",
+    "text": "Moving mechanical assemblies that are not assembled on a vehicle but are placed in storage for more than one year shall be retested in accordance with the established thermal or thermal vacuum acceptance test procedures prior to use.",
+    "tags": ["storage", "retest", "thermal-testing"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.10-04"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.10-Req05",
+    "name": "Annual Lubricant Degradation Testing After Two Years Storage",
+    "source": "MIL-A-83577B",
+    "text": "After two years of storage and every year thereafter, the liquid lubricants used in these moving mechanical assemblies shall, where practicable, be sample tested to evaluate degradation.",
+    "tags": ["storage", "lubrication", "degradation-testing"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.10-05"
+    }
+  },
+  {
+    "type": "requirement",
+    "req_id": "MIL-A-83577B-4.10-Req06",
+    "name": "Eliminate Cause of Lubricant Degradation and Relubricate",
+    "source": "MIL-A-83577B",
+    "text": "If there is evidence of lubricant degradation, the cause of the degradation shall be eliminated and the assembly relubricated.",
+    "tags": ["lubrication", "degradation", "corrective-action"],
+    "metadata": {
+      "version": 0.1,
+      "modifiedDate": "2026-06-27",
+      "unique_id": "req-4.10-06"
     }
   }
 ]

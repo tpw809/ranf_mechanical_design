@@ -4,7 +4,7 @@ Design For Minimum Risk (DFMR)
 
 September 28, 2000
 
-0.0 Mechanical Systems Verification Plan
+0.0 Mechanical Systems Verification Plan (MSVP)
 
 REQ: A comprehensive Mechanical Systems Verification Plan (MSVP) that describes the verification approach for safety critical movable mechanical systems shall be submitted for review and approval by the Mechanical Systems Working Group (MSWG).
 
@@ -16,7 +16,7 @@ Before a movable mechanical system can be classified as a DFMR Mechanical System
 
 REQ: Designs shall include provisions to prevent binding/jamming/seizing. 
 
-Appropriate design provisions include, but are not limited to, dual rotating surfaces or other mechanical redundancies, robust strength margins such that self-generated internal particles are precluded, shrouding and debris shielding, proper selection of materials and lubrication design to prevent friction welding or galling, etc. 
+Guidance: Appropriate design provisions include, but are not limited to, dual rotating surfaces or other mechanical redundancies, robust strength margins such that self-generated internal particles are precluded, shrouding and debris shielding, proper selection of materials and lubrication design to prevent friction welding or galling, etc. 
 
 REQ: Designs shall establish dimensional tolerances on all moving parts to ensure that proper functional performance will be maintained under all natural and induced environmental conditions including, but not limited to, thermally induced in-plane and out-of-plane distortions, differential thermal growth and shrinkage, and load-induced deflections. 
 
@@ -24,13 +24,13 @@ REQ: The design shall take into account tolerances associated with rigging (mech
 
 REQ: The design shall demonstrate by test and/or analysis that the sensitivity of mechanism performance as a function of rigging tolerances or installation/integration variables is understood. 
 
-REQ: Mechanical system design shall ensure compatibility of any lubricants used with interfacing materials.
-
-REQ: Mechanical system design shall ensure compatibility of any lubricants used with other lubricants used in the design.
-
-REQ: Mechanical system design shall ensure the lubrication is compatible with the natural and induced environment. 
+REQ: Mechanical system design shall ensure compatibility of any lubricants used with: 
+(a) interfacing materials,
+(b) other lubricants used in the design,
+(c) the natural and induced environment. 
 
 REQ: The design shall address proper quantities of lubricant.
+
 
 2.0 Quick Release Pins (Pip-Pins)
 
@@ -43,7 +43,9 @@ REQ: Flight pip-pins shall be subjected to environmental acceptance testing.
 REQ: Pip-pins shall be vibration tested to qualification levels in place in their respective hardware locations during the qualification test of the total assembly, or they may be tested alone in a component test to the predicted qualification levels at the hardware location. 
 
 REQ: Pip-pins shall be subjected to thermal testing to the maximum/minimum qualification temperatures. 
+
 Due to a history of failures with pip-pins, the simple mechanical system approach identified above is not applicable.
+
 
 3.0 Springs
 
@@ -53,13 +55,15 @@ Failure of springs that are properly controlled under an acceptable fracture con
 The design and use of a fail-safe spring or the use of a spring that maintains functionality with the loss of a single coil is acceptable. 
 Where practical, compression springs should be used in lieu of tension or torsional springs.
 
+
 4.0 Fastener Retention
 
-REQ: A means of positive locking (i.e., self-locking threads, selflocking inserts, etc.) shall be provided on all fasteners (threaded and otherwise) to assure integrity of the mechanical assemblies and prevent loose parts. 
+REQ: A means of positive locking (i.e., self-locking threads, self-locking inserts, etc.) shall be provided on all fasteners (threaded and otherwise) to assure integrity of the mechanical assemblies and prevent loose parts. 
 
 This is in addition to the standard torque/preload of the fastener. 
 
 REQ: Where other locking devices are practicable, locking compounds shall not be used on fasteners to provide locking.
+
 
 5.0 Strength and Fracture Control
 
@@ -75,11 +79,13 @@ REQ: Exposed mechanical system components, protective shrouds and covers, and mo
 
 REQ: A design that incorporates preload as a means of meeting functional and/or structural requirements shall comply with the preload criteria defined in NSTS 08307.
 
+
 6.0 Positive Indication of Status
 
 REQ: All movable mechanical systems shall provide positive indication that the mechanism has achieved its desired position (i.e., ready-to-latch, latched). 
 
 REQ: End of travel stops shall be provided for all movable mechanical systems.
+
 
 7.0 Torque / Force Margins
 
@@ -115,11 +121,13 @@ For linear devices, "Force" replaces "Torque" in the above equation.
 
 Verification by test, as specified in this paragraph, does not require a mechanical system demonstration at greater than limit load conditions but rather requires a test verification of the amount of driving or holding torque or force available under conservative adverse conditions.
 
+
 8.0 Contamination
 
 REQ: Fabrication and handling of safety critical movable mechanical assemblies shall be accomplished in a clean environment with attention given to avoiding nonparticulate (chemical) as well as particulate air contamination. 
 
 REQ: Specific cleanliness requirements shall be established for each movable mechanical assembly and shall address cleanliness levels needed to prevent binding or jamming.
+
 
 9.0 Assembly Level Acceptance Tests
 
@@ -129,11 +137,13 @@ REQ: The acceptance tests shall be structured to detect workmanship defects that
 
 For programs using proto-flight approaches, the test parameters may be adjusted with MSWG approval to avoid excessive endurance or fatigue limit margin erosion.
 
+
 9.1 Run-in Test
 
 REQ: After initial functional testing, a run-in test shall be performed on each movable mechanical assembly before it is subjected to further acceptance testing. 
 
 The purpose of the run-in test is to detect material/workmanship defects and to wear-in parts.
+
 
 9.2 Functional and Environmental Acceptance Tests
 
@@ -144,6 +154,7 @@ REQ: Functional tests shall be structured to demonstrate that the movable mechan
 REQ: Functional tests are required before and after exposure to environmental test conditions in order to establish whether damage or degradation in performance has occurred. 
 
 REQ: Environmental acceptance tests shall be structured to demonstrate the ability to achieve performance requirements when exposed to the expected environmental extremes and to identify any workmanship defects.
+
 
 10.0 Qualification Test
 
@@ -160,6 +171,7 @@ MIL-STD-1540D may be helpful in establishing an effective Qualification Test Pro
 REQ: Natural and induced environmental conditions shall include but are not limited to, thermally induced in-plane and out-of-plane distortions, differential thermal growth and shrinkage, and load-induced deflections. 
 
 For programs using protoflight approaches, the test parameters may be adjusted with MSWG approval to avoid excessive endurance or fatigue limit margin erosion.
+
 
 11.0 Design Life Verification Tests
 
