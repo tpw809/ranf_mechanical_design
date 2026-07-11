@@ -7,6 +7,8 @@ what do I want it to do?
 3. export to excel
 4. modify? (auto-update lastmodified date & version)
 5. export to MBSE sysml2.0 compatible format
+6. combine jsons into a single json
+7. detail view and edit a single requirement.
 
 step 0: finalize json format
 step 1: get all the jsons for the requirements docs...
@@ -16,3 +18,12 @@ python json mod tools?
 vscode is a powerful json mod tool...
 
 practice: glossary / nomenclature... (simpler)
+
+Metadata:
+
+version: simple integer, increment when requirement is changed
+
+unique_id: 12 digit id, make new whenever requirement is changed
+
+modifiedDate: update to current date whenever requirement is changed
+
