@@ -1,76 +1,364 @@
+[
 {
-	"elements": [
-	{
-		"type": "requirement",
-		"req_id": "DFMR-3.1",
-		"name": "Redundant Springs",
-		"text": "In designs and applications where spring failure would result in a hazard, the springs shall be redundant.",
-		"tags": ["spring", "redundant"],
-		"phase": ["design"],
-		"level": "subassembly",
-		"source": "MA2-00-057",
-		"guidance": "",
-		"rationale": "if one spring breaks, then functionality can be maintained",
-		"verifiedBy": "inspection", 
-		"metadata": {
-			"unique_id": "req-39haliohug8n",
-			"lastModified": 20260622,
-			"version": 0.1
-		}
-	},
-	{
-		"type": "requirement",
-		"req_id": "DFMR-3.2",
-		"name": "Spring Fracture Control",
-		"text": "In designs and applications where spring failure would result in a hazard and not redundant, the springs shall be designed, evaluated, and used under an acceptable fracture control program (reference NASA-STD-5003)",
-		"tags": ["spring", "redundant", "fracture"],
-		"phase": ["design"],
-		"level": "subassembly",
-		"source": "MA2-00-057",
-		"guidance": "",
-		"rationale": "makes spring failure non-credible",
-		"verifiedBy": "inspection", 
-		"metadata": {
-			"unique_id": "req-348uguhsn34934h",
-			"lastModified": 20260622,
-			"version": 0.1
-		}
-	},
-	{
-		"type": "requirement",
-		"req_id": "DFMR-6.1",
-		"name": "Positive Status Indication",
-		"text": "All movable mechanical systems shall provide positive indication that the mechanism has achieved its desired position (i.e., ready-to-latch, latched).",
-		"tags": ["status", "indication"],
-		"phase": ["design", "verification"],
-		"level": "assembly",
-		"source": "MA2-00-057",
-		"guidance": "status such as ready to latch, latched, etc",
-		"rationale": "allows deterministic automation of sequences",
-		"verifiedBy": "demonstration", 
-		"metadata": {
-			"unique_id": "req-5729563nvu",
-			"lastModified": 20260622,
-			"version": 0.1
-		}
-	},
-	{
-		"type": "requirement",
-		"req_id": "DFMR-6.2",
-		"name": "End of Travel Stops",
-		"text": "End of travel stops shall be provided for all movable mechanical systems.",
-		"tags": ["stop", "travel", "end"],
-		"phase": ["design"],
-		"level": "assembly",
-		"source": "MA2-00-057",
-		"guidance": "non-jamming, obviously not for continuously rotating systems",
-		"rationale": "stops prevent motion beyond what is intended",
-		"verifiedBy": "inspection", 
-		"metadata": {
-			"unique_id": "req-39vhma948fhs",
-			"lastModified": 20260622,
-			"version": 0.1
-		}
+	"type": "requirement",
+	"req_id": "DFMR-0-1",
+	"name": "Mechanical Systems Verification Plan",
+	"text": "A comprehensive Mechanical Systems Verification Plan (MSVP) that describes the verification approach for safety critical movable mechanical systems shall be submitted for review and approval by the Mechanical Systems Working Group (MSWG).",
+	"tags": ["verification plan", "MSVP"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "The specific purpose of this plan is to establish an understanding on how applicable systems requirements will be implemented and verified.",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-1892nhcflmwl",
+		"lastModified": 20260718,
+		"version": 0.1
 	}
-	]
-}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-1-1",
+	"name": "Prevent Binding-Jamming-Seizing",
+	"text": "Designs shall include provisions to prevent binding/jamming/seizing.",
+	"tags": ["binding", "jamming", "seizing"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "Appropriate design provisions include, but are not limited to, dual rotating surfaces or other mechanical redundancies, robust strength margins such that self-generated internal particles are precluded, shrouding and debris shielding, proper selection of materials and lubrication design to prevent friction welding or galling, etc.",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-1293rcwhnfcwcui",
+		"lastModified": 20260718,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-1-2",
+	"name": "Dimensional Tolerancing",
+	"text": "Designs shall establish dimensional tolerances on all moving parts to ensure that proper functional performance will be maintained under all natural and induced environmental conditions including, but not limited to: thermally induced in-plane and out-of-plane distortions, differential thermal growth and shrinkage, and load-induced deflections.",
+	"tags": ["dimension", "tolerance"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-simecq8p3t9nvnh",
+		"lastModified": 20260718,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-1-3",
+	"name": "Rigging Tolerances",
+	"text": "The design shall take into account tolerances associated with rigging (mechanical adjustment).",
+	"tags": [""],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-alsdkvniweoifj",
+		"lastModified": 20260718,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-1-4",
+	"name": "Rigging and Installation Tolerances",
+	"text": "The design shall demonstrate by test and/or analysis that the sensitivity of mechanism performance as a function of rigging tolerances or installation/integration variables is understood.",
+	"tags": ["tolerance", "rigging"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-20319rmhgvswnfna3",
+		"lastModified": 20260718,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-1-5",
+	"name": "Lubricant Compatibility",
+	"text": "Mechanical system design shall ensure compatibility of any lubricants used with: (a) interfacing materials, (b) other lubricants used in the design, (c) the natural and induced environment.",
+	"tags": ["lubricant", "material", "compatibility"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-0m3cromjw3491n8nc4fh",
+		"lastModified": 20260718,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-1-6",
+	"name": "Lubricant Quantity",
+	"text": "The design shall address proper quantities of lubricant.",
+	"tags": ["lubricant", "quantity"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-198cmpwhmerc3rfpm",
+		"lastModified": 20260718,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-3.1",
+	"name": "Redundant Springs",
+	"text": "In designs and applications where spring failure would result in a hazard, the springs shall be redundant.",
+	"tags": ["spring", "redundant"],
+	"phase": ["design"],
+	"level": "subassembly",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "if one spring breaks, then functionality can be maintained",
+	"verifiedBy": "inspection", 
+	"metadata": {
+		"unique_id": "req-39haliohug8n",
+		"lastModified": 20260622,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-3.2",
+	"name": "Spring Fracture Control",
+	"text": "In designs and applications where spring failure would result in a hazard and not redundant, the springs shall be designed, evaluated, and used under an acceptable fracture control program (reference NASA-STD-5003)",
+	"tags": ["spring", "redundant", "fracture"],
+	"phase": ["design"],
+	"level": "subassembly",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "makes spring failure non-credible",
+	"verifiedBy": "inspection", 
+	"metadata": {
+		"unique_id": "req-348uguhsn34934h",
+		"lastModified": 20260622,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-6.1",
+	"name": "Positive Status Indication",
+	"text": "All movable mechanical systems shall provide positive indication that the mechanism has achieved its desired position (i.e., ready-to-latch, latched).",
+	"tags": ["status", "indication"],
+	"phase": ["design", "verification"],
+	"level": "assembly",
+	"source": "MA2-00-057",
+	"guidance": "status such as ready to latch, latched, etc",
+	"rationale": "allows deterministic automation of sequences",
+	"verifiedBy": "demonstration", 
+	"metadata": {
+		"unique_id": "req-5729563nvu",
+		"lastModified": 20260622,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-6.2",
+	"name": "End of Travel Stops",
+	"text": "End of travel stops shall be provided for all movable mechanical systems.",
+	"tags": ["stop", "travel", "end"],
+	"phase": ["design"],
+	"level": "assembly",
+	"source": "MA2-00-057",
+	"guidance": "non-jamming, obviously not for continuously rotating systems",
+	"rationale": "stops prevent motion beyond what is intended",
+	"verifiedBy": "inspection", 
+	"metadata": {
+		"unique_id": "req-39vhma948fhs",
+		"lastModified": 20260622,
+		"version": 0.1
+	}
+},
+
+{
+	"type": "requirement",
+	"req_id": "DFMR-10-1",
+	"name": "Qualification Test",
+	"text": "A Qualification Test Program shall be established for each safety critical movable mechanical assembly.",
+	"tags": [],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-23189hnvrwvpjm",
+		"lastModified": 20260718,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-10-2",
+	"name": "Qualification Test",
+	"text": "The qualification test program shall assure that a design performance and safety margin exists with respect to all design requirements when exposed to any mechanical, electrical, environmental, including acceptance testing, and operational stimuli that the product may reasonably expect to encounter during its service life.",
+	"tags": [],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-2398528jmewqk",
+		"lastModified": 20260718,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-10-3",
+	"name": "Qualification Test Config Environment and State",
+	"text": "The mechanism shall be tested in its launch, on-orbit, and landing configurations with the appropriate corresponding environmental extremes and with the mechanism in its appropriate passive or operating state.",
+	"tags": [],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-129uncnhvimmrg",
+		"lastModified": 20260718,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-10-4",
+	"name": "Qualification Test Pre-Post Inspection and Functional",
+	"text": "Inspection and functional tests shall be performed before and after qualification tests.",
+	"tags": [],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-129uncnhvimmrg",
+		"lastModified": 20260718,
+		"version": 0.1
+	}
+},
+
+{
+	"type": "requirement",
+	"req_id": "DFMR-11-1",
+	"name": "Life Test",
+	"text": "For applications where design life might be a concern due to endurance or fatigue limits being exceeded, potential deterioration of lubrication, or excessive wear, design life verification testing shall be conducted to verify that design life requirements have been complied with.",
+	"tags": ["life", "test"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-sdfhvierhoehv",
+		"lastModified": 20260718,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-11-2",
+	"name": "Catastrophic Hazard Life Test Factor",
+	"text": "Design life testing for mechanisms that pose a catastrophic hazard potential shall assure at least four times the number of operational cycles, plus four times the number of component and vehicle functional and environmental test cycles.",
+	"tags": ["life", "test"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-aiuhwie237h2",
+		"lastModified": 20260718,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-11-3",
+	"name": "Critical Hazard Life Test Factor",
+	"text": "Design life testing for mechanisms that pose a critical hazard potential shall assure at least two times the number of operational cycles, plus two times the number of component and vehicle functional and environmental test cycles.",
+	"tags": ["life", "test"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-237ryc83n1ocon3",
+		"lastModified": 20260718,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-11-4",
+	"name": "Life Test Pre-Post Inspection and Functional",
+	"text": "Inspection and functional tests shall be performed before and after design life verification tests.",
+	"tags": ["life", "test"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-23998ffnus",
+		"lastModified": 20260718,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-11-5",
+	"name": "Protoflight Hardware Refurbishment",
+	"text": "For protoflight hardware, refurbishment shall be accomplished after the qualification or design life verification tests and prior to reacceptance testing.",
+	"tags": ["life", "test", "protoflight", "refurbishment"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-120923vmaioj",
+		"lastModified": 20260718,
+		"version": 0.1
+	}
+},
+]
