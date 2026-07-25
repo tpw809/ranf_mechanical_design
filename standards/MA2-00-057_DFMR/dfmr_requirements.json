@@ -148,7 +148,7 @@
 	"req_id": "DFMR-2-2",
 	"name": "Pip-pin Environmental Acceptance Test",
 	"text": "Flight pip-pins shall be subjected to environmental acceptance testing.",
-	"tags": ["pip-pin", "quick release pin"],
+	"tags": ["pip-pin", "quick release pin", "acceptance", "test", "environmental"],
 	"phase": "",
 	"level": "",
 	"source": "MA2-00-057",
@@ -166,7 +166,7 @@
 	"req_id": "DFMR-2-3",
 	"name": "Pip-pin Qual Vibration Test",
 	"text": "Pip-pins shall be vibration tested to qualification levels in place in their respective hardware locations during the qualification test of the total assembly, or they may be tested alone in a component test to the predicted qualification levels at the hardware location.",
-	"tags": ["pip-pin", "quick release pin"],
+	"tags": ["pip-pin", "quick release pin", "qualification", "test", "vibration"],
 	"phase": "",
 	"level": "",
 	"source": "MA2-00-057",
@@ -199,36 +199,18 @@
 },
 {
 	"type": "requirement",
-	"req_id": "DFMR-3.1",
+	"req_id": "DFMR-3-1",
 	"name": "Redundant Springs",
-	"text": "In designs and applications where spring failure would result in a hazard, the springs shall be redundant.",
+	"text": "In designs and applications where spring failure would result in a hazard, the springs shall be redundant or designed, evaluated, and used under an acceptable fracture control program.",
 	"tags": ["spring", "redundant"],
 	"phase": ["design"],
 	"level": "subassembly",
 	"source": "MA2-00-057",
-	"guidance": "",
-	"rationale": "if one spring breaks, then functionality can be maintained",
+	"guidance": "Where practical, compression springs should be used in lieu of tension or torsional springs.",
+	"rationale": "The design and use of a fail-safe spring or the use of a spring that maintains functionality with the loss of a single coil is acceptable. Failure of springs that are properly controlled under an acceptable fracture control program, is considered noncredible.",
 	"verifiedBy": "inspection", 
 	"metadata": {
 		"unique_id": "req-39haliohug8n",
-		"lastModified": 20260622,
-		"version": 0.1
-	}
-},
-{
-	"type": "requirement",
-	"req_id": "DFMR-3.2",
-	"name": "Spring Fracture Control",
-	"text": "In designs and applications where spring failure would result in a hazard and not redundant, the springs shall be designed, evaluated, and used under an acceptable fracture control program (reference NASA-STD-5003)",
-	"tags": ["spring", "redundant", "fracture"],
-	"phase": ["design"],
-	"level": "subassembly",
-	"source": "MA2-00-057",
-	"guidance": "",
-	"rationale": "makes spring failure non-credible",
-	"verifiedBy": "inspection", 
-	"metadata": {
-		"unique_id": "req-348uguhsn34934h",
 		"lastModified": 20260622,
 		"version": 0.1
 	}
@@ -278,7 +260,7 @@
 	"phase": "",
 	"level": "",
 	"source": "MA2-00-057",
-	"guidance": "",
+	"guidance": "208.1: Structural Design. The structural design shall provide ultimate factors of safety equal to or greater than 1.4 for all STS mission phases except emergency landing. This includes loads incurred during payload and Orbiter operations for all payload configurations or while changing configuration as specified in the PIP. Verification of design compliance shall be in accordance with NSTS 14046. When failure of structure can result in a catastrophic event, the design shall be based on fracture control procedures to prevent structural failure because of the initiation or propagation of flaws or crack-like defects during fabrication, testing, and service life. Requirements for fracture control are specified in NASA-STD-5003. 208.2: Emergency Landing Loads. The structural design shall comply with the ultimate design load factors for emergency landing loads that are specified in the ICD's between the Orbiter and the payload. Structural verification for these loads may be certified by analysis only. 208.3: Stress Corrosion. Materials used in the design of payload structures, support bracketry, and mounting hardware shall be rated for resistance to stress corrosion cracking (SCC) in accordance with the tables in MSFC-HDBK-527/JSC 09604 and MSFC-STD-3029. Alloys with high resistance to SCC shall be used whenever possible and do not require NSTS approval. When failure of a part made from a moderate or low resistance alloy could result in a critical or catastrophic hazard, a Material Usage Agreement that includes a Stress Corrosion Evaluation Form from MSFCHDBK-527/JSC 09604 must be attached to the applicable stress corrosion hazard report contained in the safety assessment report (see paragraph 301). When failure of a part made from a moderate or low resistance alloy would not result in a hazard, rationale to support the nonhazard assessment must be included in the stress corrosion hazard report. Approval of the hazard report shall constitute NSTS approval for the use of the alloy in the documented applications. Controls that are required to prevent SCC of components after manufacturing shall be identified in the hazard report and closure shall be documented in the verification log (see paragraph 214.2) prior to flight.",
 	"rationale": "",
 	"verifiedBy": "", 
 	"metadata": {
@@ -290,7 +272,7 @@
 {
 	"type": "requirement",
 	"req_id": "DFMR-5-2",
-	"name": "Fracture Control",
+	"name": "Fracture Control Program",
 	"text": "Movable mechanical assemblies used in safety critical applications shall be included in an acceptable fracture control program (reference NASA-STD-5003). ",
 	"tags": [],
 	"phase": "",
@@ -308,14 +290,14 @@
 {
 	"type": "requirement",
 	"req_id": "DFMR-5-3",
-	"name": "",
+	"name": "Strength Margin in Stall Conditions",
 	"text": "Mechanical system components and linkages shall be designed with sufficient strength to tolerate an actuation force/torque stall condition at any point of travel and maintain a positive margin of safety with an ultimate factor of safety applied.",
 	"tags": [],
 	"phase": "",
 	"level": "",
 	"source": "MA2-00-057",
 	"guidance": "",
-	"rationale": "",
+	"rationale": "Machine should not be able to break itself.",
 	"verifiedBy": "", 
 	"metadata": {
 		"unique_id": "req-8o374wgnwkw2o83",
@@ -326,14 +308,14 @@
 {
 	"type": "requirement",
 	"req_id": "DFMR-5-4",
-	"name": "",
+	"name": "Strength Margin in Worst Case Stop Impact",
 	"text": "Mechanical systems that incorporate end of travel mechanical stops shall be designed to have positive strength margins for worst case dynamic loading conditions, considering variables in inertia properties, actuation force/torque, drive train resistance, and other environmental conditions.",
 	"tags": [],
 	"phase": "",
 	"level": "",
 	"source": "MA2-00-057",
 	"guidance": "",
-	"rationale": "",
+	"rationale": "Machine should not be able to break itself.",
 	"verifiedBy": "", 
 	"metadata": {
 		"unique_id": "req-q9843cwinhgwiuriu",
@@ -344,7 +326,7 @@
 {
 	"type": "requirement",
 	"req_id": "DFMR-5-5",
-	"name": "",
+	"name": "Survive External Impact Loads",
 	"text": "Exposed mechanical system components, protective shrouds and covers, and mounting structure shall be designed to accommodate inadvertent impact loads from remote manipulator system/ISS remote manipulator system/payload operations and extravehicular activity/intravehcular activity loads, as appropriate, to ensure adequate margins to preclude deformation that could cause a binding or jamming condition or inadvertent operation of the mechanism.",
 	"tags": [],
 	"phase": "",
@@ -362,13 +344,13 @@
 {
 	"type": "requirement",
 	"req_id": "DFMR-5-6",
-	"name": "",
-	"text": "A design that incorporates preload as a means of meeting functional and/or structural requirements shall comply with the preload criteria defined in NSTS 08307.",
+	"name": "Threaded Joint Preload",
+	"text": "A design that incorporates preload as a means of meeting functional and/or structural requirements shall comply with the preload criteria defined in NSTS 08307 (Criteria for Preloaded Bolts).",
 	"tags": [],
 	"phase": "",
 	"level": "",
 	"source": "MA2-00-057",
-	"guidance": "",
+	"guidance": "NSTS 08307A has been superceded by NASA-STD-5020B.",
 	"rationale": "",
 	"verifiedBy": "", 
 	"metadata": {
@@ -379,9 +361,9 @@
 },
 {
 	"type": "requirement",
-	"req_id": "DFMR-6.1",
+	"req_id": "DFMR-6-1",
 	"name": "Positive Status Indication",
-	"text": "All movable mechanical systems shall provide positive indication that the mechanism has achieved its desired position (i.e., ready-to-latch, latched).",
+	"text": "All movable mechanical systems shall provide positive indication that the mechanism has achieved its desired position.",
 	"tags": ["status", "indication"],
 	"phase": ["design", "verification"],
 	"level": "assembly",
@@ -397,7 +379,7 @@
 },
 {
 	"type": "requirement",
-	"req_id": "DFMR-6.2",
+	"req_id": "DFMR-6-2",
 	"name": "End of Travel Stops",
 	"text": "End of travel stops shall be provided for all movable mechanical systems.",
 	"tags": ["stop", "travel", "end"],
@@ -416,9 +398,9 @@
 {
 	"type": "requirement",
 	"req_id": "DFMR-7.1-1",
-	"name": "Torque Force Margin",
+	"name": "Operating Torque Force Margin Acceptance Test Verified",
 	"text": "For movable mechanical systems in safety critical applications, the operating torque or force margin shall be acceptance-test verified unless another verification approach is approved by the MSWG.",
-	"tags": [],
+	"tags": ["torque", "force", "margin", "operating"],
 	"phase": "",
 	"level": "",
 	"source": "MA2-00-057",
@@ -434,9 +416,9 @@
 {
 	"type": "requirement",
 	"req_id": "DFMR-7.1-2",
-	"name": "Torque Force Margin",
+	"name": "Operating Torque Force Margin Value Throughout Travel",
 	"text": "When test verified, the margin shall be 1.0 or greater at applicable points of travel.",
-	"tags": [],
+	"tags": ["torque", "force", "margin", "operating", "travel"],
 	"phase": "",
 	"level": "",
 	"source": "MA2-00-057",
@@ -452,9 +434,9 @@
 {
 	"type": "requirement",
 	"req_id": "DFMR-7.1-3",
-	"name": "",
+	"name": "Operating Torque Force Margin Worst Case Conditions",
 	"text": "This margin, as demonstrated conservatively by test or analytical calculations, shall take into account worst case environmental conditions, frictional effects, alignment effects, latching forces, thermally induced distortions, load induced distortions, and variations in lubricity including degradation or depletion of lubrication under vacuum and under worst case thermal conditions, etc.",
-	"tags": [],
+	"tags": ["operating", "margin", "worst case"],
 	"phase": "",
 	"level": "",
 	"source": "MA2-00-057",
@@ -470,13 +452,13 @@
 {
 	"type": "requirement",
 	"req_id": "DFMR-7.2-1",
-	"name": "",
-	"text": "",
-	"tags": [],
+	"name": "Holding Torque Force Margin Acceptance Test",
+	"text": "Mechanism holding torque or force margin shall be acceptance-test verified unless another verification approach is approved by the MSWG.",
+	"tags": ["holding", "margin"],
 	"phase": "",
 	"level": "",
 	"source": "MA2-00-057",
-	"guidance": "",
+	"guidance": "The holding torque or force margin is the margin provided to prevent inadvertent operation. Verification by test, as specified in this paragraph, does not require a mechanical system demonstration at greater than limit load conditions but rather requires a test verification of the amount of driving or holding torque or force available under conservative adverse conditions.",
 	"rationale": "",
 	"verifiedBy": "", 
 	"metadata": {
@@ -488,9 +470,9 @@
 {
 	"type": "requirement",
 	"req_id": "DFMR-7.2-2",
-	"name": "",
-	"text": "",
-	"tags": [],
+	"name": "Holding Torque Force Margin Value",
+	"text": "When test verified, a margin of 1.0 or greater is required in the applicable mechanism holding configuration(s).",
+	"tags": ["holding", "margin"],
 	"phase": "",
 	"level": "",
 	"source": "MA2-00-057",
@@ -506,9 +488,9 @@
 {
 	"type": "requirement",
 	"req_id": "DFMR-7.2-3",
-	"name": "",
-	"text": "",
-	"tags": [],
+	"name": "Holding Torque Force Margin Analysis Only Approval",
+	"text": "Verification by analysis only will require prior review and approval of the analytical approach and margin requirement by the MSWG.",
+	"tags": ["holding", "margin"],
 	"phase": "",
 	"level": "",
 	"source": "MA2-00-057",
@@ -524,9 +506,9 @@
 {
 	"type": "requirement",
 	"req_id": "DFMR-7.2-4",
-	"name": "",
-	"text": "",
-	"tags": [],
+	"name": "Holding Torque Force Margin Worst Case Conditions",
+	"text": "Holding Torque/Force margin, as conservatively demonstrated by test or analytical calculations, shall take into account worst case environmental conditions, frictional effects, alignment effects, latching forces, thermally induced distortions, and load induced distortions, etc.",
+	"tags": ["holding", "margin", "worst case"],
 	"phase": "",
 	"level": "",
 	"source": "MA2-00-057",
@@ -535,6 +517,168 @@
 	"verifiedBy": "", 
 	"metadata": {
 		"unique_id": "req-28o713rcncwufhn",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-8-1",
+	"name": "Contamination During Fabrication and Handling",
+	"text": "Fabrication and handling of safety critical movable mechanical assemblies shall be accomplished in a clean environment with attention given to avoiding nonparticulate (chemical) as well as particulate air contamination.",
+	"tags": ["contamination", "clean"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-fuhpmqq7rofn",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-8-2",
+	"name": "Cleanliness Requirements",
+	"text": "Specific cleanliness requirements shall be established for each movable mechanical assembly and shall address cleanliness levels needed to prevent binding or jamming.",
+	"tags": ["cleanliness"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-vio7h1nfrrrg",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-9-1",
+	"name": "Acceptance Test Flight and Qual Units",
+	"text": "Each movable mechanical assembly designated for flight or as a qualification test article shall be subjected to acceptance testing which incorporates run-in, functional, and environmental testing.",
+	"tags": ["acceptance", "test"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-wvnmm374fwhnruy",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-9-2",
+	"name": "Acceptance Test Detect Defects",
+	"text": "The acceptance tests shall be structured to detect workmanship defects that could affect operational performance.",
+	"tags": ["acceptance", "test"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-17834ryjqgjwpowkf",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-9.1-1",
+	"name": "Run-in Acceptance Test",
+	"text": "After initial functional testing, a run-in test shall be performed on each movable mechanical assembly before it is subjected to further acceptance testing.",
+	"tags": ["acceptance", "test"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "The purpose of the run-in test is to detect material/workmanship defects and to wear-in parts.",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-1q781fnnfgqgge3",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-9.2-1",
+	"name": "Functional and Environmental Acceptance Test",
+	"text": "Each movable mechanical assembly shall be subjected to functional and environmental tests.",
+	"tags": ["acceptance", "test", "functional", "environmental"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-8934r874yj827w",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-9.2-2",
+	"name": "Functional Acceptance Test",
+	"text": "Functional tests shall be structured to demonstrate that the movable mechanical assembly is capable of operating to satisfy all performance requirements.",
+	"tags": ["acceptance", "test", "functional", "performance"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-98378frqngf",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-9.2-3",
+	"name": "Functional Acceptance Test Pre-Post Environments",
+	"text": "Functional tests are required before and after exposure to environmental test conditions in order to establish whether damage or degradation in performance has occurred.",
+	"tags": ["acceptance", "test"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-13847tyncq8hrw",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-9.2-4",
+	"name": "Environmental Acceptance Test",
+	"text": "Environmental acceptance tests shall be structured to demonstrate the ability to achieve performance requirements when exposed to the expected environmental extremes and to identify any workmanship defects.",
+	"tags": ["acceptance", "test"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-13846nt8cn",
 		"lastModified": 20260724,
 		"version": 0.1
 	}
@@ -736,5 +880,5 @@
 		"lastModified": 20260718,
 		"version": 0.1
 	}
-},
+}
 ]
