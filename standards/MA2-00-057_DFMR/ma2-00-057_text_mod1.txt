@@ -104,15 +104,15 @@ For linear devices, "Force" replaces "Torque" in the above equation.
 
 7.2 Holding Torque / Force Margin
 
-REQ: Mechanism holding torque or force margin shall be acceptance-test verified unless another verification approach is approved by the MSWG. 
+REQ 7.2-1: Mechanism holding torque or force margin shall be acceptance-test verified unless another verification approach is approved by the MSWG. 
 
-REQ: When test verified, a margin of 1.0 or greater is required in the applicable mechanism holding configuration(s). 
+REQ 7.2-2: When test verified, a margin of 1.0 or greater is required in the applicable mechanism holding configuration(s). 
 
 The holding torque or force margin is the margin provided to prevent inadvertent operation. 
 
-REQ: Verification by analysis only will require prior review and approval of the analytical approach and margin requirement by the MSWG.
+REQ 7.2-3: Verification by analysis only will require prior review and approval of the analytical approach and margin requirement by the MSWG.
  
-REQ: This margin, as conservatively demonstrated by test or analytical calculations, shall take into account worst case environmental conditions, frictional effects, alignment effects, latching forces, thermally induced distortions, and load induced distortions, etc. 
+REQ 7.2-4: This margin, as conservatively demonstrated by test or analytical calculations, shall take into account worst case environmental conditions, frictional effects, alignment effects, latching forces, thermally induced distortions, and load induced distortions, etc. 
 
 The holding torque margin is defined as:
 
@@ -168,9 +168,9 @@ REQ 10-4: Inspection and functional tests shall be performed before and after qu
 
 MIL-STD-1540D may be helpful in establishing an effective Qualification Test Program. 
 
-Natural and induced environmental conditions shall include but are not limited to, thermally induced in-plane and out-of-plane distortions, differential thermal growth and shrinkage, and load-induced deflections. 
+REQ 10-5: Natural and induced environmental conditions shall include but are not limited to, thermally induced in-plane and out-of-plane distortions, differential thermal growth and shrinkage, and load-induced deflections. 
 
-For programs using protoflight approaches, the test parameters may be adjusted with MSWG approval to avoid excessive endurance or fatigue limit margin erosion.
+REQ 10-6: For programs using protoflight approaches, the test parameters may be adjusted with MSWG approval to avoid excessive endurance or fatigue limit margin erosion.
 
 11.0 Design Life Verification Tests
 

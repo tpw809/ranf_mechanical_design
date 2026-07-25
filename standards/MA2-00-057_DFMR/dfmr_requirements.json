@@ -127,6 +127,78 @@
 },
 {
 	"type": "requirement",
+	"req_id": "DFMR-2-1",
+	"name": "Pip-pin Must Be MIL-P-23460",
+	"text": "A pip-pin design qualified by inspection and test to the provisions of MIL-P-23460 or equivalent shall be used in any system design incorporating safety critical pip-pins.",
+	"tags": ["pip-pin", "quick release pin"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-198cmpwhmerc3rfpm",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-2-2",
+	"name": "Pip-pin Environmental Acceptance Test",
+	"text": "Flight pip-pins shall be subjected to environmental acceptance testing.",
+	"tags": ["pip-pin", "quick release pin"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-qwe8p3vv48tpnwim",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-2-3",
+	"name": "Pip-pin Qual Vibration Test",
+	"text": "Pip-pins shall be vibration tested to qualification levels in place in their respective hardware locations during the qualification test of the total assembly, or they may be tested alone in a component test to the predicted qualification levels at the hardware location.",
+	"tags": ["pip-pin", "quick release pin"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-28m13hnwcwsim",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-2-4",
+	"name": "Pip-pin Qual Thermal Test",
+	"text": "Pip-pins shall be subjected to thermal testing to the maximum/minimum qualification temperatures.",
+	"tags": ["pip-pin", "quick release pin"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-1weoqfmqnqfcqfoj",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
 	"req_id": "DFMR-3.1",
 	"name": "Redundant Springs",
 	"text": "In designs and applications where spring failure would result in a hazard, the springs shall be redundant.",
@@ -158,6 +230,150 @@
 	"metadata": {
 		"unique_id": "req-348uguhsn34934h",
 		"lastModified": 20260622,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-4-1",
+	"name": "Fastener Locking",
+	"text": "A means of positive locking (i.e., self-locking threads, self-locking inserts, etc.) shall be provided on all fasteners (threaded and otherwise) to assure integrity of the mechanical assemblies and prevent loose parts.",
+	"tags": ["fastener"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "This is in addition to the standard torque/preload of the fastener.",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-2qocmm9fkwerow",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-4-2",
+	"name": "Fastener Locking Compounds",
+	"text": "Where other locking devices are practicable, locking compounds shall not be used on fasteners to provide locking.",
+	"tags": ["fastener"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-0k93r98nvna4oqm",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-5-1",
+	"name": "Structural Design Factors of Safety",
+	"text": "Structural design of safety critical mechanical system components shall adhere to paragraphs 208.1, 208.2, and 208.3 of NSTS 1700.7.",
+	"tags": ["structure"],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-98q34uwueirnhiwhgwi",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-5-2",
+	"name": "Fracture Control",
+	"text": "Movable mechanical assemblies used in safety critical applications shall be included in an acceptable fracture control program (reference NASA-STD-5003). ",
+	"tags": [],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-q734ynwgiohws",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-5-3",
+	"name": "",
+	"text": "Mechanical system components and linkages shall be designed with sufficient strength to tolerate an actuation force/torque stall condition at any point of travel and maintain a positive margin of safety with an ultimate factor of safety applied.",
+	"tags": [],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-8o374wgnwkw2o83",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-5-4",
+	"name": "",
+	"text": "Mechanical systems that incorporate end of travel mechanical stops shall be designed to have positive strength margins for worst case dynamic loading conditions, considering variables in inertia properties, actuation force/torque, drive train resistance, and other environmental conditions.",
+	"tags": [],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-q9843cwinhgwiuriu",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-5-5",
+	"name": "",
+	"text": "Exposed mechanical system components, protective shrouds and covers, and mounting structure shall be designed to accommodate inadvertent impact loads from remote manipulator system/ISS remote manipulator system/payload operations and extravehicular activity/intravehcular activity loads, as appropriate, to ensure adequate margins to preclude deformation that could cause a binding or jamming condition or inadvertent operation of the mechanism.",
+	"tags": [],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-9384tuwn4wn",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-5-6",
+	"name": "",
+	"text": "A design that incorporates preload as a means of meeting functional and/or structural requirements shall comply with the preload criteria defined in NSTS 08307.",
+	"tags": [],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-oqimfowgkjui",
+		"lastModified": 20260724,
 		"version": 0.1
 	}
 },
@@ -197,7 +413,132 @@
 		"version": 0.1
 	}
 },
-
+{
+	"type": "requirement",
+	"req_id": "DFMR-7.1-1",
+	"name": "Torque Force Margin",
+	"text": "For movable mechanical systems in safety critical applications, the operating torque or force margin shall be acceptance-test verified unless another verification approach is approved by the MSWG.",
+	"tags": [],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-3478ycnwinch",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-7.1-2",
+	"name": "Torque Force Margin",
+	"text": "When test verified, the margin shall be 1.0 or greater at applicable points of travel.",
+	"tags": [],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-q983n4cifnw",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-7.1-3",
+	"name": "",
+	"text": "This margin, as demonstrated conservatively by test or analytical calculations, shall take into account worst case environmental conditions, frictional effects, alignment effects, latching forces, thermally induced distortions, load induced distortions, and variations in lubricity including degradation or depletion of lubrication under vacuum and under worst case thermal conditions, etc.",
+	"tags": [],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-euio3fq38qng",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-7.2-1",
+	"name": "",
+	"text": "",
+	"tags": [],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-29378ynwin",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-7.2-2",
+	"name": "",
+	"text": "",
+	"tags": [],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-nucwuh2398f23hf2w",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-7.2-3",
+	"name": "",
+	"text": "",
+	"tags": [],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-83o7wnwofhnekn",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-7.2-4",
+	"name": "",
+	"text": "",
+	"tags": [],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-28o713rcncwufhn",
+		"lastModified": 20260724,
+		"version": 0.1
+	}
+},
 {
 	"type": "requirement",
 	"req_id": "DFMR-10-1",
@@ -270,7 +611,42 @@
 		"version": 0.1
 	}
 },
-
+{
+	"type": "requirement",
+	"req_id": "DFMR-10-5",
+	"name": "Qualification Test Environment Conditions",
+	"text": "Natural and induced environmental conditions shall include but are not limited to, thermally induced in-plane and out-of-plane distortions, differential thermal growth and shrinkage, and load-induced deflections.",
+	"tags": [],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-1wkeucknueurhn",
+		"lastModified": 20260718,
+		"version": 0.1
+	}
+},
+{
+	"type": "requirement",
+	"req_id": "DFMR-10-6",
+	"name": "Qualification Test ProtoFlight Parameters",
+	"text": "For programs using protoflight approaches, the test parameters may be adjusted with MSWG approval to avoid excessive endurance or fatigue limit margin erosion.",
+	"tags": [],
+	"phase": "",
+	"level": "",
+	"source": "MA2-00-057",
+	"guidance": "",
+	"rationale": "",
+	"verifiedBy": "", 
+	"metadata": {
+		"unique_id": "req-q73ycrnwicno",
+		"lastModified": 20260718,
+		"version": 0.1
+	}
+},
 {
 	"type": "requirement",
 	"req_id": "DFMR-11-1",
