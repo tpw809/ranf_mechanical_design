@@ -4,6 +4,9 @@ References:
 
 - MIL-STD-29A
 - AFFDL-TR-69-42 Stress Analysis Manual, section 1.5.4
+- Shigley, Mechanical Engineering Design, 5th Ed.
+- Machinery Handbook
+- NASA-STD-5017B
 """
 import numpy as np
 
@@ -11,6 +14,13 @@ import numpy as np
 #shape = 'square'
 #shape = 'rectangular'
 shape = 'round'
+
+# End Type:
+# end_type = 'open_not_ground'
+# end_type = 'open_end_ground'
+# end_type = 'closed_not_ground'
+end_type = 'closed_end_ground'
+
 
 # [mm], wire diameter:
 d_wire = 1.0
@@ -27,9 +37,15 @@ p = 1.0
 # [mm], spring radius:
 r = D_mean / 2.0
 
+# Service:
+# Light: static loads, small deflections, seldom used, 1e3 to 1e4 deflections
+# Average: general use, 1e5 to 1e6 deflections
+# Severe: rapid deflections, shock loading, valves, 1e6 to 1e7 deflections
+
 
 # [-], Spring Index (C):
 # Spring index should be from 5 to 15, 7 to 9 is ideal
+# typically 6 to 12 (Shigley)
 if shape == 'round':
     C = D_mean / d_wire
 elif shape == 'square':
@@ -53,6 +69,9 @@ N = 10.0
 # Factor of Safety:
 # Ratio of max load a spring can sustain without permanent set to the max applied load.
 
+# For critical applications:
+SF_yield = 1.65
+SF_ultimate = 2.0
 
 
 # Material:
@@ -73,7 +92,22 @@ P = 1.0
 # [N-mm], torsional load:
 T = P * r
 
+############################################
+# Solid Height:
+############################################
 
+# TC = total coils
+
+if end_type == 'open_not_ground':
+    SH = (TC + 1) * d_wire
+elif end_type == 'open_end_ground':
+    SH = TC * d_wire
+elif end_type == 'closed_not_ground':
+    SH = (TC + 1) * d_wire
+elif end_type == 'closed_end_ground':
+    SH = TC * d_wire
+else:
+    raise Exception('select valid end_type')
 
 
 ############################################
@@ -95,10 +129,16 @@ if shape == 'round':
     # helical compression spring rate:
     k = (G * d_wire**4) / (8.0 * D_mean**3 * N)
     
+    # spring rate (shigley):
+    k_shigley = d_wire**4 * G / (8.0 * D_mean**3 * N)
+    
     # max shear stress in the spring:
     # stress analysis manual, pg 1-95:
     # s_max = 16.0 * P * r / (np.pi * d**3) * (1.0 + d / (4.0 * r))
     s_max = 16.0 * P * r / (np.pi * d_wire**3)
+    
+    # max shear stress in wire (Shigley):
+    tau_max = 8.0 * P * D_mean / (np.pi * d_wire**3)
     
     # deflection:
     # stress analysis manual, pg 1-95:
@@ -183,15 +223,32 @@ V = 1.0
 # MIL-STD-29A, section 21.11: Curvature Stress-Correction Factors
 ############################################
 
+# Shear Stress Correction Factor:
+k_shear = (2.0 * C + 1.0) / (2.0 * C)
+print(f"k_shear = {k_shear}")
+
 # Curvature Stress Correction Factor: K
 # Wahl Stress Correction Factor, K_w
-K = (4.0 * C - 1.0) / (4.0 * C - 4.0) + 0.615 / C
+K_wahl = (4.0 * C - 1.0) / (4.0 * C - 4.0) + 0.615 / C
+print(f"K_wahl = {K_wahl}")
 
-s_max = s_max * K
+# Bergstrasser Factor:
+K_berg = (4.0 * C + 2.0) / (4.0 * C - 3.0)
+print(f"K_berg = {K_berg}")
+
+# Curvature stress correction factor:
+k_curv = K_wahl / k_shear
+print(f"k_curv = {k_curv}")
+
+s_max = s_max * K_wahl
 print(f"s_max = {s_max} [MPa]")
 
-S_t_max = S_t * K
+S_t_max = S_t * K_wahl
 print(f"S_t_max = {S_t_max} [MPa]")
+
+# max shear stress in wire (Shigley):
+tau_max = tau_max * K_wahl
+print(f"tau_max = {tau_max} [MPa]")
 
 # as spring diameter increases, this approaches:
 # (1.0 + d / (4.0 * r))
@@ -209,3 +266,37 @@ t = b
 # t_prime = new thickness of inner edge after coiling
 
 t_prime = 0.48 * t * (OD / D_mean + 1.0)
+print(f"t_prime = {t_prime}")
+
+
+############################################
+# Buckling Stability
+############################################
+
+# alpha = end condition constant
+alpha = 0.0
+
+# lambda_eff = slenderness ratio
+lambda_eff = alpha * L0 / D
+
+
+y_cr = L0 * c1 * (1.0 - (1.0 - c2/lambda_eff**2)**(0.5))
+
+
+############################################
+# Material Strength Capability (Allowable)
+############################################
+
+# ultimate tensile strength:
+S_ut = 1200.0
+
+# ultimate shear strength:
+S_su = 0.45 * S_ut
+
+
+############################################
+# Spring Strength Margin of Safety
+############################################
+
+MS_shear = ((SF_ultimate * tau_max) / S_su) - 1.0
+print(f"MS_shear = {MS_shear}")

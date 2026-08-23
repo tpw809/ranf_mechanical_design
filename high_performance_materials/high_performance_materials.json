@@ -1,0 +1,171 @@
+[
+  {
+	"name": "Ti6Al4V Annealed",
+	"E_mpa": 113.8,
+	"nu": 0.342,
+	"rho_gcc": 4.43,
+	"sigma_tu_MPa": 950.0,
+	"sigma_ty_MPa": 880.0,
+	"cte_um_m_C": 8.6,
+	"hc_J_gC": 0.5263,
+	"tc_W_mK": 6.7
+  },
+  {
+	"name": "Ti6Al4V STA",
+	"E_mpa": 113.8,
+	"nu": 0.33,
+	"rho_gcc": 4.43,
+	"sigma_tu_MPa": 1170.0,
+	"sigma_ty_MPa": 1070.0,
+	"cte_um_m_C": 8.6,
+	"hc_J_gC": 0.5263,
+	"tc_W_mK": 6.7,
+	"HRC": 39.0
+  },
+  {
+	"name": "15-5PH H1100",
+	"E_mpa": 200.0e3,
+	"nu": 0.3,
+	"rho_gcc": 7.80,
+	"sigma_tu_MPa": 1069.0,
+	"sigma_ty_MPa": 1034.0,
+	"cte_um_m_C": 10.8,
+	"hc_J_gC": 0.420,
+	"tc_W_mK": 17.8
+  },
+  {
+	"name": "Inconel 718",
+	"E_mpa": 205.0e3,
+	"nu": 0.284,
+	"rho_gcc": 8.19,
+	"sigma_tu_MPa": 1375.0,
+	"sigma_ty_MPa": 1100.0,
+	"cte_um_m_C": 13.0,
+	"hc_J_gC": 0.435,
+	"tc_W_mK": 11.4
+  },
+  {
+	"name": "Inconel 718 Annealed",
+	"E_mpa": 205.0e3,
+	"nu": 0.284,
+	"rho_gcc": 8.19,
+	"sigma_tu_MPa": 1120.0,
+	"sigma_ty_MPa": 827.0,
+	"cte_um_m_C": 12.15,
+	"hc_J_gC": 0.435,
+	"tc_W_mK": 11.4
+  },
+  {
+	"name": "Nitronic 60 Annealed",
+	"E_mpa": 179.0e3,
+	"nu": 0.3,
+	"rho_gcc": 7.62,
+	"sigma_tu_MPa": 710.0,
+	"sigma_ty_MPa": 414.0,
+	"cte_um_m_C": 15.8,
+	"hc_J_gC": 0.0,
+	"tc_W_mK": 0.0
+  },
+  {
+	"name": "Nitronic 60 Level 3 Cold Worked",
+	"E_mpa": 179.0e3,
+	"nu": 0.3,
+	"rho_gcc": 7.62,
+	"sigma_tu_MPa": 1100.0,
+	"sigma_ty_MPa": 896.0,
+	"cte_um_m_C": 15.8,
+	"hc_J_gC": 0.0,
+	"tc_W_mK": 0.0
+  },
+  {
+	"name": "17-4 PH H1025",
+	"E_mpa": 0.0,
+	"nu": 0.0,
+	"rho_gcc": 7.8,
+	"sigma_tu_MPa": 1276.0,
+	"sigma_ty_MPa": 1172.0,
+	"cte_um_m_C": 10.8,
+	"hc_J_gC": 0.460,
+	"tc_W_mK": 0.0,
+	"HRC": 38.0
+  },
+  {
+	"name": "17-4 PH Annealed",
+	"E_mpa": 0.0,
+	"nu": 0.0,
+	"rho_gcc": 7.8,
+	"sigma_tu_MPa": 1100.0,
+	"sigma_ty_MPa": 1000.0,
+	"cte_um_m_C": 10.8,
+	"hc_J_gC": 0.460,
+	"tc_W_mK": 0.0,
+	"HRC": 35.0
+  },
+  {
+	"name": "Stainless 316L Annealed",
+	"E_mpa": 193.0e3,
+	"nu": 0.0,
+	"rho_gcc": 8.0,
+	"sigma_tu_MPa": 560.0,
+	"sigma_ty_MPa": 235.0,
+	"cte_um_m_C": 0.0,
+	"hc_J_gC": 0.5,
+	"tc_W_mK": 14.0
+  },
+  {
+	"name": "Stainless 302B Annealed",
+	"E_mpa": 195.0e3,
+	"nu": 0.0,
+	"rho_gcc": 8.0,
+	"sigma_tu_MPa": 620.0,
+	"sigma_ty_MPa": 275.0,
+	"cte_um_m_C": 16.2,
+	"hc_J_gC": 0.5,
+	"tc_W_mK": 15.9
+  },
+  {
+	"name": "Stainless 304 Annealed",
+	"E_mpa": 193.0e3,
+	"nu": 0.29,
+	"rho_gcc": 8.0,
+	"sigma_tu_MPa": 590.0,
+	"sigma_ty_MPa": 330.0,
+	"cte_um_m_C": 17.3,
+	"hc_J_gC": 0.5,
+	"tc_W_mK": 16.2
+  },
+  {
+	"name": "Stainless 440C",
+	"E_mpa": 205.0e3,
+	"nu": 0.283,
+	"rho_gcc": 7.8,
+	"sigma_tu_MPa": 1900.0,
+	"sigma_ty_MPa": 1800.0,
+	"cte_um_m_C": 10.2,
+	"hc_J_gC": 0.46,
+	"tc_W_mK": 24.2,
+	"HRC": 58.0
+  },
+  {
+	"name": "Aluminum 7075-T6",
+	"E_mpa": 71.7e3,
+	"nu": 0.33,
+	"rho_gcc": 0.0,
+	"sigma_tu_MPa": 500.0,
+	"sigma_ty_MPa": 450.0,
+	"cte_um_m_C": 21.6,
+	"hc_J_gC": 0.96,
+	"tc_W_mK": 130.0
+  },
+  {
+	"name": "0",
+	"E_mpa": 0.0,
+	"nu": 0.0,
+	"rho_gcc": 2.81,
+	"sigma_tu_MPa": 0.0,
+	"sigma_ty_MPa": 0.0,
+	"cte_um_m_C": 0.0,
+	"hc_J_gC": 0.0,
+	"tc_W_mK": 0.0
+  }
+]

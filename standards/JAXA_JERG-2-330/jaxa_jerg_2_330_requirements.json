@@ -1,0 +1,111 @@
+[
+    {
+        "type": "requirement",
+        "req_id": "JERG-2-330_REQ4.1",
+        "name": "System Performance Requirements",
+        "source": "JAXA-JERG-2-330",
+        "text": "The functional performance of mechanisms shall comply with the performance requirements of the system.",
+        "tags": [],
+        "implementationPhase": "",
+        "assemblyLevel": "",
+        "guidance": "",
+        "rationale": "",
+        "verifiedBy": "",
+        "metadata": {
+             "version": 0.1,
+             "modifiedDate": "2026-07-26",
+             "unique_id": "req-374tybow7" 
+        }
+    },
+    {
+        "type": "requirement",
+        "req_id": "JERG-2-330_REQ4.2-1",
+        "name": "Mission Period",
+        "source": "JAXA-JERG-2-330",
+        "text": "In designing a mechanism, the requirements shall be applied throughout the entire period of the mission specified in individual programs.",
+        "tags": [],
+        "implementationPhase": "",
+        "assemblyLevel": "",
+        "guidance": "",
+        "rationale": "",
+        "verifiedBy": "",
+        "metadata": {
+             "version": 0.1,
+             "modifiedDate": "2026-07-26",
+             "unique_id": "req-8173r4cnfr" 
+        }
+    },
+	{
+        "type": "requirement",
+        "req_id": "JERG-2-330_REQ4.2-1",
+        "name": "Mission Phase",
+        "source": "JAXA-JERG-2-330",
+        "text": "All the requirements and environment conditions in each phase of the mission shall be satisfied.",
+        "tags": [],
+        "implementationPhase": "",
+        "assemblyLevel": "",
+        "guidance": "",
+        "rationale": "",
+        "verifiedBy": "",
+        "metadata": {
+             "version": 0.1,
+             "modifiedDate": "2026-07-26",
+             "unique_id": "req-87o34tybcoa"
+        }
+    },
+	
+	{
+        "type": "requirement",
+        "req_id": "JERG-2-330_REQ6.2.5.1",
+        "name": "Life Test After Environments",
+        "source": "JAXA-JERG-2-330",
+        "text": "After going through an environment test at a level higher than that of the acceptance test, the design, operating life and performance of mechanisms shall be verified for conformity under the operating life test conditions simulating the ground and in-orbit environment conditions.",
+        "tags": ["life", "test", "environment"],
+        "implementationPhase": "",
+        "assemblyLevel": "",
+        "guidance": "",
+        "rationale": "",
+        "verifiedBy": "",
+        "metadata": {
+             "version": 0.1,
+             "modifiedDate": "2026-07-26",
+             "unique_id": "req-bahcbka283nfqkinq"
+        }
+    },
+	{
+        "type": "requirement",
+        "req_id": "JERG-2-330_REQ6.2.5.2",
+        "name": "Life Test Conditions",
+        "source": "JAXA-JERG-2-330",
+        "text": "The operating life test conditions shall properly represent the following parameters which impact the operating life. (1) Thermal conditions, load conditions and motion profiles properly corresponding to operational conditions. (2) When conducting an accelerated operating life test to verify the operating life performance of a mechanism, the conditions of the accelerated operating life test shall represent the worst-case environment in terms of deterioration.",
+        "tags": ["life", "test", "conditions"],
+        "implementationPhase": "",
+        "assemblyLevel": "",
+        "guidance": "",
+        "rationale": "",
+        "verifiedBy": "",
+        "metadata": {
+             "version": 0.1,
+             "modifiedDate": "2026-07-26",
+             "unique_id": "req-87ryncskdfnv"
+        }
+    },
+	{
+        "type": "requirement",
+        "req_id": "JERG-2-330_REQ6.2.5.3",
+        "name": "Life Test Performance",
+        "source": "JAXA-JERG-2-330",
+        "text": "In an operating life test, the functional performance of mechanisms shall conform to the design requirements after the test is finished.",
+        "tags": ["life", "test", "performance"],
+        "implementationPhase": "",
+        "assemblyLevel": "",
+        "guidance": "",
+        "rationale": "",
+        "verifiedBy": "",
+        "metadata": {
+             "version": 0.1,
+             "modifiedDate": "2026-07-26",
+             "unique_id": "req-skdufnhlie8qn4"
+        }
+    }
+]

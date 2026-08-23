@@ -1,2 +1,5 @@
-Reference: Airframe Stress Analysis & Sizing, Niu, Section 9.8
+References:
+ 
+-Airframe Stress Analysis & Sizing, Niu, Section 9.8
+-AD0759199 Stress Analysis Manual, section 9
 
