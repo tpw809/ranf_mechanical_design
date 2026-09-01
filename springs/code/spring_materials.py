@@ -4,6 +4,7 @@ Sources:
 
 - Mechanical Design and Systems Handbook, Rothbart
 - Machinery's Handbook, 29th Ed.
+- https://www.leespring.com/spring-materials
 """
 
 ####################################

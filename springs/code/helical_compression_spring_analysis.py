@@ -179,7 +179,7 @@ OD_c = np.sqrt(D_mean**2 + (p**2 - d_wire**2)/np.pi**2) + d_wire
 
 
 ############################################
-# MIL-STD-29A, section 21.4: Bucking
+# MIL-STD-29A, section 21.4: Buckling
 ############################################
 
 # Slenderness Ratio = Free Length / Mean Diameter
@@ -292,6 +292,7 @@ S_ut = 1200.0
 
 # ultimate shear strength:
 S_su = 0.45 * S_ut
+print(f"S_su = {S_su}")
 
 
 ############################################
