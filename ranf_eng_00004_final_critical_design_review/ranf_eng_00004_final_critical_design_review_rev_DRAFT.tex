@@ -1,0 +1,226 @@
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage{graphicx}      % For logo
+\usepackage{tcolorbox}     % For note box
+\usepackage{setspace}      % Optional spacing
+\usepackage{geometry}      % Page layout
+\usepackage{draftwatermark}
+
+\geometry{margin=1in}
+
+\begin{document}
+
+% Watermark:
+\SetWatermarkText{DRAFT} % Text of the watermark
+\SetWatermarkScale{4} % Size (scale factor)
+\SetWatermarkColor[gray]{0.85} % Transparency (0 = invisible, 1 = fully opaque)
+
+% -------------------------------
+% TITLE PAGE
+% -------------------------------
+\begin{titlepage}
+    \centering
+
+    % Top row: Logo (left) and Doc Info (right)
+    \noindent
+    \begin{minipage}[t]{0.49\textwidth}
+        \vspace{0pt}
+        \includegraphics[width=0.6\textwidth]{logo_text.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.49\textwidth}
+        \vspace{0pt}
+        \raggedleft
+        \begin{tabular}{rl}
+            \textbf{Document Number:} & RANF-ENG-00004 \\
+            \textbf{Revision:} & Rev. DRAFT \\
+        \end{tabular}
+    \end{minipage}
+
+    % Vertical spacing before title
+    \vspace{2.5cm}
+
+%    % Document Number and Revision
+%    \begin{tabular}{rl}
+%        \textbf{Document Number:} & DOC-00123 \\
+%        \textbf{Revision:} & Rev. A \\
+%    \end{tabular}
+%
+%    % Organization Logo
+%    \vspace*{1cm}
+%    \includegraphics[width=0.35\textwidth]{ranf_imprint_logo.png}\\[1.5cm]
+
+% TODO: add QR code to website
+
+    % Report Title
+    {\Huge \bfseries Final / Critical Design Review \\[0.5cm]}
+
+    % Author and Date
+    {\Large Timothy P Woodard \\[0.2cm]}
+    {\large \today \\[1.5cm]}
+
+    % Note Box
+    \begin{tcolorbox}[colback=gray!10, colframe=black, width=0.9\textwidth]
+        \textbf{Note:} Copyright 2026 Roads Are No Fun
+
+This document is provided as part of the Roads Are No Fun project under the Creative Commons CC BY-SA license.
+    \end{tcolorbox}
+
+    \vfill
+\end{titlepage}
+
+% -------------------------------
+% MAIN DOCUMENT
+% -------------------------------
+%\tableofcontents
+\newpage
+
+\section{Introduction}
+Design reviews serve as gating events that establish the progress attained during the design process for a product and determine whether the next steps of design/production can begin, or if additional work is required.
+The final or critical design review is the review which evaluates if the design is complete and ready for production.
+Obviously at this stage of design, all requirements and constraints must be expected to be met, or have a clear path identified to be met.
+
+\section{Expectations}
+
+\subsection{Front Matter}
+
+point of contact / author / organization
+
+date, revision 
+
+subject / identifiers / part numbers
+
+contents
+
+
+\subsection{Design Overview}
+
+context
+
+purpose 
+
+function
+
+overall design concept / architecture
+
+consists of
+
+
+\subsection{Design Criteria}
+
+guidance documents / standards
+
+requirements:
+
+performance criteria
+
+functional criteria
+
+requirements verification matrix
+
+key performance parameters
+
+higher level driving requirements
+
+derived requirements
+
+concept specific requirements
+
+
+\subsection{Design Details}
+
+detailed architecture
+
+what and how
+
+standard / COTS components
+
+materials
+
+
+trade studies / alternatives / evaluations
+
+
+\subsection{Lifecycle Summary}
+
+
+
+manufacture
+
+processes
+
+assembly
+
+operation
+
+maintenance
+
+disposal
+
+tooling and test equipment
+
+facilities
+
+
+\subsection{Design Verification}
+
+verification plan: inspection, analysis, test, demonstrate, similarity, lot testing
+
+qualification and acceptance
+
+Analysis
+-methodology
+-margins summary
+-loads and environments
+-analysis results
+
+durability: fracture / fatigue / wear
+
+Testing: test plan
+
+
+\subsection{Safety \& Failure}
+
+FMECA
+
+Hazards
+
+Hazard controls
+
+risks and watch items
+
+
+\subsection{Forward Work}
+
+Identify and remaining open items
+
+schedule and cost estimates
+
+
+\subsection{Success / Exit Criteria}
+
+design is complete
+
+design meets all requirements and constraints
+
+feasible to build
+
+ready for implementation / production
+
+
+
+
+
+%\section{Glossary}
+%\paragraph{Not Invented Here (NIH) Syndrome} when engineers at a company do not use a system external to their organization due to the perceived inferiority to internally developed systems
+%\paragraph{C-Sketch} collaborative sketching, also called 6-3-5, is a brainstorming method
+
+\section*{References}
+
+\begin{enumerate}
+\item MIL-A-83577, 1988.
+    %\item George E. Dieter, Linda C. Schmidt; Engineering Design Fourth Edition; McGraw Hill; 2009.
+\end{enumerate}
+
+\end{document}
