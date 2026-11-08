@@ -2,18 +2,25 @@
 
 References:
 
-- MIL-STD-29A
-- AFFDL-TR-69-42 Stress Analysis Manual, section 1.5.4
+- MIL-STD-29A, SPRINGS, MECHANICAL; DRAWING REQUIREMENTS FOR
+- AFFDL-TR-69-42, Stress Analysis Manual, section 1.5.4
 - Shigley, Mechanical Engineering Design, 5th Ed.
 - Machinery Handbook
-- NASA-STD-5017B
+- NASA-STD-5017B, Design and Development Requirements for Mechanisms
+
+
+- ult = ultimate
+- yld = yield
+- d = diameter
+- r = radius
+- k = spring rate (stiffness)
 """
 import numpy as np
 
 # wire shape:
-#shape = 'square'
-#shape = 'rectangular'
-shape = 'round'
+#wire_shape = 'square'
+#wire_shape = 'rectangular'
+wire_shape = 'round'
 
 # End Type:
 # end_type = 'open_not_ground'
@@ -32,7 +39,7 @@ b = 1.0
 D_mean = 10.0
 
 # [mm/turn], pitch at free length:
-p = 1.0
+pitch = 1.0
 
 # [mm], spring radius:
 r = D_mean / 2.0
@@ -46,7 +53,7 @@ r = D_mean / 2.0
 # [-], Spring Index (C):
 # Spring index should be from 5 to 15, 7 to 9 is ideal
 # typically 6 to 12 (Shigley)
-if shape == 'round':
+if wire_shape == 'round':
     C = D_mean / d_wire
 elif shape == 'square':
     C = D_mean / b
@@ -116,7 +123,7 @@ else:
 
 # Table II:
 
-if shape == 'round':
+if wire_shape == 'round':
     # torsional stress:
     # S_t = (P * D) / (0.393 * d**2)
     S_t = 8.0 * P * D_mean / (np.pi * d_wire**3)
@@ -144,7 +151,7 @@ if shape == 'round':
     # stress analysis manual, pg 1-95:
     delta = 64.0 * P*r**3*N / (G * d_wire**4)
 
-elif shape == 'square':
+elif wire_shape == 'square':
     # max shear stress in the spring:
     # stress analysis manual, pg 1-96:
     s_max = 4.80 * P * r / b**3
@@ -152,6 +159,8 @@ elif shape == 'square':
     # deflection:
     # stress analysis manual, pg 1-96:
     delta = 44.5 * P * r**3 * N / (G * b**4)
+else:
+    print("rectangular wire not yet implemented...")
 
 
 # MIL-STD-29A Table III:
@@ -175,7 +184,7 @@ print(f"P_est = {P_est}")
 # Increase in outside diameter when compressed:
 
 # OD_c = outside diameter at solid length:
-OD_c = np.sqrt(D_mean**2 + (p**2 - d_wire**2)/np.pi**2) + d_wire
+OD_c = np.sqrt(D_mean**2 + (pitch**2 - d_wire**2)/np.pi**2) + d_wire
 
 
 ############################################
@@ -290,14 +299,25 @@ y_cr = L0 * c1 * (1.0 - (1.0 - c2/lambda_eff**2)**(0.5))
 # ultimate tensile strength:
 S_ut = 1200.0
 
+# yield tensile strength:
+S_yt = 1000.0
+
 # ultimate shear strength:
 S_su = 0.45 * S_ut
 print(f"S_su = {S_su}")
+
+# yield shear strength:
+S_sy = 0.45 * S_yt
+print(f"S_sy = {S_sy}")
 
 
 ############################################
 # Spring Strength Margin of Safety
 ############################################
+print(f"\nMargins:")
 
-MS_shear = ((SF_ultimate * tau_max) / S_su) - 1.0
-print(f"MS_shear = {MS_shear}")
+MS_shear_ult = (S_su / (SF_ultimate * tau_max)) - 1.0
+print(f"MS_shear_ult = {MS_shear_ult}")
+
+MS_shear_yld = (S_sy / (SF_yield * tau_max)) - 1.0
+print(f"MS_shear_yld = {MS_shear_yld}")
